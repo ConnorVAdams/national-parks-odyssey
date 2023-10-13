@@ -2,16 +2,16 @@ import { useState, useEffect } from 'react'
 import AnimalTile from './AnimalTile'
 
 const AnimalBoard = ({ animals }) => {
-    
-    const buildDeck = (animalArr) => {
-        const randomInt = Math.floor(Math.random() * (16 - 0) + 0)
+    const [clickedName, setClickedName] = useState('')
+    const [shuffledDeck, setShuffledDeck] = useState([])
 
-        const duplicateCards = ([...animalArr]) => {
+    useEffect(() => {
+        const duplicateCards = ([...animals]) => {
                 animals.map(animal => {
                     const newAnimal = {...animal, id: animal.id + animals.length}
-                    animalArr.push(newAnimal)
+                    animals.push(newAnimal)
             })
-            return animalArr
+            return animals
         }
 
         const shuffleDeck = (fullDeck) => {
@@ -22,14 +22,32 @@ const AnimalBoard = ({ animals }) => {
             }
             return fullDeck
         }
+        setShuffledDeck(shuffleDeck(duplicateCards(animals)))
+    }, [])
 
-        return shuffleDeck(duplicateCards(animalArr))
+
+    const handleSelectAnimal = (name) => {
+        if (name === clickedName) {
+            setShuffledDeck(current => current.map(card => {
+                if (card.name === name) {
+                    return { ...card, found: true }
+                } else {
+                    return card
+                }
+            }))
+        }
+        setClickedName(name)
     }
 
-    const animalDisplay = buildDeck(animals).map(animal => {
-        return <AnimalTile key={animal.id} id={animal.id} {...animal} />
+    const animalDisplay = shuffledDeck.map(animal => {
+        return <AnimalTile 
+                    key={animal.id} 
+                    id={animal.id} 
+                    {...animal} 
+                    handleSelectAnimal={handleSelectAnimal}
+                    clickedName={clickedName}
+                />
     })
-
 
     return (
     <div className='animal-board'>
