@@ -3,42 +3,37 @@ import AnimalTile from './AnimalTile'
 
 const AnimalBoard = ({ animals }) => {
     
-    const randomInt = Math.floor(Math.random() * (16 - 0) + 0)
-
-    const duplicateAnimals = (animalArr) => {
-            animals.map(animal => {
-                const newAnimal = {...animal, id: animal.id + animals.length}
-                animalArr.push(newAnimal)
-        })
-    }
-
-    const shuffleDeck = (fullDeck) => {
-        const newDeck = [...fullDeck]
-        newDeck.map(card => {
-            const [ cardOut ] = fullDeck.slice(randomInt, randomInt + 1)
-    
-        })
-        return newDeck
-    }
-
     const buildDeck = (animalArr) => {
-        const deck = [...animalArr]
-        duplicateAnimals(deck)
-        shuffleDeck(deck)
-        return deck
+        const randomInt = Math.floor(Math.random() * (16 - 0) + 0)
+
+        const duplicateCards = ([...animalArr]) => {
+                animals.map(animal => {
+                    const newAnimal = {...animal, id: animal.id + animals.length}
+                    animalArr.push(newAnimal)
+            })
+            return animalArr
+        }
+
+        const shuffleDeck = (fullDeck) => {
+            for (let i = fullDeck.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1)); // Generate a random index between 0 and i.
+            // Swap elements at i and j
+            [fullDeck[i], fullDeck[j]] = [fullDeck[j], fullDeck[i]];
+            }
+            return fullDeck
+        }
+
+        return shuffleDeck(duplicateCards(animalArr))
     }
 
-    
-    const playTiles = buildDeck(animals)
-    console.log(playTiles)
-    const animalDisplay = playTiles.map(animal => {
+    const animalDisplay = buildDeck(animals).map(animal => {
         return <AnimalTile key={animal.id} id={animal.id} {...animal} />
     })
 
 
     return (
     <div className='animal-board'>
-        {/* {animalDisplay} */}
+        {animalDisplay}
     </div>
     )
 }
