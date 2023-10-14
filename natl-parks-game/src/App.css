@@ -56,3 +56,12 @@
   justify-content: space-evenly;
   width: 100%;
 }
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+.disabled {
+  pointer-events: none;
+}

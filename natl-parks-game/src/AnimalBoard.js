@@ -28,19 +28,26 @@ const AnimalBoard = ({ animals }) => {
 
     useEffect(() => {
         if (count % 2 === 0) {
-            setClickedName('')
+            // console.log(`useEffect1 - Count is ${count}`)
+            // setClickedName('')
+            // console.log(`useEffect2 - Count is ${count}`)
         }
     }, [count])
 
     const handleSelectAnimal = (name) => {
-        if (name === clickedName) {
-            setShuffledDeck(current => current.map(animal => animal.name === name ? { ...animal, found: true } : animal))
-            setClickedName('')  
+        console.log(clickedName, name)
+        if (count % 2 === 0 && name === clickedName){
+            console.log('Good job!')
+            setClickedName('')
+            setCount(count => count + 1)
         } else {
+            console.log('Better luck next time.')
             setClickedName(name)
+            setCount(count => count + 1)
         }
-        setCount(count => count + 1)
     }
+
+    
 
     const animalDisplay = shuffledDeck.map(animal => {
         return <AnimalTile 
@@ -49,6 +56,7 @@ const AnimalBoard = ({ animals }) => {
                     {...animal} 
                     handleSelectAnimal={handleSelectAnimal}
                     clickedName={clickedName}
+                    count={count}
                 />
     })
 
