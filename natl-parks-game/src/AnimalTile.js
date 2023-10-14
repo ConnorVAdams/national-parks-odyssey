@@ -14,17 +14,17 @@ const AnimalTile = ({ img, name, fact, id, found, handleSelectAnimal, count }) =
         }
     }, [count])
 
-  return (
-    <div 
-        className={`animal-tile ${back ? 'tile-back ' : 'disabled' }`} 
-        onClick={clickHandle}
-    >
-        <>
-        {!back ? null : <img src={img} alt={img} />}
-        {found ? <p>{fact}</p> : null}
-        </>
-    </div>
-  )
+    return (
+        <div 
+            className={`animal-tile ${back ? 'tile-back ' : 'disabled' }`} 
+            onClick={clickHandle}
+        >
+            <>
+            {back ? null : <img src={img} alt={img} />}
+            {found ? <p>{fact}</p> : null}
+            </>
+        </div>
+    )
 }
 
 export default AnimalTile

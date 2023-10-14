@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import AnimalTile from './AnimalTile'
 
-const AnimalBoard = ({ animals }) => {
+const AnimalBoard = ({ animals, handleWin }) => {
     const [count, setCount] = useState(0)
     const [clickedName, setClickedName] = useState('')
     const [shuffledDeck, setShuffledDeck] = useState([])
@@ -12,23 +12,10 @@ const AnimalBoard = ({ animals }) => {
         return combined
     }    
 
-    const sliceMaker = (arr, n) => {
-        let count = 0
-        return arr.filter(el => {
-            if (count < n) {
-                count++
-                return true
-            } else {
-                return false
-            }
-        })
-    }
-
     const shuffleDeck = (arr) => {
         for (let i = arr.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1)); // Generate a random index between 0 and i.
-        // Swap elements at i and j
-        [arr[i], arr[j]] = [arr[j], arr[i]];
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]]
         }
         return arr
     }
@@ -53,20 +40,23 @@ const AnimalBoard = ({ animals }) => {
     }
 
     useEffect(() => {
-        const newDeck = shuffleDeck(animals)
-
-        const dupes = duplicateCards(newDeck)
-        setShuffledDeck(shuffleDeck(dupes))
+        setShuffledDeck(shuffleDeck(duplicateCards(animals)))
     }, [])
 
     useEffect(() => {
         document.querySelector('.animal-board').classList.remove('disabled')
     }, [count])
 
+    useEffect(() => {
+        if ((shuffledDeck.filter(card => !card.found)).length === 0) {
+            const endTime = Date.now()
+            handleWin(endTime, count)
+        }
+    }, [shuffledDeck])
+
     const animalDisplay = shuffledDeck.map(animal => {
         return <AnimalTile 
                     key={animal.id} 
-                    id={animal.id} 
                     {...animal} 
                     handleSelectAnimal={handleSelectAnimal}
                     clickedName={clickedName}
@@ -75,7 +65,8 @@ const AnimalBoard = ({ animals }) => {
     })
 
     return (
-    <div id={'animal-board'} className={'animal-board'}>
+    <div className={'animal-board'}>
+        <h2>{}</h2>
         {animalDisplay}
     </div>
     )
