@@ -25,11 +25,4 @@ parkObj: {
 	wildlife: {}?
 	quizQuestions: {‘question1’: ‘answer1’}
 }
-
-Other Ideas If We Change Our Mind.
-Cooking Mama style game
-World Wonders Travel Tracker
-Where Should We Go On a Date?
-Cabin Rental
-
 	

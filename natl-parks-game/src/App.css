@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,24 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.animal-board {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    '1' '2' '3' '4'
+    '5' '6' '7' '8'
+    '9' '10' '11' '12'
+    '13' '14' '15' '16';
+  grid-gap: 20px;
+}
+
+.animal-tile {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
 }
