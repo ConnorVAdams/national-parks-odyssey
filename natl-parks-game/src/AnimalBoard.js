@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import AnimalTile from './AnimalTile'
 
 const AnimalBoard = ({ animals }) => {
+    const [count, setCount] = useState(0)
     const [clickedName, setClickedName] = useState('')
     const [shuffledDeck, setShuffledDeck] = useState([])
 
@@ -25,14 +26,20 @@ const AnimalBoard = ({ animals }) => {
         setShuffledDeck(shuffleDeck(duplicateCards(animals)))
     }, [])
 
+    useEffect(() => {
+        if (count % 2 === 0) {
+            setClickedName('')
+        }
+    }, [count])
+
     const handleSelectAnimal = (name) => {
         if (name === clickedName) {
-            const updatedAnimals = shuffledDeck.map(animal => animal.name === name ? { ...animal, found: true } : animal)
-            setShuffledDeck(updatedAnimals)
+            setShuffledDeck(current => current.map(animal => animal.name === name ? { ...animal, found: true } : animal))
             setClickedName('')  
         } else {
             setClickedName(name)
         }
+        setCount(count => count + 1)
     }
 
     const animalDisplay = shuffledDeck.map(animal => {
