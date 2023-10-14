@@ -6,6 +6,10 @@ const AnimalBoard = ({ animals }) => {
     const [clickedName, setClickedName] = useState('')
     const [shuffledDeck, setShuffledDeck] = useState([])
 
+    const easy = 8
+    const medium = 12
+    const hard = 16
+
     useEffect(() => {
         const duplicateCards = ([...animals]) => {
                 animals.forEach(animal => {
@@ -31,14 +35,23 @@ const AnimalBoard = ({ animals }) => {
             console.log('Good job!')
             setClickedName('')
             setCount(count => count + 1)
-            const foundAnimals =  shuffledDeck.map(animal => animal.name === name ? { ...animal, found: true } : animal)
-            setShuffledDeck(foundAnimals)
-        } else {
+            setShuffledDeck(current => current.map(animal => animal.name === name ? { ...animal, found: true } : animal))
+        } else if (count % 2 !== 0) {
+            document.querySelector('.animal-board').classList.add('disabled')
+            setTimeout(() => {
+                setClickedName('')
+                setCount(count => count + 1)
+                }, 1400)
             console.log('Better luck next time.')
+        } else {
             setClickedName(name)
             setCount(count => count + 1)
         }
     }
+
+    useEffect(() => {
+            document.querySelector('.animal-board').classList.remove('disabled')
+    }, [count])
 
     const animalDisplay = shuffledDeck.map(animal => {
         return <AnimalTile 
@@ -52,7 +65,7 @@ const AnimalBoard = ({ animals }) => {
     })
 
     return (
-    <div className='animal-board'>
+    <div id={'animal-board'} className={'animal-board'}>
         {animalDisplay}
     </div>
     )

@@ -15,18 +15,14 @@ const AnimalTile = ({ img, name, fact, id, found, handleSelectAnimal, count }) =
     }, [count])
 
   return (
-    <div onClick=
-        {found || !back ? null : clickHandle} 
-        className={`animal-tile ${back ? 'tile-back' : null }` }>
-        {back ? 
-            (
-            <h1>X</h1>
-            ) : (
-            <>
-            <img src={img} alt={img} />
-            {found ? <p>{fact}</p> : null}
-            </>
-            )}
+    <div 
+        className={`animal-tile ${back ? 'tile-back ' : 'disabled' }`} 
+        onClick={clickHandle}
+    >
+        <>
+        {back ? null : <img src={img} alt={img} />}
+        {found ? <p>{fact}</p> : null}
+        </>
     </div>
   )
 }
