@@ -6,29 +6,32 @@ const AnimalBoard = ({ animals }) => {
     const [clickedName, setClickedName] = useState('')
     const [shuffledDeck, setShuffledDeck] = useState([])
 
-    const easy = 8
-    const medium = 12
-    const hard = 16
+    const duplicateCards = (arr) => {
+        const duplicates = arr.map(card => ({ ...card, id: card.id + arr.length }))
+        const combined = [...duplicates, ...arr]
+        return combined
+    }    
 
-    useEffect(() => {
-        const duplicateCards = ([...animals]) => {
-                animals.forEach(animal => {
-                    const newAnimal = {...animal, id: animal.id + animals.length}
-                    animals.push(newAnimal)
-            })
-            return animals
-        }
-
-        const shuffleDeck = (fullDeck) => {
-            for (let i = fullDeck.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1)); // Generate a random index between 0 and i.
-            // Swap elements at i and j
-            [fullDeck[i], fullDeck[j]] = [fullDeck[j], fullDeck[i]];
+    const sliceMaker = (arr, n) => {
+        let count = 0
+        return arr.filter(el => {
+            if (count < n) {
+                count++
+                return true
+            } else {
+                return false
             }
-            return fullDeck
+        })
+    }
+
+    const shuffleDeck = (arr) => {
+        for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1)); // Generate a random index between 0 and i.
+        // Swap elements at i and j
+        [arr[i], arr[j]] = [arr[j], arr[i]];
         }
-        setShuffledDeck(shuffleDeck(duplicateCards(animals)))
-    }, [])
+        return arr
+    }
 
     const handleSelectAnimal = (name) => {
         if (count % 2 !== 0 && name === clickedName){
@@ -50,7 +53,14 @@ const AnimalBoard = ({ animals }) => {
     }
 
     useEffect(() => {
-            document.querySelector('.animal-board').classList.remove('disabled')
+        const newDeck = shuffleDeck(animals)
+
+        const dupes = duplicateCards(newDeck)
+        setShuffledDeck(shuffleDeck(dupes))
+    }, [])
+
+    useEffect(() => {
+        document.querySelector('.animal-board').classList.remove('disabled')
     }, [count])
 
     const animalDisplay = shuffledDeck.map(animal => {
