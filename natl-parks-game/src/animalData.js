@@ -41,11 +41,10 @@ const animals = [
     },
     {
         id: 6,
-        name: 'Gray Fox',
-        img: 'https://i.imgur.com/bdnlYFb.png',
-        fact: 'Gray foxes are the only foxes that can climb trees.',
-        parks: [],
-        found: false
+        name: 'Golden-mantled Marmot',
+        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg/220px-Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg',
+        fact: 'Golden-mantled marmots are known for their whistling calls.',
+        parks: []
     },
     {
         id: 7,
