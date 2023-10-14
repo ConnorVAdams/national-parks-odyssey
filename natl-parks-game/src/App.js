@@ -5,7 +5,6 @@ import animals from './animalData'
 
 function App() {
 
-
   return (
     <div className="App">
         <AnimalBoard animals={animals} />

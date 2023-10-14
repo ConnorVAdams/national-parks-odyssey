@@ -7,7 +7,7 @@ const AnimalBoard = ({ animals }) => {
 
     useEffect(() => {
         const duplicateCards = ([...animals]) => {
-                animals.map(animal => {
+                animals.forEach(animal => {
                     const newAnimal = {...animal, id: animal.id + animals.length}
                     animals.push(newAnimal)
             })
@@ -25,18 +25,14 @@ const AnimalBoard = ({ animals }) => {
         setShuffledDeck(shuffleDeck(duplicateCards(animals)))
     }, [])
 
-
     const handleSelectAnimal = (name) => {
         if (name === clickedName) {
-            setShuffledDeck(current => current.map(card => {
-                if (card.name === name) {
-                    return { ...card, found: true }
-                } else {
-                    return card
-                }
-            }))
+            const updatedAnimals = shuffledDeck.map(animal => animal.name === name ? { ...animal, found: true } : animal)
+            setShuffledDeck(updatedAnimals)
+            setClickedName('')  
+        } else {
+            setClickedName(name)
         }
-        setClickedName(name)
     }
 
     const animalDisplay = shuffledDeck.map(animal => {
