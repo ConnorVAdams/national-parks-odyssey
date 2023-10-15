@@ -1,6 +1,7 @@
 {
   "parkObj": [
-      {
+      //!! -- Tiana's Code -- !!
+    {
         "id": 1,
         "name": "Acadia National Park",
         "year": 1919,
@@ -371,5 +372,82 @@
         "gameWon": false,
         "description": "This park along the Cuyahoga River has waterfalls, hills, trails, and exhibits on early rural living. The Ohio and Erie Canal Towpath Trail follows the Ohio and Erie Canal, where mules towed canal boats. The park has numerous historic homes, bridges, and structures,[34] and also offers a scenic train ride."
       },
+
+      //!! -- Connor's Code -- !!
+
+      
+      {
+        "id": 61,
+        "name": "Yellowstone National Park",
+        "year": 1872,
+        "location": "California",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Grand_Prismatic_Spring_2013.jpg/200px-Grand_Prismatic_Spring_2013.jpg",
+        "coordinates": [
+            44.60,
+            110.50
+        ],
+        "attractions": [
+            "Old Faithful",
+            "Grand Canyon of the Yellowstone",
+            "Mammoth Hot Springs",
+            "Wapiti Lake Wolf Pack"
+        ],
+        "link": "https://www.nps.gov/yell/index.htm",
+        "visitors": 3,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "Situated on the Yellowstone Caldera, the park has an expansive network of geothermal areas including boiling mud pots, vividly colored hot springs such as Grand Prismatic Spring, and regularly erupting geysers, the best-known being Old Faithful. The yellow-hued Grand Canyon of the Yellowstone River contains several high waterfalls, and four mountain ranges traverse the park. More than 60 mammal species including timber wolves, grizzly bears, black bears, lynxes, bison, and elk make this park one of the best wildlife viewing spots in the country."
+    },
+    {
+    "id": 62,
+    "name": "Yosemite National Park",
+    "year": 1890,
+    "location": "California",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg/1280px-Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg",
+    "coordinates": [
+        37.83,
+        119.50
+    ],
+    "attractions": [
+        "Half Dome",
+        "Yosemite Falls",
+        "El Capitan",
+        "Yosemite Valley"
+    ],
+    "link": "https://www.nps.gov/yose/index.htm",
+    "visitors": 3,
+    "pointValue": 0,
+    "wildlife": {},
+    "quizQuestions": {},
+    "gameWon": false,
+    "description": "Yosemite features sheer granite cliffs, exceptionally tall waterfalls, and old-growth forests at a unique intersection of geology and hydrology. Half Dome and El Capitan rise from the park's centerpiece, the glacier-carved Yosemite Valley, and from its vertical walls drop Yosemite Falls, one of North America's tallest waterfalls at 2,425 feet (739 m) high. Three giant sequoia groves, along with a pristine wilderness in the heart of the Sierra Nevada, are home to a wide variety of rare plant and animal species."
+},
+{
+    "id": 63,
+    "name": "Zion National Park",
+    "year": 1919,
+    "location": "Utah",
+    "image": "https://en.wikipedia.org/wiki/Zion_National_Park#/media/File:Zion_angels_landing_view.jpg",
+    "coordinates": [
+        44.35,
+        68.21
+    ],
+    "attractions": [
+        "Angel's Landing",
+        "Kolob Canyons",
+        "The Grotto",
+        "Watchman Campground"
+    ],
+    "link": "https://www.nps.gov/zion/",
+    "visitors": 4692417,
+    "pointValue": 0,
+    "wildlife": {},
+    "quizQuestions": {},
+    "gameWon": false,
+    "description": "Located at the junction of the Colorado Plateau, Great Basin, and Mojave Desert, this park contains sandstone features such as mesas, rock towers, and canyons, including the Virgin River Narrows. The various sandstone formations and the forks of the Virgin River create a wilderness divided into four ecosystems: desert, riparian, woodland, and coniferous forest."
+    }
+
 ]
 }
