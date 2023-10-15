@@ -337,6 +337,30 @@
         "attractions": [
           "Brandywine Falls",
           "Beaver Marsh",
+          "Erie Canal Towpath Trail",
+          "Ohio Canal Towpath Trail"
+        ],
+        "link": "https://www.nps.gov/crla/index.htm",
+        "visitors": 2800000,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "This park along the Cuyahoga River has waterfalls, hills, trails, and exhibits on early rural living. The Ohio and Erie Canal Towpath Trail follows the Ohio and Erie Canal, where mules towed canal boats. The park has numerous historic homes, bridges, and structures,[34] and also offers a scenic train ride."
+      },
+      {
+        "id": 16,
+        "name": "Death Valley National Park",
+        "year": 1994,
+        "location": "California & Nevada",
+        "coordinates": [
+          36.24,
+          116.82
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Isolated_Desert.jpg/200px-Isolated_Desert.jpg",
+        "attractions": [
+          "Brandywine Falls",
+          "Beaver Marsh",
           "Erie Canal"
         ],
         "link": "https://www.nps.gov/crla/index.htm",
