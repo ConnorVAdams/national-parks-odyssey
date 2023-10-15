@@ -491,7 +491,247 @@
         },
 
     //!! --- Connor's Code --- !!
-        
+    
+        {
+            "id": 40,
+            "name": "Kobuk Valley National Park",
+            "year": 1980,
+            "location": "Alaksa",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Wetlands_along_the_Kobuk_River_%288029770162%29.jpg/200px-Wetlands_along_the_Kobuk_River_%288029770162%29.jpg",
+            "coordinates": [
+                67.55,
+                159.28
+            ],
+            "attractions": [
+                "Great Kobok Sand Dunes",
+                "Kotzebue",
+                "Onion Portage Archeological District",
+                "Kallarichuk"
+            ],
+            "link": "https://www.nps.gov/kova/index.htm",
+            "visitors": 16925,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "Kobuk Valley protects 61 miles (98 km) of the Kobuk River and three regions of sand dunes. Created by glaciers, the Great Kobuk, Little Kobuk, and Hunt River Sand Dunes can reach 100 feet (30 m) high and 100 °F (38 °C), and they are the largest dunes in the Arctic. Twice a year, half a million caribou migrate through the dunes and across river bluffs that expose well-preserved ice age fossils."
+        },
+        {
+            "id": 41,
+            "name": "Lake Clark National Park",
+            "year": 1980,
+            "location": "Alaksa",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Lake_Clark_Place_Name_Project_images._Credit_Dev_Charm_Khalsa_NPS._%2836bde271-64b3-447a-b18a-9421e5e07284%29.jpg/200px-Lake_Clark_Place_Name_Project_images._Credit_Dev_Charm_Khalsa_NPS._%2836bde271-64b3-447a-b18a-9421e5e07284%29.jpg",
+            "coordinates": [
+                60.97,
+                153.42
+            ],
+            "attractions": [
+                "Mount Redoubt",
+                "Bristol Bay Salmon",
+                "Iliamna Volcano",
+                "Port Alsworth"
+            ],
+            "link": "https://www.nps.gov/lacl/index.htm",
+            "visitors": 18187,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "The region around Lake Clark features four active volcanoes, including Mount Redoubt, as well as an abundance of rivers, glaciers, and waterfalls. Temperate rainforests, a tundra plateau, and three mountain ranges complete the landscape."
+        },
+        {
+            "id": 42,
+            "name": "Lassen Volcanic National Park",
+            "year": 1916,
+            "location": "California",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Lake_Helen%2C_Lassen_Volcanic_National_Park%2C_in_June_2020.jpg/200px-Lake_Helen%2C_Lassen_Volcanic_National_Park%2C_in_June_2020.jpg",
+            "coordinates": [
+                40.49,
+                121.51
+            ],
+            "attractions": [
+                "Lassen Peak",
+                "Painted Dunes",
+                "Juniper Lake",
+                "Drakesbad Ranch"
+            ],
+            "link": "https://www.nps.gov/lavo/index.htm",
+            "visitors": 446291,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "Lassen Peak, the largest lava dome volcano in the world, is joined by all three other types of volcanoes in this park: shield, cinder cone, and composite. Though Lassen itself last erupted in 1915, most of the rest of the park is continuously active. Numerous hydrothermal features, including fumaroles, boiling pools, and bubbling mud pots, are heated by molten rock from beneath the peak."
+        },
+        {
+            "id": 43,
+            "name": "Mammoth Cave National Park",
+            "year": 1941,
+            "location": "Kentucky",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Mammoth_Cave_National_Park_007.jpg/200px-Mammoth_Cave_National_Park_007.jpg",
+            "coordinates": [
+                37.18,
+                86.10
+            ],
+            "attractions": [
+                "Green River",
+                "Proctor Cave",
+                "Roppel Cave",
+                "Eudora Ridge"
+            ],
+            "link": "https://www.nps.gov/maca/index.htm",
+            "visitors": 663147,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "With more than 400 miles (640 km) of passageways explored, Mammoth Cave is the world's longest known cave system. Subterranean wildlife includes eight bat species, Kentucky cave shrimp, Northern cavefish, and cave salamanders. Above ground, the park provides recreation on the Green River, 70 miles of hiking trails, and plenty of sinkholes and springs."
+        },
+        {
+            "id": 44,
+            "name": "Mesa Verde National Park",
+            "year": 1906,
+            "location": "Colorado",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg/200px-Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg",
+            "coordinates": [
+                37.18,
+                108.49
+            ],
+            "attractions": [
+                "Cliff Palace",
+                "Oak Tree House",
+                "Square Tower House",
+                "Long House"
+            ],
+            "link": "https://www.nps.gov/mora/index.htm",
+            "visitors": 499790,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "This area constitutes over 4,000 archaeological sites of the Ancestral Puebloan people, who lived here and elsewhere in the Four Corners region for at least 700 years. Cliff dwellings built in the 12th and 13th centuries include Cliff Palace, which has 150 rooms and 23 kivas, and the Balcony House, with its many passages and tunnels."
+        },
+        {
+            "id": 45,
+            "name": "Mount Rainier National Park",
+            "year": 1899,
+            "location": "Washington",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Tatoosh_Range_WA_MRNP1.jpg/200px-Tatoosh_Range_WA_MRNP1.jpg",
+            "coordinates": [
+                46.85,
+                121.75
+            ],
+            "attractions": [
+                "Carbon Glacier",
+                "Wonderland Trail",
+                "Longmire Visitor Center",
+                "Myrtle Falls"
+            ],
+            "link": "https://www.nps.gov/mora/index.htm",
+            "visitors": 1622395,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "Mount Rainier, an active stratovolcano, is the most prominent peak in the Cascades and is covered by 26 named glaciers including Carbon Glacier and Emmons Glacier, the longest and largest in the contiguous United States respectively. The mountain is popular for climbing, and more than half of the park is covered by subalpine and alpine forests and meadows seasonally in bloom with wildflowers. Paradise on the south slope is among the snowiest places on Earth.[89] The Longmire visitor center is the start of the Wonderland Trail, which encircles the mountain."
+        },    
+        {
+            "id": 46,
+            "name": "New River Gorge National Park",
+            "year": 2020,
+            "location": "West Virginia",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/New_River_Gorge_Bridge.jpg/200px-New_River_Gorge_Bridge.jpg",
+            "coordinates": [
+                38.07,
+                81.08
+            ],
+            "attractions": [
+                "Endless Wall",
+                "Bridge Day",
+                "Sandstone Falls",
+                "Bank of Glen Jean"
+            ],
+            "link": "https://www.nps.gov/neri/index.htm",
+            "visitors": 1593523,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "The New River Gorge is the deepest river gorge east of the Mississippi River. The park primarily covers the lower gorge area around the New River Gorge Bridge, which features some of the country's best whitewater rafting. Smaller noncontiguous sections showcase the ghost town of Thurmond, the scenic Grandview vista, and Sandstone Falls. The other 65,165 acres (263.71 km2) of the redesignated national river is now a national preserve, spanning 53 mi (85 km) of the New River."
+        },
+        {
+            "id": 47,
+            "name": "North Cascades National Park",
+            "year": 1968,
+            "location": "Washington",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Cascade_Pass.jpg/200px-Cascade_Pass.jpg",
+            "coordinates": [
+                48.70,
+                121.20
+            ],
+            "attractions": [
+                "Sahale Glacier",
+                "Cascade Pass",
+                "Eldorado Peak",
+                "Mount Terror"
+            ],
+            "link": "https://www.nps.gov/noca/index.htm",
+            "visitors": 30154,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "The highly glaciated mountains of the North Cascades Range exhibit a spectacular and complex geologic history. Between the river valleys and high peaks there are eight diverse life zones with 75 mammal and 1,600 vascular plant species. Popular hiking and climbing areas of the Stephen Mather Wilderness include Cascade Pass, Mount Shuksan, Mount Triumph, and Eldorado Peak. Ross Lake and Lake Chelan National Recreation Areas adjoin the two segments of the park and are all administered together."
+        },    
+        {
+            "id": 48,
+            "name": "Olympic National Park",
+            "year": 1938,
+            "location": "Washington",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Acer_macrophyllum_in_Hoh_ValleyB.jpg/200px-Acer_macrophyllum_in_Hoh_ValleyB.jpg",
+            "coordinates": [
+                47.97,
+                123.50
+            ],
+            "attractions": [
+                "Hurricane Ridge",
+                "Lake Quinalt",
+                "Seven Lakes Basin",
+                "Shi Shi Beach"
+            ],
+            "link": "https://www.nps.gov/olym/index.htm",
+            "visitors": 2432972,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "This park on the Olympic Peninsula includes a wide range of ecosystems from Pacific shoreline to temperate rainforests to the glaciated alpine peaks of the Olympic Mountains, the tallest of which is Mount Olympus. The Hoh and Quinault Rainforests are the wettest areas in the contiguous United States, with the Hoh receiving an average of almost 12 ft (3.7 m) of rain every year."
+        },
+        {
+            "id": 48,
+            "name": "Petrified Forest National Park",
+            "year": 1962,
+            "location": "Arizona",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/The_PEFO_Tepees.jpg/200px-The_PEFO_Tepees.jpg",
+            "coordinates": [
+                35.07,
+                109.78
+            ],
+            "attractions": [
+                "The Tepees",
+                "The Painted Desert",
+                "Triassic Fossils",
+                "Rainbow Forest Museum"
+            ],
+            "link": "https://www.nps.gov/pefo/index.htm",
+            "visitors": 505209,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "This portion of the Chinle Formation has a large concentration of 225-million-year-old petrified wood. The surrounding Painted Desert features eroded cliffs of red-hued volcanic rock called bentonite. Dinosaur fossils and over 350 Native American sites are also protected in this park."
+        },    
         {
             "id": 49,
             "name": "Pinnacles National Park",
