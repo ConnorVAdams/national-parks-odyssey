@@ -490,9 +490,200 @@
           "description": "The Gateway Arch is a 630-foot (192 m) (both high and wide) catenary arch built in the 1960s to commemorate the Lewis and Clark Expedition, initiated by Thomas Jefferson, and the subsequent westward expansion of the country. The nearby Old Courthouse, across a greenway to the west of the arch, was the original site of the landmark Dred Scott case about slavery. An underground museum describes the arch's construction and the country's westward expansion."
         },
 
-        //!! --- Connor's Code --- !!
-
-    
+    //!! --- Connor's Code --- !!
+        
+        {
+            "id": 49,
+            "name": "Pinnacles National Park",
+            "year": 2013,
+            "location": "California",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Pinnacles_National_Park.jpg/200px-Pinnacles_National_Park.jpg",
+            "coordinates": [
+                36.48,
+                121.16
+            ],
+            "attractions": [
+                "High Peaks Trail",
+                "Pinnacles Ranch",
+                "Bear Gulch Reservoir",
+                "Balconies Cave"
+            ],
+            "link": "https://www.nps.gov/pinn/index.htm",
+            "visitors": 275023,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "Named for the eroded leftovers of a portion of an extinct volcano, the park's massive black and gold monoliths of andesite and rhyolite are a popular destination for rock climbers. Hikers have access to trails crossing the Coast Range wilderness. The park is one of the few locations where the endangered California condor can be seen in the wild. Pinnacles also supports a dense population of prairie falcons and more than 13 species of bat that populate its talus caves."
+        },
+        {
+            "id": 50,
+            "name": "Redwood National Park",
+            "year": 1968,
+            "location": "California",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Redwood_National_Park%2C_fog_in_the_forest.jpg/200px-Redwood_National_Park%2C_fog_in_the_forest.jpg",
+            "coordinates": [
+                41.30,
+                124.00
+            ],
+            "attractions": [
+                "Mill Creek",
+                "Klamath River",
+                "Coastal Trail",
+                "Gold Bluffs Beach"
+            ],
+            "link": "https://www.nps.gov/redw/index.htm",
+            "visitors": 458400,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "This park and the co-managed state parks protect almost half of all remaining coastal redwoods, the tallest trees on earth. There are three large river systems in this very seismically active area, and 37 miles (60 km) of protected coastline reveal tide pools and seastacks. The prairie, estuary, coast, river, and forest ecosystems contain a wide variety of animal and plant species."
+        },
+        {
+            "id": 51,
+            "name": "Rocky Mountain National Park",
+            "year": 1915,
+            "location": "Colorado",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Bierstadt_Lake%2C_Rocky_Mountain_National_Park%2C_USA.jpg/200px-Bierstadt_Lake%2C_Rocky_Mountain_National_Park%2C_USA.jpg",
+            "coordinates": [
+                40.40,
+                105.58
+            ],
+            "attractions": [
+                "Continental Divide Trail",
+                "Trail Ridge Road",
+                "Bear Lake",
+                "Hallett Peak"
+            ],
+            "link": "https://www.nps.gov/romo/index.htm",
+            "visitors": 4300424,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "Bisected north to south by the Continental Divide, this portion of the Rockies has ecosystems varying from over 150 riparian lakes to montane and subalpine forests to treeless alpine tundra. Wildlife including elk, moose, mule deer, bighorn sheep, black bears, and cougars inhabit its igneous mountains and glacial valleys. Longs Peak, a classic Colorado fourteener, and the scenic Bear Lake are popular destinations, as well as the historic Trail Ridge Road, which reaches an elevation of more than 12,000 feet (3,700 m)."
+        },
+        {
+            "id": 52,
+            "name": "Saguaro National Park",
+            "year": 1994,
+            "location": "Arizona",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Saguaronationalparl17102008.jpg/200px-Saguaronationalparl17102008.jpg",
+            "coordinates": [
+                32.25,
+                110.50
+            ],
+            "attractions": [
+                "Javelina Rocks",
+                "Rincon Mountains",
+                "Arizona-Sonora Desert Museum",
+                "Sonoran Desert"
+            ],
+            "link": "https://www.nps.gov/sagu/index.htm",
+            "visitors": 908194,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "Split into the separate Rincon Mountain and Tucson Mountain districts, this park is evidence that the dry Sonoran Desert is still home to a great variety of life spanning six biotic communities. Beyond the namesake giant saguaro cacti, there are barrel cacti, chollas, and prickly pears, as well as lesser long-nosed bats, spotted owls, and javelinas."
+        }, 
+        {
+        "id": 53,
+        "name": "Sequoia National Park",
+        "year": 1890,
+        "location": "California",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Giant_sequoias_in_Sequoia_National_Park_2013.jpg/200px-Giant_sequoias_in_Sequoia_National_Park_2013.jpg",
+        "coordinates": [
+            36.43,
+            118.68
+        ],
+        "attractions": [
+            "The Giant Forest",
+            "High Sierra Trail",
+            "Tharp's Log",
+            "Great Western Divide"
+        ],
+        "link": "https://www.nps.gov/seki/index.htm",
+        "visitors": 1153198,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "This park protects the Giant Forest, which boasts some of the world's largest trees, the General Sherman being the largest measured tree in the park. Other features include over 240 caves, a long segment of the Sierra Nevada including the tallest mountain in the contiguous United States, and Moro Rock, a large granite dome."
+    },
+    {
+        "id": 54,
+        "name": "Shenandoah National Park",
+        "year": 1935,
+        "location": "Virginia",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Early_Fall_at_Dark_Hollow_Falls_%2822028259442%29.jpg/200px-Early_Fall_at_Dark_Hollow_Falls_%2822028259442%29.jpg",
+        "coordinates": [
+            38.53,
+            78.35
+        ],
+        "attractions": [
+            "Skyline Drive",
+            "Blue Ridge Mountains",
+            "Hawksbill Mountain",
+            "Appalachian Trail"
+        ],
+        "link": "https://www.nps.gov/shen/index.htm",
+        "visitors": 1449300,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "Shenandoah's Blue Ridge Mountains are covered by hardwood forests that teem with a wide variety of wildlife. The Skyline Drive and Appalachian Trail run the entire length of this narrow park, along with more than 500 miles (800 km) of hiking trails passing scenic overlooks and cataracts of the Shenandoah River."
+    },
+    {
+        "id": 55,
+        "name": "Theodore Roosevelt National Park",
+        "year": 1978,
+        "location": "North Dakota",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/View_of_Theodore_Roosevelt_National_Park.jpg/200px-View_of_Theodore_Roosevelt_National_Park.jpg",
+        "coordinates": [
+            46.97,
+            103.45
+        ],
+        "attractions": [
+            "Maah Daah Hey Trail",
+            "Little Missouri River",
+            "Juniper Campground",
+            "Elkhorn Ranch"
+        ],
+        "link": "https://www.nps.gov/thro/index.htm",
+        "visitors": 668679,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "This region that enticed and influenced President Theodore Roosevelt consists of a park of three units in the northern badlands. Besides Roosevelt's historic cabin, there are numerous scenic drives and backcountry hiking opportunities. Wildlife includes American bison, pronghorn, bighorn sheep, and wild horses."
+    },
+    {
+        "id": 56,
+        "name": "Virgin Islands National Park",
+        "year": 1956,
+        "location": "U.S. Virgin Islands",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/St_John_Trunk_Bay_1.jpg/200px-St_John_Trunk_Bay_1.jpg",
+        "coordinates": [
+            18.33,
+            64.73
+        ],
+        "attractions": [
+            "Honeymoon Beach",
+            "Cinnamon Bay Nature Trail",
+            "Annaberg Historic District",
+            "Reef Bay Petroglyphs"
+        ],
+        "link": "https://www.nps.gov/viis/index.htm",
+        "visitors": 196752,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "This island park on Saint John preserves pristine beaches surrounded by mangrove forests, seagrass beds, and coral reefs. It also has Taíno archaeological sites and the ruins of sugar plantations from Columbus's time."
+    },
     {
         "id": 57,
         "name": "Voyageurs National Park",
