@@ -10,8 +10,10 @@ function Hangman() {
     <div>
       <p>{test.split("").fill("_").join(" ")}</p>
       {alphabets.map((letter, index) => (
-        <button key={index}>{alphabet}</button>
+        <button key={index}>{alphabets}</button>
       ))}
     </div>
   )
 }
+
+export default Hangman
