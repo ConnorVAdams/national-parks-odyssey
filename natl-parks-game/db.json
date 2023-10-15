@@ -489,31 +489,107 @@
           "gameWon": false,
           "description": "The Gateway Arch is a 630-foot (192 m) (both high and wide) catenary arch built in the 1960s to commemorate the Lewis and Clark Expedition, initiated by Thomas Jefferson, and the subsequent westward expansion of the country. The nearby Old Courthouse, across a greenway to the west of the arch, was the original site of the landmark Dred Scott case about slavery. An underground museum describes the arch's construction and the country's westward expansion."
         },
-        {
-            "id": 61,
-            "name": "Yellowstone National Park",
-            "year": 1872,
-            "location": "California",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Grand_Prismatic_Spring_2013.jpg/200px-Grand_Prismatic_Spring_2013.jpg",
-            "coordinates": [
-                44.60,
-                110.50
-            ],
-            "attractions": [
-                "Old Faithful",
-                "Grand Canyon of the Yellowstone",
-                "Mammoth Hot Springs",
-                "Wapiti Lake Wolf Pack"
-            ],
-            "link": "https://www.nps.gov/yell/index.htm",
-            "visitors": 3,
-            "pointValue": 0,
-            "wildlife": {},
-            "quizQuestions": {},
-            "gameWon": false,
-            "description": "Situated on the Yellowstone Caldera, the park has an expansive network of geothermal areas including boiling mud pots, vividly colored hot springs such as Grand Prismatic Spring, and regularly erupting geysers, the best-known being Old Faithful. The yellow-hued Grand Canyon of the Yellowstone River contains several high waterfalls, and four mountain ranges traverse the park. More than 60 mammal species including timber wolves, grizzly bears, black bears, lynxes, bison, and elk make this park one of the best wildlife viewing spots in the country."
-        },
-        {
+
+        //!! --- Connor's Code --- !!
+
+    
+    {
+        "id": 57,
+        "name": "Voyageurs National Park",
+        "year": 1975,
+        "location": "Minnesota",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Voyageurs_National_Park.jpg/200px-Voyageurs_National_Park.jpg",
+        "coordinates": [
+            48.50,
+            92.88
+        ],
+        "attractions": [
+            "Ash River",
+            "Kabetogama Lake",
+            "Rainy Lake",
+            "Kettle Falls Hotel"
+        ],
+        "link": "https://www.nps.gov/voya/index.htm",
+        "visitors": 221434,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "This park protecting four lakes near the Canada–US border is a site for canoeing, kayaking, and fishing. The park also preserves a history populated by Ojibwe Native Americans, French fur traders called voyageurs, and gold miners. Formed by glaciers, the region features tall bluffs, rock gardens, islands, bays, and several historic buildings."
+    },
+    {
+        "id": 58,
+        "name": "White Sands National Park",
+        "year": 2019,
+        "location": "New Mexico",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/White_Sands_New_Mexico_USA.jpg/200px-White_Sands_New_Mexico_USA.jpg",
+        "coordinates": [
+            32.78,
+            106.17
+        ],
+        "attractions": [
+            "Pleistocene Fossils",
+            "Dune Sledding",
+            "Dunes Drive",
+            "Desert Horseback Riding"
+        ],
+        "link": "https://www.nps.gov/whsa/index.htm",
+        "visitors": 705127,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "Located in the mountain-ringed Tularosa Basin, White Sands consists of the southern part of a 275-square-mile (710 km2) field of white sand dunes composed of gypsum crystals—the world's largest gypsum dunefield. The park is completely within the White Sands Missile Range and is subject to closure when tests are conducted."
+    },
+    {
+        "id": 59,
+        "name": "Wind Cave National Park",
+        "year": 1980,
+        "location": "South Dakota",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Wind_Cave_lower.jpg/200px-Wind_Cave_lower.jpg",
+        "coordinates": [
+            43.57,
+            103.48
+        ],
+        "attractions": [
+            "Wind Cave Bison Herd",
+            "Boxwork Geology",
+            "Elk Mountain Campground",
+            "Candlelight Tours"
+        ],
+        "link": "https://www.nps.gov/wica/index.htm",
+        "visitors": 607418,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "Wind Cave is distinctive for its calcite fin formations called boxwork, a unique formation rarely found elsewhere, and needle-like growths called frostwork. It is one of the longest caves in the world and creates a wind as air pressure changes. Above ground is a mixed-grass prairie with animals such as bison, black-footed ferrets, and prairie dogs and ponderosa pine forests home to cougars and elk.[113] The cave is culturally significant to the Lakota people as a creation site."
+    },
+    {
+        "id": 61,
+        "name": "Yellowstone National Park",
+        "year": 1872,
+        "location": "California",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Grand_Prismatic_Spring_2013.jpg/200px-Grand_Prismatic_Spring_2013.jpg",
+        "coordinates": [
+            44.60,
+            110.50
+        ],
+        "attractions": [
+            "Old Faithful",
+            "Grand Canyon of the Yellowstone",
+            "Mammoth Hot Springs",
+            "Wapiti Lake Wolf Pack"
+        ],
+        "link": "https://www.nps.gov/yell/index.htm",
+        "visitors": 3,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "Situated on the Yellowstone Caldera, the park has an expansive network of geothermal areas including boiling mud pots, vividly colored hot springs such as Grand Prismatic Spring, and regularly erupting geysers, the best-known being Old Faithful. The yellow-hued Grand Canyon of the Yellowstone River contains several high waterfalls, and four mountain ranges traverse the park. More than 60 mammal species including timber wolves, grizzly bears, black bears, lynxes, bison, and elk make this park one of the best wildlife viewing spots in the country."
+    },
+    {
         "id": 62,
         "name": "Yosemite National Park",
         "year": 1890,
