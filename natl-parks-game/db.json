@@ -1,453 +1,566 @@
 {
-  "parkObj": [
-      //!! -- Tiana's Code -- !!
-    {
-        "id": 1,
-        "name": "Acadia National Park",
-        "year": 1919,
-        "location": "Maine",
-        "coordinates": [44.35, 68.21],
-        "image": "https://www.nps.gov/npgallery/GetAsset/5AB22F47-1DD8-B71B-0B3EF03E4B8E6E79/proxy/lores",
-        "attractions": [
-          "Cadillac Mountain",
-          "Jordan Pond",
-          "Thunder Hole",
-          "Park Loop Road"
-        ],
-        "link": "https://www.nps.gov/acad/index.htm",
-        "visitors": 3000000000,
-        "pointValue": 0,
-        "wildlife": {},
-        "quizQuestions": {},
-        "gameWon": false,
-        "description": "Covering most of Mount Desert Island and other coastal islands, Acadia features the tallest mountain on the Atlantic coast of the United States, granite peaks, ocean shoreline, woodlands, and lakes. There are freshwater, estuary, forest, and intertidal habitats."
-      },
-      {
-        "id": 2,
-        "name": "National Park of American Samoa",
-        "year": 1988,
-        "location": "American Samoa",
-        "coordinates": [14.25, 170.68],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ofu_Beach_American_Samoa_US_National_Park_Service.jpg/200px-Ofu_Beach_American_Samoa_US_National_Park_Service.jpg",
-        "attractions": [
-          "Ta'ū Island",
-          "Pago Pago Harbor",
-          "Ofu Island",
-          "Oloseag Island"
-        ],
-        "link": "https://www.nps.gov/npsa/index.htm",
-        "visitors": 20000,
-        "pointValue": 0,
-        "wildlife": {},
-        "quizQuestions": {},
-        "gameWon": false,
-        "description": "The southernmost national park is on three Samoan islands in the South Pacific. It protects coral reefs, rainforests, volcanic mountains, and white beaches. The area is also home to flying foxes, brown boobies, sea turtles, and 900 species of fish."
-      },
-      {
-        "id": 3,
-        "name": "Arches National Park",
-        "year": 1971,
-        "location": "Utah 38.68°N 109.57°W",
-        "coordinates": [38.68, 109.57],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/USA_Arches_NP_Delicate_Arch%281%29.jpg/200px-USA_Arches_NP_Delicate_Arch%281%29.jpg",
-        "attractions": [
-          "Delicate Arch",
-          "Landscape Arch",
-          "Balanced Rock",
-          "Double Arch"
-        ],
-        "link": "https://www.nps.gov/arch/index.htm",
-        "visitors": 1600000,
-        "pointValue": 0,
-        "wildlife": {},
-        "quizQuestions": {},
-        "gameWon": false,
-        "description": "This site features more than 2,000 natural sandstone arches, with some of the most popular arches in the park being Delicate Arch, Landscape Arch and Double Arch Millions of years of erosion have created these structures in a desert climate where the arid ground has life-sustaining biological soil crusts and potholes that serve as natural water-collecting basins. Other geologic formations include stone pinnacles, fins, and balancing rocks."
-      },
-      {
-        "id": 4,
-        "name": "Badlands National Park",
-        "year": 1978,
-        "location": "South Dakota",
-        "coordinates": [43.75,102.50],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Golden_Glow_Canyon.jpg/200px-Golden_Glow_Canyon.jpg",
-        "attractions": [
-          "Chihuahuan Desert",
-          "Badlands Wall",
-          "Yellow Mounds",
-          "Emory Peak"
-        ],
-        "link": "https://www.nps.gov/badl/index.htm",
-        "visitors": 1000000,
-        "pointValue": 0,
-        "wildlife": {},
-        "quizQuestions": {},
-        "gameWon": false,
-        "description": "The Badlands are a collection of buttes, pinnacles, spires, and mixed-grass prairies within the drainage basin of the White River, in southwestern South Dakota. They contain the largest known assemblage of late Eocene and Oligocene mammal fossils. Wildlife includes bison, bighorn sheep, black-footed ferrets, and prairie dogs."
-      },
-      {
-        "id": 5,
-        "name": "Big Bend National Park",
-        "year": 1944,
-        "location": "Texas",
-        "coordinates": [
-          29.25,
-          103.25
-        ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/On_the_Border_%2839960085292%29.jpg/200px-On_the_Border_%2839960085292%29.jpg",
-        "attractions": [
-          "Santa Elena Canyon",
-          "Chisos Basin",
-          "Rio Grande",
-          "Rio Grande Village"
-        ],
-        "link": "https://www.nps.gov/bibe/index.htm",
-        "visitors": 400000,
-        "pointValue": 0,
-        "wildlife": {},
-        "quizQuestions": {},
-        "gameWon": false,
-        "description": "Named for the prominent bend in the Rio Grande along the U.S.-Mexico border, this park encompasses a large and remote part of the Chihuahuan Desert. Its main attraction is backcountry recreation in the arid Chisos Mountains and in canyons along the river. A wide variety of Cretaceous and Tertiary fossils as well as cultural artifacts of Native Americans also exist within its borders."
-      },
-      {
-        "id": 6,
-        "name": "Biscayne National Park",
-        "year": 1980,
-        "location": "Florida",
-        "coordinates": [
-          26.65,
-          80.08
-        ],
-        "image": "https://www.nps.gov/common/uploads/grid_builder/bisc/crop16_9/D85099D1-1DD8-B71B-0BCB85721A0B789D.jpg?width=640&quality=90&mode=crop",
-        "attractions": [
-          "Biscayne Bay",
-          "Boca Chita Key",
-          "Maritime Heritage Trail",
-          "Elliott Key"
-        ],
-        "link": "https://www.nps.gov/bisc/index.htm",
-        "visitors": 500000,
-        "pointValue": 0,
-        "wildlife": {},
-        "quizQuestions": {},
-        "gameWon": false,
-        "description": "The central part of Biscayne Bay, this mostly underwater park at the north end of the Florida Keys has four interrelated marine ecosystems: mangrove forest, the Bay, the Keys, and coral reefs. Threatened animals include the West Indian manatee, American crocodile, various sea turtles, and the peregrine falcon."
-      },
-      {
-        "id": 7,
-        "name": "Black Canyon of the Gunnison National Park",
-        "year": 1999,
-        "location": "Colorado",
-        "coordinates": [
-          38.57,
-          107.72
-        ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Black_canyon_gunnison_Colorado.jpg/200px-Black_canyon_gunnison_Colorado.jpg",
-        "attractions": [
-          "Painted Wall",
-          "Gunnison Point",
-          "Chasm View",
-          "Warner Point"
-        ],
-        "link": "https://www.nps.gov/blca/index.htm",
-        "visitors": 300000,
-        "pointValue": 0,
-        "wildlife": {},
-        "quizQuestions": {},
-        "gameWon": false,
-        "description": "The park protects a quarter of the Gunnison River, which slices sheer canyon walls from dark Precambrian-era rock. The canyon features some of the steepest cliffs and oldest rock in North America, and is a popular site for river rafting and rock climbing. The deep, narrow canyon is composed of gneiss and schist, which appears black when in shadow."
-      },
-      {
-        "id": 8,
-        "name": "Bryce Canyon",
-        "year": 1928,
-        "location": "Utah",
-        "coordinates": [
-          37.57,
-          112.18
-        ],
-        "image": "https://www.nps.gov/common/uploads/grid_builder/brca/crop16_9/714287D9-B886-247C-84147D225AB0BDC5.jpg?width=640&quality=90&mode=crop",
-        "attractions": [
-          "Inspiration Point",
-          "Sunset Point",
-          "Navajo Loop Trail",
-          "Fairyland Loop Trail"
-        ],
-        "link": "https://www.nps.gov/brca/index.htm",
-        "visitors": 2500000,
-        "pointValue": 0,
-        "wildlife": {},
-        "quizQuestions": {},
-        "gameWon": false,
-        "description": "Bryce Canyon is a geological amphitheater on southern Utah's Paunsaugunt Plateau with hundreds of tall, multicolored sandstone hoodoos formed by erosion. The region was originally settled by Native Americans and later by Mormon pioneers."
-      },
-      {
-        "id": 9,
-        "name": "Canyonlands National Park",
-        "year": 1964,
-        "location": "Utah",
-        "coordinates": [
-          38.2,
-          109.93
-        ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Canyonlands_National_Park%E2%80%A6Needles_area_%286294480744%29.jpg/200px-Canyonlands_National_Park%E2%80%A6Needles_area_%286294480744%29.jpg",
-        "attractions": [
-          "Island in the Sky",
-          "Mesa Arch",
-          "Upheaval Dome",
-          "Elephant Hill"
-        ],
-        "link": "https://www.nps.gov/cany/index.htm",
-        "visitors": 733000,
-        "pointValue": 0,
-        "wildlife": {},
-        "quizQuestions": {},
-        "gameWon": false,
-        "description": "This landscape was eroded into a maze of canyons, buttes, and mesas by the combined efforts of the Colorado River, Green River, and their tributaries, which divide the park into three districts. The park contains thousands of rock pinnacles and arches, as well as artifacts from Ancient Pueblo peoples."
-      },
-      {
-        "id": 10,
-        "name": "Capitol Reef National Park",
-        "year": 1971,
-        "location": "Utah",
-        "coordinates": [
-          38.2,
-          111.17
-        ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Cassidy_Arch%2C_Capitol_Reef_National_Park.JPG/200px-Cassidy_Arch%2C_Capitol_Reef_National_Park.JPG",
-        "attractions": [
-          "Waterpocket Fold",
-          "Capitol Gorge",
-          "Hickman Bridge",
-          "Grand Wash"
-        ],
-        "link": "https://www.nps.gov/care/index.htm",
-        "visitors": 1000000,
-        "pointValue": 0,
-        "wildlife": {},
-        "quizQuestions": {},
-        "gameWon": false,
-        "description": "The park's Waterpocket Fold is a 100-mile (160 km) monocline that exhibits the earth's diverse geologic layers. Other natural features include monoliths, eroded buttes, and sandstone domes, including one shaped like the United States Capitol."
-      },
-      {
-        "id": 11,
-        "name": "Carlsbad Caverns National Park",
-        "year": 1930,
-        "location": "New Mexico",
-        "coordinates": [
-          32.17,
-          104.44
-        ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Carlsbad_Caverns.jpg/200px-Carlsbad_Caverns.jpg",
-        "attractions": [
-          "Carlsbad Cavern",
-          "Natural Entrance",
-          "Bat Flight Program",
-          "Big Room"
-        ],
-        "link": "https://www.nps.gov/cave/index.htm",
-        "visitors": 400000,
-        "pointValue": 0,
-        "wildlife": {},
-        "quizQuestions": {},
-        "gameWon": false,
-        "description": "Carlsbad Caverns has 117 caves, the longest of which is over 120 miles (190 km) long. The Big Room is almost 4,000 feet (1,200 m) long, and the caves are home to over 400,000 Mexican free-tailed bats and sixteen other species. Above ground are the Chihuahuan Desert and Rattlesnake Springs."
-      },
-      {
-        "id": 12,
-        "name": "Channel Islands National Park",
-        "year": 1980,
+    "parkObj": [
+        {
+          "id": 1,
+          "name": "Acadia National Park",
+          "year": 1919,
+          "location": "Maine",
+          "coordinates": [44.35, 68.21],
+          "image": "https://www.nps.gov/npgallery/GetAsset/5AB22F47-1DD8-B71B-0B3EF03E4B8E6E79/proxy/lores",
+          "attractions": [
+            "Cadillac Mountain",
+            "Jordan Pond",
+            "Thunder Hole",
+            "Park Loop Road"
+          ],
+          "link": "https://www.nps.gov/acad/index.htm",
+          "visitors": 3000000000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Covering most of Mount Desert Island and other coastal islands, Acadia features the tallest mountain on the Atlantic coast of the United States, granite peaks, ocean shoreline, woodlands, and lakes. There are freshwater, estuary, forest, and intertidal habitats."
+        },
+        {
+          "id": 2,
+          "name": "National Park of American Samoa",
+          "year": 1988,
+          "location": "American Samoa",
+          "coordinates": [14.25, 170.68],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ofu_Beach_American_Samoa_US_National_Park_Service.jpg/200px-Ofu_Beach_American_Samoa_US_National_Park_Service.jpg",
+          "attractions": [
+            "Ta'ū Island",
+            "Pago Pago Harbor",
+            "Ofu Island",
+            "Oloseag Island"
+          ],
+          "link": "https://www.nps.gov/npsa/index.htm",
+          "visitors": 20000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "The southernmost national park is on three Samoan islands in the South Pacific. It protects coral reefs, rainforests, volcanic mountains, and white beaches. The area is also home to flying foxes, brown boobies, sea turtles, and 900 species of fish."
+        },
+        {
+          "id": 3,
+          "name": "Arches National Park",
+          "year": 1971,
+          "location": "Utah 38.68°N 109.57°W",
+          "coordinates": [38.68, 109.57],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/USA_Arches_NP_Delicate_Arch%281%29.jpg/200px-USA_Arches_NP_Delicate_Arch%281%29.jpg",
+          "attractions": [
+            "Delicate Arch",
+            "Landscape Arch",
+            "Balanced Rock",
+            "Double Arch"
+          ],
+          "link": "https://www.nps.gov/arch/index.htm",
+          "visitors": 1600000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "This site features more than 2,000 natural sandstone arches, with some of the most popular arches in the park being Delicate Arch, Landscape Arch and Double Arch Millions of years of erosion have created these structures in a desert climate where the arid ground has life-sustaining biological soil crusts and potholes that serve as natural water-collecting basins. Other geologic formations include stone pinnacles, fins, and balancing rocks."
+        },
+        {
+          "id": 4,
+          "name": "Badlands National Park",
+          "year": 1978,
+          "location": "South Dakota",
+          "coordinates": [43.75,102.50],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Golden_Glow_Canyon.jpg/200px-Golden_Glow_Canyon.jpg",
+          "attractions": [
+            "Chihuahuan Desert",
+            "Badlands Wall",
+            "Yellow Mounds",
+            "Emory Peak"
+          ],
+          "link": "https://www.nps.gov/badl/index.htm",
+          "visitors": 1000000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "The Badlands are a collection of buttes, pinnacles, spires, and mixed-grass prairies within the drainage basin of the White River, in southwestern South Dakota. They contain the largest known assemblage of late Eocene and Oligocene mammal fossils. Wildlife includes bison, bighorn sheep, black-footed ferrets, and prairie dogs."
+        },
+        {
+          "id": 5,
+          "name": "Big Bend National Park",
+          "year": 1944,
+          "location": "Texas",
+          "coordinates": [
+            29.25,
+            103.25
+          ],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/On_the_Border_%2839960085292%29.jpg/200px-On_the_Border_%2839960085292%29.jpg",
+          "attractions": [
+            "Santa Elena Canyon",
+            "Chisos Basin",
+            "Rio Grande",
+            "Rio Grande Village"
+          ],
+          "link": "https://www.nps.gov/bibe/index.htm",
+          "visitors": 400000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Named for the prominent bend in the Rio Grande along the U.S.-Mexico border, this park encompasses a large and remote part of the Chihuahuan Desert. Its main attraction is backcountry recreation in the arid Chisos Mountains and in canyons along the river. A wide variety of Cretaceous and Tertiary fossils as well as cultural artifacts of Native Americans also exist within its borders."
+        },
+        {
+          "id": 6,
+          "name": "Biscayne National Park",
+          "year": 1980,
+          "location": "Florida",
+          "coordinates": [
+            26.65,
+            80.08
+          ],
+          "image": "https://www.nps.gov/common/uploads/grid_builder/bisc/crop16_9/D85099D1-1DD8-B71B-0BCB85721A0B789D.jpg?width=640&quality=90&mode=crop",
+          "attractions": [
+            "Biscayne Bay",
+            "Boca Chita Key",
+            "Maritime Heritage Trail",
+            "Elliott Key"
+          ],
+          "link": "https://www.nps.gov/bisc/index.htm",
+          "visitors": 500000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "The central part of Biscayne Bay, this mostly underwater park at the north end of the Florida Keys has four interrelated marine ecosystems: mangrove forest, the Bay, the Keys, and coral reefs. Threatened animals include the West Indian manatee, American crocodile, various sea turtles, and the peregrine falcon."
+        },
+        {
+          "id": 7,
+          "name": "Black Canyon of the Gunnison National Park",
+          "year": 1999,
+          "location": "Colorado",
+          "coordinates": [
+            38.57,
+            107.72
+          ],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Black_canyon_gunnison_Colorado.jpg/200px-Black_canyon_gunnison_Colorado.jpg",
+          "attractions": [
+            "Painted Wall",
+            "Gunnison Point",
+            "Chasm View",
+            "Warner Point"
+          ],
+          "link": "https://www.nps.gov/blca/index.htm",
+          "visitors": 300000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "The park protects a quarter of the Gunnison River, which slices sheer canyon walls from dark Precambrian-era rock. The canyon features some of the steepest cliffs and oldest rock in North America, and is a popular site for river rafting and rock climbing. The deep, narrow canyon is composed of gneiss and schist, which appears black when in shadow."
+        },
+        {
+          "id": 8,
+          "name": "Bryce Canyon",
+          "year": 1928,
+          "location": "Utah",
+          "coordinates": [
+            37.57,
+            112.18
+          ],
+          "image": "https://www.nps.gov/common/uploads/grid_builder/brca/crop16_9/714287D9-B886-247C-84147D225AB0BDC5.jpg?width=640&quality=90&mode=crop",
+          "attractions": [
+            "Inspiration Point",
+            "Sunset Point",
+            "Navajo Loop Trail",
+            "Fairyland Loop Trail"
+          ],
+          "link": "https://www.nps.gov/brca/index.htm",
+          "visitors": 2500000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Bryce Canyon is a geological amphitheater on southern Utah's Paunsaugunt Plateau with hundreds of tall, multicolored sandstone hoodoos formed by erosion. The region was originally settled by Native Americans and later by Mormon pioneers."
+        },
+        {
+          "id": 9,
+          "name": "Canyonlands National Park",
+          "year": 1964,
+          "location": "Utah",
+          "coordinates": [
+            38.2,
+            109.93
+          ],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Canyonlands_National_Park%E2%80%A6Needles_area_%286294480744%29.jpg/200px-Canyonlands_National_Park%E2%80%A6Needles_area_%286294480744%29.jpg",
+          "attractions": [
+            "Island in the Sky",
+            "Mesa Arch",
+            "Upheaval Dome",
+            "Elephant Hill"
+          ],
+          "link": "https://www.nps.gov/cany/index.htm",
+          "visitors": 733000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "This landscape was eroded into a maze of canyons, buttes, and mesas by the combined efforts of the Colorado River, Green River, and their tributaries, which divide the park into three districts. The park contains thousands of rock pinnacles and arches, as well as artifacts from Ancient Pueblo peoples."
+        },
+        {
+          "id": 10,
+          "name": "Capitol Reef National Park",
+          "year": 1971,
+          "location": "Utah",
+          "coordinates": [
+            38.2,
+            111.17
+          ],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Cassidy_Arch%2C_Capitol_Reef_National_Park.JPG/200px-Cassidy_Arch%2C_Capitol_Reef_National_Park.JPG",
+          "attractions": [
+            "Waterpocket Fold",
+            "Capitol Gorge",
+            "Hickman Bridge",
+            "Grand Wash"
+          ],
+          "link": "https://www.nps.gov/care/index.htm",
+          "visitors": 1000000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "The park's Waterpocket Fold is a 100-mile (160 km) monocline that exhibits the earth's diverse geologic layers. Other natural features include monoliths, eroded buttes, and sandstone domes, including one shaped like the United States Capitol."
+        },
+        {
+          "id": 11,
+          "name": "Carlsbad Caverns National Park",
+          "year": 1930,
+          "location": "New Mexico",
+          "coordinates": [
+            32.17,
+            104.44
+          ],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Carlsbad_Caverns.jpg/200px-Carlsbad_Caverns.jpg",
+          "attractions": [
+            "Carlsbad Cavern",
+            "Natural Entrance",
+            "Bat Flight Program",
+            "Big Room"
+          ],
+          "link": "https://www.nps.gov/cave/index.htm",
+          "visitors": 400000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Carlsbad Caverns has 117 caves, the longest of which is over 120 miles (190 km) long. The Big Room is almost 4,000 feet (1,200 m) long, and the caves are home to over 400,000 Mexican free-tailed bats and sixteen other species. Above ground are the Chihuahuan Desert and Rattlesnake Springs."
+        },
+        {
+          "id": 12,
+          "name": "Channel Islands National Park",
+          "year": 1980,
+          "location": "California",
+          "coordinates": [
+            34.01,
+            119.42
+          ],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Santa_Cruz_Island_CA_DSC_4323_ad.JPG/200px-Santa_Cruz_Island_CA_DSC_4323_ad.JPG",
+          "attractions": [
+            "Anapaca Island - Arch Rock",
+            "Santa Cruz Island - Scorpion Ranch",
+            "Santa Rosa Island - Water Canyon Beach",
+            "Santa Barbara Island"
+          ],
+          "link": "https://www.nps.gov/chis/index.htm",
+          "visitors": 409000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Five of the eight Channel Islands are protected, with half of the park's area underwater. The islands have a unique Mediterranean ecosystem originally settled by the Chumash people. They are home to over 2,000 species of land plants and animals, 145 endemic to them, including the island fox. Ferry services offer transportation to the islands from the mainland."
+        },
+        {
+          "id": 13,
+          "name": "Congaree National Park",
+          "year": 2003,
+          "location": "South Carolina",
+          "coordinates": [
+            33.78,
+            80.78
+          ],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Bald_cypress_and_creek_%287166139814%29.jpg/200px-Bald_cypress_and_creek_%287166139814%29.jpg",
+          "attractions": [
+            "Boardwalk Loop Trail",
+            "Bluff Trail",
+            "Congaree River",
+            "Cedar Creek"
+          ],
+          "link": "https://www.nps.gov/cong/index.htm",
+          "visitors": 160000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "On the Congaree River, this park is the largest portion of old-growth floodplain forest left in North America. Some of the trees are the tallest in the eastern United States. An elevated walkway called the Boardwalk Loop guides visitors through the swamp."
+        },
+        {
+          "id": 14,
+          "name": "Crater Lake",
+          "year": 1902,
+          "location": "Oregon",
+          "coordinates": [
+            42.94,
+            122.1
+          ],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Crater_Lake_winter_pano2.jpg/200px-Crater_Lake_winter_pano2.jpg",
+          "attractions": [
+            "Mount Mazama",
+            "Wizard Island",
+            "Phantom Ship",
+            "Cleetwood Cove Trail"
+          ],
+          "link": "https://www.nps.gov/crla/index.htm",
+          "visitors": 720000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Crater Lake lies in the caldera of an ancient volcano called Mount Mazama that collapsed 7,700 years ago. The lake is the deepest in the United States and is noted for its vivid blue color and water clarity. Wizard Island and the Phantom Ship are more recent volcanic formations within the caldera. As the lake has no inlets or outlets, it is replenished only by precipitation."
+        },
+        {
+          "id": 15,
+          "name": "Cuyahoga Valley National Park",
+          "year": 2000,
+          "location": "Ohio",
+          "coordinates": [
+            41.24,
+            81.55
+          ],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Crater_Lake_winter_pano2.jpg/200px-Crater_Lake_winter_pano2.jpg",
+          "attractions": [
+            "Brandywine Falls",
+            "Beaver Marsh",
+            "Erie Canal Towpath Trail",
+            "Ohio Canal Towpath Trail"
+          ],
+          "link": "https://www.nps.gov/crla/index.htm",
+          "visitors": 2800000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "This park along the Cuyahoga River has waterfalls, hills, trails, and exhibits on early rural living. The Ohio and Erie Canal Towpath Trail follows the Ohio and Erie Canal, where mules towed canal boats. The park has numerous historic homes, bridges, and structures,[34] and also offers a scenic train ride."
+        },
+        {
+          "id": 16,
+          "name": "Death Valley National Park",
+          "year": 1994,
+          "location": "California & Nevada",
+          "coordinates": [
+            36.24,
+            116.82
+          ],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Isolated_Desert.jpg/200px-Isolated_Desert.jpg",
+          "attractions": [
+            "Badwater Basin",
+            "Zabriskie Point",
+            "Mesquite Flat Sand Dunes",
+            "Dante's View"
+          ],
+          "link": "https://www.nps.gov/deva/index.htm",
+          "visitors": 1500000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Death Valley is the hottest, lowest, and driest place in the United States, with daytime temperatures that have exceeded 130 °F (54 °C). The park protects Badwater Basin and its vast salt flats at the lowest elevation in North America, -282 ft (-86 m),[36] This geologic graben also protects numerous canyons, badlands, sand dunes, mountain ranges, historic mines, springs, and more than 1,000 species of plants that grow."
+        },
+        {
+          "id": 17,
+          "name": "Denali National Park",
+          "year": 1917,
+          "location": "California & Nevada",
+          "coordinates": [
+            63.33,
+            150.5
+          ],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wonder_Lake_and_Denali.jpg/200px-Wonder_Lake_and_Denali.jpg",
+          "attractions": [
+            "Denali Mountain",
+            "Svage River Area",
+            "Elson Visitor Center",
+            "Wonder Lake"
+          ],
+          "link": "https://www.nps.gov/dena/index.htm",
+          "visitors": 600000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Centered on Denali, the tallest and most prominent mountain in North America, the park is serviced by a single road leading to Wonder Lake, most of which can only be accessed via scheduled tour buses. Denali and other peaks of the Alaska Range are covered with long glaciers and boreal forest. Wildlife includes grizzly bears, Dall sheep, moose, caribou, and wolves."
+        },
+        {
+          "id": 18,
+          "name": "Dry Tortugas National Park",
+          "year": 1992,
+          "location": "Florida",
+          "coordinates": [
+            24.63,
+            82.87
+          ],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Fort-Jefferson_Dry-Tortugas.jpg/200px-Fort-Jefferson_Dry-Tortugas.jpg",
+          "attractions": [
+            "Fort Jefferson",
+            "Loggerhead Key"
+          ],
+          "link": "https://www.nps.gov/drto/index.htm",
+          "visitors": 80000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "The islands of the Dry Tortugas, at the westernmost end of the Florida Keys, are the site of Fort Jefferson, a Civil War-era fort that is the largest masonry structure in the Western Hemisphere. The park is home to undisturbed coral reefs and shipwrecks, and is only accessible by plane or boat."
+        },
+        {
+          "id": 19,
+          "name": "Everglades National Park",
+          "year": 1934,
+          "location": "Florida",
+          "coordinates": [
+            25.32,
+            80.93
+          ],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Pinelands_Sunrise_%281%29_NPSPhoto%2C_Sarah_Zenner_%289255147763%29.jpg/200px-Pinelands_Sunrise_%281%29_NPSPhoto%2C_Sarah_Zenner_%289255147763%29.jpg",
+          "attractions": [
+            "Anhinga Trail",
+            "Shark Valley",
+            "Florida Keys",
+            "Florida Bay"
+          ],
+          "link": "https://www.nps.gov/ever/index.htm",
+          "visitors": 1000000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "The Everglades are the largest tropical wilderness in the United States. This mangrove and tropical rainforest ecosystem and marine estuary is home to 36 protected species, including the Florida panther, American crocodile, and West Indian manatee. Some areas have been drained and developed; restoration projects aim to restore the ecology."
+        },
+        {
+          "id": 20,
+          "name": "Gates of the Arctic National Park",
+          "year": 1980,
+          "location": "Alaska",
+          "coordinates": [
+            67.78,
+            153.30
+          ],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Remote_river_in_Gates_of_the_Arctic_%2816524035298%29.jpg/200px-Remote_river_in_Gates_of_the_Arctic_%2816524035298%29.jpg",
+          "attractions": [
+            "Noatak Wild and Scenic River",
+            "Arrigetch Peaks",
+            "Kobuk River Sand Dunes",
+            "Brooks Range"
+          ],
+          "link": "https://www.nps.gov/ever/index.htm",
+          "visitors": 10000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "The country's northernmost park protects an expanse of pure wilderness in Alaska's Brooks Range and has no park facilities. The land is home to Alaska Natives who have relied on the land and caribou for 11,000 years."
+        },
+        {
+          "id": 21,
+          "name": "Gateway Arch National Park",
+          "year": 2018,
+          "location": "Missouri",
+          "coordinates": [
+            38.63,
+            90.19
+          ],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/St_Louis_night_expblend.jpg/200px-St_Louis_night_expblend.jpg",
+          "attractions": [
+            "Gateway Arch",
+            "Old Courthouse",
+            "Mississippi River"
+          ],
+          "link": "https://www.nps.gov/jeff/index.htm",
+          "visitors": 2500000,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "The Gateway Arch is a 630-foot (192 m) (both high and wide) catenary arch built in the 1960s to commemorate the Lewis and Clark Expedition, initiated by Thomas Jefferson, and the subsequent westward expansion of the country. The nearby Old Courthouse, across a greenway to the west of the arch, was the original site of the landmark Dred Scott case about slavery. An underground museum describes the arch's construction and the country's westward expansion."
+        },
+        {
+            "id": 61,
+            "name": "Yellowstone National Park",
+            "year": 1872,
+            "location": "California",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Grand_Prismatic_Spring_2013.jpg/200px-Grand_Prismatic_Spring_2013.jpg",
+            "coordinates": [
+                44.60,
+                110.50
+            ],
+            "attractions": [
+                "Old Faithful",
+                "Grand Canyon of the Yellowstone",
+                "Mammoth Hot Springs",
+                "Wapiti Lake Wolf Pack"
+            ],
+            "link": "https://www.nps.gov/yell/index.htm",
+            "visitors": 3,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "Situated on the Yellowstone Caldera, the park has an expansive network of geothermal areas including boiling mud pots, vividly colored hot springs such as Grand Prismatic Spring, and regularly erupting geysers, the best-known being Old Faithful. The yellow-hued Grand Canyon of the Yellowstone River contains several high waterfalls, and four mountain ranges traverse the park. More than 60 mammal species including timber wolves, grizzly bears, black bears, lynxes, bison, and elk make this park one of the best wildlife viewing spots in the country."
+        },
+        {
+        "id": 62,
+        "name": "Yosemite National Park",
+        "year": 1890,
         "location": "California",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg/1280px-Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg",
         "coordinates": [
-          34.01,
-          119.42
-        ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Santa_Cruz_Island_CA_DSC_4323_ad.JPG/200px-Santa_Cruz_Island_CA_DSC_4323_ad.JPG",
-        "attractions": [
-          "Anapaca Island - Arch Rock",
-          "Santa Cruz Island - Scorpion Ranch",
-          "Santa Rosa Island - Water Canyon Beach",
-          "Santa Barbara Island"
-        ],
-        "link": "https://www.nps.gov/chis/index.htm",
-        "visitors": 409000,
-        "pointValue": 0,
-        "wildlife": {},
-        "quizQuestions": {},
-        "gameWon": false,
-        "description": "Five of the eight Channel Islands are protected, with half of the park's area underwater. The islands have a unique Mediterranean ecosystem originally settled by the Chumash people. They are home to over 2,000 species of land plants and animals, 145 endemic to them, including the island fox. Ferry services offer transportation to the islands from the mainland."
-      },
-      {
-        "id": 13,
-        "name": "Congaree National Park",
-        "year": 2003,
-        "location": "South Carolina",
-        "coordinates": [
-          33.78,
-          80.78
-        ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Bald_cypress_and_creek_%287166139814%29.jpg/200px-Bald_cypress_and_creek_%287166139814%29.jpg",
-        "attractions": [
-          "Boardwalk Loop Trail",
-          "Bluff Trail",
-          "Congaree River",
-          "Cedar Creek"
-        ],
-        "link": "https://www.nps.gov/cong/index.htm",
-        "visitors": 160000,
-        "pointValue": 0,
-        "wildlife": {},
-        "quizQuestions": {},
-        "gameWon": false,
-        "description": "On the Congaree River, this park is the largest portion of old-growth floodplain forest left in North America. Some of the trees are the tallest in the eastern United States. An elevated walkway called the Boardwalk Loop guides visitors through the swamp."
-      },
-      {
-        "id": 14,
-        "name": "Crater Lake",
-        "year": 1902,
-        "location": "Oregon",
-        "coordinates": [
-          42.94,
-          122.1
-        ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Crater_Lake_winter_pano2.jpg/200px-Crater_Lake_winter_pano2.jpg",
-        "attractions": [
-          "Mount Mazama",
-          "Wizard Island",
-          "Phantom Ship",
-          "Cleetwood Cove Trail"
-        ],
-        "link": "https://www.nps.gov/crla/index.htm",
-        "visitors": 720000,
-        "pointValue": 0,
-        "wildlife": {},
-        "quizQuestions": {},
-        "gameWon": false,
-        "description": "Crater Lake lies in the caldera of an ancient volcano called Mount Mazama that collapsed 7,700 years ago. The lake is the deepest in the United States and is noted for its vivid blue color and water clarity. Wizard Island and the Phantom Ship are more recent volcanic formations within the caldera. As the lake has no inlets or outlets, it is replenished only by precipitation."
-      },
-      {
-        "id": 15,
-        "name": "Cuyahoga Valley National Park",
-        "year": 2000,
-        "location": "Ohio",
-        "coordinates": [
-          41.24,
-          81.55
-        ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Crater_Lake_winter_pano2.jpg/200px-Crater_Lake_winter_pano2.jpg",
-        "attractions": [
-          "Brandywine Falls",
-          "Beaver Marsh",
-          "Erie Canal Towpath Trail",
-          "Ohio Canal Towpath Trail"
-        ],
-        "link": "https://www.nps.gov/crla/index.htm",
-        "visitors": 2800000,
-        "pointValue": 0,
-        "wildlife": {},
-        "quizQuestions": {},
-        "gameWon": false,
-        "description": "This park along the Cuyahoga River has waterfalls, hills, trails, and exhibits on early rural living. The Ohio and Erie Canal Towpath Trail follows the Ohio and Erie Canal, where mules towed canal boats. The park has numerous historic homes, bridges, and structures,[34] and also offers a scenic train ride."
-      },
-      {
-        "id": 16,
-        "name": "Death Valley National Park",
-        "year": 1994,
-        "location": "California & Nevada",
-        "coordinates": [
-          36.24,
-          116.82
-        ],
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Isolated_Desert.jpg/200px-Isolated_Desert.jpg",
-        "attractions": [
-          "Brandywine Falls",
-          "Beaver Marsh",
-          "Erie Canal"
-        ],
-        "link": "https://www.nps.gov/crla/index.htm",
-        "visitors": 2800000,
-        "pointValue": 0,
-        "wildlife": {},
-        "quizQuestions": {},
-        "gameWon": false,
-        "description": "This park along the Cuyahoga River has waterfalls, hills, trails, and exhibits on early rural living. The Ohio and Erie Canal Towpath Trail follows the Ohio and Erie Canal, where mules towed canal boats. The park has numerous historic homes, bridges, and structures,[34] and also offers a scenic train ride."
-      },
-
-      //!! -- Connor's Code -- !!
-
-      
-      {
-        "id": 61,
-        "name": "Yellowstone National Park",
-        "year": 1872,
-        "location": "California",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Grand_Prismatic_Spring_2013.jpg/200px-Grand_Prismatic_Spring_2013.jpg",
-        "coordinates": [
-            44.60,
-            110.50
+            37.83,
+            119.50
         ],
         "attractions": [
-            "Old Faithful",
-            "Grand Canyon of the Yellowstone",
-            "Mammoth Hot Springs",
-            "Wapiti Lake Wolf Pack"
+            "Half Dome",
+            "Yosemite Falls",
+            "El Capitan",
+            "Yosemite Valley"
         ],
-        "link": "https://www.nps.gov/yell/index.htm",
+        "link": "https://www.nps.gov/yose/index.htm",
         "visitors": 3,
         "pointValue": 0,
         "wildlife": {},
         "quizQuestions": {},
         "gameWon": false,
-        "description": "Situated on the Yellowstone Caldera, the park has an expansive network of geothermal areas including boiling mud pots, vividly colored hot springs such as Grand Prismatic Spring, and regularly erupting geysers, the best-known being Old Faithful. The yellow-hued Grand Canyon of the Yellowstone River contains several high waterfalls, and four mountain ranges traverse the park. More than 60 mammal species including timber wolves, grizzly bears, black bears, lynxes, bison, and elk make this park one of the best wildlife viewing spots in the country."
+        "description": "Yosemite features sheer granite cliffs, exceptionally tall waterfalls, and old-growth forests at a unique intersection of geology and hydrology. Half Dome and El Capitan rise from the park's centerpiece, the glacier-carved Yosemite Valley, and from its vertical walls drop Yosemite Falls, one of North America's tallest waterfalls at 2,425 feet (739 m) high. Three giant sequoia groves, along with a pristine wilderness in the heart of the Sierra Nevada, are home to a wide variety of rare plant and animal species."
     },
     {
-    "id": 62,
-    "name": "Yosemite National Park",
-    "year": 1890,
-    "location": "California",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg/1280px-Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg",
-    "coordinates": [
-        37.83,
-        119.50
-    ],
-    "attractions": [
-        "Half Dome",
-        "Yosemite Falls",
-        "El Capitan",
-        "Yosemite Valley"
-    ],
-    "link": "https://www.nps.gov/yose/index.htm",
-    "visitors": 3,
-    "pointValue": 0,
-    "wildlife": {},
-    "quizQuestions": {},
-    "gameWon": false,
-    "description": "Yosemite features sheer granite cliffs, exceptionally tall waterfalls, and old-growth forests at a unique intersection of geology and hydrology. Half Dome and El Capitan rise from the park's centerpiece, the glacier-carved Yosemite Valley, and from its vertical walls drop Yosemite Falls, one of North America's tallest waterfalls at 2,425 feet (739 m) high. Three giant sequoia groves, along with a pristine wilderness in the heart of the Sierra Nevada, are home to a wide variety of rare plant and animal species."
-},
-{
-    "id": 63,
-    "name": "Zion National Park",
-    "year": 1919,
-    "location": "Utah",
-    "image": "https://en.wikipedia.org/wiki/Zion_National_Park#/media/File:Zion_angels_landing_view.jpg",
-    "coordinates": [
-        44.35,
-        68.21
-    ],
-    "attractions": [
-        "Angel's Landing",
-        "Kolob Canyons",
-        "The Grotto",
-        "Watchman Campground"
-    ],
-    "link": "https://www.nps.gov/zion/",
-    "visitors": 4692417,
-    "pointValue": 0,
-    "wildlife": {},
-    "quizQuestions": {},
-    "gameWon": false,
-    "description": "Located at the junction of the Colorado Plateau, Great Basin, and Mojave Desert, this park contains sandstone features such as mesas, rock towers, and canyons, including the Virgin River Narrows. The various sandstone formations and the forks of the Virgin River create a wilderness divided into four ecosystems: desert, riparian, woodland, and coniferous forest."
-    }
-
-]
-}
+        "id": 63,
+        "name": "Zion National Park",
+        "year": 1919,
+        "location": "Utah",
+        "image": "https://en.wikipedia.org/wiki/Zion_National_Park#/media/File:Zion_angels_landing_view.jpg",
+        "coordinates": [
+            44.35,
+            68.21
+        ],
+        "attractions": [
+            "Angel's Landing",
+            "Kolob Canyons",
+            "The Grotto",
+            "Watchman Campground"
+        ],
+        "link": "https://www.nps.gov/zion/",
+        "visitors": 4692417,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "Located at the junction of the Colorado Plateau, Great Basin, and Mojave Desert, this park contains sandstone features such as mesas, rock towers, and canyons, including the Virgin River Narrows. The various sandstone formations and the forks of the Virgin River create a wilderness divided into four ecosystems: desert, riparian, woodland, and coniferous forest."
+        }
+  ]
+  }
+  
