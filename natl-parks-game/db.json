@@ -489,31 +489,538 @@
           "gameWon": false,
           "description": "The Gateway Arch is a 630-foot (192 m) (both high and wide) catenary arch built in the 1960s to commemorate the Lewis and Clark Expedition, initiated by Thomas Jefferson, and the subsequent westward expansion of the country. The nearby Old Courthouse, across a greenway to the west of the arch, was the original site of the landmark Dred Scott case about slavery. An underground museum describes the arch's construction and the country's westward expansion."
         },
+
+    //!! --- Connor's Code --- !!
+    
         {
-            "id": 61,
-            "name": "Yellowstone National Park",
-            "year": 1872,
-            "location": "California",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Grand_Prismatic_Spring_2013.jpg/200px-Grand_Prismatic_Spring_2013.jpg",
+            "id": 40,
+            "name": "Kobuk Valley National Park",
+            "year": 1980,
+            "location": "Alaksa",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Wetlands_along_the_Kobuk_River_%288029770162%29.jpg/200px-Wetlands_along_the_Kobuk_River_%288029770162%29.jpg",
             "coordinates": [
-                44.60,
-                110.50
+                67.55,
+                159.28
             ],
             "attractions": [
-                "Old Faithful",
-                "Grand Canyon of the Yellowstone",
-                "Mammoth Hot Springs",
-                "Wapiti Lake Wolf Pack"
+                "Great Kobok Sand Dunes",
+                "Kotzebue",
+                "Onion Portage Archeological District",
+                "Kallarichuk"
             ],
-            "link": "https://www.nps.gov/yell/index.htm",
-            "visitors": 3,
+            "link": "https://www.nps.gov/kova/index.htm",
+            "visitors": 16925,
             "pointValue": 0,
             "wildlife": {},
             "quizQuestions": {},
             "gameWon": false,
-            "description": "Situated on the Yellowstone Caldera, the park has an expansive network of geothermal areas including boiling mud pots, vividly colored hot springs such as Grand Prismatic Spring, and regularly erupting geysers, the best-known being Old Faithful. The yellow-hued Grand Canyon of the Yellowstone River contains several high waterfalls, and four mountain ranges traverse the park. More than 60 mammal species including timber wolves, grizzly bears, black bears, lynxes, bison, and elk make this park one of the best wildlife viewing spots in the country."
+            "description": "Kobuk Valley protects 61 miles (98 km) of the Kobuk River and three regions of sand dunes. Created by glaciers, the Great Kobuk, Little Kobuk, and Hunt River Sand Dunes can reach 100 feet (30 m) high and 100 °F (38 °C), and they are the largest dunes in the Arctic. Twice a year, half a million caribou migrate through the dunes and across river bluffs that expose well-preserved ice age fossils."
         },
         {
+            "id": 41,
+            "name": "Lake Clark National Park",
+            "year": 1980,
+            "location": "Alaksa",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Lake_Clark_Place_Name_Project_images._Credit_Dev_Charm_Khalsa_NPS._%2836bde271-64b3-447a-b18a-9421e5e07284%29.jpg/200px-Lake_Clark_Place_Name_Project_images._Credit_Dev_Charm_Khalsa_NPS._%2836bde271-64b3-447a-b18a-9421e5e07284%29.jpg",
+            "coordinates": [
+                60.97,
+                153.42
+            ],
+            "attractions": [
+                "Mount Redoubt",
+                "Bristol Bay Salmon",
+                "Iliamna Volcano",
+                "Port Alsworth"
+            ],
+            "link": "https://www.nps.gov/lacl/index.htm",
+            "visitors": 18187,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "The region around Lake Clark features four active volcanoes, including Mount Redoubt, as well as an abundance of rivers, glaciers, and waterfalls. Temperate rainforests, a tundra plateau, and three mountain ranges complete the landscape."
+        },
+        {
+            "id": 42,
+            "name": "Lassen Volcanic National Park",
+            "year": 1916,
+            "location": "California",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Lake_Helen%2C_Lassen_Volcanic_National_Park%2C_in_June_2020.jpg/200px-Lake_Helen%2C_Lassen_Volcanic_National_Park%2C_in_June_2020.jpg",
+            "coordinates": [
+                40.49,
+                121.51
+            ],
+            "attractions": [
+                "Lassen Peak",
+                "Painted Dunes",
+                "Juniper Lake",
+                "Drakesbad Ranch"
+            ],
+            "link": "https://www.nps.gov/lavo/index.htm",
+            "visitors": 446291,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "Lassen Peak, the largest lava dome volcano in the world, is joined by all three other types of volcanoes in this park: shield, cinder cone, and composite. Though Lassen itself last erupted in 1915, most of the rest of the park is continuously active. Numerous hydrothermal features, including fumaroles, boiling pools, and bubbling mud pots, are heated by molten rock from beneath the peak."
+        },
+        {
+            "id": 43,
+            "name": "Mammoth Cave National Park",
+            "year": 1941,
+            "location": "Kentucky",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Mammoth_Cave_National_Park_007.jpg/200px-Mammoth_Cave_National_Park_007.jpg",
+            "coordinates": [
+                37.18,
+                86.10
+            ],
+            "attractions": [
+                "Green River",
+                "Proctor Cave",
+                "Roppel Cave",
+                "Eudora Ridge"
+            ],
+            "link": "https://www.nps.gov/maca/index.htm",
+            "visitors": 663147,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "With more than 400 miles (640 km) of passageways explored, Mammoth Cave is the world's longest known cave system. Subterranean wildlife includes eight bat species, Kentucky cave shrimp, Northern cavefish, and cave salamanders. Above ground, the park provides recreation on the Green River, 70 miles of hiking trails, and plenty of sinkholes and springs."
+        },
+        {
+            "id": 44,
+            "name": "Mesa Verde National Park",
+            "year": 1906,
+            "location": "Colorado",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg/200px-Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg",
+            "coordinates": [
+                37.18,
+                108.49
+            ],
+            "attractions": [
+                "Cliff Palace",
+                "Oak Tree House",
+                "Square Tower House",
+                "Long House"
+            ],
+            "link": "https://www.nps.gov/mora/index.htm",
+            "visitors": 499790,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "This area constitutes over 4,000 archaeological sites of the Ancestral Puebloan people, who lived here and elsewhere in the Four Corners region for at least 700 years. Cliff dwellings built in the 12th and 13th centuries include Cliff Palace, which has 150 rooms and 23 kivas, and the Balcony House, with its many passages and tunnels."
+        },
+        {
+            "id": 45,
+            "name": "Mount Rainier National Park",
+            "year": 1899,
+            "location": "Washington",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Tatoosh_Range_WA_MRNP1.jpg/200px-Tatoosh_Range_WA_MRNP1.jpg",
+            "coordinates": [
+                46.85,
+                121.75
+            ],
+            "attractions": [
+                "Carbon Glacier",
+                "Wonderland Trail",
+                "Longmire Visitor Center",
+                "Myrtle Falls"
+            ],
+            "link": "https://www.nps.gov/mora/index.htm",
+            "visitors": 1622395,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "Mount Rainier, an active stratovolcano, is the most prominent peak in the Cascades and is covered by 26 named glaciers including Carbon Glacier and Emmons Glacier, the longest and largest in the contiguous United States respectively. The mountain is popular for climbing, and more than half of the park is covered by subalpine and alpine forests and meadows seasonally in bloom with wildflowers. Paradise on the south slope is among the snowiest places on Earth.[89] The Longmire visitor center is the start of the Wonderland Trail, which encircles the mountain."
+        },    
+        {
+            "id": 46,
+            "name": "New River Gorge National Park",
+            "year": 2020,
+            "location": "West Virginia",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/New_River_Gorge_Bridge.jpg/200px-New_River_Gorge_Bridge.jpg",
+            "coordinates": [
+                38.07,
+                81.08
+            ],
+            "attractions": [
+                "Endless Wall",
+                "Bridge Day",
+                "Sandstone Falls",
+                "Bank of Glen Jean"
+            ],
+            "link": "https://www.nps.gov/neri/index.htm",
+            "visitors": 1593523,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "The New River Gorge is the deepest river gorge east of the Mississippi River. The park primarily covers the lower gorge area around the New River Gorge Bridge, which features some of the country's best whitewater rafting. Smaller noncontiguous sections showcase the ghost town of Thurmond, the scenic Grandview vista, and Sandstone Falls. The other 65,165 acres (263.71 km2) of the redesignated national river is now a national preserve, spanning 53 mi (85 km) of the New River."
+        },
+        {
+            "id": 47,
+            "name": "North Cascades National Park",
+            "year": 1968,
+            "location": "Washington",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Cascade_Pass.jpg/200px-Cascade_Pass.jpg",
+            "coordinates": [
+                48.70,
+                121.20
+            ],
+            "attractions": [
+                "Sahale Glacier",
+                "Cascade Pass",
+                "Eldorado Peak",
+                "Mount Terror"
+            ],
+            "link": "https://www.nps.gov/noca/index.htm",
+            "visitors": 30154,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "The highly glaciated mountains of the North Cascades Range exhibit a spectacular and complex geologic history. Between the river valleys and high peaks there are eight diverse life zones with 75 mammal and 1,600 vascular plant species. Popular hiking and climbing areas of the Stephen Mather Wilderness include Cascade Pass, Mount Shuksan, Mount Triumph, and Eldorado Peak. Ross Lake and Lake Chelan National Recreation Areas adjoin the two segments of the park and are all administered together."
+        },    
+        {
+            "id": 48,
+            "name": "Olympic National Park",
+            "year": 1938,
+            "location": "Washington",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Acer_macrophyllum_in_Hoh_ValleyB.jpg/200px-Acer_macrophyllum_in_Hoh_ValleyB.jpg",
+            "coordinates": [
+                47.97,
+                123.50
+            ],
+            "attractions": [
+                "Hurricane Ridge",
+                "Lake Quinalt",
+                "Seven Lakes Basin",
+                "Shi Shi Beach"
+            ],
+            "link": "https://www.nps.gov/olym/index.htm",
+            "visitors": 2432972,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "This park on the Olympic Peninsula includes a wide range of ecosystems from Pacific shoreline to temperate rainforests to the glaciated alpine peaks of the Olympic Mountains, the tallest of which is Mount Olympus. The Hoh and Quinault Rainforests are the wettest areas in the contiguous United States, with the Hoh receiving an average of almost 12 ft (3.7 m) of rain every year."
+        },
+        {
+            "id": 48,
+            "name": "Petrified Forest National Park",
+            "year": 1962,
+            "location": "Arizona",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/The_PEFO_Tepees.jpg/200px-The_PEFO_Tepees.jpg",
+            "coordinates": [
+                35.07,
+                109.78
+            ],
+            "attractions": [
+                "The Tepees",
+                "The Painted Desert",
+                "Triassic Fossils",
+                "Rainbow Forest Museum"
+            ],
+            "link": "https://www.nps.gov/pefo/index.htm",
+            "visitors": 505209,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "This portion of the Chinle Formation has a large concentration of 225-million-year-old petrified wood. The surrounding Painted Desert features eroded cliffs of red-hued volcanic rock called bentonite. Dinosaur fossils and over 350 Native American sites are also protected in this park."
+        },    
+        {
+            "id": 49,
+            "name": "Pinnacles National Park",
+            "year": 2013,
+            "location": "California",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Pinnacles_National_Park.jpg/200px-Pinnacles_National_Park.jpg",
+            "coordinates": [
+                36.48,
+                121.16
+            ],
+            "attractions": [
+                "High Peaks Trail",
+                "Pinnacles Ranch",
+                "Bear Gulch Reservoir",
+                "Balconies Cave"
+            ],
+            "link": "https://www.nps.gov/pinn/index.htm",
+            "visitors": 275023,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "Named for the eroded leftovers of a portion of an extinct volcano, the park's massive black and gold monoliths of andesite and rhyolite are a popular destination for rock climbers. Hikers have access to trails crossing the Coast Range wilderness. The park is one of the few locations where the endangered California condor can be seen in the wild. Pinnacles also supports a dense population of prairie falcons and more than 13 species of bat that populate its talus caves."
+        },
+        {
+            "id": 50,
+            "name": "Redwood National Park",
+            "year": 1968,
+            "location": "California",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Redwood_National_Park%2C_fog_in_the_forest.jpg/200px-Redwood_National_Park%2C_fog_in_the_forest.jpg",
+            "coordinates": [
+                41.30,
+                124.00
+            ],
+            "attractions": [
+                "Mill Creek",
+                "Klamath River",
+                "Coastal Trail",
+                "Gold Bluffs Beach"
+            ],
+            "link": "https://www.nps.gov/redw/index.htm",
+            "visitors": 458400,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "This park and the co-managed state parks protect almost half of all remaining coastal redwoods, the tallest trees on earth. There are three large river systems in this very seismically active area, and 37 miles (60 km) of protected coastline reveal tide pools and seastacks. The prairie, estuary, coast, river, and forest ecosystems contain a wide variety of animal and plant species."
+        },
+        {
+            "id": 51,
+            "name": "Rocky Mountain National Park",
+            "year": 1915,
+            "location": "Colorado",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Bierstadt_Lake%2C_Rocky_Mountain_National_Park%2C_USA.jpg/200px-Bierstadt_Lake%2C_Rocky_Mountain_National_Park%2C_USA.jpg",
+            "coordinates": [
+                40.40,
+                105.58
+            ],
+            "attractions": [
+                "Continental Divide Trail",
+                "Trail Ridge Road",
+                "Bear Lake",
+                "Hallett Peak"
+            ],
+            "link": "https://www.nps.gov/romo/index.htm",
+            "visitors": 4300424,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "Bisected north to south by the Continental Divide, this portion of the Rockies has ecosystems varying from over 150 riparian lakes to montane and subalpine forests to treeless alpine tundra. Wildlife including elk, moose, mule deer, bighorn sheep, black bears, and cougars inhabit its igneous mountains and glacial valleys. Longs Peak, a classic Colorado fourteener, and the scenic Bear Lake are popular destinations, as well as the historic Trail Ridge Road, which reaches an elevation of more than 12,000 feet (3,700 m)."
+        },
+        {
+            "id": 52,
+            "name": "Saguaro National Park",
+            "year": 1994,
+            "location": "Arizona",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Saguaronationalparl17102008.jpg/200px-Saguaronationalparl17102008.jpg",
+            "coordinates": [
+                32.25,
+                110.50
+            ],
+            "attractions": [
+                "Javelina Rocks",
+                "Rincon Mountains",
+                "Arizona-Sonora Desert Museum",
+                "Sonoran Desert"
+            ],
+            "link": "https://www.nps.gov/sagu/index.htm",
+            "visitors": 908194,
+            "pointValue": 0,
+            "wildlife": {},
+            "quizQuestions": {},
+            "gameWon": false,
+            "description": "Split into the separate Rincon Mountain and Tucson Mountain districts, this park is evidence that the dry Sonoran Desert is still home to a great variety of life spanning six biotic communities. Beyond the namesake giant saguaro cacti, there are barrel cacti, chollas, and prickly pears, as well as lesser long-nosed bats, spotted owls, and javelinas."
+        }, 
+        {
+        "id": 53,
+        "name": "Sequoia National Park",
+        "year": 1890,
+        "location": "California",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Giant_sequoias_in_Sequoia_National_Park_2013.jpg/200px-Giant_sequoias_in_Sequoia_National_Park_2013.jpg",
+        "coordinates": [
+            36.43,
+            118.68
+        ],
+        "attractions": [
+            "The Giant Forest",
+            "High Sierra Trail",
+            "Tharp's Log",
+            "Great Western Divide"
+        ],
+        "link": "https://www.nps.gov/seki/index.htm",
+        "visitors": 1153198,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "This park protects the Giant Forest, which boasts some of the world's largest trees, the General Sherman being the largest measured tree in the park. Other features include over 240 caves, a long segment of the Sierra Nevada including the tallest mountain in the contiguous United States, and Moro Rock, a large granite dome."
+    },
+    {
+        "id": 54,
+        "name": "Shenandoah National Park",
+        "year": 1935,
+        "location": "Virginia",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Early_Fall_at_Dark_Hollow_Falls_%2822028259442%29.jpg/200px-Early_Fall_at_Dark_Hollow_Falls_%2822028259442%29.jpg",
+        "coordinates": [
+            38.53,
+            78.35
+        ],
+        "attractions": [
+            "Skyline Drive",
+            "Blue Ridge Mountains",
+            "Hawksbill Mountain",
+            "Appalachian Trail"
+        ],
+        "link": "https://www.nps.gov/shen/index.htm",
+        "visitors": 1449300,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "Shenandoah's Blue Ridge Mountains are covered by hardwood forests that teem with a wide variety of wildlife. The Skyline Drive and Appalachian Trail run the entire length of this narrow park, along with more than 500 miles (800 km) of hiking trails passing scenic overlooks and cataracts of the Shenandoah River."
+    },
+    {
+        "id": 55,
+        "name": "Theodore Roosevelt National Park",
+        "year": 1978,
+        "location": "North Dakota",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/View_of_Theodore_Roosevelt_National_Park.jpg/200px-View_of_Theodore_Roosevelt_National_Park.jpg",
+        "coordinates": [
+            46.97,
+            103.45
+        ],
+        "attractions": [
+            "Maah Daah Hey Trail",
+            "Little Missouri River",
+            "Juniper Campground",
+            "Elkhorn Ranch"
+        ],
+        "link": "https://www.nps.gov/thro/index.htm",
+        "visitors": 668679,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "This region that enticed and influenced President Theodore Roosevelt consists of a park of three units in the northern badlands. Besides Roosevelt's historic cabin, there are numerous scenic drives and backcountry hiking opportunities. Wildlife includes American bison, pronghorn, bighorn sheep, and wild horses."
+    },
+    {
+        "id": 56,
+        "name": "Virgin Islands National Park",
+        "year": 1956,
+        "location": "U.S. Virgin Islands",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/St_John_Trunk_Bay_1.jpg/200px-St_John_Trunk_Bay_1.jpg",
+        "coordinates": [
+            18.33,
+            64.73
+        ],
+        "attractions": [
+            "Honeymoon Beach",
+            "Cinnamon Bay Nature Trail",
+            "Annaberg Historic District",
+            "Reef Bay Petroglyphs"
+        ],
+        "link": "https://www.nps.gov/viis/index.htm",
+        "visitors": 196752,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "This island park on Saint John preserves pristine beaches surrounded by mangrove forests, seagrass beds, and coral reefs. It also has Taíno archaeological sites and the ruins of sugar plantations from Columbus's time."
+    },
+    {
+        "id": 57,
+        "name": "Voyageurs National Park",
+        "year": 1975,
+        "location": "Minnesota",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Voyageurs_National_Park.jpg/200px-Voyageurs_National_Park.jpg",
+        "coordinates": [
+            48.50,
+            92.88
+        ],
+        "attractions": [
+            "Ash River",
+            "Kabetogama Lake",
+            "Rainy Lake",
+            "Kettle Falls Hotel"
+        ],
+        "link": "https://www.nps.gov/voya/index.htm",
+        "visitors": 221434,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "This park protecting four lakes near the Canada–US border is a site for canoeing, kayaking, and fishing. The park also preserves a history populated by Ojibwe Native Americans, French fur traders called voyageurs, and gold miners. Formed by glaciers, the region features tall bluffs, rock gardens, islands, bays, and several historic buildings."
+    },
+    {
+        "id": 58,
+        "name": "White Sands National Park",
+        "year": 2019,
+        "location": "New Mexico",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/White_Sands_New_Mexico_USA.jpg/200px-White_Sands_New_Mexico_USA.jpg",
+        "coordinates": [
+            32.78,
+            106.17
+        ],
+        "attractions": [
+            "Pleistocene Fossils",
+            "Dune Sledding",
+            "Dunes Drive",
+            "Desert Horseback Riding"
+        ],
+        "link": "https://www.nps.gov/whsa/index.htm",
+        "visitors": 705127,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "Located in the mountain-ringed Tularosa Basin, White Sands consists of the southern part of a 275-square-mile (710 km2) field of white sand dunes composed of gypsum crystals—the world's largest gypsum dunefield. The park is completely within the White Sands Missile Range and is subject to closure when tests are conducted."
+    },
+    {
+        "id": 59,
+        "name": "Wind Cave National Park",
+        "year": 1980,
+        "location": "South Dakota",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Wind_Cave_lower.jpg/200px-Wind_Cave_lower.jpg",
+        "coordinates": [
+            43.57,
+            103.48
+        ],
+        "attractions": [
+            "Wind Cave Bison Herd",
+            "Boxwork Geology",
+            "Elk Mountain Campground",
+            "Candlelight Tours"
+        ],
+        "link": "https://www.nps.gov/wica/index.htm",
+        "visitors": 607418,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "Wind Cave is distinctive for its calcite fin formations called boxwork, a unique formation rarely found elsewhere, and needle-like growths called frostwork. It is one of the longest caves in the world and creates a wind as air pressure changes. Above ground is a mixed-grass prairie with animals such as bison, black-footed ferrets, and prairie dogs and ponderosa pine forests home to cougars and elk.[113] The cave is culturally significant to the Lakota people as a creation site."
+    },
+    {
+        "id": 61,
+        "name": "Yellowstone National Park",
+        "year": 1872,
+        "location": "California",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Grand_Prismatic_Spring_2013.jpg/200px-Grand_Prismatic_Spring_2013.jpg",
+        "coordinates": [
+            44.60,
+            110.50
+        ],
+        "attractions": [
+            "Old Faithful",
+            "Grand Canyon of the Yellowstone",
+            "Mammoth Hot Springs",
+            "Wapiti Lake Wolf Pack"
+        ],
+        "link": "https://www.nps.gov/yell/index.htm",
+        "visitors": 3,
+        "pointValue": 0,
+        "wildlife": {},
+        "quizQuestions": {},
+        "gameWon": false,
+        "description": "Situated on the Yellowstone Caldera, the park has an expansive network of geothermal areas including boiling mud pots, vividly colored hot springs such as Grand Prismatic Spring, and regularly erupting geysers, the best-known being Old Faithful. The yellow-hued Grand Canyon of the Yellowstone River contains several high waterfalls, and four mountain ranges traverse the park. More than 60 mammal species including timber wolves, grizzly bears, black bears, lynxes, bison, and elk make this park one of the best wildlife viewing spots in the country."
+    },
+    {
         "id": 62,
         "name": "Yosemite National Park",
         "year": 1890,
