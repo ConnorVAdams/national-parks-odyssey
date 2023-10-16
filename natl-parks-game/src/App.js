@@ -1,7 +1,7 @@
 import './App.css'
 import AnimalBoard from './AnimalBoard'
 import animals from './animalData'
-import Hangman from "./Hangman"
+import UHangman from "./UHangman"
 import parkObj from './attractionData'
 
 function App() {
@@ -19,8 +19,8 @@ function App() {
 
   return (
     <div className="App">
-        <AnimalBoard animals={animals} handleWin={handleWin} />
-        <Hangman parkObj={parkObj} />
+        {/* <AnimalBoard animals={animals} handleWin={handleWin} /> */}
+        <UHangman parkObj={parkObj} />
     </div>
   );
 }

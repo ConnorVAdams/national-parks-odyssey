@@ -3,10 +3,11 @@ import "./Hangman.css"
 
 
 function Hangman({parkObj}) {
-  const [correctAttempt, setCorrectAttempt] = useState([])
+  const [correctLetters, setCorrectLetters] = useState([])
   const [randomAttraction, setRandomAttraction] = useState("")
-  //needs filter to idntify based on id, which national park was chosen
+  const [usedLetters, setUsedLetters] = useState([])
 
+  //temporary
   const selectedPark = parkObj[0].attractions
 
   //function to grab random element from array
@@ -26,19 +27,41 @@ function Hangman({parkObj}) {
 
 
   //hidden word player needs to guess
-  const hiddenWord = randomAttraction.split('').map(letter =>
-    correctAttempt.includes(letter) ? letter : "_").join(" ");
+  const hiddenWord = randomAttraction.split('').map((letter, i) => {
+    if (letter === " ") {
+      return <span key={i} className="word-space">&nbsp;</span>;
+    } else {
+      const displayLetter = (usedLetters.includes(letter) || letter === " ") ? letter : "_";
+      return (
+        <span key={i} className="word">
+          {displayLetter}
+        </span>
+      );
+    }
+  });
 
   //when letter is clicked
   const handleClick = (letter) => {
-    console.log('clicked')
-    if (randomAttraction.includes(letter)) {
-      setCorrectAttempt((attempts) => [...attempts, letter])
-      console.log(correctAttempt)
+    if (!usedLetters.includes(letter)) {
+      setUsedLetters([...usedLetters, letter]);
     }
   }
 
-  const test = "TEST"
+  //render buttons filtering for already used buttons
+  const renderButtons = () => {
+    return alphabets
+      .filter((letter) => (!usedLetters.includes(letter)))
+      .map((letter) => (
+        <button className="letter"
+        key={letter}
+        onClick={() => handleClick(letter)}
+          disabled={usedLetters.includes(letter)}
+          >
+          {letter}
+          </button>
+      ))
+  }
+
   const alphabets = ["A", "B", "C", "D", "E", "F", "G",
     "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R",
     "S", "T", "U", "V", "W", "X", "Y", "Z"]
@@ -48,14 +71,11 @@ function Hangman({parkObj}) {
 
   return(
     <div>
-      <p>{hiddenWord}</p>
-      {alphabets
-      .map((letter, index) => (
-        <button className="letter"
-        key={index}
-        onClick={(letter) => handleClick(letter)}>{letter}</button>
-      ))}
-      {!hiddenWord.includes("_") && <p>You Won!</p>}
+      <h1>Hangman - Find the Hidden Word</h1>
+      <p>Hint: What are the major attractions at the National Park?</p>
+      <div className="hidden-word">{hiddenWord}</div>
+      {renderButtons()}
+      {hiddenWord.every(item => item.props.children !== "_") && <p>You Won!</p>}
     </div>
   )
 }
