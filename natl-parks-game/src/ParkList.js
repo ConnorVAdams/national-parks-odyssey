@@ -1,13 +1,14 @@
-import ParkTile from "./ParkTile"
+import ParkLi from "./ParkLi"
+
 
 const ParkList = ({ parks }) => {
     
     // const ParksDisplay = parks.map(park => {
-    //     return <ParkTile key={park.id} id={park.id} {...park}/>
+    //     return <ParkLi key={park.id} id={park.id} {...park}/>
     // })
 
   return (
-    <div></div>
+    <ParkLi />
   )
 }
 

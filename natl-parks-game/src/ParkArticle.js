@@ -1,6 +1,12 @@
+import ParkCard from './ParkCard'
+
 const ParkArticle = () => {
   return (
-    <div>ParkArticle</div>
+    <>
+      <div>ParkArticle</div>
+      <ParkCard />
+    </>
+
   )
 }
 
