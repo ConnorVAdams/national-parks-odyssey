@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Hangman.css"
 
-function UHangman({parkObj}) {
+function Hangman({parkObj}) {
   const [randomAttraction, setRandomAttraction] = useState("")
   const [correctGuesses, setCorrectGuesses] = useState([])
   const [wrongGuesses, setWrongGuesses] = useState([])
@@ -16,7 +16,7 @@ function UHangman({parkObj}) {
     "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
     //temporary
-  const selectedPark = parkObj[0].attractions
+  const selectedPark = ["Attraction", "Attraction", "Attraction"]
 
   //reset game (with a loss)
   const reset = () => {
@@ -103,4 +103,4 @@ const renderStatus = () => {
   </div>
 }
 
-export default UHangman
+export default Hangman
