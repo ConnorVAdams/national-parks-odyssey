@@ -2,6 +2,7 @@ import './App.css'
 import AnimalBoard from './AnimalBoard'
 import animals from './animalData'
 import Hangman from "./Hangman"
+import "./attractionData"
 
 function App() {
 
