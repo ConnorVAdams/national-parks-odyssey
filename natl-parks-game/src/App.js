@@ -3,6 +3,7 @@ import AnimalBoard from './AnimalBoard'
 import Book from './Book'
 import animals from './animalData'
 import Hangman from "./Hangman"
+import Home from './Home'
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
         {/*<Game /> component for memory game.*/}
         {/* <AnimalBoard animals={animals} handleWin={handleWin} /> */}
         {/* <Hangman /> */}
-        {/* <Book /> */}
+        <Home />
     </div>
   );
 }
