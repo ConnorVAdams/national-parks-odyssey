@@ -1,0 +1,1 @@
+- Fold in a function that spreads the parkObj and adds a property favorited: 'true' when the user clicks the favorite button on the ParkTile.
