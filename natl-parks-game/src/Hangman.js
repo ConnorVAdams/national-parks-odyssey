@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Hangman.css"
 
-function UHangman({parkObj}) {
+function Hangman({parkObj}) {
   const [randomAttraction, setRandomAttraction] = useState("")
   const [correctGuesses, setCorrectGuesses] = useState([])
   const [wrongGuesses, setWrongGuesses] = useState([])
@@ -103,4 +103,4 @@ const renderStatus = () => {
   </div>
 }
 
-export default UHangman
+export default Hangman
