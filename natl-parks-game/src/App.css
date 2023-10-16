@@ -17,7 +17,7 @@
 .game-info {
     display: flex;
     grid-area: 2/1/5/2;
-    height: 86vh;
+    height: 85vh;
     border: 3px solid black;
     margin-left: 10px;
 }
@@ -27,22 +27,29 @@
     grid-area: 2/2/3/3;
     height: 6vh;
     width: 70%;
-    border: 3px solid black;
     margin-left: auto;
     margin-right: auto;
+    justify-content: space-evenly;
 }
 
 .main-container {
     display: flex;
-    grid-area: 3/2/5/3;
-    height: 80vh;
+    grid-area: 3/2/4/3;
+    height: 74vh;
     border: 3px solid black;
 }
 
 .carousel {
     display: flex;
     grid-area: 2/3/5/4;
-    height: 86vh;
+    height: 85vh;
+    border: 3px solid black;
+}
+
+.footer {
+    display: flex;
+    grid-area: 4/1/5/4;
+    height: 3vh;
     border: 3px solid black;
 }
 
@@ -53,5 +60,43 @@
 }
 
 .title {
+    display: inherit;
     margin-left: 10px;
+}
+
+.nav-buttons button {
+    display: inherit;
+    width: 30%;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+}
+
+.book {
+    display: flex;
+}
+
+.book-left {
+    display: inherit;
+    flex-direction: column;
+    width: 50%;
+    flex-grow: 1;
+}
+
+.book-right {
+    display: inherit;
+    width: 50%;
+    flex-grow: 1;
+}
+
+.search {
+    display: inherit;
+}
+
+.park-list {
+    display: inherit;
+}
+
+.park-article {
+    display: inherit;
 }
