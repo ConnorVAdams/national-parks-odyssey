@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./Hangman.css"
 
-function Hangman({parkObj}) {
+function Hangman({handleWin}) {
   const [randomAttraction, setRandomAttraction] = useState("")
   const [correctGuesses, setCorrectGuesses] = useState([])
   const [wrongGuesses, setWrongGuesses] = useState([])
   const [status, setStatus] = useState("")
-
-  console.log(wrongGuesses)
-  console.log(wrongGuesses.length)
 
   //define letters
   const alphabets = ["A", "B", "C", "D", "E", "F", "G",
@@ -90,6 +87,13 @@ const renderStatus = () => {
     </div>
   }
 }
+//callback when the game ends
+useEffect(() => {
+  if (status === "win") {
+    const endTime= Date.now()
+    handleWin(endTime, wrongGuesses)
+  }
+})
 
   //display hidden word
   const hiddenWord = randomAttraction.split('').map(letter =>
