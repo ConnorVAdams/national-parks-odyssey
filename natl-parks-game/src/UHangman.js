@@ -15,6 +15,9 @@ function UHangman({parkObj}) {
     "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R",
     "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
+    //temporary
+  const selectedPark = parkObj[0].attractions
+
   //reset game (with a loss)
   const reset = () => {
     randomElement(selectedPark)
@@ -23,8 +26,7 @@ function UHangman({parkObj}) {
     setStatus("")
   }
 
-  //temporary
-  const selectedPark = parkObj[0].attractions
+
 
   //function to grab random element from array
   const randomElement = (array) => {
@@ -84,7 +86,7 @@ const renderStatus = () => {
   else {
     return <div>
       <p>You {status}!</p>
-      <p>{status === "win" ? "Claim your Card" : "Try again"}</p>
+      <p>{status === "win" ? "Claim your Card" : <button onClick={reset} >Try again</button>}</p>
     </div>
   }
 }
