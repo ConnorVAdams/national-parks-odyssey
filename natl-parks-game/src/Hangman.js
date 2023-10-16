@@ -16,8 +16,13 @@ function Hangman({parkObj}) {
   }
   //run the function, but will be triggered with useEffect when something is clicked
   useEffect(() => {
+    console.log('useEffect triggered')
     randomElement(selectedPark)
   },[selectedPark])
+  //reset display of hidden word
+  useEffect(() => {
+
+  })
 
 
   //hidden word player needs to guess
@@ -26,8 +31,10 @@ function Hangman({parkObj}) {
 
   //when letter is clicked
   const handleClick = (letter) => {
+    console.log('clicked')
     if (randomAttraction.includes(letter)) {
       setCorrectAttempt((attempts) => [...attempts, letter])
+      console.log(correctAttempt)
     }
   }
 
@@ -46,7 +53,7 @@ function Hangman({parkObj}) {
       .map((letter, index) => (
         <button className="letter"
         key={index}
-        onClick={(letter) => handleClick}>{letter}</button>
+        onClick={(letter) => handleClick(letter)}>{letter}</button>
       ))}
       {!hiddenWord.includes("_") && <p>You Won!</p>}
     </div>
