@@ -1,6 +1,7 @@
 import './App.css'
 import AnimalBoard from './AnimalBoard'
 import animals from './animalData'
+import Hangman from "./Hangman"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="App">
         <AnimalBoard animals={animals} handleWin={handleWin} />
+        <Hangman />
     </div>
   );
 }
