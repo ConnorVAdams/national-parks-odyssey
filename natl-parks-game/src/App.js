@@ -23,8 +23,6 @@ const App = () => {
   //   console.log(`Congratulations, you earned ${score} points!`)
   // }
 
-
-
   return (
     <div className="App">
         {/*<Game /> component for memory game.*/}
