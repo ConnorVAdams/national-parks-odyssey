@@ -6,6 +6,7 @@ import Header from './Header'
 import NavButtons from "./NavButtons"
 
 const Home = () => {
+  const 
   return (
     <div className='wrapper'>
       <Header />

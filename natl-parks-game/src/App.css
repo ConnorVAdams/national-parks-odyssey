@@ -10,8 +10,8 @@
     display: flex;
     grid-area: 1/1/2/4;
     height: 10vh;
-    border: 3px solid black;
     align-items: center;
+    margin-top: 10px;
 }
 
 .game-info {
@@ -53,15 +53,26 @@
     border: 3px solid black;
 }
 
+.title-container {
+    display: flex;
+    flex-direction: row;
+}
+
 .nps-logo {
     display: flex;
-    max-height: 80%;
+    max-height: 80px;
     margin: 10px;
 }
 
 .title {
-    display: inherit;
+    display: flex;
     margin-left: 10px;
+}
+
+.point-container {
+    display: inherit;
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 .nav-buttons button {
@@ -74,29 +85,73 @@
 
 .book {
     display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
-.book-left {
+
+.search-form {
     display: inherit;
     flex-direction: column;
-    width: 50%;
-    flex-grow: 1;
-}
-
-.book-right {
+    height: 100%;
     display: inherit;
-    width: 50%;
-    flex-grow: 1;
+    flex-direction: column;
+    height: 150px;
 }
 
-.search {
+.search-list-sort {
+    display: inherit;
+    flex-direction: row;
+    height: 50%;
+}
+
+.search-list-sort div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-list-sort input, select {
+    display: block;
+    margin: 5px;
+    width: 75%
+}
+
+.search-list-sort label {
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.filters label {
+    display: inherit;
+    margin-right: auto;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.filters-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.filters-container label {
+    width: 20%;
+}
+
+
+.book-bottom {
     display: inherit;
 }
-
 .park-list {
     display: inherit;
+    flex-grow: 1;
 }
 
 .park-article {
     display: inherit;
+    flex-grow: 1;
 }

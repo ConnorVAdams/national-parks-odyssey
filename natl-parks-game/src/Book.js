@@ -8,11 +8,9 @@ const Book = () => {
   return (
     <>
       <div className='book'>
-        <div className='book-left'>
           <Search />
+        <div className='book-bottom'>
           <ParkList />
-        </div>
-        <div className='book-right'>
           <ParkArticle />
         </div>
       </div>
