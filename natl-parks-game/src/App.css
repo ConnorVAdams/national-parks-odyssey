@@ -66,7 +66,6 @@ h3 {
     display: flex;
     grid-area: 4/1/5/4;
     height: 3vh;
-    border: 3px solid black;
 }
 
 .title-container {
@@ -83,6 +82,7 @@ h3 {
 .title {
     display: flex;
     margin-left: 10px;
+    align-self: center;
 }
 
 .point-container {
@@ -114,8 +114,8 @@ h3 {
     display: inherit;
     flex-direction: column;
     border: 3px solid black;
-    padding: 5px;
-    height: 20%;
+    padding: 8px;
+    height: 14%;
 }
 
 .search-list-sort {
@@ -143,27 +143,26 @@ h3 {
     margin-left: 10px;
 }
 
-.filters label {
-    display: inherit;
-    margin-right: auto;
-    margin-left: 10px;
-    margin-top: 0px;
-    margin-bottom: 5px;
-}
-
 .filters-container {
     display: flex;
     flex-direction: row;
     padding: 2px;
+    margin-top: 8px;
+    margin-left: 8px;
+    height: 50%;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.filters-container label {
-    width: 20%;
+.filters-container label, input {
+    display: flex;
+    flex-grow: 1;
 }
 
 .book-bottom {
     display: inherit;
-    height: 75%;
+    height: 80%;
+    column-gap: 8px;
 }
 
 .park-list {
@@ -172,6 +171,7 @@ h3 {
     overflow: auto;
     max-height: 500px;
     border: 3px solid black;
+    flex: 1;
 }
 
 .park-li {
@@ -199,5 +199,10 @@ h3 {
 
 .park-article {
     display: inherit;
-    flex-grow: 1;
+    flex: 1;
+    border: 3px solid black;
+}
+
+.park-card {
+
 }

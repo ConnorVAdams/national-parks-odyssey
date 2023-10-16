@@ -8,6 +8,7 @@ const URL = 'http://localhost:3000/parkObj'
 
 const Book = () => {
   const [parks, setParks] = useState([])
+  const [currentPark, setcurrentPark] = useState({})
 
   const fetchAllParks = () => {
     fetch(URL)
@@ -19,13 +20,17 @@ const Book = () => {
     fetchAllParks()
   }, [])
 
+  const displayPark = (parkObj) => {
+    setcurrentPark(parkObj)
+  }
+
   return (
     <>
       <div className='book'>
           <Search />
         <div className='book-bottom'>
-          <ParkList parks={parks}/>
-          <ParkArticle />
+          <ParkList displayPark={displayPark} parks={parks}/>
+          <ParkArticle {...currentPark} />
         </div>
       </div>
     </>

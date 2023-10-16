@@ -23,7 +23,7 @@
         },
         {
           "id": 2,
-          "name": "National Park of American Samoa",
+          "name": "American Samoa National",
           "year": 1988,
           "location": "American Samoa",
           "coordinates": [14.25, 170.68],
@@ -333,7 +333,7 @@
             41.24,
             81.55
           ],
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Crater_Lake_winter_pano2.jpg/200px-Crater_Lake_winter_pano2.jpg",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cuyahoga_Valley_National_Park.jpg/284px-Cuyahoga_Valley_National_Park.jpg",
           "attractions": [
             "Brandywine Falls",
             "Beaver Marsh",
@@ -1046,7 +1046,7 @@
         "name": "Zion National Park",
         "year": 1919,
         "location": "Utah",
-        "image": "https://en.wikipedia.org/wiki/Zion_National_Park#/media/File:Zion_angels_landing_view.jpg",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Zion_angels_landing_view.jpg/284px-Zion_angels_landing_view.jpg",
         "coordinates": [
             44.35,
             68.21

@@ -1,10 +1,10 @@
 import ParkLi from "./ParkLi"
 
 
-const ParkList = ({ parks }) => {
+const ParkList = ({ parks, displayPark }) => {
     
     const parksDisplay = parks.map(park => {
-        return <ParkLi key={park.id} id={park.id} {...park}/>
+        return <ParkLi key={park.id} {...park} displayPark={displayPark}/>
     })
 
   return (
