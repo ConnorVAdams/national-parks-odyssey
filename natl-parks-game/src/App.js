@@ -25,10 +25,10 @@ const App = () => {
 
   return (
     <div className="App">
-      {/*<Game /> component for memory game.*/}
-      {/* <AnimalBoard animals={animals} handleWin={handleWin} /> */}
-      {/* <Hangman /> */}
-      <Home />
+        {/*<Game /> component for memory game.*/}
+        {/* <AnimalBoard animals={animals} handleWin={handleWin} /> */}
+        {/* <Hangman /> */}
+        <Home />
     </div>
   );
 }
