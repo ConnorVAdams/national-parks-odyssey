@@ -5,6 +5,7 @@ import ParkCard from './ParkCard'
 import Header from './Header'
 import NavButtons from "./NavButtons"
 import { useState, useEffect } from 'react'
+import {GoogleMap} from "react-google-maps"
 
 const Home = () => {
 
@@ -16,8 +17,8 @@ const Home = () => {
       <div className='game-info' />
       {/* ^ Turn this into component if stretch goals are met, includes Leaderboard and GameInfo/Stats. */}
       <div className='main-container'>
-        <Book />
-        {/* <Map /> */}
+        {/* <Book /> */}
+        <Map />
         {/* <Rules /> */}
       </div>
       <div className='carousel'>
