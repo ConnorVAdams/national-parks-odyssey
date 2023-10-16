@@ -1,7 +1,7 @@
-const ParkTile = ({ id, name, year,  location, gameWon }) => {
+const ParkCard = ({ id, name, year,  location, gameWon }) => {
   return (
-    <div>ParkCard</div>
+    <div className='park-card'></div>
   )
 }
 
-export default ParkTile
+export default ParkCard

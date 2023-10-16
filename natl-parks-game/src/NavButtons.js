@@ -1,6 +1,6 @@
 const NavButtons = () => {
   return (
-    <div>NavButtons</div>
+    <div className='nav-buttons'></div>
   )
 }
 

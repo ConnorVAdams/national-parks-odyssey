@@ -7,10 +7,11 @@ import NavButtons from './NavButtons'
 const Book = () => {
   return (
     <>
-      <NavButtons />
-      <Search />
-      <ParkArticle />
-      <ParkList />
+      <div className='book'>
+        <Search />
+        <ParkArticle />
+        <ParkList />
+      </div>
     </>
   )
 }

@@ -2,11 +2,9 @@ import ParkCard from './ParkCard'
 
 const ParkArticle = () => {
   return (
-    <>
-      <div>ParkArticle</div>
-      <ParkCard />
-    </>
-
+      <div className='park-article'>
+        <ParkCard />
+      </div>
   )
 }
 

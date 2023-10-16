@@ -1,6 +1,6 @@
 const ParkLi = () => {
   return (
-    <div>ParkLi</div>
+    <div className='park-li'></div>
   )
 }
 

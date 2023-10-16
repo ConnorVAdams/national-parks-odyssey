@@ -6,11 +6,11 @@ import Game from './Game'
 const Map = () => {
   return (
     <>
-      <NavButtons />
-      <ParkIcon />
-      <ParkCard />
-      <Game />
-      <div>Map</div>
+      <div className='map'>
+        <ParkIcon />
+        <ParkCard />
+        <Game />
+      </div>
     </>
   )
 }

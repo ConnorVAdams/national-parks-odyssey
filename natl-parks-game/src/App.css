@@ -1,5 +1,57 @@
-body {
+.wrapper {
     display: grid;
-    /* grid-template-areas: ; */
+    grid-template-rows: 3fr 2fr 14fr 10fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 100vh;
+    grid-gap: 20px;
 }
 
+.header {
+    display: flex;
+    grid-area: 1/1/2/4;
+    height: 10vh;
+    border: 3px solid black;
+    align-items: center;
+}
+
+.game-info {
+    display: flex;
+    grid-area: 2/1/5/2;
+    height: 86vh;
+    border: 3px solid black;
+    margin-left: 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    grid-area: 2/2/3/3;
+    height: 6vh;
+    width: 70%;
+    border: 3px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-container {
+    display: flex;
+    grid-area: 3/2/5/3;
+    height: 80vh;
+    border: 3px solid black;
+}
+
+.carousel {
+    display: flex;
+    grid-area: 2/3/5/4;
+    height: 86vh;
+    border: 3px solid black;
+}
+
+.nps-logo {
+    display: flex;
+    max-height: 80%;
+    margin: 10px;
+}
+
+.title {
+    margin-left: 10px;
+}

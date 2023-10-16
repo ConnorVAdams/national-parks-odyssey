@@ -1,6 +1,6 @@
 const ParkIcon = () => {
   return (
-    <div>ParkIcon</div>
+    <div className='park-icon'></div>
   )
 }
 

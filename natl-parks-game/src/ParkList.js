@@ -8,7 +8,9 @@ const ParkList = ({ parks }) => {
     // })
 
   return (
-    <ParkLi />
+    <div className='park-list'>
+      <ParkLi />
+    </div>
   )
 }
 

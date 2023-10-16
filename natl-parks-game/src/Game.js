@@ -3,10 +3,10 @@ import Hangman from './Hangman'
 
 const Game = () => {
   return (
-    <>
+    <div className='game'>
       {/* <AnimalBoard />
       <Hangman /> */}
-    </>
+    </div>
     
 
   )
