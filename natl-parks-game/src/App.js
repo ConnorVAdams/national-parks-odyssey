@@ -1,5 +1,6 @@
 import './App.css'
 import AnimalBoard from './AnimalBoard'
+import Book from './Book'
 import animals from './animalData'
 import Hangman from "./Hangman"
 
@@ -24,8 +25,9 @@ function App() {
   return (
     <div className="App">
         {/*<Game /> component for memory game.*/}
-        <AnimalBoard animals={animals} handleWin={handleWin} />
-        <Hangman />
+        {/* <AnimalBoard animals={animals} handleWin={handleWin} />
+        <Hangman /> */}
+        <Book />
     </div>
   );
 }
