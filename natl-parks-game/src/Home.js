@@ -4,9 +4,11 @@ import Rules from "./Rules"
 import ParkCard from './ParkCard'
 import Header from './Header'
 import NavButtons from "./NavButtons"
+import { useState, useEffect } from 'react'
 
 const Home = () => {
-  const 
+
+
   return (
     <div className='wrapper'>
       <Header />
