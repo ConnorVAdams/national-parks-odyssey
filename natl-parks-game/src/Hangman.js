@@ -16,7 +16,7 @@ function Hangman({parkObj}) {
     "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
     //temporary
-  const selectedPark = parkObj[0].attractions
+  const selectedPark = ["Attraction", "Attraction", "Attraction"]
 
   //reset game (with a loss)
   const reset = () => {
