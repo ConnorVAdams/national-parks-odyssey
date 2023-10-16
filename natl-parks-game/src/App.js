@@ -5,7 +5,7 @@ import animals from './animalData'
 import Hangman from "./Hangman"
 import Home from './Home'
 
-function App() {
+const App = () => {
 
   // //Score calculator specific to memory game
   // //TODO Can be generalized to calculate score for every game?
