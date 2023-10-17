@@ -3,8 +3,8 @@ import { createRoot } from "react-dom/client"
 import { Wrapper } from "@googlemaps/react-wrapper"
 import './ParkIcon.css'
 
-const ParkIcon = ({map, parks, google}) => {
-  const Marker = ({map, children, position}) => {
+const ParkIcon = ({map, parks, google, loadGame}) => {
+  const Marker = ({map, children, position, onClick}) => {
     //need to reconcile dom with jsx/react
     const markerRef = useRef();
     const rootRef = useRef();
@@ -26,12 +26,14 @@ const ParkIcon = ({map, parks, google}) => {
       rootRef.current.render(children)
       markerRef.current.position = position
       markerRef.current.map = map
+      const listener = markerRef.current.addListener("click", onClick)
+      return () => listener.remove() //cleanup function to remove all the events
     },[map, children, position])
   }
   return (
     <>
     {parks.map((park) => (
-      <Marker key={park.id} map={map} position={park.coordinates}>
+      <Marker key={park.id} map={map} position={park.coordinates} onClick={loadGame}>
         <div>
           <h2>{park.name}</h2>
         </div>

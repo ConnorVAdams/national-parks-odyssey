@@ -3,7 +3,7 @@ import { Wrapper } from "@googlemaps/react-wrapper"
 import ParkIcon from './ParkIcon';
 import parkObj from './TestData';
 
-function GoogleMap() {
+function GoogleMap({loadGame}) {
   const [map, setMap] = useState();
   const ref = useRef();
 
@@ -22,7 +22,7 @@ const mapOptions = {
   return (
     <>
      <div ref={ref} className='map' style={{ height: "100%", width: '100%' }}/>
-     {map && <ParkIcon map={map} parks={parkObj} google={window.google}/>}
+     {map && <ParkIcon map={map} parks={parkObj} google={window.google} loadGame={loadGame}/>}
     </>
   )
 }

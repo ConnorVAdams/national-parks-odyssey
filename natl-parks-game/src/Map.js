@@ -9,12 +9,15 @@ import GoogleMap from './GoogleMap'
 
 
 const Map = () => {
-
+  //test the callback
+  const loadGame = () => {
+    console.log("clicked")
+  }
   return (
     <>
       <div className='map' style={{ height: "100%", width: '100%' }}>
         <Wrapper apiKey="AIzaSyDluKUqWkz1grc2yKMFvax4DSK3_kc-Qjk" version="beta" libraries={["marker"]}>
-          <GoogleMap />
+          <GoogleMap loadGame={loadGame}/>
         </Wrapper>
         {/* <ParkIcon />
         <ParkCard />
