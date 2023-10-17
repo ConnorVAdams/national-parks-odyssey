@@ -19,6 +19,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Covering most of Mount Desert Island and other coastal islands, Acadia features the tallest mountain on the Atlantic coast of the United States, granite peaks, ocean shoreline, woodlands, and lakes. There are freshwater, estuary, forest, and intertidal habitats."
         },
         {
@@ -40,6 +41,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "The southernmost national park is on three Samoan islands in the South Pacific. It protects coral reefs, rainforests, volcanic mountains, and white beaches. The area is also home to flying foxes, brown boobies, sea turtles, and 900 species of fish."
         },
         {
@@ -61,6 +63,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "This site features more than 2,000 natural sandstone arches, with some of the most popular arches in the park being Delicate Arch, Landscape Arch and Double Arch Millions of years of erosion have created these structures in a desert climate where the arid ground has life-sustaining biological soil crusts and potholes that serve as natural water-collecting basins. Other geologic formations include stone pinnacles, fins, and balancing rocks."
         },
         {
@@ -82,6 +85,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "The Badlands are a collection of buttes, pinnacles, spires, and mixed-grass prairies within the drainage basin of the White River, in southwestern South Dakota. They contain the largest known assemblage of late Eocene and Oligocene mammal fossils. Wildlife includes bison, bighorn sheep, black-footed ferrets, and prairie dogs."
         },
         {
@@ -106,6 +110,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Named for the prominent bend in the Rio Grande along the U.S.-Mexico border, this park encompasses a large and remote part of the Chihuahuan Desert. Its main attraction is backcountry recreation in the arid Chisos Mountains and in canyons along the river. A wide variety of Cretaceous and Tertiary fossils as well as cultural artifacts of Native Americans also exist within its borders."
         },
         {
@@ -130,6 +135,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "The central part of Biscayne Bay, this mostly underwater park at the north end of the Florida Keys has four interrelated marine ecosystems: mangrove forest, the Bay, the Keys, and coral reefs. Threatened animals include the West Indian manatee, American crocodile, various sea turtles, and the peregrine falcon."
         },
         {
@@ -154,6 +160,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "The park protects a quarter of the Gunnison River, which slices sheer canyon walls from dark Precambrian-era rock. The canyon features some of the steepest cliffs and oldest rock in North America, and is a popular site for river rafting and rock climbing. The deep, narrow canyon is composed of gneiss and schist, which appears black when in shadow."
         },
         {
@@ -178,6 +185,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Bryce Canyon is a geological amphitheater on southern Utah's Paunsaugunt Plateau with hundreds of tall, multicolored sandstone hoodoos formed by erosion. The region was originally settled by Native Americans and later by Mormon pioneers."
         },
         {
@@ -202,6 +210,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "This landscape was eroded into a maze of canyons, buttes, and mesas by the combined efforts of the Colorado River, Green River, and their tributaries, which divide the park into three districts. The park contains thousands of rock pinnacles and arches, as well as artifacts from Ancient Pueblo peoples."
         },
         {
@@ -226,6 +235,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "The park's Waterpocket Fold is a 100-mile (160 km) monocline that exhibits the earth's diverse geologic layers. Other natural features include monoliths, eroded buttes, and sandstone domes, including one shaped like the United States Capitol."
         },
         {
@@ -250,6 +260,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Carlsbad Caverns has 117 caves, the longest of which is over 120 miles (190 km) long. The Big Room is almost 4,000 feet (1,200 m) long, and the caves are home to over 400,000 Mexican free-tailed bats and sixteen other species. Above ground are the Chihuahuan Desert and Rattlesnake Springs."
         },
         {
@@ -274,6 +285,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Five of the eight Channel Islands are protected, with half of the park's area underwater. The islands have a unique Mediterranean ecosystem originally settled by the Chumash people. They are home to over 2,000 species of land plants and animals, 145 endemic to them, including the island fox. Ferry services offer transportation to the islands from the mainland."
         },
         {
@@ -298,6 +310,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "On the Congaree River, this park is the largest portion of old-growth floodplain forest left in North America. Some of the trees are the tallest in the eastern United States. An elevated walkway called the Boardwalk Loop guides visitors through the swamp."
         },
         {
@@ -322,6 +335,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Crater Lake lies in the caldera of an ancient volcano called Mount Mazama that collapsed 7,700 years ago. The lake is the deepest in the United States and is noted for its vivid blue color and water clarity. Wizard Island and the Phantom Ship are more recent volcanic formations within the caldera. As the lake has no inlets or outlets, it is replenished only by precipitation."
         },
         {
@@ -370,6 +384,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Death Valley is the hottest, lowest, and driest place in the United States, with daytime temperatures that have exceeded 130 °F (54 °C). The park protects Badwater Basin and its vast salt flats at the lowest elevation in North America, -282 ft (-86 m),[36] This geologic graben also protects numerous canyons, badlands, sand dunes, mountain ranges, historic mines, springs, and more than 1,000 species of plants that grow."
         },
         {
@@ -416,6 +431,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "The islands of the Dry Tortugas, at the westernmost end of the Florida Keys, are the site of Fort Jefferson, a Civil War-era fort that is the largest masonry structure in the Western Hemisphere. The park is home to undisturbed coral reefs and shipwrecks, and is only accessible by plane or boat."
         },
         {
@@ -440,6 +456,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "The Everglades are the largest tropical wilderness in the United States. This mangrove and tropical rainforest ecosystem and marine estuary is home to 36 protected species, including the Florida panther, American crocodile, and West Indian manatee. Some areas have been drained and developed; restoration projects aim to restore the ecology."
         },
         {
@@ -464,6 +481,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "The country's northernmost park protects an expanse of pure wilderness in Alaska's Brooks Range and has no park facilities. The land is home to Alaska Natives who have relied on the land and caribou for 11,000 years."
         },
         {
@@ -487,6 +505,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "The Gateway Arch is a 630-foot (192 m) (both high and wide) catenary arch built in the 1960s to commemorate the Lewis and Clark Expedition, initiated by Thomas Jefferson, and the subsequent westward expansion of the country. The nearby Old Courthouse, across a greenway to the west of the arch, was the original site of the landmark Dred Scott case about slavery. An underground museum describes the arch's construction and the country's westward expansion."
         },
 
@@ -511,6 +530,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "This park is known for its massive glaciers, towering snow-capped mountains, and deep fjords. Visitors can witness calving glaciers, spot marine wildlife such as whales and seals, and explore the park's diverse ecosystems."
         },
         {
@@ -532,6 +552,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "The Grand Canyon, carved by the Colorado River, exposes layers of colorful rocks that reveal a geological story spanning millions of years. Visitors can enjoy breathtaking views from both the South Rim and North Rim, and engage in activities such as hiking and river rafting."
         },
         {
@@ -553,6 +574,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Home to the majestic Teton Range, this park offers stunning mountain landscapes, pristine lakes, and diverse ecosystems. Visitors can explore hiking trails, go wildlife spotting, and enjoy the breathtaking scenery."
         },
         {
@@ -574,6 +596,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Known for its ancient bristlecone pine trees and limestone caves, Great Basin National Park offers a unique blend of high mountain terrain and subterranean wonders. The park is a haven for stargazers due to its dark night skies."
         },
         {
@@ -595,6 +618,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Home to the tallest sand dunes in North America, this park features diverse landscapes including sand dunes, grasslands, and wetlands. Visitors can hike the dunes, splash in Medano Creek, and experience the unique ecosystems."
         },
         {
@@ -616,6 +640,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Known for its biodiversity, this park is a UNESCO World Heritage Site. It offers diverse plant and animal life, historical structures, and scenic beauty. Popular activities include hiking, wildlife viewing, and exploring historic sites."
         },
         {
@@ -637,6 +662,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Home to the highest peak in Texas, Guadalupe Mountains National Park showcases rugged mountains, canyons, and a fossilized reef. Hiking, camping, and stargazing are popular activities in this remote and beautiful park."
         },
         {
@@ -658,6 +684,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "The park encompasses the dormant Haleakalā Volcano, providing breathtaking landscapes, unique plant life, and cultural significance. Visitors can witness stunning sunrises, hike through lush forests, and explore volcanic landscapes."
         },
         {
@@ -679,6 +706,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Home to two of the world's most active volcanoes, this park showcases the power of natural forces. Visitors can witness volcanic activity, explore lava tubes, and experience the ever-changing landscapes shaped by volcanic forces."
         },
         {
@@ -700,6 +728,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Renowned for its thermal springs, this urban park offers historic bathhouses, scenic trails, and cultural attractions. Visitors can take a bath in the thermal waters, explore hiking trails, and enjoy the charming town of Hot Springs."
         },
         {
@@ -721,6 +750,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Located in the largest freshwater lake in the world, Lake Superior, Isle Royale National Park is known for its pristine wilderness. Visitors can explore the island's rugged coastline, hike, and observe diverse wildlife, including wolves and moose."
         },
         {
@@ -742,6 +772,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Famous for its otherworldly landscapes and iconic Joshua trees, this park offers unique rock formations, starry skies, and a variety of plant and animal life. Visitors can hike, rock climb, and stargaze in this desert wonderland."
         },
         {
@@ -763,6 +794,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Renowned for its brown bear population, Katmai National Park features diverse landscapes, including volcanoes and the Valley of Ten Thousand Smokes. Visitors can witness bears fishing for salmon, explore volcanic terrains, and enjoy pristine wilderness."
         },
         {
@@ -784,6 +816,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "This park showcases the stunning beauty of Alaskan fjords, glaciers, and icefields. Visitors can explore coastal landscapes, witness calving glaciers, and observe diverse wildlife such as whales, seals, and sea otters."
         },
         {
@@ -805,6 +838,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Known for its deep canyons and towering sequoias, Kings Canyon National Park offers diverse ecosystems and stunning mountain scenery. Popular activities include hiking, camping, and exploring the ancient groves of giant sequoias."
         },
         {
@@ -826,6 +860,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "Previously designated a national lakeshore, parts of this 20-mile (32 km) stretch of the southern shore of Lake Michigan have sandy beaches and tall dunes. The park includes grassy prairies, peat bogs, and marsh wetlands home to over 2,000 species."
         },
         {
@@ -847,6 +882,7 @@
           "wildlife": {},
           "quizQuestions": {},
           "gameWon": false,
+          "favorited": false,
           "description": "This park includes 26 rapidly receding glaciers and 130 named lakes surrounded by Rocky Mountain peaks. Historic hotels and the landmark Going-to-the-Sun Road accommodate visitors. The local mountains, formed by an overthrust, expose Paleozoic fossils including trilobites, mollusks, giant ferns and dinosaurs. The park is also home to Triple Divide Peak, which forms the boundary between the watersheds of the Atlantic, Pacific, and Arctic Oceans."
         },
         {
@@ -871,6 +907,7 @@
             "wildlife": {},
             "quizQuestions": {},
             "gameWon": false,
+            "favorited": false,
             "description": "Kobuk Valley protects 61 miles (98 km) of the Kobuk River and three regions of sand dunes. Created by glaciers, the Great Kobuk, Little Kobuk, and Hunt River Sand Dunes can reach 100 feet (30 m) high and 100 °F (38 °C), and they are the largest dunes in the Arctic. Twice a year, half a million caribou migrate through the dunes and across river bluffs that expose well-preserved ice age fossils."
         },
         {
@@ -895,6 +932,7 @@
             "wildlife": {},
             "quizQuestions": {},
             "gameWon": false,
+            "favorited": false,
             "description": "The region around Lake Clark features four active volcanoes, including Mount Redoubt, as well as an abundance of rivers, glaciers, and waterfalls. Temperate rainforests, a tundra plateau, and three mountain ranges complete the landscape."
         },
         {
@@ -919,6 +957,7 @@
             "wildlife": {},
             "quizQuestions": {},
             "gameWon": false,
+            "favorited": false,
             "description": "Lassen Peak, the largest lava dome volcano in the world, is joined by all three other types of volcanoes in this park: shield, cinder cone, and composite. Though Lassen itself last erupted in 1915, most of the rest of the park is continuously active. Numerous hydrothermal features, including fumaroles, boiling pools, and bubbling mud pots, are heated by molten rock from beneath the peak."
         },
         {
@@ -943,6 +982,7 @@
             "wildlife": {},
             "quizQuestions": {},
             "gameWon": false,
+            "favorited": false,
             "description": "With more than 400 miles (640 km) of passageways explored, Mammoth Cave is the world's longest known cave system. Subterranean wildlife includes eight bat species, Kentucky cave shrimp, Northern cavefish, and cave salamanders. Above ground, the park provides recreation on the Green River, 70 miles of hiking trails, and plenty of sinkholes and springs."
         },
         {
@@ -967,6 +1007,7 @@
             "wildlife": {},
             "quizQuestions": {},
             "gameWon": false,
+            "favorited": false,
             "description": "This area constitutes over 4,000 archaeological sites of the Ancestral Puebloan people, who lived here and elsewhere in the Four Corners region for at least 700 years. Cliff dwellings built in the 12th and 13th centuries include Cliff Palace, which has 150 rooms and 23 kivas, and the Balcony House, with its many passages and tunnels."
         },
         {
@@ -991,6 +1032,7 @@
             "wildlife": {},
             "quizQuestions": {},
             "gameWon": false,
+            "favorited": false,
             "description": "Mount Rainier, an active stratovolcano, is the most prominent peak in the Cascades and is covered by 26 named glaciers including Carbon Glacier and Emmons Glacier, the longest and largest in the contiguous United States respectively. The mountain is popular for climbing, and more than half of the park is covered by subalpine and alpine forests and meadows seasonally in bloom with wildflowers. Paradise on the south slope is among the snowiest places on Earth.[89] The Longmire visitor center is the start of the Wonderland Trail, which encircles the mountain."
         },    
         {
@@ -1015,6 +1057,7 @@
             "wildlife": {},
             "quizQuestions": {},
             "gameWon": false,
+            "favorited": false,
             "description": "The New River Gorge is the deepest river gorge east of the Mississippi River. The park primarily covers the lower gorge area around the New River Gorge Bridge, which features some of the country's best whitewater rafting. Smaller noncontiguous sections showcase the ghost town of Thurmond, the scenic Grandview vista, and Sandstone Falls. The other 65,165 acres (263.71 km2) of the redesignated national river is now a national preserve, spanning 53 mi (85 km) of the New River."
         },
         {
@@ -1039,6 +1082,7 @@
             "wildlife": {},
             "quizQuestions": {},
             "gameWon": false,
+            "favorited": false,
             "description": "The highly glaciated mountains of the North Cascades Range exhibit a spectacular and complex geologic history. Between the river valleys and high peaks there are eight diverse life zones with 75 mammal and 1,600 vascular plant species. Popular hiking and climbing areas of the Stephen Mather Wilderness include Cascade Pass, Mount Shuksan, Mount Triumph, and Eldorado Peak. Ross Lake and Lake Chelan National Recreation Areas adjoin the two segments of the park and are all administered together."
         },    
         {
@@ -1063,6 +1107,7 @@
             "wildlife": {},
             "quizQuestions": {},
             "gameWon": false,
+            "favorited": false,
             "description": "This park on the Olympic Peninsula includes a wide range of ecosystems from Pacific shoreline to temperate rainforests to the glaciated alpine peaks of the Olympic Mountains, the tallest of which is Mount Olympus. The Hoh and Quinault Rainforests are the wettest areas in the contiguous United States, with the Hoh receiving an average of almost 12 ft (3.7 m) of rain every year."
         },
         {
@@ -1087,6 +1132,7 @@
             "wildlife": {},
             "quizQuestions": {},
             "gameWon": false,
+            "favorited": false,
             "description": "This portion of the Chinle Formation has a large concentration of 225-million-year-old petrified wood. The surrounding Painted Desert features eroded cliffs of red-hued volcanic rock called bentonite. Dinosaur fossils and over 350 Native American sites are also protected in this park."
         },    
         {
@@ -1111,6 +1157,7 @@
             "wildlife": {},
             "quizQuestions": {},
             "gameWon": false,
+            "favorited": false,
             "description": "Named for the eroded leftovers of a portion of an extinct volcano, the park's massive black and gold monoliths of andesite and rhyolite are a popular destination for rock climbers. Hikers have access to trails crossing the Coast Range wilderness. The park is one of the few locations where the endangered California condor can be seen in the wild. Pinnacles also supports a dense population of prairie falcons and more than 13 species of bat that populate its talus caves."
         },
         {
@@ -1135,6 +1182,7 @@
             "wildlife": {},
             "quizQuestions": {},
             "gameWon": false,
+            "favorited": false,
             "description": "This park and the co-managed state parks protect almost half of all remaining coastal redwoods, the tallest trees on earth. There are three large river systems in this very seismically active area, and 37 miles (60 km) of protected coastline reveal tide pools and seastacks. The prairie, estuary, coast, river, and forest ecosystems contain a wide variety of animal and plant species."
         },
         {
@@ -1159,6 +1207,7 @@
             "wildlife": {},
             "quizQuestions": {},
             "gameWon": false,
+            "favorited": false,
             "description": "Bisected north to south by the Continental Divide, this portion of the Rockies has ecosystems varying from over 150 riparian lakes to montane and subalpine forests to treeless alpine tundra. Wildlife including elk, moose, mule deer, bighorn sheep, black bears, and cougars inhabit its igneous mountains and glacial valleys. Longs Peak, a classic Colorado fourteener, and the scenic Bear Lake are popular destinations, as well as the historic Trail Ridge Road, which reaches an elevation of more than 12,000 feet (3,700 m)."
         },
         {
@@ -1183,6 +1232,7 @@
             "wildlife": {},
             "quizQuestions": {},
             "gameWon": false,
+            "favorited": false,
             "description": "Split into the separate Rincon Mountain and Tucson Mountain districts, this park is evidence that the dry Sonoran Desert is still home to a great variety of life spanning six biotic communities. Beyond the namesake giant saguaro cacti, there are barrel cacti, chollas, and prickly pears, as well as lesser long-nosed bats, spotted owls, and javelinas."
         }, 
         {
@@ -1207,6 +1257,7 @@
         "wildlife": {},
         "quizQuestions": {},
         "gameWon": false,
+        "favorited": false,
         "description": "This park protects the Giant Forest, which boasts some of the world's largest trees, the General Sherman being the largest measured tree in the park. Other features include over 240 caves, a long segment of the Sierra Nevada including the tallest mountain in the contiguous United States, and Moro Rock, a large granite dome."
     },
     {
@@ -1231,6 +1282,7 @@
         "wildlife": {},
         "quizQuestions": {},
         "gameWon": false,
+        "favorited": false,
         "description": "Shenandoah's Blue Ridge Mountains are covered by hardwood forests that teem with a wide variety of wildlife. The Skyline Drive and Appalachian Trail run the entire length of this narrow park, along with more than 500 miles (800 km) of hiking trails passing scenic overlooks and cataracts of the Shenandoah River."
     },
     {
@@ -1255,6 +1307,7 @@
         "wildlife": {},
         "quizQuestions": {},
         "gameWon": false,
+        "favorited": false,
         "description": "This region that enticed and influenced President Theodore Roosevelt consists of a park of three units in the northern badlands. Besides Roosevelt's historic cabin, there are numerous scenic drives and backcountry hiking opportunities. Wildlife includes American bison, pronghorn, bighorn sheep, and wild horses."
     },
     {
@@ -1279,6 +1332,7 @@
         "wildlife": {},
         "quizQuestions": {},
         "gameWon": false,
+        "favorited": false,
         "description": "This island park on Saint John preserves pristine beaches surrounded by mangrove forests, seagrass beds, and coral reefs. It also has Taíno archaeological sites and the ruins of sugar plantations from Columbus's time."
     },
     {
@@ -1303,6 +1357,7 @@
         "wildlife": {},
         "quizQuestions": {},
         "gameWon": false,
+        "favorited": false,
         "description": "This park protecting four lakes near the Canada–US border is a site for canoeing, kayaking, and fishing. The park also preserves a history populated by Ojibwe Native Americans, French fur traders called voyageurs, and gold miners. Formed by glaciers, the region features tall bluffs, rock gardens, islands, bays, and several historic buildings."
     },
     {
@@ -1327,6 +1382,7 @@
         "wildlife": {},
         "quizQuestions": {},
         "gameWon": false,
+        "favorited": false,
         "description": "Located in the mountain-ringed Tularosa Basin, White Sands consists of the southern part of a 275-square-mile (710 km2) field of white sand dunes composed of gypsum crystals—the world's largest gypsum dunefield. The park is completely within the White Sands Missile Range and is subject to closure when tests are conducted."
     },
     {
@@ -1351,6 +1407,7 @@
         "wildlife": {},
         "quizQuestions": {},
         "gameWon": false,
+        "favorited": false,
         "description": "Wind Cave is distinctive for its calcite fin formations called boxwork, a unique formation rarely found elsewhere, and needle-like growths called frostwork. It is one of the longest caves in the world and creates a wind as air pressure changes. Above ground is a mixed-grass prairie with animals such as bison, black-footed ferrets, and prairie dogs and ponderosa pine forests home to cougars and elk.[113] The cave is culturally significant to the Lakota people as a creation site."
     },
     {
@@ -1375,6 +1432,7 @@
         "wildlife": {},
         "quizQuestions": {},
         "gameWon": false,
+        "favorited": false,
         "description": "Situated on the Yellowstone Caldera, the park has an expansive network of geothermal areas including boiling mud pots, vividly colored hot springs such as Grand Prismatic Spring, and regularly erupting geysers, the best-known being Old Faithful. The yellow-hued Grand Canyon of the Yellowstone River contains several high waterfalls, and four mountain ranges traverse the park. More than 60 mammal species including timber wolves, grizzly bears, black bears, lynxes, bison, and elk make this park one of the best wildlife viewing spots in the country."
     },
     {
@@ -1399,6 +1457,7 @@
         "wildlife": {},
         "quizQuestions": {},
         "gameWon": false,
+        "favorited": false,
         "description": "Yosemite features sheer granite cliffs, exceptionally tall waterfalls, and old-growth forests at a unique intersection of geology and hydrology. Half Dome and El Capitan rise from the park's centerpiece, the glacier-carved Yosemite Valley, and from its vertical walls drop Yosemite Falls, one of North America's tallest waterfalls at 2,425 feet (739 m) high. Three giant sequoia groves, along with a pristine wilderness in the heart of the Sierra Nevada, are home to a wide variety of rare plant and animal species."
     },
     {
@@ -1423,6 +1482,7 @@
         "wildlife": {},
         "quizQuestions": {},
         "gameWon": false,
+        "favorited": false,
         "description": "Located at the junction of the Colorado Plateau, Great Basin, and Mojave Desert, this park contains sandstone features such as mesas, rock towers, and canyons, including the Virgin River Narrows. The various sandstone formations and the forks of the Virgin River create a wilderness divided into four ecosystems: desert, riparian, woodland, and coniferous forest."
         }
   ]
