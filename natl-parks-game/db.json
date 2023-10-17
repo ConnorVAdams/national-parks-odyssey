@@ -1067,7 +1067,7 @@
       "id": 62,
       "name": "Yosemite National Park",
       "year": 1890,
-      "location": "California",
+      "location": ["California"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg/1280px-Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg",
       "coordinates": [
           37.83,
@@ -1092,7 +1092,7 @@
       "id": 63,
       "name": "Zion National Park",
       "year": 1919,
-      "location": "Utah",
+      "location": ["Utah"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Zion_angels_landing_view.jpg/284px-Zion_angels_landing_view.jpg",
       "coordinates": [
           44.35,
