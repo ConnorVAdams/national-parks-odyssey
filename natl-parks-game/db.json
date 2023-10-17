@@ -493,6 +493,363 @@
         
 
         {
+          "id": 22,
+          "name": "Glacier Bay National Park",
+          "year": 1980,
+          "location": "Alaska",
+          "coordinates": [58.5, 137],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Muir_Inlet_Glacier_Bay.jpg/200px-Muir_Inlet_Glacier_Bay.jpg",
+          "attractions": [
+            "Muir Glacier",
+            "Johns Hopkins Glacier",
+            "Lamplugh Glacier",
+            "Grand Pacific Glacier"
+          ],
+          "link": "https://www.nps.gov/glba/index.htm",
+          "visitors": 545758,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "This park is known for its massive glaciers, towering snow-capped mountains, and deep fjords. Visitors can witness calving glaciers, spot marine wildlife such as whales and seals, and explore the park's diverse ecosystems."
+        },
+        {
+          "id": 23,
+          "name": "Grand Canyon National Park",
+          "year": 1919,
+          "location": "Arizona",
+          "coordinates": [36.06, -112.14],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Grand_Canyon_%28south_rim%29_%28september_2005%29.jpg/200px-Grand_Canyon_%28south_rim%29_%28september_2005%29.jpg",
+          "attractions": [
+            "South Rim",
+            "North Rim",
+            "Havasu Falls",
+            "Bright Angel Trail"
+          ],
+          "link": "https://www.nps.gov/grca/index.htm",
+          "visitors": 4732101,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "The Grand Canyon, carved by the Colorado River, exposes layers of colorful rocks that reveal a geological story spanning millions of years. Visitors can enjoy breathtaking views from both the South Rim and North Rim, and engage in activities such as hiking and river rafting."
+        },
+        {
+          "id": 24,
+          "name": "Grand Teton National Park",
+          "year": 1929,
+          "location": "Wyoming",
+          "coordinates": [43.73, -110.80],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Teton_Range_from_Glacier_View_Turnout_%282%29.jpg/200px-Teton_Range_from_Glacier_View_Turnout_%282%29.jpg",
+          "attractions": [
+            "Grand Teton",
+            "Jackson Hole",
+            "Jenny Lake",
+            "Cascade Canyon"
+          ],
+          "link": "https://www.nps.gov/grte/index.htm",
+          "visitors": 2806223,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Home to the majestic Teton Range, this park offers stunning mountain landscapes, pristine lakes, and diverse ecosystems. Visitors can explore hiking trails, go wildlife spotting, and enjoy the breathtaking scenery."
+        },
+        {
+          "id": 25,
+          "name": "Great Basin National Park",
+          "year": 1986,
+          "location": "Nevada",
+          "coordinates": [38.98, -114.30],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Great_Basin_NP_-_Bristlecone_Pine_Forest.jpg/200px-Great_Basin_NP_-_Bristlecone_Pine_Forest.jpg",
+          "attractions": [
+            "Wheeler Peak",
+            "Lehman Caves",
+            "Bristlecone Pine Forest",
+            "Lexington Arch"
+          ],
+          "link": "https://www.nps.gov/grba/index.htm",
+          "visitors": 142115,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Known for its ancient bristlecone pine trees and limestone caves, Great Basin National Park offers a unique blend of high mountain terrain and subterranean wonders. The park is a haven for stargazers due to its dark night skies."
+        },
+        {
+          "id": 26,
+          "name": "Great Sand Dunes National Park",
+          "year": 2004,
+          "location": "Colorado",
+          "coordinates": [37.73, -105.51],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Great_Sand_Dunes_-_750px.jpg/200px-Great_Sand_Dunes_-_750px.jpg",
+          "attractions": [
+            "Star Dune",
+            "High Dune",
+            "Medano Creek",
+            "Zapata Falls"
+          ],
+          "link": "https://www.nps.gov/grsa/index.htm",
+          "visitors": 493428,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Home to the tallest sand dunes in North America, this park features diverse landscapes including sand dunes, grasslands, and wetlands. Visitors can hike the dunes, splash in Medano Creek, and experience the unique ecosystems."
+        },
+        {
+          "id": 27,
+          "name": "Great Smoky Mountains National Park",
+          "year": 1934,
+          "location": "North Carolina & Tennessee",
+          "coordinates": [35.68, -83.53],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Clingmans_Dome.jpg/200px-Clingmans_Dome.jpg",
+          "attractions": [
+            "Clingmans Dome",
+            "Cades Cove",
+            "Roaring Fork Motor Nature Trail",
+            "Alum Cave Trail"
+          ],
+          "link": "https://www.nps.gov/grsm/index.htm",
+          "visitors": 12937633,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Known for its biodiversity, this park is a UNESCO World Heritage Site. It offers diverse plant and animal life, historical structures, and scenic beauty. Popular activities include hiking, wildlife viewing, and exploring historic sites."
+        },
+        {
+          "id": 28,
+          "name": "Guadalupe Mountains National Park",
+          "year": 1966,
+          "location": "Texas",
+          "coordinates": [31.92, -104.87],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/El_Capitan_%28Texas%29_%28cropped%29.jpg/200px-El_Capitan_%28Texas%29_%28cropped%29.jpg",
+          "attractions": [
+            "Guadalupe Peak",
+            "McKittrick Canyon",
+            "Salt Basin Dunes",
+            "Frijole Ranch"
+          ],
+          "link": "https://www.nps.gov/gumo/index.htm",
+          "visitors": 219987,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Home to the highest peak in Texas, Guadalupe Mountains National Park showcases rugged mountains, canyons, and a fossilized reef. Hiking, camping, and stargazing are popular activities in this remote and beautiful park."
+        },
+        {
+          "id": 29,
+          "name": "Haleakalā National Park",
+          "year": 1916,
+          "location": "Hawaii",
+          "coordinates": [20.72, -156.17],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Haleakal%C4%81_National_Park_Sunset_Overlook_%28%27%C5%8Ci%27%C5%8Ci_and_Kaho%CA%BBolawe%29.jpg/200px-Haleakal%C4%81_National_Park_Sunset_Overlook_%28%27%C5%8Ci%27%C5%8Ci_and_Kaho%CA%BBolawe%29.jpg",
+          "attractions": [
+            "Haleakalā Crater",
+            "Pipiwai Trail",
+            "Hosmer Grove",
+            "Hana Highway"
+          ],
+          "link": "https://www.nps.gov/hale/index.htm",
+          "visitors": 1087616,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "The park encompasses the dormant Haleakalā Volcano, providing breathtaking landscapes, unique plant life, and cultural significance. Visitors can witness stunning sunrises, hike through lush forests, and explore volcanic landscapes."
+        },
+        {
+          "id": 30,
+          "name": "Hawaii Volcanoes National Park",
+          "year": 1916,
+          "location": "Hawaii",
+          "coordinates": [19.41, -155.28],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Hawaii_Volcanoes_National_Park%2C_Hawaii_%2820133835071%29.jpg/200px-Hawaii_Volcanoes_National_Park%2C_Hawaii_%2820133835071%29.jpg",
+          "attractions": [
+            "Kīlauea Caldera",
+            "Mauna Loa",
+            "Thurston Lava Tube",
+            "Chain of Craters Road"
+          ],
+          "link": "https://www.nps.gov/havo/index.htm",
+          "visitors": 1580961,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Home to two of the world's most active volcanoes, this park showcases the power of natural forces. Visitors can witness volcanic activity, explore lava tubes, and experience the ever-changing landscapes shaped by volcanic forces."
+        },
+        {
+          "id": 31,
+          "name": "Hot Springs National Park",
+          "year": 1832,
+          "location": "Arkansas",
+          "coordinates": [34.52, -93.04],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/HSP_Central_Ave_April_2012.jpg/200px-HSP_Central_Ave_April_2012.jpg",
+          "attractions": [
+            "Bathhouse Row",
+            "Hot Springs Mountain",
+            "Grand Promenade",
+            "Quapaw Baths"
+          ],
+          "link": "https://www.nps.gov/hosp/index.htm",
+          "visitors": 2646133,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Renowned for its thermal springs, this urban park offers historic bathhouses, scenic trails, and cultural attractions. Visitors can take a bath in the thermal waters, explore hiking trails, and enjoy the charming town of Hot Springs."
+        },
+        {
+          "id": 32,
+          "name": "Isle Royale National Park",
+          "year": 1940,
+          "location": "Michigan",
+          "coordinates": [47.99, -88.88],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/GRTE_7-2008_wolf_and_moose.jpg/200px-GRTE_7-2008_wolf_and_moose.jpg",
+          "attractions": [
+            "Rock Harbor",
+            "Moose Flats",
+            "Scoville Point",
+            "Isle Royale Lighthouse"
+          ],
+          "link": "https://www.nps.gov/isro/index.htm",
+          "visitors": 25454,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Located in the largest freshwater lake in the world, Lake Superior, Isle Royale National Park is known for its pristine wilderness. Visitors can explore the island's rugged coastline, hike, and observe diverse wildlife, including wolves and moose."
+        },
+        {
+          "id": 33,
+          "name": "Joshua Tree National Park",
+          "year": 1994,
+          "location": "California",
+          "coordinates": [33.79, -115.90],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Joshua_Tree_National_Park_%28NHp%29.jpg/200px-Joshua_Tree_National_Park_%28NHp%29.jpg",
+          "attractions": [
+            "Skull Rock",
+            "Keys View",
+            "Cholla Cactus Garden",
+            "Joshua Tree Scenic Drive"
+          ],
+          "link": "https://www.nps.gov/jotr/index.htm",
+          "visitors": 3058294,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Famous for its otherworldly landscapes and iconic Joshua trees, this park offers unique rock formations, starry skies, and a variety of plant and animal life. Visitors can hike, rock climb, and stargaze in this desert wonderland."
+        },
+        {
+          "id": 34,
+          "name": "Katmai National Park",
+          "year": 1980,
+          "location": "Alaska",
+          "coordinates": [58.50, -155.00],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Katmai_National_Park_and_Preserve_-_brochure.jpg/200px-Katmai_National_Park_and_Preserve_-_brochure.jpg",
+          "attractions": [
+            "Valley of Ten Thousand Smokes",
+            "Brooks Falls",
+            "Mount Katmai",
+            "Hallo Bay"
+          ],
+          "link": "https://www.nps.gov/katm/index.htm",
+          "visitors": 33908,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Renowned for its brown bear population, Katmai National Park features diverse landscapes, including volcanoes and the Valley of Ten Thousand Smokes. Visitors can witness bears fishing for salmon, explore volcanic terrains, and enjoy pristine wilderness."
+        },
+        {
+          "id": 35,
+          "name": "Kenai Fjords National Park",
+          "year": 1980,
+          "location": "Alaska",
+          "coordinates": [59.92, -149.65],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Kenai_Fjords_NP_exit_glacier.jpg/200px-Kenai_Fjords_NP_exit_glacier.jpg",
+          "attractions": [
+            "Exit Glacier",
+            "Kenai Fjords",
+            "Harding Icefield",
+            "Resurrection Bay"
+          ],
+          "link": "https://www.nps.gov/kefj/index.htm",
+          "visitors": 389943,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "This park showcases the stunning beauty of Alaskan fjords, glaciers, and icefields. Visitors can explore coastal landscapes, witness calving glaciers, and observe diverse wildlife such as whales, seals, and sea otters."
+        },
+        {
+          "id": 36,
+          "name": "Kings Canyon National Park",
+          "year": 1940,
+          "location": "California",
+          "coordinates": [36.80, -118.55],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Kings_Canyon_View.jpg/200px-Kings_Canyon_View.jpg",
+          "attractions": [
+            "General Grant Grove",
+            "Kings Canyon Scenic Byway",
+            "Rae Lakes",
+            "Zumwalt Meadow"
+          ],
+          "link": "https://www.nps.gov/seki/index.htm",
+          "visitors": 640986,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Known for its deep canyons and towering sequoias, Kings Canyon National Park offers diverse ecosystems and stunning mountain scenery. Popular activities include hiking, camping, and exploring the ancient groves of giant sequoias."
+        },
+        {
+          "id": 37,
+          "name": "Indiana Dunes",
+          "year": 2019,
+          "location": "Indiana",
+          "coordinates": [41.65, 87.05],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/2010-11-26_3060x2040_portage_indiana_dunes.jpg/400px-2010-11-26_3060x2040_portage_indiana_dunes.jpg",
+          "attractions": [
+            "Mount Baldy",
+            "Lake Michigan Beach",
+            "Porter Beach",
+            "Cowles Bog Trail"
+          ],
+          "link": "https://www.nps.gov/indu/index.htm",
+          "visitors": 2834180,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "Previously designated a national lakeshore, parts of this 20-mile (32 km) stretch of the southern shore of Lake Michigan have sandy beaches and tall dunes. The park includes grassy prairies, peat bogs, and marsh wetlands home to over 2,000 species."
+        },
+        {
+          "id": 38,
+          "name": "Waterton-Glacier International Peace Park",
+          "year": 1910,
+          "location": "Montana",
+          "coordinates": [48.80, 114.00],
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mountain_Goat_at_Hidden_Lake.jpg/400px-Mountain_Goat_at_Hidden_Lake.jpg",
+          "attractions": [
+            "Going-to-the-Sun Road",
+            "Logan Pass",
+            "Lake McDonald",
+            "Grinnell Glacier"
+          ],
+          "link": "https://www.nps.gov/glac/index.htm",
+          "visitors": 2908458,
+          "pointValue": 0,
+          "wildlife": {},
+          "quizQuestions": {},
+          "gameWon": false,
+          "description": "This park includes 26 rapidly receding glaciers and 130 named lakes surrounded by Rocky Mountain peaks. Historic hotels and the landmark Going-to-the-Sun Road accommodate visitors. The local mountains, formed by an overthrust, expose Paleozoic fossils including trilobites, mollusks, giant ferns and dinosaurs. The park is also home to Triple Divide Peak, which forms the boundary between the watersheds of the Atlantic, Pacific, and Arctic Oceans."
+        },
+        {
             "id": 39,
             "name": "Kobuk Valley National Park",
             "year": 1980,
