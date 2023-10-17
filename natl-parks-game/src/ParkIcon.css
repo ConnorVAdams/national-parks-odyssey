@@ -1,8 +1,56 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
 .marker {
-  padding: 0.5rem;
-  background: black;
-  transition: all 0.3s ease-out;
+  width: auto;
+  height: auto;
+  margin: auto;
+  border-radius: 6px 22px;
+  transition: all .2s ease;
+  box-sizing: border-box;
+  text-align: center;
+  background: rgb(197, 108, 57);
+  color: rgb(255,255,255);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 14px 0;
+  overflow: hidden;
+}
+
+.marker:hover {
+  border-radius: 22px 6px;
+  background: rgb(46, 204, 113);
+  cursor: pointer;
+}
+
+.marker--trees {
+  background: rgb(39, 174, 96);
+}
+
+.marker--trees:hover {
+  background: rgb(46, 204, 113);
+  padding: 10px;
+}
+
+.fa-tree {
   position: relative;
-  width: 100px;
-  border-radius: 5px;
+  transition: all .2s ease;
+  top: 15px;
+}
+
+.fa-tree.tree-one {
+  font-size: 14px;
+}
+
+.fa-tree.tree-two {
+  transition-delay: .07s;
+}
+
+.fa-tree.tree-three {
+  transition-delay: .14s;
+  font-size: 14px;
+}
+
+.marker:hover .fa-tree {
+  top: 3px;
 }

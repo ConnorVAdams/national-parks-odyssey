@@ -34,9 +34,8 @@ const ParkIcon = ({map, parks, google, loadGame}) => {
     <>
     {parks.map((park) => (
       <Marker key={park.id} map={map} position={park.coordinates} onClick={loadGame}>
-        <div class="marker">
-          <h2>Welcome to</h2>
-          <h2>{park.name}</h2>
+        <div>
+          <h2 className="marker">{park.name}</h2>
         </div>
       </Marker>
     ))}
