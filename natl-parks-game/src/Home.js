@@ -16,8 +16,8 @@ const Home = () => {
       <div className='game-info' />
       {/* ^ Turn this into component if stretch goals are met, includes Leaderboard and GameInfo/Stats. */}
       <div className='main-container'>
-        <Book />
-        {/* <Map /> */}
+        {/* <Book /> */}
+        <Map />
         {/* <Rules /> */}
       </div>
       <div className='carousel'>
