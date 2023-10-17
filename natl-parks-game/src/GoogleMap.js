@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Wrapper } from "@googlemaps/react-wrapper"
+import ParkIcon from './ParkIcon';
+import parkObj from './TestData';
 
 function GoogleMap() {
   const [map, setMap] = useState();
   const ref = useRef();
 
 //contains map object styling and view on initial load
-  const mapOptions = {
+const mapOptions = {
     mapId: 'bd65f4eb7088841f',
     center: { lat: 37.09, lng: -95.71 }, //where to start
     zoom: 4, //how much to initially zoom
@@ -18,9 +20,10 @@ function GoogleMap() {
   },[])
 
   return (
-    <div ref={ref} className='map' style={{ height: "100%", width: '100%' }}>
-
-    </div>
+    <>
+     <div ref={ref} className='map' style={{ height: "100%", width: '100%' }}/>
+     {map && <ParkIcon map={map} parks={parkObj}/>}
+    </>
   )
 }
 
