@@ -1,0 +1,8 @@
+.marker {
+  padding: 0.5rem;
+  background: black;
+  transition: all 0.3s ease-out;
+  position: relative;
+  width: 100px;
+  border-radius: 5px;
+}
