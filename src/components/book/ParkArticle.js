@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react'
 import { BiBookHeart as AddFaveIcon } from 'react-icons/bi'
 import { BiSolidBookHeart as RemoveFaveIcon } from 'react-icons/bi'
 
-const ParkArticle = ({ id, name, year, location, coordinates, image, attractions, link, visitors, wildlife, gameWon, description, favorited }) => {
+const ParkArticle = ({ park }) => {
+  const { id, name, year, location, coordinates, image, attractions, link, visitors, wildlife, gameWon, description, favorited } = park
   const [currentInfo, setCurrentInfo] = useState(null)
 
   const displayInfo = ({ target: { name } }) => {

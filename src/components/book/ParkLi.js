@@ -6,10 +6,7 @@ import { BiSolidBookHeart as RemoveFaveIcon } from 'react-icons/bi'
 const ParkLi = ({ id, name, year, location, link, image, gameWon, favorited, displayPark }) => {
   
   const handleClick = (id) => {
-    console.log(id)
-    fetch(`http://localhost:3000/parkObj/${id}`)
-    .then(resp => resp.json())
-    .then(data => displayPark(data))
+    displayPark(id)
   }
 
   return (

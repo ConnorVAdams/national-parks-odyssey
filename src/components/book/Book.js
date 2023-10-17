@@ -7,22 +7,21 @@ import NavButtons from '../nav/NavButtons.js'
 
 const Book = () => {
   const { parks }= useOutletContext()
-  // const [parks, setParks] = useState([])
-  // const [currentPark, setcurrentPark] = useState({})
+  const [currentPark, setCurrentPark] = useState([])
 
-  // const fetchAllParks = () => {
-  //   fetch(URL)
-  //   .then(resp => resp.json())
-  //   .then(data => setParks(data))
-  // }
+  const displayPark = (id) => {
+    fetch(`http://localhost:3000/parkObj/${id}`)
+    .then(resp => resp.json())
+    .then(data => setCurrentPark(data)) 
+  }
 
-  // useEffect(() => {
-  //   fetchAllParks()
-  // }, [])
+  useEffect(() => {
+    fetch(`http://localhost:3000/parkObj/1`)
+    .then(resp => resp.json())
+    .then(data => setCurrentPark(data)) 
+  }, [])
 
-  // const displayPark = (parkObj) => {
-  //   setcurrentPark(parkObj)
-  // }
+  console.log(currentPark)
 
   return (
     <>
@@ -30,8 +29,8 @@ const Book = () => {
       <div className='book'>
           <Search parks={parks}/>
         <div className='book-bottom'>
-          <ParkList parks={parks}/>
-          <ParkArticle  />
+          <ParkList parks={parks} displayPark={displayPark} />
+          <ParkArticle park={currentPark} />
         </div>
       </div>
     </>
