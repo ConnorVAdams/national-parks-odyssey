@@ -7,14 +7,16 @@ function GoogleMap() {
 
 //contains map object styling and view on initial load
   const mapOptions = {
-    mapId: process.env.NEXT_PUBLIC_GOOGLE_MAP_ID,
-    center: { lat: 37.09, lng: 95.71 },
-    zoom: 10,
+    mapId: 'bd65f4eb7088841f',
+    center: { lat: 37.09, lng: -95.71 }, //where to start
+    zoom: 4, //how much to initially zoom
     disableDefaultUI: true,
   }
+
  useEffect(() => {
     setMap(new window.google.maps.Map(ref.current, mapOptions))
   },[])
+
   return (
     <div ref={ref} className='map' style={{ height: "100%", width: '100%' }}>
 

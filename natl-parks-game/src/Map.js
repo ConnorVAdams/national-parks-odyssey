@@ -13,7 +13,7 @@ const Map = () => {
   return (
     <>
       <div className='map' style={{ height: "100%", width: '100%' }}>
-        <Wrapper apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY} version="beta" libraries={["marker"]}>
+        <Wrapper apiKey="AIzaSyDluKUqWkz1grc2yKMFvax4DSK3_kc-Qjk" version="beta" libraries={["marker"]}>
           <GoogleMap />
         </Wrapper>
         {/* <ParkIcon />
