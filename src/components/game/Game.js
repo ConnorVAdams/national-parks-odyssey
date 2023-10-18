@@ -3,15 +3,14 @@ import { Outlet, useOutletContext, useNavigate, useLocation } from "react-router
 
 
 const Game = () => {
+  const { handleWin } = useOutletContext()
+  const navigate = useNavigate()
+  const locationData = useLocation()
   const [currentGameData, setCurrentGameData] = useState({
     park: {},
     id: 0,
     path: ''
   })
-  const { handleWin } = useOutletContext()
-  const navigate = useNavigate()
-
-  const locationData = useLocation()
 
   useEffect(() => {
     fetch(`http://localhost:3000/parkObj/${locationData.state.id}`)
@@ -33,10 +32,11 @@ const Game = () => {
     navigate('/')
   }, 180000)
 
+  //TODO Route protection
   // useEffect(() => {
   //   if (!id) {
   //     navigate('/')
-  //     //TODO select a park msg
+  // Alert user to 'select a park' msg
   //   }
   // })
 
