@@ -8,7 +8,7 @@ import GoogleMap from './GoogleMap'
 const Map = () => {
   const navigate = useNavigate()
   const {parks} = useOutletContext()
-  
+
   //test the callback
   const loadGame = () => {
     //Provide three possible game paths.
@@ -20,10 +20,10 @@ const Map = () => {
 
   return (
     <>
-      <div onClick={loadGame} className='map' style={{ height: "100%", width: '100%' }}>
-        {/* <Wrapper apiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY} version="beta" libraries={["marker"]}>
+      <div className='map' style={{ height: "100%", width: '100%' }}>
+        <Wrapper apiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY} version="beta" libraries={["marker"]}>
           <GoogleMap loadGame={loadGame} parks={parks}/>
-        </Wrapper> */}
+        </Wrapper>
       </div>
     </>
   )

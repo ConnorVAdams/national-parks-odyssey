@@ -24,7 +24,7 @@ const mapOptions = {
   return (
     <>
      <div ref={ref} style={{ height: "100%", width: '100%' }}/>
-     {map && <ParkIcon map={map} parks={parkObj} google={window.google} loadGame={loadGame}/>}
+     {map && <ParkIcon map={map} parks={parks} google={window.google} loadGame={loadGame}/>}
     </>
   )
 }
