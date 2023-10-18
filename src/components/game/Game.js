@@ -48,6 +48,7 @@ const Game = () => {
     <div className="game">
       <button onClick={() => navigate('/')} className="return-home-button">X</button>
       <button onClick={() => navigate(path)} className="restart-game-button">Restart Game</button>
+      {/* Should we allow user to choose a different type of game without returning to Home? */}
       {/* Destructure whatever park.property props you need for your game above and feed them to the context below:  */}
       <Outlet context={{ handleWin }}/>
       {/* <NotifyBar /> */}
