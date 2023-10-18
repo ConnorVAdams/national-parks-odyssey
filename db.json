@@ -902,7 +902,7 @@
         "location": ["Indiana"],
         "coordinates": {
           "lat": 41.65,
-          "lng": 87.05
+          "lng": -87.05
         },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/2010-11-26_3060x2040_portage_indiana_dunes.jpg/400px-2010-11-26_3060x2040_portage_indiana_dunes.jpg",
         "attractions": [
@@ -927,7 +927,7 @@
         "location": ["Montana"],
         "coordinates": {
           "lat": 48.80,
-          "lng": 114.00
+          "lng": -114.00
         },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mountain_Goat_at_Hidden_Lake.jpg/400px-Mountain_Goat_at_Hidden_Lake.jpg",
         "attractions": [
@@ -1527,8 +1527,8 @@
       "location": ["Utah"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Zion_angels_landing_view.jpg/284px-Zion_angels_landing_view.jpg",
       "coordinates": {
-        "lat": 44.35,
-        "lng": -68.21
+        "lat": 37.30,
+        "lng": -113.03
       },
       "attractions": [
           "Angel's Landing",
