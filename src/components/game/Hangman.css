@@ -3,7 +3,7 @@
 /* CSS */
 .letter {
   align-self: center;
-  background-color: #074b06;
+  background-color: #A4A89F;
   background-image: none;
   background-position: 0 90%;
   background-repeat: repeat no-repeat;
@@ -30,6 +30,8 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  border-color: #638da8;
+  margin: 2px;
 }
 
 .letter:hover {
@@ -50,9 +52,11 @@
 /* hangman container formatting */
 
 .hangman-container div{
-  align-self: center;
-  padding: 30px;
-  background-color: brown;
+
+  padding: 40px;
+  background-color: #354a20;
+  border-radius: 20px/30px;
+  border: 5px solid #595126
 }
 .hangman-container p{
   text-align: center;
