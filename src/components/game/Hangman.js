@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { useOutletContext } from "react-router-dom";
 import "./Hangman.css"
 
-function Hangman({handleWin}) {
+function Hangman() {
+  const { handleWin } = useOutletContext()
+
   const [randomAttraction, setRandomAttraction] = useState("")
   const [correctGuesses, setCorrectGuesses] = useState([])
   const [wrongGuesses, setWrongGuesses] = useState([])
