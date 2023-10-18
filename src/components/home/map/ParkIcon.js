@@ -17,7 +17,8 @@ const ParkIcon = ({map, parks, google, loadGame}) => {
         //need advanced marker
         markerRef.current = new google.maps.marker.AdvancedMarkerView({
           position,
-          content: container
+          content: container,
+          collisionBehavior: "OPTIONAL_AND_HIDES_LOWER_PRIORITY"
         })
       }
     }, [])
@@ -26,8 +27,13 @@ const ParkIcon = ({map, parks, google, loadGame}) => {
       rootRef.current.render(children)
       markerRef.current.position = position
       markerRef.current.map = map
+
+      //add listener
       const listener = markerRef.current.addListener("click", onClick)
-      return () => listener.remove() //cleanup function to remove all the events
+
+      return () => { //cleanup function to remove all the events
+        listener.remove()
+      }
     },[map, children, position])
   }
   return (
