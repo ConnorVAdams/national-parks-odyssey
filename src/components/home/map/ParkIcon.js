@@ -39,7 +39,7 @@ const ParkIcon = ({map, parks, google, loadGame}) => {
   return (
     <>
     {parks.map((park) => (
-      <Marker key={park.id} map={map} position={park.coordinates} onClick={loadGame}>
+      <Marker key={park.id} map={map} position={park.coordinates} onClick={() => loadGame(park.id)}>
         <div >
           <h2 className="marker">
             <i className="fa fa-tree tree-one"></i>
