@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import { Outlet, useOutletContext, useNavigate, useLocation } from "react-router-dom"
 import GameNav from "../nav/GameNav"
-import animals from './animalData.js'
 
 const Game = () => {
   const { handleWin } = useOutletContext()
@@ -40,14 +39,14 @@ const Game = () => {
   //   }
   // })
 
-  const { park: { attractions }, id, path } = currentGameData
+  const { park: { attractions, wildlife }, id, path } = currentGameData
 
   return (
     <div className="game">
       {/* Should we allow user to choose a different type of game without returning to Home? */}
       {/* Destructure whatever park.property props you need for your game above and feed them to the context below:  */}
       <GameNav path={path} />
-      <Outlet context={{ handleWin, attractions, animals }}/>
+      <Outlet context={{ handleWin, attractions, wildlife }}/>
       {/* <NotifyBar /> */}
     </div>
   )
