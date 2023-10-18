@@ -28,6 +28,3 @@ const mapOptions = {
 }
 
 export default GoogleMap
-
-
-// { lat: 37.09, lng: -95.71 }

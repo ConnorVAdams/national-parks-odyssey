@@ -35,7 +35,7 @@ h3 {
 
 .map {
   grid-area: 3/2/5/3;
-  /* border: 2px solid blueviolet; */
+  border: 2px solid blueviolet;
 }
 
 .rules {
