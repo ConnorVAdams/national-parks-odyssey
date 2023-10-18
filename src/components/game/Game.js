@@ -31,6 +31,10 @@ const Game = ({ restartGame }) => {
 
   console.log(currentGameData)
 
+  //TODO Timer
+
+  //TODO handleWin
+
   //TODO Route protection
   // useEffect(() => {
   //   if (!id) {

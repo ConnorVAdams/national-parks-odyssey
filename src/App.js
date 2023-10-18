@@ -10,6 +10,7 @@ const URL = 'http://localhost:3000/parkObj'
 
 function App() {
 const [parks, setParks] = useState([])
+const [points, setPoints] = useState(0)
 
 const fetchAllParks = () => {
   fetch(URL)
@@ -39,7 +40,7 @@ useEffect(() => {
 
   return (
     <div className='wrapper'>
-      <Header />
+      <Header points={points} />
       <Outlet context={{ parks, handleWin }} />
       <Footer />
     </div>
