@@ -16,9 +16,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "env-cmd -f .env.local react-scripts start",
-    "build:staging": "env-cmd -f .env.local react-scripts build",
-    "build:production": "env-cmd -f .env.production react-scripts build",
+    "start": "react-scripts start",
+ 
     "eject": "react-scripts eject",
     "server": "json-server --watch db.json"
   },
