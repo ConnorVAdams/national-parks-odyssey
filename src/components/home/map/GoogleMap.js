@@ -16,12 +16,14 @@ const mapOptions = {
   }
 
  useEffect(() => {
-    setMap(new window.google.maps.Map(ref.current, mapOptions))
+
+      setMap(new window.google.maps.Map(ref.current, mapOptions))
+
   },[])
 
   return (
     <>
-     <div ref={ref} className='map' style={{ height: "100%", width: '100%' }}/>
+     <div ref={ref} style={{ height: "100%", width: '100%' }}/>
      {map && <ParkIcon map={map} parks={parkObj} google={window.google} loadGame={loadGame}/>}
     </>
   )
