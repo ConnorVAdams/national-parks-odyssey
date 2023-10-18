@@ -10,13 +10,12 @@ const Game = () => {
   const locationData = useLocation()
   const { state: { id, path } } = locationData
 
-  const initiateGame = (id) => {
+  useEffect(() => {
     fetch(`http://localhost:3000/parkObj/${id}`)
     .then(resp => resp.json())
     .then(data => setCurrentPark(data)) 
-  }
+  }, [])
 
-  initiateGame(id)
   console.log(id, path, currentPark)
 
   //User gets 3 minutes to play game before being navigated back to home

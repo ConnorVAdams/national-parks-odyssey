@@ -70,7 +70,7 @@ const MemoryGame = () => {
 
     //Create unique deck for game on first render.
     useEffect(() => {
-        setShuffledDeck(duplicateCards(shuffleDeck(randomSlice(animals, easy))))
+        setShuffledDeck(shuffleDeck(duplicateCards(randomSlice(animals, easy))))
     }, [])
 
     //Re-enable pointer events after every turn.
