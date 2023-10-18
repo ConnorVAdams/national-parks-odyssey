@@ -54,6 +54,7 @@ const MemoryGame = () => {
             setShuffledDeck(current => current.map(animal => animal.name === name ? { ...animal, found: true } : animal))
         } else if (count % 2 !== 0) {
             //If it's not a match, give user 1.4 secs to digest both animals, but disable pointer events so user cannot reveal more tiles, then rest clickedName and re-render.
+            //TODO Fix this query selection to be more React
             document.querySelector('.animal-board').classList.add('disabled')
             setTimeout(() => {
                 setClickedName('')

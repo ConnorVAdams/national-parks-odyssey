@@ -23,7 +23,7 @@ const AnimalTile = ({ img, name, fact, id, found, handleSelectAnimal, count }) =
             onClick={clickHandle}
         >
             <>
-            {!back ? null : <img src={img} alt={img} />}
+            {back ? null : <img src={img} alt={img} />}
             {found ? <p>{fact}</p> : null}
             </>
         </div>
