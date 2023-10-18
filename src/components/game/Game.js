@@ -25,6 +25,7 @@ const Game = () => {
 
   return (
     <div className="game">
+      <button className="return-home-button">X</button>
       <Outlet context={{ handleWin }}/>
     </div>
   )
