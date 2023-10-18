@@ -1,6 +1,7 @@
 const Search = ({ parks }) => {
   
   const makeStateFilters =() => {
+    
     let stateOptions =[]
     parks.map(park => {
       const states = park.location
