@@ -1,23 +1,22 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
+import {  } from "react-router-dom"
 import { Outlet, useOutletContext, useNavigate, useLocation } from "react-router-dom"
 
 
 const Game = () => {
-  const [currentPark, setCurrentPark] = useState({})
   const { handleWin } = useOutletContext()
   const navigate = useNavigate()
 
-  const locationData = useLocation()
-  const { state: { id, path } } = locationData
+  const location = useLocation()
+  const { state: { id, path } } = location
 
   const initiateGame = (id) => {
     fetch(`http://localhost:3000/parkObj/${id}`)
     .then(resp => resp.json())
-    .then(data => setCurrentPark(data)) 
+    .then(data => console.log(data)) 
   }
-
-  initiateGame(id)
-  console.log(id, path, currentPark)
+  console.log(id, path)
+  // const currentParkObj = initiateGame(passedId)
 
   //User gets 3 minutes to play game before being navigated back to home
   setTimeout(() => {
@@ -25,19 +24,17 @@ const Game = () => {
     navigate('/')
   }, 180000)
 
-  // useEffect(() => {
-  //   if (!id) {
-  //     navigate('/')
-  //     //TODO select a park msg
-  //   }
-  // })
-
-  const { location, wildlife, attractions } = currentPark
+  useEffect(() => {
+    if (!id) {
+      navigate('/')
+      //TODO select a park msg
+    }
+  })
 
   return (
     <div className="game">
       <button className="return-home-button">X</button>
-      <Outlet context={{ handleWin, wildlife, location, attractions }}/>
+      <Outlet context={{ handleWin }}/>
     </div>
   )
 }
