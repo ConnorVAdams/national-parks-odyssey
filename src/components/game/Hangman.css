@@ -52,7 +52,7 @@
 .hangman-container div{
   align-self: center;
   padding: 30px;
-  background-color: yellow;
+  background-color: brown;
 }
 .hangman-container p{
   text-align: center;
