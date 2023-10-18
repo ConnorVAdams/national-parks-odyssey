@@ -21,8 +21,6 @@ const Book = () => {
     .then(data => setCurrentPark(data)) 
   }, [])
 
-  console.log(currentPark)
-
   return (
     <>
       <NavButtons />

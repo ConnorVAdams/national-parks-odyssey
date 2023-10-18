@@ -56,7 +56,8 @@ const ParkArticle = ({ park }) => {
             <h4><a href={link} target='_blank'>{name}</a></h4>
           </div>
           {!gameWon ? (
-            <span className='map-card'>{coordinates}</span>
+            //TODO Figure out how to destructure new coordinates and get Google Map on the page.
+            <span className='map-card'>Map</span>
           ) : ( null
             // <ParkCard/> 
           )}
