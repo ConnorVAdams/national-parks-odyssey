@@ -47,3 +47,13 @@
   border-color: inherit;
   cursor: not-allowed;
 }
+/* hangman container formatting */
+
+.hangman-container div{
+  align-self: center;
+  padding: 30px;
+  background-color: yellow;
+}
+.hangman-container p{
+  text-align: center;
+}

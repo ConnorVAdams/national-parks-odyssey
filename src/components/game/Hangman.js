@@ -102,10 +102,12 @@ useEffect(() => {
   const hiddenWord = randomAttraction.split('').map(letter =>
     correctGuesses.includes(letter) ? letter : "_").join(" ");
 
-  return <div>
+  return <div className="hangman-container">
     <p>{hiddenWord}</p>
     <p>{progress()}</p>
-    {renderButtons()}
+    <div>
+      {renderButtons()}
+    </div>
     {renderStatus()}
   </div>
 }
