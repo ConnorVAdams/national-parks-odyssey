@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react'
-import { useOutletContext } from 'react-router-dom'
+import { useOutletContext, useNavigate } from 'react-router-dom'
 import { Wrapper } from "@googlemaps/react-wrapper"
 import GoogleMap from './GoogleMap'
 
@@ -7,9 +7,11 @@ import GoogleMap from './GoogleMap'
 
 const Map = () => {
   const {parks} = useOutletContext()
-  //test the callback
+  const navigate = useNavigate();
+
+  //navigate to new route for game
   const loadGame = () => {
-    console.log("clicked")
+    navigate("/game")
   }
   return (
     <>
