@@ -13,7 +13,7 @@ const Game = () => {
   const initiateGame = (id) => {
     fetch(`http://localhost:3000/parkObj/${id}`)
     .then(resp => resp.json())
-    .then(data => setCurrentPark(data)) 
+    .then(data => setCurrentPark(data))
   }
 
   initiateGame(id)
@@ -23,7 +23,7 @@ const Game = () => {
   setTimeout(() => {
     //TODO Display 'Sorry, you ran out of time!' message to user.
     navigate('/')
-  }, 180000)
+  }, 180000000) //oldvalue was 180000
 
   // useEffect(() => {
   //   if (!id) {
