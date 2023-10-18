@@ -3,7 +3,7 @@ import { useOutletContext } from "react-router-dom";
 import "./Hangman.css"
 
 function Hangman() {
-  const { handleWin } = useOutletContext()
+  const { handleWin, attractions } = useOutletContext()
 
   const [randomAttraction, setRandomAttraction] = useState("")
   const [correctGuesses, setCorrectGuesses] = useState([])
@@ -15,12 +15,9 @@ function Hangman() {
     "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R",
     "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
-    //temporary
-  const selectedPark = ["Attraction", "Attraction", "Attraction"]
-
   //reset game (with a loss)
   const reset = () => {
-    randomElement(selectedPark)
+    randomElement(attractions)
     setCorrectGuesses((resets) => [])
     setWrongGuesses((resets) => [])
     setStatus("")
@@ -35,9 +32,9 @@ function Hangman() {
   }
   //run the function, but will be triggered with useEffect when something is clicked
   useEffect(() => {
-    console.log('useEffect triggered')
-    randomElement(selectedPark)
-  }, [selectedPark])
+    console.log(attractions)
+    // randomElement(attractions)
+  }, [attractions])
 
  //handle click
  const handleClick = (letter) => {
