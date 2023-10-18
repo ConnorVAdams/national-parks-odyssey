@@ -21,21 +21,6 @@ useEffect(() => {
   fetchAllParks()
 }, [])
 
-const patchPark = (id) => {
-  fetch(`http://localhost:3000/parkObj/${id}`, {
-    method: 'PATCH',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      wildlife: animals
-    })
-  })
-  .then(resp => resp.json())
-}
-
-parks.map(park => patchPark(park.id))
-
 //Score calculator specific to memory game
   //TODO Can be generalized to calculate score for every game?
   const calculateScore = (finalTime, finalCount) => {

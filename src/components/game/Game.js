@@ -2,34 +2,34 @@ import { useEffect, useState } from "react"
 import { Outlet, useOutletContext, useNavigate, useLocation } from "react-router-dom"
 import GameNav from "../nav/GameNav"
 
-const Game = () => {
+const Game = ({ restartGame }) => {
   const { handleWin } = useOutletContext()
   const navigate = useNavigate()
   const locationData = useLocation()
   const [currentGameData, setCurrentGameData] = useState({
-    park: {},
-    id: 0,
-    path: ''
+    gamePark: {},
+    gameId: 0,
+    gamePath: ''
   })
 
-  useEffect(() => { 
-    fetch(`http://localhost:3000/parkObj/${locationData.state.id}`)
+  const startGame = (id, path) => {
+    console.log(id, path)
+    fetch(`http://localhost:3000/parkObj/${id}`)
     .then(resp => resp.json())
     .then(data => {
 
     setCurrentGameData(current => ({...current,
-      park: data,
-      id: locationData.state.id,
-      path: locationData.state.path
+      gamePark: data,
+      gameId: id,
+      gamePath: path
     }))
-  })}, [])
+  })}
+
+  useEffect(() => { 
+    startGame(locationData.state.id, locationData.state.path)
+ }, [])
 
   console.log(currentGameData)
-
-  //User gets 3 minutes to play game before being navigated back to home
-  setTimeout(() => {
-    //add disabled class, 
-  }, 2000)
 
   //TODO Route protection
   // useEffect(() => {
@@ -39,13 +39,15 @@ const Game = () => {
   //   }
   // })
 
-  const { park: { attractions, wildlife }, id, path } = currentGameData
+  const { gamePark: { attractions, wildlife }, gameId, gamePath } = currentGameData
 
   return (
     <div className="game">
+      {/* <GameNav path={path}/> */}
+      <button onClick={restartGame}>Retry</button>
+      <button onClick={() => navigate('../')}>Return to Map</button>
       {/* Should we allow user to choose a different type of game without returning to Home? */}
       {/* Destructure whatever park.property props you need for your game above and feed them to the context below:  */}
-      <GameNav path={path} />
       <Outlet context={{ handleWin, attractions, wildlife }}/>
       {/* <NotifyBar /> */}
     </div>
