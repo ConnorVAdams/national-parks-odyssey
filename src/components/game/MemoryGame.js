@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react'
 import { useOutletContext } from 'react-router-dom'
 import MemoryTile from './MemoryTile'
-import animals from './animalData.js'
 import './MemoryGame.css'
 
 const MemoryGame = () => {
-    const { handleWin } = useOutletContext()
+    const { handleWin, animals } = useOutletContext()
 
     //count variable keeps track of number of turns player has taken, with an odd numbered count being the middle of a turn and an even number being the end of a turn.
     const [count, setCount] = useState(0)

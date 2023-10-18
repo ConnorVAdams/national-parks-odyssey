@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { Outlet, useOutletContext, useNavigate, useLocation } from "react-router-dom"
-
+import GameNav from "../nav/GameNav"
+import animals from './animalData.js'
 
 const Game = () => {
   const { handleWin } = useOutletContext()
@@ -12,7 +13,7 @@ const Game = () => {
     path: ''
   })
 
-  useEffect(() => {
+  useEffect(() => { 
     fetch(`http://localhost:3000/parkObj/${locationData.state.id}`)
     .then(resp => resp.json())
     .then(data => {
@@ -28,9 +29,8 @@ const Game = () => {
 
   //User gets 3 minutes to play game before being navigated back to home
   setTimeout(() => {
-    //TODO Display 'Sorry, you ran out of time!' message to user.
-    navigate('/')
-  }, 180000)
+    //add disabled class, 
+  }, 2000)
 
   //TODO Route protection
   // useEffect(() => {
@@ -40,17 +40,14 @@ const Game = () => {
   //   }
   // })
 
-  // const { location, wildlife, attractions } = currentPark
-
-  const { park, id, path } = currentGameData
+  const { park: { attractions }, id, path } = currentGameData
 
   return (
     <div className="game">
-      <button onClick={() => navigate('/')} className="return-home-button">X</button>
-      <button onClick={() => navigate(path)} className="restart-game-button">Restart Game</button>
       {/* Should we allow user to choose a different type of game without returning to Home? */}
       {/* Destructure whatever park.property props you need for your game above and feed them to the context below:  */}
-      <Outlet context={{ handleWin }}/>
+      <GameNav path={path} />
+      <Outlet context={{ handleWin, attractions, animals }}/>
       {/* <NotifyBar /> */}
     </div>
   )
