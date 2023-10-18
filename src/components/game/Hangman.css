@@ -1,9 +1,9 @@
-
+@import url(https://fonts.googleapis.com/css2?family=Bahianita&family=Roboto+Condensed&display=swap);
 
 /* CSS */
 .letter {
   align-self: center;
-  background-color: #074b06;
+  background-color: #A4A89F;
   background-image: none;
   background-position: 0 90%;
   background-repeat: repeat no-repeat;
@@ -16,8 +16,8 @@
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: Neucha, sans-serif;
-  font-size: 1rem;
+  font-family: 'Bahianita', sans-serif;
+  font-size: 1.5rem;
   line-height: 23px;
   outline: none;
   padding: .75rem;
@@ -30,6 +30,8 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  border-color: #638da8;
+  margin: 2px;
 }
 
 .letter:hover {
@@ -46,4 +48,18 @@
   animation: none;
   border-color: inherit;
   cursor: not-allowed;
+}
+/* hangman container formatting */
+
+.hangman-container div{
+  padding: 40px;
+  background-color: #354a20;
+  border-radius: 20px/30px;
+  border: 5px solid #595126
+}
+.hangman-container p{
+  text-align: center;
+  font-family: 'Bahianita', sans-serif;
+  font-size:xx-large;
+  letter-spacing: 1px;
 }
