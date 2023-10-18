@@ -19,7 +19,7 @@ h3 {
 
 .wrapper {
   display: grid;
-  grid-template-rows: 3fr 1fr 14fr 10fr 1fr;
+  grid-template-rows: 3fr 1fr 8fr 8fr 1fr;
   grid-template-columns: 1fr 3fr 1fr;
   height: 100vh;
   grid-gap: 8px;
@@ -35,6 +35,7 @@ h3 {
 
 .map {
   grid-area: 3/2/5/3;
+  border-color: blueviolet;
 }
 
 .rules {
@@ -272,7 +273,7 @@ h3 {
   flex-direction: column;
   row-gap: 3px;
   max-height: 500px;
-  flex: 1; 
+  flex: 1;
   overflow: auto;
 }
 
