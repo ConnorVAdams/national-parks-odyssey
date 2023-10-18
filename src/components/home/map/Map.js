@@ -8,13 +8,14 @@ import GoogleMap from './GoogleMap'
 const Map = () => {
   const navigate = useNavigate()
   const {parks} = useOutletContext()
+  
   //test the callback
   const loadGame = () => {
-    console.log("clicked")
     //Provide three possible game paths.
     const games = ['/game/memory', '/game/hangman', '/game/arrow-game']
     const randomPath = games[Math.floor(Math.random() * games.length)]
-    navigate(randomPath)
+    navigate(randomPath, { state: 3 })
+    //TODO ^ Make this dynamic based on clicked ParkIcon's id
   }
 
   return (
