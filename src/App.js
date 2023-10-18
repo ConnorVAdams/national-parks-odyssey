@@ -4,11 +4,13 @@ import { Outlet } from "react-router-dom"
 import Header from './components/nav/Header'
 import Footer from './components/nav/Footer'
 import './App.css'
+import animals from './components/game/animalData.js'
 
 const URL = 'http://localhost:3000/parkObj'
 
 function App() {
 const [parks, setParks] = useState([])
+const [points, setPoints] = useState(0)
 
 const fetchAllParks = () => {
   fetch(URL)
@@ -38,7 +40,7 @@ useEffect(() => {
 
   return (
     <div className='wrapper'>
-      <Header />
+      <Header points={points} />
       <Outlet context={{ parks, handleWin }} />
       <Footer />
     </div>
