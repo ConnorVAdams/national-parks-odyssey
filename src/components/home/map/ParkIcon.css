@@ -12,13 +12,69 @@
   box-sizing: border-box;
   background: rgb(197, 108, 57);
   border: 3px outset rgb(111, 73, 48);
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: x-small;
   padding: 7px;
   height: auto;
   width: auto;
+  overflow: hidden;
+}
+
+.marker:hover {
+  border-radius: 10px/20px;
+  background: rgb(33, 58, 27);
+  border: 3px inset rgb(86, 144, 58);
+  cursor: pointer;
+}
+
+.fa-tree {
+  position: relative;
+  align-items: center;
+  transition: all .2s ease;
+}
+
+.fa-tree.tree-one {
+  font-size: 14px;
+}
+
+.fa-tree.tree-two {
+  transition-delay: .07s;
+}
+
+.fa-tree.tree-three {
+  transition-delay: .14s;
+}
+
+.fa-tree.tree-four {
+  transition-delay: .14s;
+  font-size: 14px;
+}
+
+.marker:hover .fa-tree {
+  top: 3px;
+  transform: rotate(20deg)
+}
+/* .marker {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px/20px;
+  transition: all .2s ease;
+  box-sizing: border-box;
+  background: rgb(197, 108, 57);
+  border: 3px outset rgb(111, 73, 48);
+  color: rgb(255,255,255);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: x-small;
+  padding: 7px 5px 12px 5px;
+  height: auto;
+  width: auto;
+  overflow: hidden;
 }
 
 
@@ -30,15 +86,16 @@
 }
 
 .fa-tree {
-  position:absolute;
+  position: absolute;
   align-items: center;
   transition: all .2s ease;
-  top: 11px;
-
+  top: 25px;
+  text-align: center;
 }
 
 .fa-tree.tree-one {
   font-size: 14px;
+  position: absolute;
 }
 
 .fa-tree.tree-two {
@@ -53,4 +110,4 @@
 .marker:hover .fa-tree {
   top: 3px;
   transform: rotate(20deg)
-}
+} */
