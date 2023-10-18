@@ -9,7 +9,7 @@ const Header = ({ points }) => {
         <h1 className='title'>Untitled National Parks Game</h1>
       </div>
       <div className='point-container'>
-        <h2>{points} points</h2>
+        <h2>{points !== undefined ? `${points} points` : null}</h2>
       </div>
     </div>
   )
