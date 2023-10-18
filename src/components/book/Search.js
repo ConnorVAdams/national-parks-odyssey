@@ -5,8 +5,7 @@ const Search = ({ parks }) => {
     parks.map(park => {
       const states = park.location
       states.map(state => {
-        if (stateOptions.includes(state)) {
-        } else {
+        if (!stateOptions.includes(state)) {
           stateOptions = [...stateOptions, state]
         }
       })
