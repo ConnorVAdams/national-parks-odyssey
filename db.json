@@ -5,7 +5,8 @@
         "name": "Acadia National Park",
         "year": 1919,
         "location": ["Maine"],
-        "coordinates": [44.35, 68.21],
+        "coordinates": {"lat": 44.35, "lng": -68.21
+        },
         "image": "https://www.nps.gov/npgallery/GetAsset/5AB22F47-1DD8-B71B-0B3EF03E4B8E6E79/proxy/lores.jpg",
         "attractions": [
           "Cadillac Mountain",
@@ -27,7 +28,10 @@
         "name": "American Samoa National Park",
         "year": 1988,
         "location": ["American Samoa"],
-        "coordinates": [14.25, 170.68],
+        "coordinates": {
+          "lat": 14.25,
+          "lng": -170.68
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Ofu_Beach_American_Samoa_US_National_Park_Service.jpg/200px-Ofu_Beach_American_Samoa_US_National_Park_Service.jpg",
         "attractions": [
           "Ta'ū Island",
@@ -49,7 +53,10 @@
         "name": "Arches National Park",
         "year": 1971,
         "location": ["Utah"],
-        "coordinates": [38.68, 109.57],
+        "coordinates": {
+          "lat": 38.68,
+          "lng": -109.57
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/USA_Arches_NP_Delicate_Arch%281%29.jpg/200px-USA_Arches_NP_Delicate_Arch%281%29.jpg",
         "attractions": [
           "Delicate Arch",
@@ -71,7 +78,10 @@
         "name": "Badlands National Park",
         "year": 1978,
         "location": ["South Dakota"],
-        "coordinates": [43.75,102.50],
+        "coordinates": {
+          "lat": 43.75,
+          "lng": -102.50
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Golden_Glow_Canyon.jpg/200px-Golden_Glow_Canyon.jpg",
         "attractions": [
           "Chihuahuan Desert",
@@ -93,10 +103,10 @@
         "name": "Big Bend National Park",
         "year": 1944,
         "location": ["Texas"],
-        "coordinates": [
-          29.25,
-          103.25
-        ],
+        "coordinates": {
+          "lat": 29.25,
+          "lng": -103.25
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/On_the_Border_%2839960085292%29.jpg/200px-On_the_Border_%2839960085292%29.jpg",
         "attractions": [
           "Santa Elena Canyon",
@@ -118,10 +128,10 @@
         "name": "Biscayne National Park",
         "year": 1980,
         "location": ["Florida"],
-        "coordinates": [
-          26.65,
-          80.08
-        ],
+        "coordinates": {
+          "lat": 26.65,
+          "lng": -80.08
+        },
         "image": "https://www.nps.gov/common/uploads/grid_builder/bisc/crop16_9/D85099D1-1DD8-B71B-0BCB85721A0B789D.jpg?width=640&quality=90&mode=crop",
         "attractions": [
           "Biscayne Bay",
@@ -143,10 +153,10 @@
         "name": "Black Canyon of the Gunnison National Park",
         "year": 1999,
         "location": ["Colorado"],
-        "coordinates": [
-          38.57,
-          107.72
-        ],
+        "coordinates": {
+          "lat": 38.57,
+          "lng": -107.72
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Black_canyon_gunnison_Colorado.jpg/200px-Black_canyon_gunnison_Colorado.jpg",
         "attractions": [
           "Painted Wall",
@@ -168,10 +178,10 @@
         "name": "Bryce Canyon",
         "year": 1928,
         "location": ["Utah"],
-        "coordinates": [
-          37.57,
-          112.18
-        ],
+        "coordinates": {
+          "lat": 37.57,
+          "lng": -112.18
+        },
         "image": "https://www.nps.gov/common/uploads/grid_builder/brca/crop16_9/714287D9-B886-247C-84147D225AB0BDC5.jpg?width=640&quality=90&mode=crop",
         "attractions": [
           "Inspiration Point",
@@ -193,10 +203,10 @@
         "name": "Canyonlands National Park",
         "year": 1964,
         "location": ["Utah"],
-        "coordinates": [
-          38.2,
-          109.93
-        ],
+        "coordinates": {
+          "lat": 38.2,
+          "lng": -109.93
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Canyonlands_National_Park%E2%80%A6Needles_area_%286294480744%29.jpg/200px-Canyonlands_National_Park%E2%80%A6Needles_area_%286294480744%29.jpg",
         "attractions": [
           "Island in the Sky",
@@ -218,10 +228,10 @@
         "name": "Capitol Reef National Park",
         "year": 1971,
         "location": ["Utah"],
-        "coordinates": [
-          38.2,
-          111.17
-        ],
+        "coordinates": {
+          "lat": 38.2,
+          "lng": -111.17
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Cassidy_Arch%2C_Capitol_Reef_National_Park.JPG/200px-Cassidy_Arch%2C_Capitol_Reef_National_Park.JPG",
         "attractions": [
           "Waterpocket Fold",
@@ -243,10 +253,10 @@
         "name": "Carlsbad Caverns National Park",
         "year": 1930,
         "location": ["New Mexico"],
-        "coordinates": [
-          32.17,
-          104.44
-        ],
+        "coordinates": {
+          "lat": 32.17,
+          "lng": -104.44
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Carlsbad_Caverns.jpg/200px-Carlsbad_Caverns.jpg",
         "attractions": [
           "Carlsbad Cavern",
@@ -268,10 +278,10 @@
         "name": "Channel Islands National Park",
         "year": 1980,
         "location": ["California"],
-        "coordinates": [
-          34.01,
-          119.42
-        ],
+        "coordinates": {
+          "lat": 34.01,
+          "lng": -119.42
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Santa_Cruz_Island_CA_DSC_4323_ad.JPG/200px-Santa_Cruz_Island_CA_DSC_4323_ad.JPG",
         "attractions": [
           "Anapaca Island - Arch Rock",
@@ -293,10 +303,10 @@
         "name": "Congaree National Park",
         "year": 2003,
         "location": ["South Carolina"],
-        "coordinates": [
-          33.78,
-          80.78
-        ],
+        "coordinates": {
+          "lat": 33.78,
+          "lng": -80.78
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Bald_cypress_and_creek_%287166139814%29.jpg/200px-Bald_cypress_and_creek_%287166139814%29.jpg",
         "attractions": [
           "Boardwalk Loop Trail",
@@ -318,10 +328,10 @@
         "name": "Crater Lake",
         "year": 1902,
         "location": ["Oregon"],
-        "coordinates": [
-          42.94,
-          122.1
-        ],
+        "coordinates": {
+          "lat": 42.94,
+          "lng": -122.1
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Crater_Lake_winter_pano2.jpg/200px-Crater_Lake_winter_pano2.jpg",
         "attractions": [
           "Mount Mazama",
@@ -343,10 +353,10 @@
         "name": "Cuyahoga Valley National Park",
         "year": 2000,
         "location": ["Ohio"],
-        "coordinates": [
-          41.24,
-          81.55
-        ],
+        "coordinates": {
+          "lat": 41.24,
+          "lng": -81.55
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Cuyahoga_Valley_National_Park.jpg/284px-Cuyahoga_Valley_National_Park.jpg",
         "attractions": [
           "Brandywine Falls",
@@ -368,10 +378,10 @@
         "name": "Death Valley National Park",
         "year": 1994,
         "location": ["California", "Nevada"],
-        "coordinates": [
-          36.24,
-          116.82
-        ],
+        "coordinates": {
+          "lat": 36.24,
+          "lng": -116.82
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Isolated_Desert.jpg/200px-Isolated_Desert.jpg",
         "attractions": [
           "Badwater Basin",
@@ -393,10 +403,10 @@
         "name": "Denali National Park",
         "year": 1917,
         "location": ["Alaska"],
-        "coordinates": [
-          63.33,
-          150.5
-        ],
+        "coordinates": {
+          "lat": 63.33,
+          "lng": -150.5
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wonder_Lake_and_Denali.jpg/200px-Wonder_Lake_and_Denali.jpg",
         "attractions": [
           "Denali Mountain",
@@ -418,10 +428,10 @@
         "name": "Dry Tortugas National Park",
         "year": 1992,
         "location": ["Florida"],
-        "coordinates": [
-          24.63,
-          82.87
-        ],
+        "coordinates": {
+          "lat": 24.63,
+          "lng": -82.87
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Fort-Jefferson_Dry-Tortugas.jpg/200px-Fort-Jefferson_Dry-Tortugas.jpg",
         "attractions": [
           "Fort Jefferson",
@@ -441,10 +451,10 @@
         "name": "Everglades National Park",
         "year": 1934,
         "location": ["Florida"],
-        "coordinates": [
-          25.32,
-          80.93
-        ],
+        "coordinates": {
+          "lat": 25.32,
+          "lng": -80.93
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Pinelands_Sunrise_%281%29_NPSPhoto%2C_Sarah_Zenner_%289255147763%29.jpg/200px-Pinelands_Sunrise_%281%29_NPSPhoto%2C_Sarah_Zenner_%289255147763%29.jpg",
         "attractions": [
           "Anhinga Trail",
@@ -466,10 +476,10 @@
         "name": "Gates of the Arctic National Park",
         "year": 1980,
         "location": ["Alaska"],
-        "coordinates": [
-          67.78,
-          153.30
-        ],
+        "coordinates": {
+          "lat": 67.78,
+          "lng": -153.30
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Remote_river_in_Gates_of_the_Arctic_%2816524035298%29.jpg/200px-Remote_river_in_Gates_of_the_Arctic_%2816524035298%29.jpg",
         "attractions": [
           "Noatak Wild and Scenic River",
@@ -491,10 +501,10 @@
         "name": "Gateway Arch National Park",
         "year": 2018,
         "location": ["Missouri"],
-        "coordinates": [
-          38.63,
-          90.19
-        ],
+        "coordinates": {
+          "lat": 38.63,
+          "lng": -90.19
+        },
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/St_Louis_night_expblend.jpg/200px-St_Louis_night_expblend.jpg",
         "attractions": [
           "Gateway Arch",
@@ -510,19 +520,16 @@
         "description": "The Gateway Arch is a 630-foot (192 m) (both high and wide) catenary arch built in the 1960s to commemorate the Lewis and Clark Expedition, initiated by Thomas Jefferson, and the subsequent westward expansion of the country. The nearby Old Courthouse, across a greenway to the west of the arch, was the original site of the landmark Dred Scott case about slavery. An underground museum describes the arch's construction and the country's westward expansion.",
         "favorited": false
       },
-
-      
-
       {
           "id": 39,
           "name": "Kobuk Valley National Park",
           "year": 1980,
           "location": ["Alaska"],
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Wetlands_along_the_Kobuk_River_%288029770162%29.jpg/200px-Wetlands_along_the_Kobuk_River_%288029770162%29.jpg",
-          "coordinates": [
-              67.55,
-              159.28
-          ],
+          "coordinates": {
+            "lat": 67.55,
+            "lng": -159.28
+          },
           "attractions": [
               "Great Kobok Sand Dunes",
               "Kotzebue",
@@ -544,10 +551,10 @@
           "year": 1980,
           "location": ["Alaska"],
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Lake_Clark_Place_Name_Project_images._Credit_Dev_Charm_Khalsa_NPS._%2836bde271-64b3-447a-b18a-9421e5e07284%29.jpg/200px-Lake_Clark_Place_Name_Project_images._Credit_Dev_Charm_Khalsa_NPS._%2836bde271-64b3-447a-b18a-9421e5e07284%29.jpg",
-          "coordinates": [
-              60.97,
-              153.42
-          ],
+          "coordinates": {
+            "lat": 60.97,
+            "lng": -153.42
+          },
           "attractions": [
               "Mount Redoubt",
               "Bristol Bay Salmon",
@@ -569,10 +576,10 @@
           "year": 1916,
           "location": ["California"],
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Lake_Helen%2C_Lassen_Volcanic_National_Park%2C_in_June_2020.jpg/200px-Lake_Helen%2C_Lassen_Volcanic_National_Park%2C_in_June_2020.jpg",
-          "coordinates": [
-              40.49,
-              121.51
-          ],
+          "coordinates": {
+            "lat": 40.49,
+            "lng": -121.51
+          },
           "attractions": [
               "Lassen Peak",
               "Painted Dunes",
@@ -594,10 +601,10 @@
           "year": 1941,
           "location": ["Kentucky"],
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Mammoth_Cave_National_Park_007.jpg/200px-Mammoth_Cave_National_Park_007.jpg",
-          "coordinates": [
-              37.18,
-              86.10
-          ],
+          "coordinates": {
+            "lat": 37.18,
+            "lng": -86.10
+          },
           "attractions": [
               "Green River",
               "Proctor Cave",
@@ -619,10 +626,10 @@
           "year": 1906,
           "location": ["Colorado"],
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg/200px-Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg",
-          "coordinates": [
-              37.18,
-              108.49
-          ],
+          "coordinates": {
+            "lat": 37.18,
+            "lng": -108.49
+          },
           "attractions": [
               "Cliff Palace",
               "Oak Tree House",
@@ -644,10 +651,10 @@
           "year": 1899,
           "location": ["Washington"],
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Tatoosh_Range_WA_MRNP1.jpg/200px-Tatoosh_Range_WA_MRNP1.jpg",
-          "coordinates": [
-              46.85,
-              121.75
-          ],
+          "coordinates": {
+            "lat": 46.85,
+            "lng": -121.75
+          },
           "attractions": [
               "Carbon Glacier",
               "Wonderland Trail",
@@ -662,17 +669,17 @@
           "gameWon": false,
           "description": "Mount Rainier, an active stratovolcano, is the most prominent peak in the Cascades and is covered by 26 named glaciers including Carbon Glacier and Emmons Glacier, the longest and largest in the contiguous United States respectively. The mountain is popular for climbing, and more than half of the park is covered by subalpine and alpine forests and meadows seasonally in bloom with wildflowers. Paradise on the south slope is among the snowiest places on Earth.[89] The Longmire visitor center is the start of the Wonderland Trail, which encircles the mountain.",
           "favorited": false
-      },    
+      },
       {
           "id": 45,
           "name": "New River Gorge National Park",
           "year": 2020,
           "location": ["West Virginia"],
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/New_River_Gorge_Bridge.jpg/200px-New_River_Gorge_Bridge.jpg",
-          "coordinates": [
-              38.07,
-              81.08
-          ],
+          "coordinates": {
+            "lat": 38.07,
+            "lng": -81.08
+          },
           "attractions": [
               "Endless Wall",
               "Bridge Day",
@@ -694,10 +701,10 @@
           "year": 1968,
           "location": ["Washington"],
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Cascade_Pass.jpg/200px-Cascade_Pass.jpg",
-          "coordinates": [
-              48.70,
-              121.20
-          ],
+          "coordinates": {
+            "lat": 48.70,
+            "lng": -121.20
+          },
           "attractions": [
               "Sahale Glacier",
               "Cascade Pass",
@@ -712,17 +719,17 @@
           "gameWon": false,
           "description": "The highly glaciated mountains of the North Cascades Range exhibit a spectacular and complex geologic history. Between the river valleys and high peaks there are eight diverse life zones with 75 mammal and 1,600 vascular plant species. Popular hiking and climbing areas of the Stephen Mather Wilderness include Cascade Pass, Mount Shuksan, Mount Triumph, and Eldorado Peak. Ross Lake and Lake Chelan National Recreation Areas adjoin the two segments of the park and are all administered together.",
           "favorited": false
-      },    
+      },
       {
           "id": 47,
           "name": "Olympic National Park",
           "year": 1938,
           "location": ["Washington"],
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Acer_macrophyllum_in_Hoh_ValleyB.jpg/200px-Acer_macrophyllum_in_Hoh_ValleyB.jpg",
-          "coordinates": [
-              47.97,
-              123.50
-          ],
+          "coordinates": {
+            "lat": 47.97,
+            "lng": -123.50
+          },
           "attractions": [
               "Hurricane Ridge",
               "Lake Quinalt",
@@ -744,10 +751,10 @@
           "year": 1962,
           "location": ["Arizona"],
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/The_PEFO_Tepees.jpg/200px-The_PEFO_Tepees.jpg",
-          "coordinates": [
-              35.07,
-              109.78
-          ],
+          "coordinates": {
+            "lat": 35.07,
+            "lng": -109.78
+          },
           "attractions": [
               "The Tepees",
               "The Painted Desert",
@@ -762,17 +769,17 @@
           "gameWon": false,
           "description": "This portion of the Chinle Formation has a large concentration of 225-million-year-old petrified wood. The surrounding Painted Desert features eroded cliffs of red-hued volcanic rock called bentonite. Dinosaur fossils and over 350 Native American sites are also protected in this park.",
           "favorited": false
-      },    
+      },
       {
           "id": 49,
           "name": "Pinnacles National Park",
           "year": 2013,
           "location": ["California"],
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Pinnacles_National_Park.jpg/200px-Pinnacles_National_Park.jpg",
-          "coordinates": [
-              36.48,
-              121.16
-          ],
+          "coordinates": {
+            "lat": 36.48,
+            "lng": -121.16
+          },
           "attractions": [
               "High Peaks Trail",
               "Pinnacles Ranch",
@@ -794,10 +801,10 @@
           "year": 1968,
           "location": ["California"],
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Redwood_National_Park%2C_fog_in_the_forest.jpg/200px-Redwood_National_Park%2C_fog_in_the_forest.jpg",
-          "coordinates": [
-              41.30,
-              124.00
-          ],
+          "coordinates": {
+            "lat": 41.30,
+            "lng": -124.00
+          },
           "attractions": [
               "Mill Creek",
               "Klamath River",
@@ -819,10 +826,10 @@
           "year": 1915,
           "location": ["Colorado"],
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Bierstadt_Lake%2C_Rocky_Mountain_National_Park%2C_USA.jpg/200px-Bierstadt_Lake%2C_Rocky_Mountain_National_Park%2C_USA.jpg",
-          "coordinates": [
-              40.40,
-              105.58
-          ],
+          "coordinates": {
+            "lat": 40.40,
+            "lng": -105.58
+          },
           "attractions": [
               "Continental Divide Trail",
               "Trail Ridge Road",
@@ -844,10 +851,10 @@
           "year": 1994,
           "location": ["Arizona"],
           "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Saguaronationalparl17102008.jpg/200px-Saguaronationalparl17102008.jpg",
-          "coordinates": [
-              32.25,
-              110.50
-          ],
+          "coordinates": {
+            "lat": 32.25,
+            "lng": -110.50
+          },
           "attractions": [
               "Javelina Rocks",
               "Rincon Mountains",
@@ -862,17 +869,17 @@
           "gameWon": false,
           "description": "Split into the separate Rincon Mountain and Tucson Mountain districts, this park is evidence that the dry Sonoran Desert is still home to a great variety of life spanning six biotic communities. Beyond the namesake giant saguaro cacti, there are barrel cacti, chollas, and prickly pears, as well as lesser long-nosed bats, spotted owls, and javelinas.",
           "favorited": false
-      }, 
+      },
       {
       "id": 53,
       "name": "Sequoia National Park",
       "year": 1890,
       "location": ["California"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Giant_sequoias_in_Sequoia_National_Park_2013.jpg/200px-Giant_sequoias_in_Sequoia_National_Park_2013.jpg",
-      "coordinates": [
-          36.43,
-          118.68
-      ],
+      "coordinates": {
+        "lat": 36.43,
+        "lng": -118.68
+      },
       "attractions": [
           "The Giant Forest",
           "High Sierra Trail",
@@ -894,10 +901,10 @@
       "year": 1935,
       "location": ["Virginia"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Early_Fall_at_Dark_Hollow_Falls_%2822028259442%29.jpg/200px-Early_Fall_at_Dark_Hollow_Falls_%2822028259442%29.jpg",
-      "coordinates": [
-          38.53,
-          78.35
-      ],
+      "coordinates": {
+        "lat": 38.53,
+        "lng": -78.35
+      },
       "attractions": [
           "Skyline Drive",
           "Blue Ridge Mountains",
@@ -919,10 +926,10 @@
       "year": 1978,
       "location": ["North Dakota"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/View_of_Theodore_Roosevelt_National_Park.jpg/200px-View_of_Theodore_Roosevelt_National_Park.jpg",
-      "coordinates": [
-          46.97,
-          103.45
-      ],
+      "coordinates": {
+        "lat": 46.97,
+        "lng": -103.45
+      },
       "attractions": [
           "Maah Daah Hey Trail",
           "Little Missouri River",
@@ -944,10 +951,10 @@
       "year": 1956,
       "location": ["U.S. Virgin Islands"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/St_John_Trunk_Bay_1.jpg/200px-St_John_Trunk_Bay_1.jpg",
-      "coordinates": [
-          18.33,
-          64.73
-      ],
+      "coordinates": {
+        "lat": 18.33,
+        "lng": -64.73
+      },
       "attractions": [
           "Honeymoon Beach",
           "Cinnamon Bay Nature Trail",
@@ -969,10 +976,10 @@
       "year": 1975,
       "location": ["Minnesota"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Voyageurs_National_Park.jpg/200px-Voyageurs_National_Park.jpg",
-      "coordinates": [
-          48.50,
-          92.88
-      ],
+      "coordinates": {
+        "lat": 48.50,
+        "lng": -92.88
+      },
       "attractions": [
           "Ash River",
           "Kabetogama Lake",
@@ -994,10 +1001,10 @@
       "year": 2019,
       "location": ["New Mexico"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/White_Sands_New_Mexico_USA.jpg/200px-White_Sands_New_Mexico_USA.jpg",
-      "coordinates": [
-          32.78,
-          106.17
-      ],
+      "coordinates": {
+        "lat": 32.78,
+        "lng": -106.17
+      },
       "attractions": [
           "Pleistocene Fossils",
           "Dune Sledding",
@@ -1019,10 +1026,10 @@
       "year": 1980,
       "location": ["South Dakota"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Wind_Cave_lower.jpg/200px-Wind_Cave_lower.jpg",
-      "coordinates": [
-          43.57,
-          103.48
-      ],
+      "coordinates": {
+        "lat": 43.57,
+        "lng": -103.48
+      },
       "attractions": [
           "Wind Cave Bison Herd",
           "Boxwork Geology",
@@ -1044,10 +1051,10 @@
       "year": 1872,
       "location": ["Wyoming", "Idaho", "Montana"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Grand_Prismatic_Spring_2013.jpg/200px-Grand_Prismatic_Spring_2013.jpg",
-      "coordinates": [
-          44.60,
-          110.50
-      ],
+      "coordinates": {
+        "lat": 44.60,
+        "lng": -110.50
+      },
       "attractions": [
           "Old Faithful",
           "Grand Canyon of the Yellowstone",
@@ -1069,10 +1076,10 @@
       "year": 1890,
       "location": ["California"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg/1280px-Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg",
-      "coordinates": [
-          37.83,
-          119.50
-      ],
+      "coordinates": {
+        "lat": 37.83,
+        "lng": -119.50
+      },
       "attractions": [
           "Half Dome",
           "Yosemite Falls",
@@ -1094,10 +1101,10 @@
       "year": 1919,
       "location": ["Utah"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Zion_angels_landing_view.jpg/284px-Zion_angels_landing_view.jpg",
-      "coordinates": [
-          44.35,
-          68.21
-      ],
+      "coordinates": {
+        "lat": 44.35,
+        "lng": -68.21
+      },
       "attractions": [
           "Angel's Landing",
           "Kolob Canyons",

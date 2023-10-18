@@ -2,40 +2,39 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300);
 
 .marker {
-  width: auto;
-  height: auto;
-  margin: auto;
-  border-radius: 6px 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px/20px;
   transition: all .2s ease;
   box-sizing: border-box;
-  text-align: center;
   background: rgb(197, 108, 57);
+  border: 3px outset rgb(111, 73, 48);
   color: rgb(255,255,255);
   text-transform: uppercase;
   letter-spacing: 2px;
-  padding: 14px 0;
-  overflow: hidden;
+  font-size: x-small;
+  padding: 7px;
+  height: auto;
+  width: auto;
 }
 
+
 .marker:hover {
-  border-radius: 22px 6px;
-  background: rgb(46, 204, 113);
+  border-radius: 10px/20px;
+  background: rgb(33, 58, 27);
+  border: 3px inset rgb(86, 144, 58);
   cursor: pointer;
 }
 
-.marker--trees {
-  background: rgb(39, 174, 96);
-}
-
-.marker--trees:hover {
-  background: rgb(46, 204, 113);
-  padding: 10px;
-}
-
 .fa-tree {
-  position: relative;
+  position:absolute;
+  align-items: center;
   transition: all .2s ease;
-  top: 15px;
+  top: 11px;
+
 }
 
 .fa-tree.tree-one {
@@ -53,4 +52,5 @@
 
 .marker:hover .fa-tree {
   top: 3px;
+  transform: rotate(20deg)
 }
