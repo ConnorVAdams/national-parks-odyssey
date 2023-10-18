@@ -3,13 +3,13 @@ import { Wrapper } from "@googlemaps/react-wrapper"
 import ParkIcon from './ParkIcon';
 import parkObj from './TestData';
 
-function GoogleMap({loadGame}) {
+function GoogleMap({loadGame, parks}) {
   const [map, setMap] = useState();
   const ref = useRef();
 
 //contains map object styling and view on initial load
 const mapOptions = {
-    mapId: 'bd65f4eb7088841f',
+  mapId: process.env.REACT_APP_GOOGLE_MAP_ID,
   center: { lat: 37.09, lng: -95.71 }, //where to start
     zoom: 4, //how much to initially zoom
     disableDefaultUI: true,
