@@ -19,9 +19,6 @@ const Map = () => {
         <Wrapper apiKey="AIzaSyDluKUqWkz1grc2yKMFvax4DSK3_kc-Qjk" version="beta" libraries={["marker"]}>
           <GoogleMap loadGame={loadGame}/>
         </Wrapper>
-        {/* <ParkIcon />
-        <ParkCard />
-        <Game /> */}
       </div>
     </>
   )
