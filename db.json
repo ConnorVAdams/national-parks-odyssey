@@ -7617,7 +7617,7 @@
       ],
       "link": "https://www.nps.gov/wica/index.htm",
       "visitors": 607418,
-      "pointValue": 0,
+      "pointValue": 10000,
       "wildlife": [
         {
           "id": 1,
@@ -7724,7 +7724,7 @@
         }
       ],
       "quizQuestions": {},
-      "gameWon": false,
+      "gameWon": true,
       "description": "Wind Cave is distinctive for its calcite fin formations called boxwork, a unique formation rarely found elsewhere, and needle-like growths called frostwork. It is one of the longest caves in the world and creates a wind as air pressure changes. Above ground is a mixed-grass prairie with animals such as bison, black-footed ferrets, and prairie dogs and ponderosa pine forests home to cougars and elk.[113] The cave is culturally significant to the Lakota people as a creation site.",
       "favorited": false
     },

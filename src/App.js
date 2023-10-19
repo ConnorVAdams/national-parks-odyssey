@@ -21,14 +21,14 @@ const [currentUser, setCurrentUser] = useState("")
 const handleCreateUserSubmit = async (username) => {
   try {
     // Fetch the current users
-    const response = await fetch('http://localhost:3000/users');
-    const currentUsers = await response.json();
+    const response = await fetch('http://localhost:3000/users')
+    const currentUsers = await response.json()
 
      // Check if the username already exists
      if (currentUsers.some(user => user.username === username)) {
-      alert('Username already exists. Choose a different username.');
+      alert('Username already exists. Choose a different username.')
       // Optionally, display an error message to the user
-      return;
+      return
     }
 
     // Add the new user
@@ -37,7 +37,7 @@ const handleCreateUserSubmit = async (username) => {
       username,
       points: 0,
       cards: [],
-    };
+    }
 
 
 
@@ -50,29 +50,29 @@ const handleCreateUserSubmit = async (username) => {
       body: JSON.stringify(newUser),
     });
 
-    console.log('User created successfully!');
+    console.log('User created successfully!')
   } catch (error) {
-    alert('Error creating user:', error);
+    alert('Error creating user:', error)
   }
 }
 
 const handleLoginUserSubmit = async (username) => {
   try {
-    const response = await fetch('http://localhost:3000/users');
-    const currentUsers = await response.json();
+    const response = await fetch('http://localhost:3000/users')
+    const currentUsers = await response.json()
 
-    const foundUser = currentUsers.find((user) => user.username === username);
+    const foundUser = currentUsers.find((user) => user.username === username)
 
     if (foundUser) {
-      console.log('User found:', foundUser);
-      setCurrentUser(foundUser); // Set currentUser state correctly
+      console.log('User found:', foundUser)
+      setCurrentUser(foundUser) // Set currentUser state correctly
     } else {
-      alert('User not found. Please check your username.');
+      alert('User not found. Please check your username.')
     }
   } catch (error) {
-    alert('Error finding user:', error);
+    alert('Error finding user:', error)
   }
-};
+}
 
 const fetchAllParks = () => {
   fetch(URL)
