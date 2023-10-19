@@ -5,12 +5,17 @@ import Header from './components/nav/Header'
 import Footer from './components/nav/Footer'
 import './App.css'
 import animals from './components/game/animalData.js'
+import ParkCard from './components/ParkCard.js'
 
 const URL = 'http://localhost:3000/parkObj'
 
 function App() {
 const [parks, setParks] = useState([])
 const [points, setPoints] = useState(0)
+const [card, setCard] = useState({
+  park: {},
+  displayCard: false
+})
 
 const fetchAllParks = () => {
   fetch(URL)
@@ -35,38 +40,52 @@ useEffect(() => {
   //Receives elapsed time and number of moves from <AnimalBoard /> and passes it through calculateScore()
   const handleWin = (gameId, param1, param2) => {
     const score = calculateScore(param1, param2)
-    // fetch(`${URL}/${gameId}`, {
-    //   method: 'PATCH',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body: JSON.stringify({
-    //     gameWon: true,
-    //     pointValue: score
-    //   })
-    // })
-    // .then(resp => resp.json())
-    // .then(data => setPoints(current => current + data.pointValue))
-    // fetchAllParks()
+    //TODO Only patch score if new score is higher
+    fetch(`${URL}/${gameId}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        gameWon: true,
+        pointValue: score
+      })
+    })
+    .then(resp => resp.json())
+    .then(data => {
+      setPoints(current => current + data.pointValue)
+      setCard({...card,
+        park: data,
+        displayCard: true
+      })
+    })
+    .then(fetchAllParks())
     console.log(`Congratulations, you earned ${score} points!`)
+  }
+
+  const resetCard = () => {
+    setCard({
+      park: {},
+      displayCard: false
+    })
   }
 
   //TODO handleWin
   // * 1. Calculate score
-  //2. Display score to user
   // * 3. PATCH database with gameWon: true
 
-  //4. Add card to trophy case.
+  //4. Add card to trophy case & display score to user
   //5. Pop up card to user, user can navigate '/' from it.
-  //6. Update points container.
+  // * 6. Update points container.
 
   //7. Updates points/parks in userObj.
 
 
   return (
-    <div className='wrapper'>
+    <div className={card.displayCard ? 'wrapper hidden' : 'wrapper'}>
       <Header points={points} />
       <Outlet context={{ parks, handleWin }} />
+      {card.displayCard ? <ParkCard park={card.park} resetCard={resetCard} /> : null}
       <Footer />
     </div>
   );

@@ -233,12 +233,6 @@ h3 {
   flex-grow: 1;
 }
 
-.park-card {
-  position: relative;
-  width: 100%;
-  padding-bottom: 140%;
-}
-
 .icon-container {
   display: inherit;
   flex-direction: row;
@@ -365,4 +359,25 @@ h3 {
 .info-container {
   display: inherit;
   overflow: auto;
+}
+
+.park-card {
+  position: relative;
+  grid-area: 3/2/5/3
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.app {
+  display: grid;
+  grid-template-rows: 3fr 1fr 8fr 8fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
+  height: 100vh;
+  grid-gap: 8px;
+}
+
+.shown {
+  visibility: visible;
 }

@@ -4056,7 +4056,7 @@
         }
       ],
       "quizQuestions": {},
-      "gameWon": false,
+      "gameWon": true,
       "description": "Renowned for its thermal springs, this urban park offers historic bathhouses, scenic trails, and cultural attractions. Visitors can take a bath in the thermal waters, explore hiking trails, and enjoy the charming town of Hot Springs.",
       "favorited": false
     },
@@ -4080,7 +4080,7 @@
       ],
       "link": "https://www.nps.gov/isro/index.htm",
       "visitors": 25454,
-      "pointValue": 0,
+      "pointValue": 625,
       "wildlife": [
         {
           "id": 1,
@@ -5390,7 +5390,7 @@
       ],
       "link": "https://www.nps.gov/maca/index.htm",
       "visitors": 663147,
-      "pointValue": 0,
+      "pointValue": 625,
       "wildlife": [
         {
           "id": 1,
@@ -5497,7 +5497,7 @@
         }
       ],
       "quizQuestions": {},
-      "gameWon": false,
+      "gameWon": true,
       "description": "With more than 400 miles (640 km) of passageways explored, Mammoth Cave is the world's longest known cave system. Subterranean wildlife includes eight bat species, Kentucky cave shrimp, Northern cavefish, and cave salamanders. Above ground, the park provides recreation on the Green River, 70 miles of hiking trails, and plenty of sinkholes and springs.",
       "favorited": false
     },
@@ -5652,7 +5652,7 @@
       ],
       "link": "https://www.nps.gov/mora/index.htm",
       "visitors": 1622395,
-      "pointValue": 0,
+      "pointValue": 625,
       "wildlife": [
         {
           "id": 1,
@@ -5759,7 +5759,7 @@
         }
       ],
       "quizQuestions": {},
-      "gameWon": false,
+      "gameWon": true,
       "description": "Mount Rainier, an active stratovolcano, is the most prominent peak in the Cascades and is covered by 26 named glaciers including Carbon Glacier and Emmons Glacier, the longest and largest in the contiguous United States respectively. The mountain is popular for climbing, and more than half of the park is covered by subalpine and alpine forests and meadows seasonally in bloom with wildflowers. Paradise on the south slope is among the snowiest places on Earth.[89] The Longmire visitor center is the start of the Wonderland Trail, which encircles the mountain.",
       "favorited": false
     },

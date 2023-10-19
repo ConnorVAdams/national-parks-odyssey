@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react"
-import {  } from "react-router-dom"
 import { Outlet, useOutletContext, useNavigate, useLocation } from "react-router-dom"
 import GameNav from "../nav/GameNav"
 
-const Game = ({ restartGame }) => {
+const Game = () => {
   const { handleWin } = useOutletContext()
   const navigate = useNavigate()
   const locationData = useLocation()
