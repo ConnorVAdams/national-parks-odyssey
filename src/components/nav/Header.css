@@ -1,0 +1,98 @@
+.header {
+  display: flex;
+  grid-area: 1/1/2/4;
+  height: 18vh;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: 'Bahianita', sans-serif;
+  letter-spacing: 1px;
+  background-color: blue;
+}
+.title-container {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+}
+.user-container {
+  display: flex;
+  align-items: right;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.user-container button {
+  margin-left: 10px;
+}
+#create-user {
+  background: #354A20;
+  font-family: 'Open Sans', serif;
+  color: white;
+}
+
+#login {
+  margin-top: 5px;
+  margin-left: 10px;
+  background: #b4d2bf;
+  font-family: 'Open Sans', serif;
+}
+
+.point-container{
+  float: right;
+  /* flex-direction: column; */
+  text-align: right;
+  margin-right: 10px;
+}
+
+.user-modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.user-modal-content {
+  background-color: #354A20;
+  font-weight: 700;
+  font-size: x-large;
+  letter-spacing: 1px;
+  color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.user-modal-content label {
+  align-items: center;
+}
+
+.user-modal-content form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user-modal-content button {
+  background: #b4d2bf;
+}
+
+.user-close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.user-close:hover,
+.user-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
