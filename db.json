@@ -8123,5 +8123,19 @@
       "description": "Located at the junction of the Colorado Plateau, Great Basin, and Mojave Desert, this park contains sandstone features such as mesas, rock towers, and canyons, including the Virgin River Narrows. The various sandstone formations and the forks of the Virgin River create a wilderness divided into four ecosystems: desert, riparian, woodland, and coniferous forest.",
       "favorited": false
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "isaac",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 2,
+      "username": "buzz",
+      "points": 0,
+      "cards": []
+    }
   ]
 }
