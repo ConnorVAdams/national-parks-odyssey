@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Outlet, useOutletContext, useNavigate, useLocation } from "react-router-dom"
-import GameNav from "../nav/GameNav"
+// import GameNav from "../nav/GameNav"
 
 const Game = () => {
   const { handleWin } = useOutletContext()
@@ -22,7 +22,7 @@ const Game = () => {
     }))
   })}
 
-  useEffect(() => { 
+  useEffect(() => {
     startGame(locationData.state.id, locationData.state.path)
  }, [])
 

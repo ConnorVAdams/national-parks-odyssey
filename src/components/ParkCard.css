@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css2?family=Bahianita&family=Roboto+Condensed&display=swap);
+
+.park-card {
+  position: relative;
+  grid-area: 1/2/5/3;
+  width: 70%;
+  place-self: center;
+  height: 75%;
+  border: 5px ridge #354A20;
+}
+
+.shown {
+  visibility: visible;
+  background-color: #A9C4A6;
+}
+.park-card div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  background-color: #A6C4D4;
+  font-family: 'Bahianita', sans-serif;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #BD6315;
+}
+.shown h3 {
+
+}
+.shown h1{
+  float: left;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+}
+
+.card-img {
+  height: auto;
+  width: 55%;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 3px ridge #BD6315;
+}
