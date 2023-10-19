@@ -1,13 +1,9 @@
-import { calculateScore, handleWin } from './helpers.js'
 import { useState, useEffect } from 'react'
 import { Outlet } from "react-router-dom"
 import Header from './components/nav/Header'
 import Footer from './components/nav/Footer'
 import './App.css'
-import wildlifeData from './wildlifeData.js'
 import ParkCard from './components/ParkCard.js'
-import noDuplicates from './wildlifeData.js'
-import { all } from 'q'
 
 const URL = 'http://localhost:3000/parkObj'
 
@@ -20,6 +16,7 @@ const [card, setCard] = useState({
 })
 const [currentUser, setCurrentUser] = useState("")
 const [users, setUsers] = useState([])
+const [usersParks, setUsersParks] = useState([])
 
 const handleCreateUserSubmit = async (username) => {
   try {
@@ -28,7 +25,7 @@ const handleCreateUserSubmit = async (username) => {
     const currentUsers = await response.json()
 
      // Check if the username already exists
-     if (currentUsers.some(user => user.username === username)) {
+      if (currentUsers.some(user => user.username === username)) {
       alert('Username already exists. Choose a different username.')
       // Optionally, display an error message to the user
       return
@@ -41,8 +38,6 @@ const handleCreateUserSubmit = async (username) => {
       points: 0,
       cards: [],
     }
-
-
 
     // Update the users in the db.json file using POST
     await fetch('http://localhost:3000/users', {
@@ -68,7 +63,10 @@ const handleLoginUserSubmit = async (username) => {
 
     if (foundUser) {
       console.log('User found:', foundUser)
-      setCurrentUser(foundUser) // Set currentUser state correctly
+      
+      setCurrentUser(current => foundUser)
+      
+    // Set currentUser state correctly
     } else {
       alert('User not found. Please check your username.')
     }
@@ -76,6 +74,8 @@ const handleLoginUserSubmit = async (username) => {
     alert('Error finding user:', error)
   }
 }
+
+// const handleLoginUserSubmit = 
 
 const fetchAllUsers = () => {
   fetch("http://localhost:3000/users")
@@ -128,13 +128,14 @@ useEffect(() => {
       }))
 
        // Patch request to update user points in the database
-       fetch(`http://localhost:3000/users/${currentUser.id}`, {
+      fetch(`http://localhost:3000/users/${currentUser.id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
           points: currentUser.points + data.pointValue,
+          cards: [...currentUser.cards, gameId]
         }),
       })
 
@@ -144,7 +145,6 @@ useEffect(() => {
       })
     })
     .then(fetchAllParks())
-    console.log(`Congratulations, you earned ${score} points!`)
   }
 
   const resetCard = () => {

@@ -20,7 +20,7 @@
       ],
       "link": "https://www.nps.gov/acad/index.htm",
       "visitors": 3970260,
-      "pointValue": 189,
+      "pointValue": 327,
       "wildlife": [
         "American black bear",
         "White-tailed deer",
@@ -1894,7 +1894,7 @@
       ],
       "link": "https://www.nps.gov/isro/index.htm",
       "visitors": 25454,
-      "pointValue": 563,
+      "pointValue": 411,
       "wildlife": [
         "White-tailed deer",
         "Eastern gray squirrel",
@@ -2430,7 +2430,7 @@
       ],
       "link": "https://www.nps.gov/lavo/index.htm",
       "visitors": 446291,
-      "pointValue": 0,
+      "pointValue": 413,
       "wildlife": [
         "Mule deer",
         "Black bear",
@@ -2465,7 +2465,7 @@
         "Black-headed grosbeak"
       ],
       "quizQuestions": {},
-      "gameWon": false,
+      "gameWon": true,
       "description": "Lassen Peak, the largest lava dome volcano in the world, is joined by all three other types of volcanoes in this park: shield, cinder cone, and composite. Though Lassen itself last erupted in 1915, most of the rest of the park is continuously active. Numerous hydrothermal features, including fumaroles, boiling pools, and bubbling mud pots, are heated by molten rock from beneath the peak.",
       "favorited": false
     },
@@ -3844,8 +3844,10 @@
     {
       "id": 1,
       "username": "isaac",
-      "points": 10625,
-      "cards": []
+      "points": 11038,
+      "cards": [
+        41
+      ]
     },
     {
       "id": 2,
@@ -3856,8 +3858,11 @@
     {
       "id": 3,
       "username": "connor",
-      "points": 0,
-      "cards": []
+      "points": 738,
+      "cards": [
+        32,
+        1
+      ]
     },
     {
       "id": 4,
@@ -3875,6 +3880,60 @@
       "id": 6,
       "username": "con con",
       "points": 5625,
+      "cards": []
+    },
+    {
+      "id": 7,
+      "username": "gj",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 8,
+      "username": "hsrths",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 9,
+      "username": "thsj",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 10,
+      "username": "agb",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 11,
+      "username": "thstj",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 12,
+      "username": "sfgjng",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 13,
+      "username": "hmd",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 14,
+      "username": "aere5r",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 15,
+      "username": "ktdked",
+      "points": 0,
       "cards": []
     }
   ]

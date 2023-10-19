@@ -1,9 +1,7 @@
 import ParkLi from "./ParkLi"
-import { useEffect, useState } from 'react'
 
 const ParkList = ({ parks, displayPark, handleFavorite, searchObj }) => {
   const { search, list, sort, state, traffic, wildlife, activity } = searchObj
-  // const { state, traffic, wildlife, activities} = searchObj.filters
 
   const listParks = () => {
     if (list === 'Favorites') {
