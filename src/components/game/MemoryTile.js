@@ -7,7 +7,7 @@ const AnimalTile = ({ img, name, fact, id, found, handleSelectAnimal, count }) =
     //Reveal tile onClick and passes clicked animal to <AnimalContainer /> for handling.
     const clickHandle = () => {
         setBack(!back)
-        handleSelectAnimal(name)
+        handleSelectAnimal(name, img, fact)
     }
 
     //Return tiles to hidden after each turn.
@@ -23,8 +23,7 @@ const AnimalTile = ({ img, name, fact, id, found, handleSelectAnimal, count }) =
             onClick={clickHandle}
         >
             <>
-            {!back ? null : <img src={img} alt={img} />}
-            {found ? <p>{fact}</p> : null}
+            {back ? null : <img src={img} alt={img} />}
             </>
         </div>
     )

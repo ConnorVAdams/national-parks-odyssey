@@ -12,6 +12,8 @@ const MemoryGame = () => {
     const { gamePark: { id, name, attractions, wildlife, image, location, gameWon } } = currentGameData
     const { path } = currentGameData
     const [startTime, setStartTime] = useState(Date.now())
+    const [displayedImg, setDisplayedImg] = useState()
+    const [displayedFact, setDisplayedFact] = useState()
 
     //count variable keeps track of number of turns player has taken, with an odd numbered count being the middle of a turn and an even number being the end of a turn.
     const [count, setCount] = useState(0)
@@ -49,12 +51,14 @@ const MemoryGame = () => {
     }
 
     //Callback for onClick on animal tile.
-    const handleSelectAnimal = (name) => {
+    const handleSelectAnimal = (name, img, fact) => {
         //TODO Refactor first two ifs into a single if (count % 2 !== 0) statement?
         //If it's end of turn, check most recently clicked name against value stored in clickedName.
         if (count % 2 !== 0 && name === clickedName){
             //If it's a match, reset clickedName, find matching animal objects, change found property to true, and re-render.
             console.log('Good job!')
+            setDisplayedImg(img)
+            setDisplayedFact(fact)
             setClickedName('')
             setCount(count => count + 1)
             setShuffledDeck(current => current.map(animal => animal.name === name ? { ...animal, found: true } : animal))
@@ -78,13 +82,13 @@ const MemoryGame = () => {
     //Create unique deck for game on first render.
     useEffect(() => {
         if (animals) {
-        setShuffledDeck(shuffleDeck(duplicateCards(randomSlice(animals, easy))))
+        setShuffledDeck(shuffleDeck(duplicateCards(randomSlice(animals, med))))
         }
     }, [animals])
 
     //Reset
     const reset = () => {
-        setShuffledDeck(shuffleDeck(duplicateCards(randomSlice(animals, easy))))
+        setShuffledDeck(shuffleDeck(duplicateCards(randomSlice(animals, med))))
     }
 
     //Re-enable pointer events after every turn.
@@ -112,9 +116,17 @@ const MemoryGame = () => {
     })
 
     return (
-    <>        
-        <div className={'animal-board'}>
-            {animalDisplay}
+    <>
+        <div className={'animal-game'}>
+            <div className={'animal-image'}>
+                {displayedImg ? <img src={displayedImg} alt={displayedImg}/> : null }
+            </div>
+            <div className={'animal-board'}>
+                {animalDisplay}    
+            </div>
+            <div className={'animal-fact'}>
+            {displayedFact ? <p>{displayedFact}</p>: null }
+            </div>
         </div>
         <button onClick={reset}>Retry</button>
     </>
