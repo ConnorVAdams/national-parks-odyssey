@@ -23,11 +23,11 @@ const Header = ({ currentUser, onLoginUserSubmit, onCreateUserSubmit }) => {
     setLoginModalOpen(false);
   };
 
-  
+
   return (
     <div className='header'>
       <div className='title-container'>
-        <img onClick={() => navigate('./')} className='nps-logo' src='https://www.nps.gov/wrst/learn/historyculture/images/NPS_16.jpg?maxwidth=1300&autorotate=false' alt='nps-logo' />
+        <img onClick={() => navigate('./')} className='nps-logo' src='https://wikiwandv2-19431.kxcdn.com/_next/image?url=https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Logo_of_the_United_States_National_Park_Service.svg/640px-Logo_of_the_United_States_National_Park_Service.svg.png&w=640&q=50' alt='nps-logo' />
         <h1 className='title'>Untitled National Parks Game</h1>
       </div>
       <div className='user-container'>
