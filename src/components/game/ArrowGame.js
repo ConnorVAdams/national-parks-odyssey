@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
+import { useOutletContext } from "react-router-dom";
 const characterImage = "https://www.nickgowman.com/wp-content/uploads/cartoon-illustration-hiker-1.png";
 
 const maze = [
@@ -48,7 +49,8 @@ const winBox = [
 
 const cellSize = 20;
 
-const ArrowGame = ({image}) => {
+const ArrowGame = () => {
+  const { id, image, handleWin, name } = useOutletContext()
   const [position, setPosition] = useState({ x: 10, y: 380 });
 
   const handleKeyDown = useCallback((e) => {

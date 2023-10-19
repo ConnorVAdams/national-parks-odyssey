@@ -3,8 +3,7 @@ import { useOutletContext } from "react-router-dom";
 import "./Hangman.css"
 
 function Hangman() {
-  const { handleWin, id, attractions } = useOutletContext()
-console.log(id)
+  const { name, handleWin, id, attractions } = useOutletContext()
   const [randomAttraction, setRandomAttraction] = useState("")
   const [correctGuesses, setCorrectGuesses] = useState([])
   const [wrongGuesses, setWrongGuesses] = useState([])

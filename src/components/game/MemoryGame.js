@@ -6,7 +6,7 @@ import './MemoryGame.css'
 import animals from './animalData.js'
 
 const MemoryGame = () => {
-    const { handleWin, wildlife, id } = useOutletContext()
+    const { name, handleWin, wildlife, id } = useOutletContext()
     //count variable keeps track of number of turns player has taken, with an odd numbered count being the middle of a turn and an even number being the end of a turn.
     const [count, setCount] = useState(0)
     //clickedName variable holds the value of the first tile clicked every turn.
