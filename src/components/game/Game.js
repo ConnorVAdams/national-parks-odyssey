@@ -13,7 +13,6 @@ const Game = ({ restartGame }) => {
   })
 
   const startGame = (id, path) => {
-    console.log(id, path)
     fetch(`http://localhost:3000/parkObj/${id}`)
     .then(resp => resp.json())
     .then(data => {
@@ -27,8 +26,6 @@ const Game = ({ restartGame }) => {
   useEffect(() => { 
     startGame(locationData.state.id, locationData.state.path)
  }, [])
-
-  console.log(currentGameData)
 
   //TODO Timer
 
@@ -51,7 +48,9 @@ const Game = ({ restartGame }) => {
   //   }
   // })
 
-  const { gamePark: { name, attractions, wildlife, image, location, gameWon }, gameId, gamePath } = currentGameData
+  const { gamePark: { id, name, attractions, wildlife, image, location, gameWon } } = currentGameData
+  const { path } = currentGameData
+  console.log(id)
 
     return (
       <div className="game">
@@ -59,7 +58,7 @@ const Game = ({ restartGame }) => {
         <button onClick={() => navigate('../')}>Return to Map</button>
         {/* Should we allow user to choose a different type of game without returning to Home? */}
         {/* Destructure whatever park.property props you need for your game above and feed them to the context below:  */}
-        <Outlet context={{ handleWin, attractions, wildlife }}/>
+        <Outlet context={{ handleWin, id, attractions, wildlife }}/>
         {/* <NotifyBar /> */}
       </div>
     )

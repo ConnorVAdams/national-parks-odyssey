@@ -3,8 +3,8 @@ import { useOutletContext } from "react-router-dom";
 import "./Hangman.css"
 
 function Hangman() {
-  const { handleWin, attractions } = useOutletContext()
-
+  const { handleWin, id, attractions } = useOutletContext()
+console.log(id)
   const [randomAttraction, setRandomAttraction] = useState("")
   const [correctGuesses, setCorrectGuesses] = useState([])
   const [wrongGuesses, setWrongGuesses] = useState([])
@@ -92,7 +92,7 @@ function Hangman() {
   useEffect(() => {
     if (status === "win") {
       const endTime = Date.now()
-      handleWin(endTime, wrongGuesses)
+      handleWin(id, endTime, wrongGuesses)
     }
   })
 

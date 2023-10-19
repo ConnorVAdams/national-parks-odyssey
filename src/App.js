@@ -33,8 +33,18 @@ useEffect(() => {
   }
 
   //Receives elapsed time and number of moves from <AnimalBoard /> and passes it through calculateScore()
-  const handleWin = (endTime, count) => {
-    const score = calculateScore(endTime, count)
+  const handleWin = (gameId, param1, param2) => {
+    const score = calculateScore(param1, param2)
+    fetch(`${URL}/${gameId}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        gameWon: true
+      })
+    })
+    .then(resp => resp.json())
     console.log(`Congratulations, you earned ${score} points!`)
   }
 
