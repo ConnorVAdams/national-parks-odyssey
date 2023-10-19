@@ -1,12 +1,13 @@
 .header {
   display: flex;
   grid-area: 1/1/2/4;
-  height: 10vh;
+  height: 18vh;
   align-items: center;
   margin-top: 30px;
   margin-bottom: 20px;
   font-family: 'Bahianita', sans-serif;
   letter-spacing: 1px;
+  background-color: blue;
 }
 .title-container {
   display: flex;
