@@ -1,23 +1,36 @@
 import { useEffect, useState } from "react"
 import { Outlet, useOutletContext, useNavigate, useLocation } from "react-router-dom"
-
+import GameNav from "../nav/GameNav"
 
 const Game = () => {
-  const [currentPark, setCurrentPark] = useState({})
   const { handleWin } = useOutletContext()
   const navigate = useNavigate()
-
   const locationData = useLocation()
-  const { state: { id, path } } = locationData
+  const [currentGameData, setCurrentGameData] = useState({
+    gamePark: {},
+    gamePath: ''
+  })
 
-  const initiateGame = (id) => {
+  const startGame = (id, path) => {
     fetch(`http://localhost:3000/parkObj/${id}`)
     .then(resp => resp.json())
-    .then(data => setCurrentPark(data)) 
-  }
+    .then(data => {
 
-  initiateGame(id)
-  console.log(id, path, currentPark)
+    setCurrentGameData(current => ({...current,
+      gamePark: data,
+      gamePath: path
+    }))
+  })}
+
+  useEffect(() => { 
+    startGame(locationData.state.id, locationData.state.path)
+ }, [])
+
+  //TODO Timer
+
+  //TODO handleWin
+
+  //TODO Reset
 
   //User gets 3 minutes to play game before being navigated back to home
   setTimeout(() => {
@@ -25,21 +38,29 @@ const Game = () => {
     navigate('/')
   }, 180000)
 
+
+  //TODO Route protection
   // useEffect(() => {
   //   if (!id) {
   //     navigate('/')
-  //     //TODO select a park msg
+  // Alert user to 'select a park' msg
   //   }
   // })
 
-  const { location, wildlife, attractions } = currentPark
+  const { gamePark: { id, name, attractions, wildlife, image, location, gameWon } } = currentGameData
+  const { path } = currentGameData
+  console.log(id)
 
-  return (
-    <div className="game">
-      <button className="return-home-button">X</button>
-      <Outlet context={{ handleWin, wildlife, location, attractions }}/>
-    </div>
-  )
+    return (
+      <div className="game">
+        {/* <GameNav path={path}/> */}
+        <button onClick={() => navigate('../')}>Return to Map</button>
+        {/* Should we allow user to choose a different type of game without returning to Home? */}
+        {/* Destructure whatever park.property props you need for your game above and feed them to the context below:  */}
+        <Outlet context={{ handleWin, id, attractions, wildlife }}/>
+        {/* <NotifyBar /> */}
+      </div>
+    )
 }
 
 export default Game

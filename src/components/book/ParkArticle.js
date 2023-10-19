@@ -23,8 +23,12 @@ const ParkArticle = ({ park }) => {
         return (
           <ul>
             {wildlife.map(animal => {
-              return <li key={animal}>{animal}</li>
-            })}
+              return (
+              <li key={animal.name}>
+                  <img src={animal.img} alt={animal.name} />
+                  <p>{animal.name}</p>
+              </li>
+            )})}
           </ul>
         )
       })

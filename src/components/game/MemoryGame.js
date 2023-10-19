@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 import { useOutletContext } from 'react-router-dom'
 import MemoryTile from './MemoryTile'
-import animals from './animalData.js'
 import './MemoryGame.css'
 
-const MemoryGame = () => {
-    const { handleWin } = useOutletContext()
+import animals from './animalData.js'
 
+const MemoryGame = () => {
+    const { handleWin, wildlife, id } = useOutletContext()
     //count variable keeps track of number of turns player has taken, with an odd numbered count being the middle of a turn and an even number being the end of a turn.
     const [count, setCount] = useState(0)
     //clickedName variable holds the value of the first tile clicked every turn.
@@ -54,6 +54,7 @@ const MemoryGame = () => {
             setShuffledDeck(current => current.map(animal => animal.name === name ? { ...animal, found: true } : animal))
         } else if (count % 2 !== 0) {
             //If it's not a match, give user 1.4 secs to digest both animals, but disable pointer events so user cannot reveal more tiles, then rest clickedName and re-render.
+            //TODO Fix this query selection to be more React
             document.querySelector('.animal-board').classList.add('disabled')
             setTimeout(() => {
                 setClickedName('')
@@ -70,8 +71,13 @@ const MemoryGame = () => {
 
     //Create unique deck for game on first render.
     useEffect(() => {
-        setShuffledDeck(duplicateCards(shuffleDeck(randomSlice(animals, easy))))
+        setShuffledDeck(shuffleDeck(duplicateCards(randomSlice(animals, easy))))
     }, [])
+
+    //Reset
+    const reset = () => {
+        setShuffledDeck(shuffleDeck(duplicateCards(randomSlice(animals, easy))))
+    }
 
     //Re-enable pointer events after every turn.
     useEffect(() => {
@@ -80,9 +86,9 @@ const MemoryGame = () => {
 
     //Initiate handleWin() callback if all tiles in deck have been found.
     useEffect(() => {
-        if ((shuffledDeck.filter(card => !card.found)).length === 0) {
+        if (((shuffledDeck.filter(card => !card.found)).length === 0) && (shuffledDeck[1] !== undefined)) {
             const endTime = Date.now()
-            handleWin(endTime, count)
+            handleWin(id, endTime, count)
         }
     }, [shuffledDeck])
     
@@ -98,9 +104,12 @@ const MemoryGame = () => {
     })
 
     return (
-    <div className={'animal-board'}>
-        {animalDisplay}
-    </div>
+    <>
+        <button onClick={reset}>Retry</button>
+        <div className={'animal-board'}> 
+            {animalDisplay}
+        </div>
+    </>
     )
 }
 

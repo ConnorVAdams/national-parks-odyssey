@@ -9,13 +9,11 @@ const Map = () => {
   const navigate = useNavigate()
   const {parks} = useOutletContext()
 
-  //test the callback
-  const loadGame = (parkID) => {
+  const loadGame = (parkID, path) => {
     //Provide three possible game paths.
     const games = ['/game/memory', '/game/hangman', '/game/arrow-game']
     const randomPath = games[Math.floor(Math.random() * games.length)]
-    navigate(randomPath, { state: {id:parkID, path: randomPath} })
-    //TODO ^ Make this dynamic based on clicked ParkIcon's id
+    navigate(randomPath, { state: {id: parkID, path: randomPath} })
   }
 
   return (
