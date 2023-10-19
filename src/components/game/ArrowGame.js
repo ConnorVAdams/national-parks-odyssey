@@ -52,7 +52,7 @@ const cellSize = 20;
 const ArrowGame = () => {
   const { id, image, handleWin, name } = useOutletContext()
   const [position, setPosition] = useState({ x: 10, y: 380 });
-  const [wallHits, setWallHits] = useState(0)
+  const [wallHits, setWallHits] = useState(1)
 
   const handleKeyDown = useCallback((e) => {
     const step = 10;

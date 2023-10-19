@@ -20,7 +20,7 @@
       ],
       "link": "https://www.nps.gov/acad/index.htm",
       "visitors": 3000000000,
-      "pointValue": 0,
+      "pointValue": null,
       "wildlife": [
         {
           "id": 1,
@@ -127,7 +127,7 @@
         }
       ],
       "quizQuestions": {},
-      "gameWon": false,
+      "gameWon": true,
       "description": "Covering most of Mount Desert Island and other coastal islands, Acadia features the tallest mountain on the Atlantic coast of the United States, granite peaks, ocean shoreline, woodlands, and lakes. There are freshwater, estuary, forest, and intertidal habitats.",
       "favorited": false
     },
@@ -6438,7 +6438,7 @@
       ],
       "link": "https://www.nps.gov/redw/index.htm",
       "visitors": 458400,
-      "pointValue": 625,
+      "pointValue": 10000,
       "wildlife": [
         {
           "id": 1,
@@ -8128,7 +8128,7 @@
     {
       "id": 1,
       "username": "isaac",
-      "points": 625,
+      "points": 10625,
       "cards": []
     },
     {
