@@ -1,7 +1,5 @@
 // import ParkCard from './ParkCard'
 import { useEffect, useState } from 'react'
-import { BiBookHeart as AddFaveIcon } from 'react-icons/bi'
-import { BiSolidBookHeart as RemoveFaveIcon } from 'react-icons/bi'
 
 const ParkArticle = ({ park, handleFavorite, displayPark }) => {
   const { id, name, year, location, coordinates, image, attractions, link, visitors, wildlife, gameWon, description, favorited } = park
@@ -69,10 +67,6 @@ const ParkArticle = ({ park, handleFavorite, displayPark }) => {
     }
   }, [park])
 
-  const handleClick = () => {
-    displayPark(id)
-  }
-
   const handleFave = () => {
     handleFavorite(id, isFavorited)
     setIsFavorited(current => !current)
@@ -83,15 +77,7 @@ const ParkArticle = ({ park, handleFavorite, displayPark }) => {
       <div className='park-article'>
         <div className='article-header'>
           <h2>{name}</h2>
-          {!isFavorited ? (
-            <div className='single-icon-container'>
-              <AddFaveIcon onClick={handleFave} className='react-icon fave-icon'/> <p>Favorite</p>
-            </div>
-          ) : ( 
-            <div class='single-icon-container'>
-              <RemoveFaveIcon onClick={handleFave} className='react-icon fave-icon'/> <p>Unfavorite</p>
-            </div>
-          )}
+          {!favorited ? <button onClick={handleFave} >Favorite</button> : <button onClick={handleFave}>Unfavorite</button>}
         </div>
         <div className='article-top'>
           <div className='article-stats'>

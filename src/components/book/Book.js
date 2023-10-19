@@ -5,9 +5,28 @@ import ParkList from './ParkList'
 import ParkArticle from './ParkArticle'
 import NavButtons from '../nav/NavButtons.js'
 
+const defaultObj = {
+  search: '',
+  list: '',
+  sort: '',
+  filters: {
+    state: [],
+    traffic: [],
+    wildlife: [],
+    activities: [],
+  }
+}
+
 const Book = () => {
   const { parks }= useOutletContext()
   const [currentPark, setCurrentPark] = useState([])
+  const [searchObj, setSearchObj] = useState(defaultObj)
+
+  const handleSearchChange = (name, value) => {
+    setSearchObj({...searchObj,
+      [name]: value
+    })
+  }
 
   const displayPark = (id) => {
     fetch(`http://localhost:3000/parkObj/${id}`)
@@ -39,9 +58,9 @@ const Book = () => {
     <>
       <NavButtons />
       <div className='book'>
-          <Search parks={parks}/>
+          <Search parks={parks} handleSearchChange={handleSearchChange} searchObj={searchObj}/>
         <div className='book-bottom'>
-          <ParkList handleFavorite={handleFavorite} parks={parks} displayPark={displayPark} />
+          <ParkList searchObj={searchObj} handleFavorite={handleFavorite} parks={parks} displayPark={displayPark} />
           <ParkArticle handleFavorite={handleFavorite} displayPark={displayPark} park={currentPark} />
         </div>
       </div>

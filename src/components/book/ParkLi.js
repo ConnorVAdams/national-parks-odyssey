@@ -1,12 +1,10 @@
 import { BiSolidSpreadsheet as DisplayIcon }  from 'react-icons/bi'
 import { BiSolidJoystickAlt as PlayIcon }  from 'react-icons/bi'
-import { BiBookHeart as AddFaveIcon } from 'react-icons/bi'
-import { BiSolidBookHeart as RemoveFaveIcon } from 'react-icons/bi'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
-const ParkLi = ({ handleFavorite, id, name, year, location, link, image, gameWon, favorited, displayPark }) => {
-  const [isFavorited, setIsFavorited] = useState(false)
-
+const ParkLi = ({ handleFavorite, park, displayPark }) => {
+  const { id, name, year, location, coordinates, image, attractions, link, visitors, wildlife, gameWon, description, favorited } = park
+  const [isFavorited, setIsFavorited] = useState(null)
 
   const handleClick = () => {
     displayPark(id)
@@ -16,6 +14,10 @@ const ParkLi = ({ handleFavorite, id, name, year, location, link, image, gameWon
     handleFavorite(id, isFavorited)
     setIsFavorited(current => !current)
   }
+
+  useEffect(() => {
+    setIsFavorited(favorited)
+  }, [])
 
   return (
     <div className='park-li'>
@@ -35,18 +37,7 @@ const ParkLi = ({ handleFavorite, id, name, year, location, link, image, gameWon
           <DisplayIcon className='react-icon display-icon' />
           <p>Details</p>
         </div>   
-        <div className='single-icon-container'>
-          {!isFavorited ? (
-              <div className='single-icon-container'>
-                <AddFaveIcon onClick={handleFave} className='react-icon fave-icon'/> <p>Favorite</p>
-              </div>
-            ) : ( 
-              <div class='single-icon-container'>
-                <RemoveFaveIcon onClick={handleFave} className='react-icon unfave-icon'/> <p>Unfavorite</p>
-              </div>
-            )}
-        </div>
-            
+        {!favorited ? <button onClick={handleFave} >Favorite</button> : <button onClick={handleFave}>Unfavorite</button>}
         {!gameWon ? 
           <div className='single-icon-container'>
             <PlayIcon className='react-icon play-icon'/> <p>Play Game</p>

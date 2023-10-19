@@ -1,6 +1,9 @@
-const Search = ({ parks }) => {
-  
-  const makeStateFilters =() => {
+import { useState } from 'react'
+
+const Search = ({ parks, searchObj, handleSearchChange }) => {
+
+
+  const makeStateFilters = () => {
     
     let stateOptions =[]
     parks.map(park => {
@@ -19,30 +22,50 @@ const Search = ({ parks }) => {
     return display
   }
 
+  const makeWildlifeFilters = () => {
+    let animalOptions =[]
+    parks.map(park => {
+      const animals = park.wildlife
+      animals.map(animal => {
+        if (!animalOptions.includes(animal)) {
+          animalOptions = [...animalOptions, animal]
+        }
+      })
+    })
+    
+    const display = animalOptions.sort().map(state => {
+      return (<option key={state}>{state}</option>)
+    })
+
+    return display
+  }
   
+  const onChange = ({ target: { name, value } }) => {
+    handleSearchChange(name, value)
+  }
 
   return (
       <form className='search-form'>
         <div className='search-list-sort'>
           <div className='search-bar'>
             <label htmlFor='search-bar'><strong>Search</strong></label>
-              <input id='search-bar' type='text' placeholder='Search by name' />
+              <input onChange={onChange} id='search' name='search' type='text' placeholder='Search by name' value={searchObj.searchQuery} />
           </div>
           <div>
             <label htmlFor='lists'><strong>Lists</strong></label>
-              <select id='lists' name='lists'>
+              <select onChange={onChange} id='list' name='list' value={searchObj.list}>
+                <option value='Trending'>All</option>
                 <option value='Favorites'>Favorites</option>
-                <option value='Trending'>Trending</option>
                 <option value='Cards Collected'>Cards Collected</option>
                 <option value='Cards Remaining'>Cards Remaining</option>
               </select>
           </div>
           <div>
             <label htmlFor='sort'><strong>Sort</strong></label>
-              <select id='sort' name='sort'>
+              <select onChange={onChange} id='sort' name='sort' value={searchObj.sort}>
                   <option value='Alphabetically'>A-Z</option>
                   <option value='Visitors'>Visitors </option>
-                  <option value='Favorites'>Oldest-Newest</option>
+                  <option value='Oldest-Newest'>Oldest-Newest</option>
                   <option value='Trending'>Trending</option>
               </select>
           </div>
@@ -66,7 +89,7 @@ const Search = ({ parks }) => {
               <div>
             <label htmlFor='wildlife'>Wildlife</label>
               <select id='wildlife'>
-                {/* {wildlifeOptions} */}
+                {makeWildlifeFilters()}
               </select>
             </div>
             <div>
