@@ -21,14 +21,28 @@ const Book = () => {
     .then(data => setCurrentPark(data)) 
   }, [])
 
+  const handleFavorite = (id, faved) => {
+    fetch(`http://localhost:3000/parkObj/${id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        favorited: !faved
+      })
+    })
+    .then(resp => resp.json())
+    .then(data => setCurrentPark(data))
+  }
+
   return (
     <>
       <NavButtons />
       <div className='book'>
           <Search parks={parks}/>
         <div className='book-bottom'>
-          <ParkList parks={parks} displayPark={displayPark} />
-          <ParkArticle park={currentPark} />
+          <ParkList handleFavorite={handleFavorite} parks={parks} displayPark={displayPark} />
+          <ParkArticle handleFavorite={handleFavorite} displayPark={displayPark} park={currentPark} />
         </div>
       </div>
     </>

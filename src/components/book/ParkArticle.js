@@ -3,9 +3,11 @@ import { useEffect, useState } from 'react'
 import { BiBookHeart as AddFaveIcon } from 'react-icons/bi'
 import { BiSolidBookHeart as RemoveFaveIcon } from 'react-icons/bi'
 
-const ParkArticle = ({ park }) => {
+const ParkArticle = ({ park, handleFavorite, displayPark }) => {
   const { id, name, year, location, coordinates, image, attractions, link, visitors, wildlife, gameWon, description, favorited } = park
   const [currentInfo, setCurrentInfo] = useState(null)
+  const [isFavorited, setIsFavorited] = useState(false)
+
 
   const displayInfo = ({ target: { name } }) => {
     if (name === 'attractions') {
@@ -67,17 +69,27 @@ const ParkArticle = ({ park }) => {
     }
   }, [park])
 
+  const handleClick = () => {
+    displayPark(id)
+  }
+
+  const handleFave = () => {
+    handleFavorite(id, isFavorited)
+    setIsFavorited(current => !current)
+  }
+
+
   return (
       <div className='park-article'>
         <div className='article-header'>
           <h2>{name}</h2>
-          {!favorited ? (
+          {!isFavorited ? (
             <div className='single-icon-container'>
-              <AddFaveIcon className='react-icon fave-icon'/> <p>Favorite</p>
+              <AddFaveIcon onClick={handleFave} className='react-icon fave-icon'/> <p>Favorite</p>
             </div>
           ) : ( 
             <div class='single-icon-container'>
-              <RemoveFaveIcon className='react-icon fave-icon'/> <p>Unfavorite</p>
+              <RemoveFaveIcon onClick={handleFave} className='react-icon fave-icon'/> <p>Unfavorite</p>
             </div>
           )}
         </div>
