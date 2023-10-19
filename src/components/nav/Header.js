@@ -25,6 +25,7 @@ const Header = ({ currentUser, onLoginUserSubmit, onCreateUserSubmit }) => {
     setLoginModalOpen(false);
   };
 
+  
 
   return (
     <div className='header'>

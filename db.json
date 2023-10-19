@@ -20,7 +20,7 @@
       ],
       "link": "https://www.nps.gov/acad/index.htm",
       "visitors": 3970260,
-      "pointValue": 189,
+      "pointValue": 327,
       "wildlife": [
         "American black bear",
         "White-tailed deer",
@@ -1894,7 +1894,7 @@
       ],
       "link": "https://www.nps.gov/isro/index.htm",
       "visitors": 25454,
-      "pointValue": 563,
+      "pointValue": 411,
       "wildlife": [
         "White-tailed deer",
         "Eastern gray squirrel",
@@ -3858,8 +3858,11 @@
     {
       "id": 3,
       "username": "connor",
-      "points": 0,
-      "cards": []
+      "points": 738,
+      "cards": [
+        32,
+        1
+      ]
     },
     {
       "id": 4,
