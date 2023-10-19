@@ -8,6 +8,7 @@ function Hangman() {
   const [correctGuesses, setCorrectGuesses] = useState([])
   const [wrongGuesses, setWrongGuesses] = useState([])
   const [status, setStatus] = useState("")
+  const [startTime, setStartTime] = useState(Date.now())
 
   //define letters
   const alphabets = ["A", "B", "C", "D", "E", "F", "G",
@@ -91,7 +92,7 @@ function Hangman() {
   useEffect(() => {
     if (status === "win") {
       const endTime = Date.now()
-      handleWin(id, endTime, wrongGuesses)
+      handleWin(id, (endTime - startTime))
     }
   }, [status])
 
