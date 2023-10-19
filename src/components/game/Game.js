@@ -39,11 +39,12 @@ const Game = () => {
   }, 180000)
 
 
-  //TODO Route protection
+  // //TODO Route protection
   // useEffect(() => {
   //   if (!id) {
   //     navigate('/')
-  // Alert user to 'select a park' msg
+  // setTimeout alert('choose a park')
+  // Navigate user to ErrorPage
   //   }
   // })
 
@@ -57,7 +58,7 @@ const Game = () => {
         <button onClick={() => navigate('../')}>Return to Map</button>
         {/* Should we allow user to choose a different type of game without returning to Home? */}
         {/* Destructure whatever park.property props you need for your game above and feed them to the context below:  */}
-        <Outlet context={{ handleWin, id, attractions, wildlife }}/>
+        <Outlet context={{ handleWin, id, attractions, wildlife, image, name }}/>
         {/* <NotifyBar /> */}
       </div>
     )

@@ -74,8 +74,8 @@ useEffect(() => {
   // * 1. Calculate score
   // * 3. PATCH database with gameWon: true
 
-  //4. Add card to trophy case & display score to user
-  //5. Pop up card to user, user can navigate '/' from it.
+  // * 4 . Display score to user
+  // * 5. Pop up card to user, user can navigate '/' from it.
   // * 6. Update points container.
 
   //7. Updates points/parks in userObj.
