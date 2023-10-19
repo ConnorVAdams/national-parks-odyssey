@@ -2365,25 +2365,21 @@ const saguaroNationalParkAnimals = [
   ]
 
 
-  function updateWildlifeInParks() {
-    fetch('http://localhost:3000/parkObj')
-    .then(resp => resp.json())
-    .then(data => console.log(data))
-    // .then(data => {
-    // // Loop through each park object in the data
-    // for (const park of data) {
-    //     // Find the index of the park in the newWildlife array based on id
-    //     const newIndex = newWildlife.findIndex(newPark => newPark.id === park.id);
+  // function updateWildlifeInPark(id) {
+  //   console.log(allWildlife[id -1])
+  //   fetch(`http://localhost:3000/parkObj/${id}`, {
+  //     method: 'PATCH',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify({
+  //       wildlife: allWildlife[id -1]
+  //     })
+  //   })
+  //   .then(resp => resp.json())
+  // }
 
-    //     // If a matching index is found, update the wildlife array
-    //     if (newIndex !== -1) {
-    //         park.wildlife = newWildlife[newIndex].wildlife;
-    //     }
-    // }
-    // })
-  }
-
-  updateWildlifeInParks()
+  // updateWildlifeInPark()
 
 const noDuplicates = []
 

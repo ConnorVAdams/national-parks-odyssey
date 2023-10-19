@@ -29,7 +29,7 @@ useEffect(() => {
   fetchAllParks()
 }, [])
 
-console.log(noDuplicates)
+// console.log(noDuplicates)
 
 //Score calculator specific to memory game
   //TODO Can be generalized to calculate score for every game?
