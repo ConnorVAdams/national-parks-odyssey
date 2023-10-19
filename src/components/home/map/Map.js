@@ -9,11 +9,13 @@ const Map = () => {
   const navigate = useNavigate()
   const {parks} = useOutletContext()
 
+
+  //TODO change back
   const loadGame = (parkID, path) => {
     //Provide three possible game paths.
     const games = ['/game/memory', '/game/hangman', '/game/arrow-game']
     const randomPath = games[Math.floor(Math.random() * games.length)]
-    navigate(randomPath, { state: {id: parkID, path: randomPath} })
+    navigate('/game/memory', { state: {id: parkID, path: '/game/memory'} })
   }
 
   return (

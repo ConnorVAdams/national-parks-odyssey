@@ -41,8 +41,8 @@ const ParkIcon = ({map, parks, google, loadGame}) => {
   return (
     <>
     {parks.map((park) => (
-      <Marker key={park.id} map={map} position={park.coordinates} onClick={() => { currentUser === "" ? 
-        alert("Please login or create a user to play!") : 
+      <Marker key={park.id} map={map} position={park.coordinates} onClick={() => {
+        // { currentUser === "" ? alert("Please login or create a user to play!") : 
         loadGame(park.id)}}
         >
         <div >
