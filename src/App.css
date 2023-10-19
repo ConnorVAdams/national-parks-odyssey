@@ -365,10 +365,10 @@ h3 {
   overflow: auto;
 }
 
-.park-card {
+/* .park-card {
   position: relative;
   grid-area: 3/2/5/3
-}
+} */
 
 .hidden {
   visibility: hidden;
@@ -382,6 +382,6 @@ h3 {
   grid-gap: 8px;
 }
 
-.shown {
+/* .shown {
   visibility: visible;
-}
+} */
