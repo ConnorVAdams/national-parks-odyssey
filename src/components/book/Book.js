@@ -5,9 +5,30 @@ import ParkList from './ParkList'
 import ParkArticle from './ParkArticle'
 import NavButtons from '../nav/NavButtons.js'
 
+const defaultObj = {
+  search: '',
+  list: '',
+  sort: '',
+  state: '',
+  traffic: '',
+  wildlife: '',
+  activity: '',
+}
+
 const Book = () => {
   const { parks }= useOutletContext()
   const [currentPark, setCurrentPark] = useState([])
+  const [searchObj, setSearchObj] = useState(defaultObj)
+
+  const handleSearchChange = (name, value) => {
+    setSearchObj({...searchObj,
+      [name]: value
+    })
+  }
+
+  const handleReset = () => {
+    setSearchObj(defaultObj)
+  }
 
   const displayPark = (id) => {
     fetch(`http://localhost:3000/parkObj/${id}`)
@@ -21,14 +42,28 @@ const Book = () => {
     .then(data => setCurrentPark(data)) 
   }, [])
 
+  const handleFavorite = (id, faved) => {
+    fetch(`http://localhost:3000/parkObj/${id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        favorited: !faved
+      })
+    })
+    .then(resp => resp.json())
+    .then(data => setCurrentPark(data))
+  }
+
   return (
     <>
       <NavButtons />
       <div className='book'>
-          <Search parks={parks}/>
+          <Search parks={parks} handleReset={handleReset} handleSearchChange={handleSearchChange} searchObj={searchObj}/>
         <div className='book-bottom'>
-          <ParkList parks={parks} displayPark={displayPark} />
-          <ParkArticle park={currentPark} />
+          <ParkList searchObj={searchObj} handleFavorite={handleFavorite} parks={parks} displayPark={displayPark} />
+          <ParkArticle handleFavorite={handleFavorite} displayPark={displayPark} park={currentPark} />
         </div>
       </div>
     </>

@@ -1,18 +1,28 @@
 import { BiSolidSpreadsheet as DisplayIcon }  from 'react-icons/bi'
 import { BiSolidJoystickAlt as PlayIcon }  from 'react-icons/bi'
-import { BiBookHeart as AddFaveIcon } from 'react-icons/bi'
-import { BiSolidBookHeart as RemoveFaveIcon } from 'react-icons/bi'
+import { useEffect, useState } from 'react'
 
-const ParkLi = ({ id, name, year, location, link, image, gameWon, favorited, displayPark }) => {
-  
-  const handleClick = (id) => {
+const ParkLi = ({ handleFavorite, park, displayPark }) => {
+  const { id, name, year, location, coordinates, image, attractions, link, visitors, wildlife, gameWon, description, favorited } = park
+  const [isFavorited, setIsFavorited] = useState(null)
+
+  const handleClick = () => {
     displayPark(id)
   }
+
+  const handleFave = () => {
+    handleFavorite(id, isFavorited)
+    setIsFavorited(current => !current)
+  }
+
+  useEffect(() => {
+    setIsFavorited(favorited)
+  }, [])
 
   return (
     <div className='park-li'>
       <div className='park-info'>
-        <img src={image} alt={name} />
+        <img src={image} alt={name} onClick={() => handleClick(id)} />
         <div className='park-li-stats'>
           <h3>{name}</h3>
           <ul>
@@ -24,22 +34,14 @@ const ParkLi = ({ id, name, year, location, link, image, gameWon, favorited, dis
       </div>
       <div className='icon-container'>
         <div className='single-icon-container'>
-          <DisplayIcon className='react-icon display-icon' onClick={() => handleClick(id)}/>
+          <DisplayIcon className='react-icon display-icon' />
           <p>Details</p>
         </div>   
-          {!favorited ? (
-            <div className='single-icon-container'>
-              <AddFaveIcon className='react-icon fave-icon'/> <p>Favorite</p>
-            </div>
-          ) : ( 
-            <div class='single-icon-container'>
-              <RemoveFaveIcon className='react-icon fave-icon'/> <p>Unfavorite</p>
-            </div>
-          )}
-          {!gameWon ? 
-            <div className='single-icon-container'>
-              <PlayIcon className='react-icon play-icon'/> <p>Play Game</p>
-            </div> : null }
+        {!favorited ? <button onClick={handleFave} >Favorite</button> : <button onClick={handleFave}>Unfavorite</button>}
+        {!gameWon ? 
+          <div className='single-icon-container'>
+            <PlayIcon className='react-icon play-icon'/> <p>Play Game</p>
+          </div> : null }
         </div>
     </div>
   )

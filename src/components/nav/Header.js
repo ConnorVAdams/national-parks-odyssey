@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom"
 
 const Header = ({ points }) => {
-  console.log(points)
   const navigate = useNavigate()
   return (
     <div className='header'>
@@ -10,7 +9,7 @@ const Header = ({ points }) => {
         <h1 className='title'>Untitled National Parks Game</h1>
       </div>
       <div className='point-container'>
-        <h2>{points}</h2>
+        <h2>{points} points</h2>
       </div>
     </div>
   )

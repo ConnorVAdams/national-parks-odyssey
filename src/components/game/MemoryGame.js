@@ -3,10 +3,9 @@ import { useOutletContext } from 'react-router-dom'
 import MemoryTile from './MemoryTile'
 import './MemoryGame.css'
 
-import animals from './animalData.js'
-
 const MemoryGame = () => {
     const { name, handleWin, wildlife, id } = useOutletContext()
+
     //count variable keeps track of number of turns player has taken, with an odd numbered count being the middle of a turn and an even number being the end of a turn.
     const [count, setCount] = useState(0)
     //clickedName variable holds the value of the first tile clicked every turn.
@@ -71,12 +70,14 @@ const MemoryGame = () => {
 
     //Create unique deck for game on first render.
     useEffect(() => {
-        setShuffledDeck(shuffleDeck(duplicateCards(randomSlice(animals, easy))))
-    }, [])
+        if (wildlife) {
+        setShuffledDeck(shuffleDeck(duplicateCards(randomSlice(wildlife, easy))))
+        }
+    }, [wildlife])
 
     //Reset
     const reset = () => {
-        setShuffledDeck(shuffleDeck(duplicateCards(randomSlice(animals, easy))))
+        setShuffledDeck(shuffleDeck(duplicateCards(randomSlice(wildlife, easy))))
     }
 
     //Re-enable pointer events after every turn.
