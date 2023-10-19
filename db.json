@@ -59,7 +59,7 @@
       "quizQuestions": {},
       "gameWon": false,
       "description": "Covering most of Mount Desert Island and other coastal islands, Acadia features the tallest mountain on the Atlantic coast of the United States, granite peaks, ocean shoreline, woodlands, and lakes. There are freshwater, estuary, forest, and intertidal habitats.",
-      "favorited": false
+      "favorited": true
     },
     {
       "id": 2,
@@ -362,7 +362,7 @@
       "quizQuestions": {},
       "gameWon": false,
       "description": "The central part of Biscayne Bay, this mostly underwater park at the north end of the Florida Keys has four interrelated marine ecosystems: mangrove forest, the Bay, the Keys, and coral reefs. Threatened animals include the West Indian manatee, American crocodile, various sea turtles, and the peregrine falcon.",
-      "favorited": true
+      "favorited": false
     },
     {
       "id": 7,
@@ -1818,7 +1818,7 @@
     {
       "id": 31,
       "name": "Hot Springs National Park",
-      "year": 1832,
+      "year": 1921,
       "location": [
         "Arkansas"
       ],

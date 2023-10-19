@@ -54,7 +54,7 @@ const Search = ({ parks, searchObj, handleSearchChange }) => {
           <div>
             <label htmlFor='lists'><strong>Lists</strong></label>
               <select onChange={onChange} id='list' name='list' value={searchObj.list}>
-                <option value='Trending'>All</option>
+                <option value='All'>All</option>
                 <option value='Favorites'>Favorites</option>
                 <option value='Cards Collected'>Cards Collected</option>
                 <option value='Cards Remaining'>Cards Remaining</option>
@@ -64,9 +64,8 @@ const Search = ({ parks, searchObj, handleSearchChange }) => {
             <label htmlFor='sort'><strong>Sort</strong></label>
               <select onChange={onChange} id='sort' name='sort' value={searchObj.sort}>
                   <option value='Alphabetically'>A-Z</option>
-                  <option value='Visitors'>Visitors </option>
                   <option value='Oldest-Newest'>Oldest-Newest</option>
-                  <option value='Trending'>Trending</option>
+                  <option value='Visitors'>Visitors </option>
               </select>
           </div>
         </div>
