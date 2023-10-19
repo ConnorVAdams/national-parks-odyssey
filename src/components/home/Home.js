@@ -5,9 +5,6 @@ import Carousel from './Carousel.js'
 import NavButtons from '../nav/NavButtons.js'
 
 const Home = () => {
-
-  
-
   return (
     <>
       <NavButtons />

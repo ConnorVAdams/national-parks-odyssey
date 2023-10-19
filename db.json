@@ -20,7 +20,7 @@
       ],
       "link": "https://www.nps.gov/acad/index.htm",
       "visitors": 3000000000,
-      "pointValue": 0,
+      "pointValue": null,
       "wildlife": [
         "American black bear",
         "White-tailed deer",
@@ -57,7 +57,7 @@
         "Song sparrow"
       ],
       "quizQuestions": {},
-      "gameWon": false,
+      "gameWon": true,
       "description": "Covering most of Mount Desert Island and other coastal islands, Acadia features the tallest mountain on the Atlantic coast of the United States, granite peaks, ocean shoreline, woodlands, and lakes. There are freshwater, estuary, forest, and intertidal habitats.",
       "favorited": true
     },
@@ -1894,7 +1894,7 @@
       ],
       "link": "https://www.nps.gov/isro/index.htm",
       "visitors": 25454,
-      "pointValue": 625,
+      "pointValue": null,
       "wildlife": [
         "White-tailed deer",
         "Eastern gray squirrel",
@@ -2489,7 +2489,7 @@
       ],
       "link": "https://www.nps.gov/maca/index.htm",
       "visitors": 663147,
-      "pointValue": 625,
+      "pointValue": null,
       "wildlife": [
         "White-tailed deer",
         "Eastern gray squirrel",
@@ -2979,7 +2979,7 @@
       ],
       "link": "https://www.nps.gov/redw/index.htm",
       "visitors": 458400,
-      "pointValue": 0,
+      "pointValue": 10000,
       "wildlife": [
         "Roosevelt elk",
         "Black bear",
@@ -3017,7 +3017,7 @@
         "Clark's nutcracker"
       ],
       "quizQuestions": {},
-      "gameWon": false,
+      "gameWon": true,
       "description": "This park and the co-managed state parks protect almost half of all remaining coastal redwoods, the tallest trees on earth. There are three large river systems in this very seismically active area, and 37 miles (60 km) of protected coastline reveal tide pools and seastacks. The prairie, estuary, coast, river, and forest ecosystems contain a wide variety of animal and plant species.",
       "favorited": false
     },
@@ -3540,7 +3540,7 @@
       ],
       "link": "https://www.nps.gov/wica/index.htm",
       "visitors": 607418,
-      "pointValue": 0,
+      "pointValue": 10000,
       "wildlife": [
         "Bison",
         "Elk",
@@ -3580,7 +3580,7 @@
         "Northern river otter"
       ],
       "quizQuestions": {},
-      "gameWon": false,
+      "gameWon": true,
       "description": "Wind Cave is distinctive for its calcite fin formations called boxwork, a unique formation rarely found elsewhere, and needle-like growths called frostwork. It is one of the longest caves in the world and creates a wind as air pressure changes. Above ground is a mixed-grass prairie with animals such as bison, black-footed ferrets, and prairie dogs and ponderosa pine forests home to cougars and elk.[113] The cave is culturally significant to the Lakota people as a creation site.",
       "favorited": false
     },
@@ -3838,6 +3838,38 @@
       "gameWon": false,
       "description": "Located at the junction of the Colorado Plateau, Great Basin, and Mojave Desert, this park contains sandstone features such as mesas, rock towers, and canyons, including the Virgin River Narrows. The various sandstone formations and the forks of the Virgin River create a wilderness divided into four ecosystems: desert, riparian, woodland, and coniferous forest.",
       "favorited": false
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "isaac",
+      "points": 10625,
+      "cards": []
+    },
+    {
+      "id": 2,
+      "username": "buzz",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 3,
+      "username": "connor",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 4,
+      "username": "tiana",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 5,
+      "username": "Matteo",
+      "points": 0,
+      "cards": []
     }
   ]
 }
