@@ -20,6 +20,7 @@ const [card, setCard] = useState({
 })
 const [currentUser, setCurrentUser] = useState("")
 const [users, setUsers] = useState([])
+const [usersParks, setUsersParks] = useState([])
 
 const handleCreateUserSubmit = async (username) => {
   try {
@@ -68,7 +69,10 @@ const handleLoginUserSubmit = async (username) => {
 
     if (foundUser) {
       console.log('User found:', foundUser)
-      setCurrentUser(foundUser) // Set currentUser state correctly
+      
+      setCurrentUser(foundUser)
+      
+    // Set currentUser state correctly
     } else {
       alert('User not found. Please check your username.')
     }
@@ -76,6 +80,14 @@ const handleLoginUserSubmit = async (username) => {
     alert('Error finding user:', error)
   }
 }
+//  if (parks) {
+//   parks.filter(park => currentUser.cards.forEach(id => console.log(id)))
+//  }
+// useEffect(() => {
+//   if (currentUser) {
+//     setUsersParks((parks) => )
+//   }
+// }, [currentUser])
 
 const fetchAllUsers = () => {
   fetch("http://localhost:3000/users")
@@ -135,6 +147,7 @@ useEffect(() => {
         },
         body: JSON.stringify({
           points: currentUser.points + data.pointValue,
+          cards: [...currentUser.cards, gameId]
         }),
       })
 
