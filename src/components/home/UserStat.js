@@ -4,7 +4,17 @@ const UserStat = ({ position, username, points, cards}) => {
     let cardsLength = cards.length
   return (
     <div>
-        <li>{position}. {username} - {points} points - {cardsLength} cards</li>
+        <li>
+          <p>
+            {position}. {username}
+          </p>
+          <p>
+            {points} points 
+          </p>
+          <p>
+            {cardsLength} cards
+          </p>
+        </li>
     </div>
   )
 }

@@ -52,6 +52,7 @@ h3 {
 
 .game-info {
   display: flex;
+  flex-direction: column;
   grid-area: 2/1/5/2;
   height: 78vh;
   border: 3px solid black;
@@ -476,4 +477,13 @@ h3 {
   transform: translate(-50%, -50%);
   z-index: 1;
   font-size: 48px;
+}
+
+.leaderboard p {
+  display: inline;
+  flex-grow: 1;
+}
+
+.leaderboard li {
+  display: flex;
 }
