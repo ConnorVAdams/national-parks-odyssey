@@ -50,7 +50,12 @@ const winBox = [
 const cellSize = 20;
 
 const ArrowGame = () => {
-  const { id, image, handleWin, name } = useOutletContext()
+  // const { gamePark: { id, name, attractions, wildlife, image, location, gameWon } } = currentGameData
+  // const { path } = currentGameData
+
+  const { currentGameData, handleWin} = useOutletContext()
+  const { gamePark: { id, name, attractions, wildlife, image, location, gameWon } } = currentGameData
+  const { path } = currentGameData
   const [position, setPosition] = useState({ x: 10, y: 380 });
   const [startTime, setStartTime] = useState(Date.now())
   // const [wallHits, setWallHits] = useState(1)

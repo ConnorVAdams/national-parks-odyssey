@@ -3,7 +3,9 @@ import { useOutletContext } from "react-router-dom";
 import "./Hangman.css"
 
 function Hangman() {
-  const { name, handleWin, id, attractions } = useOutletContext()
+  const { currentGameData, handleWin} = useOutletContext()
+  const { gamePark: { id, name, attractions, wildlife, image, location, gameWon } } = currentGameData
+  const { path } = currentGameData
   const [randomAttraction, setRandomAttraction] = useState("")
   const [correctGuesses, setCorrectGuesses] = useState([])
   const [wrongGuesses, setWrongGuesses] = useState([])
@@ -101,13 +103,14 @@ function Hangman() {
     correctGuesses.includes(letter) ? letter : "_").join(" ");
 
   return <div className="hangman-container">
-    <button onClick={reset}>Retry</button>
+    
     <p>{hiddenWord}</p>
     <p>{progress()}</p>
     <div>
       {renderButtons()}
     </div>
     {renderStatus()}
+    <button onClick={reset}>Retry</button>
   </div>
 }
 

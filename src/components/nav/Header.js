@@ -23,7 +23,6 @@ const Header = ({ currentUser, onLoginUserSubmit, onCreateUserSubmit }) => {
     setLoginModalOpen(false);
   };
 
-  
   return (
     <div className='header'>
       <div className='title-container'>
@@ -46,8 +45,8 @@ const Header = ({ currentUser, onLoginUserSubmit, onCreateUserSubmit }) => {
         />
       </div>
       <div className='point-container'>
-        <h2>Current User: {currentUser.username}</h2>
-        <h2> {currentUser.points} points</h2>
+        <h2>Current User: {currentUser ? currentUser.username : 'Guest' }</h2>
+        <h2>{currentUser ? currentUser.points : 0} points</h2>
       </div>
     </div>
   )
