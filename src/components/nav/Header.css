@@ -57,15 +57,32 @@
 }
 
 .user-modal-content {
-  background-color: #fefefe;
+  background-color: #354A20;
+  font-weight: 700;
+  font-size: x-large;
+  letter-spacing: 1px;
+  color: white;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
 }
+.user-modal-content label {
+  align-items: center;
+}
+
+.user-modal-content form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user-modal-content button {
+  background: #b4d2bf;
+}
 
 .user-close {
-  color: #aaa;
+  color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
