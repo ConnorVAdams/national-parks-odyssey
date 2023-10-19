@@ -9,12 +9,10 @@ const defaultObj = {
   search: '',
   list: '',
   sort: '',
-  filters: {
-    state: [],
-    traffic: [],
-    wildlife: [],
-    activities: [],
-  }
+  state: '',
+  traffic: '',
+  wildlife: '',
+  activities: '',
 }
 
 const Book = () => {
@@ -27,6 +25,16 @@ const Book = () => {
       [name]: value
     })
   }
+
+  // const handleSelectChange = (name, value) => {
+  //   console.log(name, value)
+  //   setSearchObj({...searchObj,
+  //     filters: {
+  //       ...searchObj.filters,
+  //       state: value
+  //     }
+  //   })
+  // }
 
   const displayPark = (id) => {
     fetch(`http://localhost:3000/parkObj/${id}`)

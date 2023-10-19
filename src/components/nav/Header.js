@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom"
 
 const Header = ({ points }) => {
-  console.log(points)
   const navigate = useNavigate()
   return (
     <div className='header'>

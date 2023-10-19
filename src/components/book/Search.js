@@ -2,6 +2,11 @@ import { useState } from 'react'
 
 const Search = ({ parks, searchObj, handleSearchChange }) => {
 
+  // const [stateArr, setStateArr] = useState([])
+
+  // const handleOptionChange = ({ target: { value }}) => {
+  //   setStateArr(current => [...current, value])
+  // }
 
   const makeStateFilters = () => {
     
@@ -16,7 +21,7 @@ const Search = ({ parks, searchObj, handleSearchChange }) => {
     })
     
     const display = stateOptions.sort().map(state => {
-      return (<option key={state}>{state}</option>)
+      return (<option onVolumeChangeCapture={state} key={state}>{state}</option>)
     })
 
     return display
@@ -43,6 +48,10 @@ const Search = ({ parks, searchObj, handleSearchChange }) => {
   const onChange = ({ target: { name, value } }) => {
     handleSearchChange(name, value)
   }
+
+  // const onSelectChange = ({ target: { value } }) => {
+  //   handleSelectChange(value)
+  // }
 
   return (
       <form className='search-form'>
@@ -73,13 +82,14 @@ const Search = ({ parks, searchObj, handleSearchChange }) => {
           <label htmlFor='filters-container'><strong>Filters</strong></label>
             <div>
               <label htmlFor='state'>State</label>
-                <select id='state'>
+                <select onChange={onChange} name='state'>
                   {makeStateFilters()}
                 </select>
             </div>
             <div>
               <label htmlFor='traffic'>Traffic</label>
                 <select id='traffic'>
+                  <option value='off'>Off</option>
                   <option value='low'>Low</option>
                   <option value='med'>Med</option>
                   <option value='high'>High</option>
@@ -94,6 +104,7 @@ const Search = ({ parks, searchObj, handleSearchChange }) => {
             <div>
               <label htmlFor='activities'>Activities</label>
                 <select id='activities'>
+                <option value='all'>All</option>
                   <option value='archaeology'>Archaeology</option>
                   <option value='hiking'>Hiking</option>
                   <option value='history'>History</option>

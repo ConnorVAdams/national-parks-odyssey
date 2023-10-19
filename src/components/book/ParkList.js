@@ -2,10 +2,8 @@ import ParkLi from "./ParkLi"
 import { useEffect, useState } from 'react'
 
 const ParkList = ({ parks, displayPark, handleFavorite, searchObj }) => {
-  const { search, list, sort } = searchObj
-  // const [currentSearch, setCurrentSearch] = useState([])
-
-  const searchedParks = parks.filter(park => new RegExp(search, 'i').test(park.name))
+  const { search, list, sort, state, traffic, wildlife, activities } = searchObj
+  // const { state, traffic, wildlife, activities} = searchObj.filters
 
   const listParks = () => {
     if (list === 'Favorites') {
@@ -57,15 +55,25 @@ const ParkList = ({ parks, displayPark, handleFavorite, searchObj }) => {
   return arr
   }
 
-  const sortedParks = sortParks(parks)
+  const finalParks = sortParks(listedParks).filter(park => new RegExp(search, 'i').test(park.name))
 
-  const finalParks = sortParks(listedParks)
-  const finalFinalParks = finalParks.filter(park => new RegExp(search, 'i').test(park.name))
-
-  const parksDisplay = finalFinalParks.map(park => {
+  const filteredByState = finalParks.filter(park => {
+    if (state) {
+    return (park.location.some(loc => loc === state))
+    } else {
+      return finalParks
+    }
+  })
+    // state.includes(park.location))
+  // }
+  const parksDisplay = filteredByState.map(park => {
     return <ParkLi handleFavorite={handleFavorite} key={park.id} park={park} displayPark={displayPark}/>
   })
   
+
+
+  console.log(filteredByState)
+
   return (
     <div className='park-list'>
       {parksDisplay}

@@ -185,6 +185,10 @@ h3 {
   margin-left: 8px;
 }
 
+/* .filters-container select {
+  max-height: 20px;
+} */
+
 .book-bottom {
   display: inherit;
   height: 80%;
