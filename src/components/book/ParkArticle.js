@@ -25,7 +25,7 @@ const ParkArticle = ({ park }) => {
             {wildlife.map(animal => {
               return (
               <li key={animal}>
-                  <img src={animal} alt={animal} />
+                  {/* <img src={animal} alt={animal} /> */}
                   <p>{animal}</p>
               </li>
             )})}
@@ -36,6 +36,36 @@ const ParkArticle = ({ park }) => {
       setCurrentInfo(current => (<p>{description}</p>))
     }
   }
+
+  useEffect(() => {
+    if (name === 'attractions') {
+      setCurrentInfo(current => {
+        return (
+          <ul>
+            {attractions.map(attraction => {
+              return <li key={attraction}>{attraction}</li>
+            })}
+          </ul>
+        )
+      })
+    } else if (name === 'wildlife') {
+      setCurrentInfo(current => {
+        return (
+          <ul>
+            {wildlife.map(animal => {
+              return (
+              <li key={animal}>
+                  {/* <img src={animal} alt={animal} /> */}
+                  <p>{animal}</p>
+              </li>
+            )})}
+          </ul>
+        )
+      })
+    } else {
+      setCurrentInfo(current => (<p>{description}</p>))
+    }
+  }, [park])
 
   return (
       <div className='park-article'>

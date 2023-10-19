@@ -12,7 +12,7 @@ const ParkLi = ({ id, name, year, location, link, image, gameWon, favorited, dis
   return (
     <div className='park-li'>
       <div className='park-info'>
-        <img src={image} alt={name} />
+        <img src={image} alt={name} onClick={() => handleClick(id)} />
         <div className='park-li-stats'>
           <h3>{name}</h3>
           <ul>
@@ -24,7 +24,7 @@ const ParkLi = ({ id, name, year, location, link, image, gameWon, favorited, dis
       </div>
       <div className='icon-container'>
         <div className='single-icon-container'>
-          <DisplayIcon className='react-icon display-icon' onClick={() => handleClick(id)}/>
+          <DisplayIcon className='react-icon display-icon' />
           <p>Details</p>
         </div>   
           {!favorited ? (
