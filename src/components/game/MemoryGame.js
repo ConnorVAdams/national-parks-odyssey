@@ -112,7 +112,7 @@ const animals = [
 
 const MemoryGame = () => {
     const { name, handleWin, id } = useOutletContext()
-    const [startTime, setStartTime] = useState(Date.now()) 
+    const [startTime, setStartTime] = useState(Date.now())
 
     //count variable keeps track of number of turns player has taken, with an odd numbered count being the middle of a turn and an even number being the end of a turn.
     const [count, setCount] = useState(0)
@@ -127,7 +127,7 @@ const MemoryGame = () => {
         const combined = [...duplicates, ...arr]
         // debugger
         return combined
-    }    
+    }
 
     //Receives duplicated collection and randomly shuffles it.
     const shuffleDeck = (arr) => {
@@ -142,7 +142,7 @@ const MemoryGame = () => {
     const easy = 8
     const med = 12
     const hard = 16
-    
+
     const randomSlice = (arr, difficulty) => {
         const gameDeck = arr.slice(0, difficulty)
         // debugger
@@ -197,15 +197,15 @@ const MemoryGame = () => {
     useEffect(() => {
         if (((shuffledDeck.filter(card => !card.found)).length === 0) && (shuffledDeck[1] !== undefined)) {
             const endTime = Date.now()
-            handleWin(id, (endTime - startTime), count)
+            handleWin(id, (endTime - startTime))
         }
     }, [shuffledDeck])
-    
+
     //Render <AnimalTile /> components for re-use on the board.
     const animalDisplay = shuffledDeck.map(animal => {
-        return <MemoryTile 
-                    key={animal.id} 
-                    {...animal} 
+        return <MemoryTile
+                    key={animal.id}
+                    {...animal}
                     handleSelectAnimal={handleSelectAnimal}
                     clickedName={clickedName}
                     count={count}
@@ -215,7 +215,7 @@ const MemoryGame = () => {
     return (
     <>
         <button onClick={reset}>Retry</button>
-        <div className={'animal-board'}> 
+        <div className={'animal-board'}>
             {animalDisplay}
         </div>
     </>
