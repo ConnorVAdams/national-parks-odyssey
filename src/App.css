@@ -402,9 +402,9 @@ h3 {
   grid-template-columns: 1fr 3fr 1fr;
   height: 100vh;
   grid-gap: 8px;
-} */
+}  */
 
-/* .user-modal {
+.user-modal {
   display: block;
   position: fixed;
   z-index: 1;
@@ -477,73 +477,3 @@ h3 {
   z-index: 1;
   font-size: 48px;
 }
-
-button {
-  display: flex;
-  align-self: center;
-  background-color: #A4A89F;
-  background-image: none;
-  background-position: 0 90%;
-  background-repeat: repeat no-repeat;
-  background-size: 4px 3px;
-  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-  border-style: solid;
-  border-width: 2px;
-  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-  box-sizing: border-box;
-  color: #ffffff;
-  cursor: pointer;
-  font-family: 'Bahianita', sans-serif;
-  font-size: 1.5rem;
-  line-height: 23px;
-  outline: none;
-  padding: .5rem;
-  text-decoration: none;
-  transition: all 235ms ease-in-out;
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  border-color: #638da8;
-  margin: 2px;
-}
-
-.nav-link {
-  display: flex;
-  align-self: center;
-  background-color: #A4A89F;
-  background-image: none;
-  background-position: 0 90%;
-  background-repeat: repeat no-repeat;
-  background-size: 2% 1.5%;
-  border-radius: 10% 50% 60% 10% 10% 60% 80% 10%;
-  border-style: solid;
-  border-width: 2px;
-  box-shadow: rgba(0, 0, 0, .2) 2% 3.5% 2.5% -1.8%;
-  box-sizing: border-box;
-  color: #ffffff;
-  cursor: pointer;
-  font-family: 'Bahianita', sans-serif;
-  font-size: 1.35rem; /* You can use relative units for font size as well */
-  line-height: 1.5; /* You can use unitless line-height for scalability */
-  outline: none;
-  padding: 1em; /* Use em units for padding */
-  text-decoration: none;
-  transition: all 0.2s ease-in-out; /* You can use seconds for transition duration */
-  border-bottom-left-radius: 10% 50%;
-  border-bottom-right-radius: 50% 10%;
-  border-top-left-radius: 60% 10%;
-  border-top-right-radius: 10% 60%;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  border-color: #638da8;
-  margin: 0.2em; /* Use em units for margin */
-}
-
-
-
-
