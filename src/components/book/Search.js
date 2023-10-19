@@ -1,12 +1,6 @@
 import { useState } from 'react'
 
-const Search = ({ parks, searchObj, handleSearchChange }) => {
-
-  // const [stateArr, setStateArr] = useState([])
-
-  // const handleOptionChange = ({ target: { value }}) => {
-  //   setStateArr(current => [...current, value])
-  // }
+const Search = ({ parks, searchObj, handleSearchChange, handleReset }) => {
 
   const makeStateFilters = () => {
     
@@ -49,9 +43,9 @@ const Search = ({ parks, searchObj, handleSearchChange }) => {
     handleSearchChange(name, value)
   }
 
-  // const onSelectChange = ({ target: { value } }) => {
-  //   handleSelectChange(value)
-  // }
+  const onReset = () => {
+    handleReset()
+  }
 
   return (
       <form className='search-form'>
@@ -83,13 +77,14 @@ const Search = ({ parks, searchObj, handleSearchChange }) => {
             <div>
               <label htmlFor='state'>State</label>
                 <select onChange={onChange} name='state'>
+                  <option value='all'>All</option>
                   {makeStateFilters()}
                 </select>
             </div>
             <div>
               <label htmlFor='wildlife'>Wildlife</label>
                 <select onChange={onChange} name='wildlife'>
-                  <option value='All'>All</option>
+                  <option value='all'>All</option>
                   {makeWildlifeFilters()}
               </select>
             </div>
@@ -106,7 +101,7 @@ const Search = ({ parks, searchObj, handleSearchChange }) => {
                   <option value='water sports'>Water Sports</option>
                 </select>
               </div>
-              <button>Reset Filters</button>
+              <button onClick={onReset}>Reset Filters</button>
         </div>
       </form>
   )

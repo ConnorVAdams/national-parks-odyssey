@@ -26,15 +26,9 @@ const Book = () => {
     })
   }
 
-  // const handleSelectChange = (name, value) => {
-  //   console.log(name, value)
-  //   setSearchObj({...searchObj,
-  //     filters: {
-  //       ...searchObj.filters,
-  //       state: value
-  //     }
-  //   })
-  // }
+  const handleReset = () => {
+    setSearchObj(defaultObj)
+  }
 
   const displayPark = (id) => {
     fetch(`http://localhost:3000/parkObj/${id}`)
@@ -66,7 +60,7 @@ const Book = () => {
     <>
       <NavButtons />
       <div className='book'>
-          <Search parks={parks} handleSearchChange={handleSearchChange} searchObj={searchObj}/>
+          <Search parks={parks} handleReset={handleReset} handleSearchChange={handleSearchChange} searchObj={searchObj}/>
         <div className='book-bottom'>
           <ParkList searchObj={searchObj} handleFavorite={handleFavorite} parks={parks} displayPark={displayPark} />
           <ParkArticle handleFavorite={handleFavorite} displayPark={displayPark} park={currentPark} />

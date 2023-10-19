@@ -58,7 +58,7 @@ const ParkList = ({ parks, displayPark, handleFavorite, searchObj }) => {
   const finalParks = sortParks(listedParks).filter(park => new RegExp(search, 'i').test(park.name))
 
   const filteredByState = finalParks.filter(park => {
-    if (state) {
+    if (state && state !== 'all') {
       return (park.location.some(loc => loc === state))
     } else {
       return finalParks
@@ -66,7 +66,7 @@ const ParkList = ({ parks, displayPark, handleFavorite, searchObj }) => {
   })
 
   const filteredByWildlife = filteredByState.filter(park => {
-    if (wildlife) {
+    if (wildlife && wildlife !== 'all') {
       return (park.wildlife.some(animal => animal === wildlife))
     } else {
       return finalParks
@@ -74,7 +74,7 @@ const ParkList = ({ parks, displayPark, handleFavorite, searchObj }) => {
   })
 
   const filteredByActivity = filteredByWildlife.filter(park => {
-    if (activity === 'horseback riding') {
+    if (activity === 'horseback riding' && activity !== 'all') {
       const regex = [/horse/i]
       return (regex.some(regex => regex.test(park.description)))
     } else if (activity === 'archaeology'){
