@@ -35,27 +35,31 @@ useEffect(() => {
   //Receives elapsed time and number of moves from <AnimalBoard /> and passes it through calculateScore()
   const handleWin = (gameId, param1, param2) => {
     const score = calculateScore(param1, param2)
-    fetch(`${URL}/${gameId}`, {
-      method: 'PATCH',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        gameWon: true
-      })
-    })
-    .then(resp => resp.json())
+    // fetch(`${URL}/${gameId}`, {
+    //   method: 'PATCH',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body: JSON.stringify({
+    //     gameWon: true,
+    //     pointValue: score
+    //   })
+    // })
+    // .then(resp => resp.json())
+    // .then(data => setPoints(current => current + data.pointValue))
+    // fetchAllParks()
     console.log(`Congratulations, you earned ${score} points!`)
   }
 
   //TODO handleWin
-  //1. Calculate score
+  // * 1. Calculate score
   //2. Display score to user
-  //3. PATCH database with gameWon: true
+  // * 3. PATCH database with gameWon: true
 
   //4. Add card to trophy case.
   //5. Pop up card to user, user can navigate '/' from it.
   //6. Update points container.
+
   //7. Updates points/parks in userObj.
 
 
