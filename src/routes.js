@@ -45,6 +45,10 @@ const routes =[
                 element: <Rules />
             }
         ]
+    },
+    {
+        path: '/error',
+        element: <ErrorPage />,
     }
 ]
 

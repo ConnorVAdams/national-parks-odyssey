@@ -33,6 +33,7 @@ const Header = ({ currentUser, onLoginUserSubmit, onCreateUserSubmit }) => {
         <h1 className='title'>National Parks Odyssey (TBD)</h1>
       </div>
       <div className='user-container'>
+
         <div className='point-container'>
           <h2>Current User: {currentUser.username} |</h2>
           <h2> | {currentUser.points} Points</h2>

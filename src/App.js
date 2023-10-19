@@ -100,11 +100,7 @@ useEffect(() => {
 }, [])
 
 //Score calculator specific to memory game
-  //TODO Can be generalized to calculate score for every game?
   const calculateScore = (finalTime) => {
-    const minimumMoves = 1
-    //Awards player more points for lower number of moves and/or lower elapsed time, with a maximum of 10,000.
-    //TODO What should maximum points for each game be?
     return Math.round(10000000 / (finalTime))
   }
 
@@ -157,17 +153,6 @@ useEffect(() => {
       displayCard: false
     })
   }
-
-  //TODO handleWin
-  // * 1. Calculate score
-  // * 3. PATCH database with gameWon: true
-
-  // * 4 . Display score to user
-  // * 5. Pop up card to user, user can navigate '/' from it.
-  // * 6. Update points container.
-
-  //7. Updates points/parks in userObj.
-
 
   return (
     <div className={card.displayCard ? 'wrapper hidden' : 'wrapper'}>

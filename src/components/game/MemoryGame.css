@@ -2,7 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 10px;
+  width: 700px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .animal-tile {
@@ -10,15 +12,15 @@
   text-align: center;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100%;
-  height: 100px;
   width: 100px;
+  height: 100px;
   border: 3px solid black;
-  margin: 10px;
+  margin: 5px;
+  overflow: scroll;
 }
 
 .tile-back {
-  background-color: black;
+  background-color: #354a20;
 }
 
 img {
@@ -28,4 +30,47 @@ img {
 
 .disabled {
   pointer-events: none;
+}
+
+.animal-game {
+  display: flex;
+  flex-direction: row;
+}
+
+.animal-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 275px;
+  background-color: #354a20;
+  height: 275px;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 3px solid black;
+}
+
+.animal-image img {
+  width: 250px;
+  height: 250px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8)
+}
+
+.animal-fact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 275px;
+  background-color: #354a20;
+  height: 275px;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 3px solid black;
+}
+
+.animal-fact p {
+  width: 200px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
 }
