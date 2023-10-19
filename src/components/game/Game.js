@@ -34,8 +34,9 @@ const Game = () => {
       <>
         <div className="game">
         <h2 className="game-title"> Welcome to {currentGameData.gamePark.name}!</h2>
-        <button onClick={() => navigate('.../')}>Return to Map</button>
+        
           <Outlet context={{ handleWin, currentGameData }}/>
+          
         </div>
       </>
     )
