@@ -40,7 +40,10 @@ h3 {
 
 .map {
   grid-area: 3/2/5/3;
-  border: 2px double black;
+  border: 3px inset rgb(33, 58, 27);
+  align-self: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .rules {
