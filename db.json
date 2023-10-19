@@ -22,109 +22,39 @@
       "visitors": 3000000000,
       "pointValue": 0,
       "wildlife": [
-        {
-          "id": 1,
-          "name": "Black Bear",
-          "img": "https://i.imgur.com/gAKDjey.jpg",
-          "fact": "Black bears are the most common bear in North America.",
-          "found": false
-        },
-        {
-          "id": 2,
-          "name": "Grizzly Bear",
-          "img": "https://i.imgur.com/S4qoH7c.jpg",
-          "fact": "Grizzly bears are the largest bears in North America.",
-          "found": false
-        },
-        {
-          "id": 3,
-          "name": "Pine Marten",
-          "img": "https://i.imgur.com/6S0u6Zf.jpg",
-          "fact": "Pine martens are small, agile members of the weasel family.",
-          "found": false
-        },
-        {
-          "id": 4,
-          "name": "American Badger",
-          "img": "https://i.imgur.com/isUCGY1.jpg",
-          "fact": "American badgers are known for their powerful digging abilities.",
-          "found": false
-        },
-        {
-          "id": 5,
-          "name": "Alaska Red Fox",
-          "img": "https://i.imgur.com/5nFXydc.jpg",
-          "fact": "Alaska red foxes are the largest subspecies of red fox.",
-          "found": false
-        },
-        {
-          "id": 6,
-          "name": "Golden-mantled Marmot",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg/220px-Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg",
-          "fact": "Golden-mantled marmots are known for their whistling calls."
-        },
-        {
-          "id": 7,
-          "name": "Coyote",
-          "img": "https://i.imgur.com/EHDpREh.png",
-          "fact": "Coyotes are highly adaptable animals and can be found in a variety of habitats.",
-          "found": false
-        },
-        {
-          "id": 8,
-          "name": "Mountain Lion",
-          "img": "https://i.imgur.com/PuaNTyi.png",
-          "fact": "Mountain lions are the largest cats in North America.",
-          "found": false
-        },
-        {
-          "id": 9,
-          "name": "Mule Deer",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg/1024px-Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg",
-          "fact": "Each spring, a buck's antlers start to regrow almost immediately after the old antlers are shed."
-        },
-        {
-          "id": 10,
-          "name": "Fisher",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Fisher_cat_tree.jpg/640px-Fisher_cat_tree.jpg",
-          "fact": "Fishers are found in a variety of habitats."
-        },
-        {
-          "id": 11,
-          "name": "Mantled Ground Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Golden-mantled_ground_squirrel-8241.jpg/640px-Golden-mantled_ground_squirrel-8241.jpg",
-          "fact": "Mantled ground squirrels are the largest ground squirrels in North America."
-        },
-        {
-          "id": 12,
-          "name": "Sierra Golden-mantled Ground Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg/640px-Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg",
-          "fact": "Sierra golden-mantled ground squirrels are found at higher elevations than other ground squirrels."
-        },
-        {
-          "id": 13,
-          "name": "Nushagak Ground Squirrel",
-          "img": "https://www.nps.gov/parkhistory/online_books/pwro/wildlife_portfolio/images/fig14.jpg",
-          "fact": "Nushagak ground squirrels are the only ground squirrels found on Kodiak Island."
-        },
-        {
-          "id": 14,
-          "name": "Chipmunk",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tamias_minimus.jpg/640px-Tamias_minimus.jpg",
-          "fact": "Chipmunks can climb trees and swim."
-        },
-        {
-          "id": 15,
-          "name": "Northern Red Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg/640px-Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg",
-          "fact": "Northern red squirrels are known for their aggressive behavior and their loud calls, especially when they are defending their territory."
-        },
-        {
-          "id": 16,
-          "name": "Sierra Chickaree",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Douglas_Squirrel_DSC2803zz.jpg/640px-Douglas_Squirrel_DSC2803zz.jpg",
-          "fact": "Sierra chickarees are found in the coniferous forests of the Sierra Nevada mountains and are known for their loud calls."
-        }
+        "American black bear",
+        "White-tailed deer",
+        "Eastern coyote",
+        "Red fox",
+        "Snowshoe hare",
+        "Moose",
+        "Bobcat",
+        "Fisher",
+        "North American river otter",
+        "American mink",
+        "Striped skunk",
+        "Porcupine",
+        "Eastern gray squirrel",
+        "Red squirrel",
+        "American marten",
+        "Meadow vole",
+        "Woodchuck",
+        "Northern raccoon",
+        "Little brown bat",
+        "Big brown bat",
+        "Bald eagle",
+        "Peregrine falcon",
+        "Osprey",
+        "Common loon",
+        "Black-capped chickadee",
+        "American robin",
+        "Mourning dove",
+        "Blue jay",
+        "American crow",
+        "Common raven",
+        "Northern cardinal",
+        "American goldfinch",
+        "Song sparrow"
       ],
       "quizQuestions": {},
       "gameWon": false,
@@ -153,109 +83,38 @@
       "visitors": 20000,
       "pointValue": 0,
       "wildlife": [
-        {
-          "id": 1,
-          "name": "Black Bear",
-          "img": "https://i.imgur.com/gAKDjey.jpg",
-          "fact": "Black bears are the most common bear in North America.",
-          "found": false
-        },
-        {
-          "id": 2,
-          "name": "Grizzly Bear",
-          "img": "https://i.imgur.com/S4qoH7c.jpg",
-          "fact": "Grizzly bears are the largest bears in North America.",
-          "found": false
-        },
-        {
-          "id": 3,
-          "name": "Pine Marten",
-          "img": "https://i.imgur.com/6S0u6Zf.jpg",
-          "fact": "Pine martens are small, agile members of the weasel family.",
-          "found": false
-        },
-        {
-          "id": 4,
-          "name": "American Badger",
-          "img": "https://i.imgur.com/isUCGY1.jpg",
-          "fact": "American badgers are known for their powerful digging abilities.",
-          "found": false
-        },
-        {
-          "id": 5,
-          "name": "Alaska Red Fox",
-          "img": "https://i.imgur.com/5nFXydc.jpg",
-          "fact": "Alaska red foxes are the largest subspecies of red fox.",
-          "found": false
-        },
-        {
-          "id": 6,
-          "name": "Golden-mantled Marmot",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg/220px-Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg",
-          "fact": "Golden-mantled marmots are known for their whistling calls."
-        },
-        {
-          "id": 7,
-          "name": "Coyote",
-          "img": "https://i.imgur.com/EHDpREh.png",
-          "fact": "Coyotes are highly adaptable animals and can be found in a variety of habitats.",
-          "found": false
-        },
-        {
-          "id": 8,
-          "name": "Mountain Lion",
-          "img": "https://i.imgur.com/PuaNTyi.png",
-          "fact": "Mountain lions are the largest cats in North America.",
-          "found": false
-        },
-        {
-          "id": 9,
-          "name": "Mule Deer",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg/1024px-Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg",
-          "fact": "Each spring, a buck's antlers start to regrow almost immediately after the old antlers are shed."
-        },
-        {
-          "id": 10,
-          "name": "Fisher",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Fisher_cat_tree.jpg/640px-Fisher_cat_tree.jpg",
-          "fact": "Fishers are found in a variety of habitats."
-        },
-        {
-          "id": 11,
-          "name": "Mantled Ground Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Golden-mantled_ground_squirrel-8241.jpg/640px-Golden-mantled_ground_squirrel-8241.jpg",
-          "fact": "Mantled ground squirrels are the largest ground squirrels in North America."
-        },
-        {
-          "id": 12,
-          "name": "Sierra Golden-mantled Ground Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg/640px-Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg",
-          "fact": "Sierra golden-mantled ground squirrels are found at higher elevations than other ground squirrels."
-        },
-        {
-          "id": 13,
-          "name": "Nushagak Ground Squirrel",
-          "img": "https://www.nps.gov/parkhistory/online_books/pwro/wildlife_portfolio/images/fig14.jpg",
-          "fact": "Nushagak ground squirrels are the only ground squirrels found on Kodiak Island."
-        },
-        {
-          "id": 14,
-          "name": "Chipmunk",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tamias_minimus.jpg/640px-Tamias_minimus.jpg",
-          "fact": "Chipmunks can climb trees and swim."
-        },
-        {
-          "id": 15,
-          "name": "Northern Red Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg/640px-Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg",
-          "fact": "Northern red squirrels are known for their aggressive behavior and their loud calls, especially when they are defending their territory."
-        },
-        {
-          "id": 16,
-          "name": "Sierra Chickaree",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Douglas_Squirrel_DSC2803zz.jpg/640px-Douglas_Squirrel_DSC2803zz.jpg",
-          "fact": "Sierra chickarees are found in the coniferous forests of the Sierra Nevada mountains and are known for their loud calls."
-        }
+        "Flying fox",
+        "Pacific boa",
+        "Coconut crab",
+        "Giant centipede",
+        "Crowned pigeon",
+        "Purple-capped fruit dove",
+        "Many-colored fruit dove",
+        "Pacific imperial pigeon",
+        "Zebra dove",
+        "Red-vented bulbul",
+        "Samoan starling",
+        "Polynesian triller",
+        "Samoan whistler",
+        "Samoan flycatcher",
+        "Samoan fantail",
+        "Samoan moorhen",
+        "Pacific reef heron",
+        "Buff-banded rail",
+        "Spotless crake",
+        "Purple swamphen",
+        "Pacific golden plover",
+        "Wandering tattler",
+        "Ruddy turnstone",
+        "Bridled tern",
+        "White tern",
+        "Brown noddy",
+        "Black noddy",
+        "Red-footed booby",
+        "Brown booby",
+        "Masked booby",
+        "Great frigatebird",
+        "Lesser frigatebird"
       ],
       "quizQuestions": {},
       "gameWon": false,
@@ -284,109 +143,39 @@
       "visitors": 1600000,
       "pointValue": 0,
       "wildlife": [
-        {
-          "id": 1,
-          "name": "Black Bear",
-          "img": "https://i.imgur.com/gAKDjey.jpg",
-          "fact": "Black bears are the most common bear in North America.",
-          "found": false
-        },
-        {
-          "id": 2,
-          "name": "Grizzly Bear",
-          "img": "https://i.imgur.com/S4qoH7c.jpg",
-          "fact": "Grizzly bears are the largest bears in North America.",
-          "found": false
-        },
-        {
-          "id": 3,
-          "name": "Pine Marten",
-          "img": "https://i.imgur.com/6S0u6Zf.jpg",
-          "fact": "Pine martens are small, agile members of the weasel family.",
-          "found": false
-        },
-        {
-          "id": 4,
-          "name": "American Badger",
-          "img": "https://i.imgur.com/isUCGY1.jpg",
-          "fact": "American badgers are known for their powerful digging abilities.",
-          "found": false
-        },
-        {
-          "id": 5,
-          "name": "Alaska Red Fox",
-          "img": "https://i.imgur.com/5nFXydc.jpg",
-          "fact": "Alaska red foxes are the largest subspecies of red fox.",
-          "found": false
-        },
-        {
-          "id": 6,
-          "name": "Golden-mantled Marmot",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg/220px-Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg",
-          "fact": "Golden-mantled marmots are known for their whistling calls."
-        },
-        {
-          "id": 7,
-          "name": "Coyote",
-          "img": "https://i.imgur.com/EHDpREh.png",
-          "fact": "Coyotes are highly adaptable animals and can be found in a variety of habitats.",
-          "found": false
-        },
-        {
-          "id": 8,
-          "name": "Mountain Lion",
-          "img": "https://i.imgur.com/PuaNTyi.png",
-          "fact": "Mountain lions are the largest cats in North America.",
-          "found": false
-        },
-        {
-          "id": 9,
-          "name": "Mule Deer",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg/1024px-Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg",
-          "fact": "Each spring, a buck's antlers start to regrow almost immediately after the old antlers are shed."
-        },
-        {
-          "id": 10,
-          "name": "Fisher",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Fisher_cat_tree.jpg/640px-Fisher_cat_tree.jpg",
-          "fact": "Fishers are found in a variety of habitats."
-        },
-        {
-          "id": 11,
-          "name": "Mantled Ground Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Golden-mantled_ground_squirrel-8241.jpg/640px-Golden-mantled_ground_squirrel-8241.jpg",
-          "fact": "Mantled ground squirrels are the largest ground squirrels in North America."
-        },
-        {
-          "id": 12,
-          "name": "Sierra Golden-mantled Ground Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg/640px-Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg",
-          "fact": "Sierra golden-mantled ground squirrels are found at higher elevations than other ground squirrels."
-        },
-        {
-          "id": 13,
-          "name": "Nushagak Ground Squirrel",
-          "img": "https://www.nps.gov/parkhistory/online_books/pwro/wildlife_portfolio/images/fig14.jpg",
-          "fact": "Nushagak ground squirrels are the only ground squirrels found on Kodiak Island."
-        },
-        {
-          "id": 14,
-          "name": "Chipmunk",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tamias_minimus.jpg/640px-Tamias_minimus.jpg",
-          "fact": "Chipmunks can climb trees and swim."
-        },
-        {
-          "id": 15,
-          "name": "Northern Red Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg/640px-Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg",
-          "fact": "Northern red squirrels are known for their aggressive behavior and their loud calls, especially when they are defending their territory."
-        },
-        {
-          "id": 16,
-          "name": "Sierra Chickaree",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Douglas_Squirrel_DSC2803zz.jpg/640px-Douglas_Squirrel_DSC2803zz.jpg",
-          "fact": "Sierra chickarees are found in the coniferous forests of the Sierra Nevada mountains and are known for their loud calls."
-        }
+        "Desert bighorn sheep",
+        "Mule deer",
+        "Coyote",
+        "Kit fox",
+        "Black-tailed jackrabbit",
+        "Desert cottontail",
+        "Canyon mouse",
+        "Deer mouse",
+        "Northern grasshopper mouse",
+        "Western harvest mouse",
+        "Rock squirrel",
+        "Round-tailed ground squirrel",
+        "White-tailed antelope squirrel",
+        "Striped skunk",
+        "Ringtail",
+        "Porcupine",
+        "American badger",
+        "Common raven",
+        "Northern flicker",
+        "Curve-billed thrasher",
+        "Canyon wren",
+        "Rock wren",
+        "Northern mockingbird",
+        "House finch",
+        "Black-throated sparrow",
+        "Common side-blotched lizard",
+        "Greater short-horned lizard",
+        "Desert spiny lizard",
+        "Eastern fence lizard",
+        "Sidewinder",
+        "Gopher snake",
+        "Great Basin rattlesnake",
+        "Colorado River toad"
       ],
       "quizQuestions": {},
       "gameWon": false,
@@ -415,109 +204,39 @@
       "visitors": 1000000,
       "pointValue": 0,
       "wildlife": [
-        {
-          "id": 1,
-          "name": "Black Bear",
-          "img": "https://i.imgur.com/gAKDjey.jpg",
-          "fact": "Black bears are the most common bear in North America.",
-          "found": false
-        },
-        {
-          "id": 2,
-          "name": "Grizzly Bear",
-          "img": "https://i.imgur.com/S4qoH7c.jpg",
-          "fact": "Grizzly bears are the largest bears in North America.",
-          "found": false
-        },
-        {
-          "id": 3,
-          "name": "Pine Marten",
-          "img": "https://i.imgur.com/6S0u6Zf.jpg",
-          "fact": "Pine martens are small, agile members of the weasel family.",
-          "found": false
-        },
-        {
-          "id": 4,
-          "name": "American Badger",
-          "img": "https://i.imgur.com/isUCGY1.jpg",
-          "fact": "American badgers are known for their powerful digging abilities.",
-          "found": false
-        },
-        {
-          "id": 5,
-          "name": "Alaska Red Fox",
-          "img": "https://i.imgur.com/5nFXydc.jpg",
-          "fact": "Alaska red foxes are the largest subspecies of red fox.",
-          "found": false
-        },
-        {
-          "id": 6,
-          "name": "Golden-mantled Marmot",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg/220px-Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg",
-          "fact": "Golden-mantled marmots are known for their whistling calls."
-        },
-        {
-          "id": 7,
-          "name": "Coyote",
-          "img": "https://i.imgur.com/EHDpREh.png",
-          "fact": "Coyotes are highly adaptable animals and can be found in a variety of habitats.",
-          "found": false
-        },
-        {
-          "id": 8,
-          "name": "Mountain Lion",
-          "img": "https://i.imgur.com/PuaNTyi.png",
-          "fact": "Mountain lions are the largest cats in North America.",
-          "found": false
-        },
-        {
-          "id": 9,
-          "name": "Mule Deer",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg/1024px-Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg",
-          "fact": "Each spring, a buck's antlers start to regrow almost immediately after the old antlers are shed."
-        },
-        {
-          "id": 10,
-          "name": "Fisher",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Fisher_cat_tree.jpg/640px-Fisher_cat_tree.jpg",
-          "fact": "Fishers are found in a variety of habitats."
-        },
-        {
-          "id": 11,
-          "name": "Mantled Ground Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Golden-mantled_ground_squirrel-8241.jpg/640px-Golden-mantled_ground_squirrel-8241.jpg",
-          "fact": "Mantled ground squirrels are the largest ground squirrels in North America."
-        },
-        {
-          "id": 12,
-          "name": "Sierra Golden-mantled Ground Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg/640px-Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg",
-          "fact": "Sierra golden-mantled ground squirrels are found at higher elevations than other ground squirrels."
-        },
-        {
-          "id": 13,
-          "name": "Nushagak Ground Squirrel",
-          "img": "https://www.nps.gov/parkhistory/online_books/pwro/wildlife_portfolio/images/fig14.jpg",
-          "fact": "Nushagak ground squirrels are the only ground squirrels found on Kodiak Island."
-        },
-        {
-          "id": 14,
-          "name": "Chipmunk",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tamias_minimus.jpg/640px-Tamias_minimus.jpg",
-          "fact": "Chipmunks can climb trees and swim."
-        },
-        {
-          "id": 15,
-          "name": "Northern Red Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg/640px-Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg",
-          "fact": "Northern red squirrels are known for their aggressive behavior and their loud calls, especially when they are defending their territory."
-        },
-        {
-          "id": 16,
-          "name": "Sierra Chickaree",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Douglas_Squirrel_DSC2803zz.jpg/640px-Douglas_Squirrel_DSC2803zz.jpg",
-          "fact": "Sierra chickarees are found in the coniferous forests of the Sierra Nevada mountains and are known for their loud calls."
-        }
+        "American badger",
+        "American bison",
+        "Black-footed ferret",
+        "Bighorn sheep",
+        "Black-tailed prairie dog",
+        "Coyote",
+        "Deer mouse",
+        "Eastern cottontail",
+        "Feral hog",
+        "Golden eagle",
+        "Great horned owl",
+        "Ground squirrel",
+        "Kit fox",
+        "Least weasel",
+        "Long-tailed weasel",
+        "Meadowlark",
+        "Mule deer",
+        "Northern grasshopper mouse",
+        "Northern leopard frog",
+        "Porcupine",
+        "Prairie rattlesnake",
+        "Pronghorn",
+        "Red fox",
+        "Red-tailed hawk",
+        "Sharp-tailed grouse",
+        "Silver-haired bat",
+        "Swift fox",
+        "Turkey vulture",
+        "Western hognose snake",
+        "Western meadowlark",
+        "Western rattlesnake",
+        "White-tailed deer",
+        "Wild turkey"
       ],
       "quizQuestions": {},
       "gameWon": false,
@@ -546,110 +265,41 @@
       "visitors": 400000,
       "pointValue": 0,
       "wildlife": [
-        {
-          "id": 1,
-          "name": "Black Bear",
-          "img": "https://i.imgur.com/gAKDjey.jpg",
-          "fact": "Black bears are the most common bear in North America.",
-          "found": false
-        },
-        {
-          "id": 2,
-          "name": "Grizzly Bear",
-          "img": "https://i.imgur.com/S4qoH7c.jpg",
-          "fact": "Grizzly bears are the largest bears in North America.",
-          "found": false
-        },
-        {
-          "id": 3,
-          "name": "Pine Marten",
-          "img": "https://i.imgur.com/6S0u6Zf.jpg",
-          "fact": "Pine martens are small, agile members of the weasel family.",
-          "found": false
-        },
-        {
-          "id": 4,
-          "name": "American Badger",
-          "img": "https://i.imgur.com/isUCGY1.jpg",
-          "fact": "American badgers are known for their powerful digging abilities.",
-          "found": false
-        },
-        {
-          "id": 5,
-          "name": "Alaska Red Fox",
-          "img": "https://i.imgur.com/5nFXydc.jpg",
-          "fact": "Alaska red foxes are the largest subspecies of red fox.",
-          "found": false
-        },
-        {
-          "id": 6,
-          "name": "Golden-mantled Marmot",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg/220px-Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg",
-          "fact": "Golden-mantled marmots are known for their whistling calls."
-        },
-        {
-          "id": 7,
-          "name": "Coyote",
-          "img": "https://i.imgur.com/EHDpREh.png",
-          "fact": "Coyotes are highly adaptable animals and can be found in a variety of habitats.",
-          "found": false
-        },
-        {
-          "id": 8,
-          "name": "Mountain Lion",
-          "img": "https://i.imgur.com/PuaNTyi.png",
-          "fact": "Mountain lions are the largest cats in North America.",
-          "found": false
-        },
-        {
-          "id": 9,
-          "name": "Mule Deer",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg/1024px-Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg",
-          "fact": "Each spring, a buck's antlers start to regrow almost immediately after the old antlers are shed."
-        },
-        {
-          "id": 10,
-          "name": "Fisher",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Fisher_cat_tree.jpg/640px-Fisher_cat_tree.jpg",
-          "fact": "Fishers are found in a variety of habitats."
-        },
-        {
-          "id": 11,
-          "name": "Mantled Ground Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Golden-mantled_ground_squirrel-8241.jpg/640px-Golden-mantled_ground_squirrel-8241.jpg",
-          "fact": "Mantled ground squirrels are the largest ground squirrels in North America."
-        },
-        {
-          "id": 12,
-          "name": "Sierra Golden-mantled Ground Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg/640px-Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg",
-          "fact": "Sierra golden-mantled ground squirrels are found at higher elevations than other ground squirrels."
-        },
-        {
-          "id": 13,
-          "name": "Nushagak Ground Squirrel",
-          "img": "https://www.nps.gov/parkhistory/online_books/pwro/wildlife_portfolio/images/fig14.jpg",
-          "fact": "Nushagak ground squirrels are the only ground squirrels found on Kodiak Island."
-        },
-        {
-          "id": 14,
-          "name": "Chipmunk",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tamias_minimus.jpg/640px-Tamias_minimus.jpg",
-          "fact": "Chipmunks can climb trees and swim."
-        },
-        {
-          "id": 15,
-          "name": "Northern Red Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg/640px-Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg",
-          "fact": "Northern red squirrels are known for their aggressive behavior and their loud calls, especially when they are defending their territory."
-        },
-        {
-          "id": 16,
-          "name": "Sierra Chickaree",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Douglas_Squirrel_DSC2803zz.jpg/640px-Douglas_Squirrel_DSC2803zz.jpg",
-          "fact": "Sierra chickarees are found in the coniferous forests of the Sierra Nevada mountains and are known for their loud calls."
-        }
-      ],
+        "American black bear",
+        "Coyote",
+        "Bobcat",
+        "Mountain lion",
+        "Desert cottontail",
+        "Black-tailed jackrabbit",
+        "Rock squirrel",
+        "Round-tailed ground squirrel",
+        "Mexican ground squirrel",
+        "Texas antelope squirrel",
+        "Merriam's kangaroo rat",
+        "Northern pygmy mouse",
+        "White-throated woodrat",
+        "Striped skunk",
+        "Hooded skunk",
+        "Ringtail",
+        "Porcupine",
+        "Nine-banded armadillo",
+        "Greater roadrunner",
+        "Curve-billed thrasher",
+        "Verdin",
+        "Northern mockingbird",
+        "Curve-billed thrush",
+        "Canyon towhee",
+        "Common raven",
+        "Greater earless lizard",
+        "Texas horned lizard",
+        "Common side-blotched lizard",
+        "Greater short-horned lizard",
+        "Desert spiny lizard",
+        "Coachwhip",
+        "Black-tailed rattlesnake",
+        "Western diamondback rattlesnake"
+      ]
+    ,
       "quizQuestions": {},
       "gameWon": false,
       "description": "Named for the prominent bend in the Rio Grande along the U.S.-Mexico border, this park encompasses a large and remote part of the Chihuahuan Desert. Its main attraction is backcountry recreation in the arid Chisos Mountains and in canyons along the river. A wide variety of Cretaceous and Tertiary fossils as well as cultural artifacts of Native Americans also exist within its borders.",
@@ -677,109 +327,38 @@
       "visitors": 500000,
       "pointValue": 0,
       "wildlife": [
-        {
-          "id": 1,
-          "name": "Black Bear",
-          "img": "https://i.imgur.com/gAKDjey.jpg",
-          "fact": "Black bears are the most common bear in North America.",
-          "found": false
-        },
-        {
-          "id": 2,
-          "name": "Grizzly Bear",
-          "img": "https://i.imgur.com/S4qoH7c.jpg",
-          "fact": "Grizzly bears are the largest bears in North America.",
-          "found": false
-        },
-        {
-          "id": 3,
-          "name": "Pine Marten",
-          "img": "https://i.imgur.com/6S0u6Zf.jpg",
-          "fact": "Pine martens are small, agile members of the weasel family.",
-          "found": false
-        },
-        {
-          "id": 4,
-          "name": "American Badger",
-          "img": "https://i.imgur.com/isUCGY1.jpg",
-          "fact": "American badgers are known for their powerful digging abilities.",
-          "found": false
-        },
-        {
-          "id": 5,
-          "name": "Alaska Red Fox",
-          "img": "https://i.imgur.com/5nFXydc.jpg",
-          "fact": "Alaska red foxes are the largest subspecies of red fox.",
-          "found": false
-        },
-        {
-          "id": 6,
-          "name": "Golden-mantled Marmot",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg/220px-Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg",
-          "fact": "Golden-mantled marmots are known for their whistling calls."
-        },
-        {
-          "id": 7,
-          "name": "Coyote",
-          "img": "https://i.imgur.com/EHDpREh.png",
-          "fact": "Coyotes are highly adaptable animals and can be found in a variety of habitats.",
-          "found": false
-        },
-        {
-          "id": 8,
-          "name": "Mountain Lion",
-          "img": "https://i.imgur.com/PuaNTyi.png",
-          "fact": "Mountain lions are the largest cats in North America.",
-          "found": false
-        },
-        {
-          "id": 9,
-          "name": "Mule Deer",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg/1024px-Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg",
-          "fact": "Each spring, a buck's antlers start to regrow almost immediately after the old antlers are shed."
-        },
-        {
-          "id": 10,
-          "name": "Fisher",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Fisher_cat_tree.jpg/640px-Fisher_cat_tree.jpg",
-          "fact": "Fishers are found in a variety of habitats."
-        },
-        {
-          "id": 11,
-          "name": "Mantled Ground Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Golden-mantled_ground_squirrel-8241.jpg/640px-Golden-mantled_ground_squirrel-8241.jpg",
-          "fact": "Mantled ground squirrels are the largest ground squirrels in North America."
-        },
-        {
-          "id": 12,
-          "name": "Sierra Golden-mantled Ground Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg/640px-Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg",
-          "fact": "Sierra golden-mantled ground squirrels are found at higher elevations than other ground squirrels."
-        },
-        {
-          "id": 13,
-          "name": "Nushagak Ground Squirrel",
-          "img": "https://www.nps.gov/parkhistory/online_books/pwro/wildlife_portfolio/images/fig14.jpg",
-          "fact": "Nushagak ground squirrels are the only ground squirrels found on Kodiak Island."
-        },
-        {
-          "id": 14,
-          "name": "Chipmunk",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tamias_minimus.jpg/640px-Tamias_minimus.jpg",
-          "fact": "Chipmunks can climb trees and swim."
-        },
-        {
-          "id": 15,
-          "name": "Northern Red Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg/640px-Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg",
-          "fact": "Northern red squirrels are known for their aggressive behavior and their loud calls, especially when they are defending their territory."
-        },
-        {
-          "id": 16,
-          "name": "Sierra Chickaree",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Douglas_Squirrel_DSC2803zz.jpg/640px-Douglas_Squirrel_DSC2803zz.jpg",
-          "fact": "Sierra chickarees are found in the coniferous forests of the Sierra Nevada mountains and are known for their loud calls."
-        }
+        "West Indian manatee",
+        "Atlantic bottlenose dolphin",
+        "Brown pelican",
+        "Upside-down jellyfish",
+        "Schaus swallowtail butterfly",
+        "Loggerhead sea turtle",
+        "Hawksbill sea turtle",
+        "Green sea turtle",
+        "Kemp's ridley sea turtle",
+        "Leatherback sea turtle",
+        "Least tern",
+        "American crocodile",
+        "Eastern indigo snake",
+        "Smalltooth sawfish",
+        "Pillar coral",
+        "Elkhorn coral",
+        "Staghorn coral",
+        "Florida tree snail",
+        "Miami blue butterfly",
+        "Florida stone crab",
+        "Spiny lobster",
+        "Snapper",
+        "Grouper",
+        "Tarpon",
+        "Bonefish",
+        "Barracuda",
+        "Great blue heron",
+        "Tricolored heron",
+        "Great egret",
+        "Snowy egret",
+        "Little blue heron",
+        "Cattle egret"
       ],
       "quizQuestions": {},
       "gameWon": false,
@@ -808,109 +387,39 @@
       "visitors": 300000,
       "pointValue": 0,
       "wildlife": [
-        {
-          "id": 1,
-          "name": "Black Bear",
-          "img": "https://i.imgur.com/gAKDjey.jpg",
-          "fact": "Black bears are the most common bear in North America.",
-          "found": false
-        },
-        {
-          "id": 2,
-          "name": "Grizzly Bear",
-          "img": "https://i.imgur.com/S4qoH7c.jpg",
-          "fact": "Grizzly bears are the largest bears in North America.",
-          "found": false
-        },
-        {
-          "id": 3,
-          "name": "Pine Marten",
-          "img": "https://i.imgur.com/6S0u6Zf.jpg",
-          "fact": "Pine martens are small, agile members of the weasel family.",
-          "found": false
-        },
-        {
-          "id": 4,
-          "name": "American Badger",
-          "img": "https://i.imgur.com/isUCGY1.jpg",
-          "fact": "American badgers are known for their powerful digging abilities.",
-          "found": false
-        },
-        {
-          "id": 5,
-          "name": "Alaska Red Fox",
-          "img": "https://i.imgur.com/5nFXydc.jpg",
-          "fact": "Alaska red foxes are the largest subspecies of red fox.",
-          "found": false
-        },
-        {
-          "id": 6,
-          "name": "Golden-mantled Marmot",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg/220px-Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg",
-          "fact": "Golden-mantled marmots are known for their whistling calls."
-        },
-        {
-          "id": 7,
-          "name": "Coyote",
-          "img": "https://i.imgur.com/EHDpREh.png",
-          "fact": "Coyotes are highly adaptable animals and can be found in a variety of habitats.",
-          "found": false
-        },
-        {
-          "id": 8,
-          "name": "Mountain Lion",
-          "img": "https://i.imgur.com/PuaNTyi.png",
-          "fact": "Mountain lions are the largest cats in North America.",
-          "found": false
-        },
-        {
-          "id": 9,
-          "name": "Mule Deer",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg/1024px-Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg",
-          "fact": "Each spring, a buck's antlers start to regrow almost immediately after the old antlers are shed."
-        },
-        {
-          "id": 10,
-          "name": "Fisher",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Fisher_cat_tree.jpg/640px-Fisher_cat_tree.jpg",
-          "fact": "Fishers are found in a variety of habitats."
-        },
-        {
-          "id": 11,
-          "name": "Mantled Ground Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Golden-mantled_ground_squirrel-8241.jpg/640px-Golden-mantled_ground_squirrel-8241.jpg",
-          "fact": "Mantled ground squirrels are the largest ground squirrels in North America."
-        },
-        {
-          "id": 12,
-          "name": "Sierra Golden-mantled Ground Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg/640px-Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg",
-          "fact": "Sierra golden-mantled ground squirrels are found at higher elevations than other ground squirrels."
-        },
-        {
-          "id": 13,
-          "name": "Nushagak Ground Squirrel",
-          "img": "https://www.nps.gov/parkhistory/online_books/pwro/wildlife_portfolio/images/fig14.jpg",
-          "fact": "Nushagak ground squirrels are the only ground squirrels found on Kodiak Island."
-        },
-        {
-          "id": 14,
-          "name": "Chipmunk",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tamias_minimus.jpg/640px-Tamias_minimus.jpg",
-          "fact": "Chipmunks can climb trees and swim."
-        },
-        {
-          "id": 15,
-          "name": "Northern Red Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg/640px-Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg",
-          "fact": "Northern red squirrels are known for their aggressive behavior and their loud calls, especially when they are defending their territory."
-        },
-        {
-          "id": 16,
-          "name": "Sierra Chickaree",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Douglas_Squirrel_DSC2803zz.jpg/640px-Douglas_Squirrel_DSC2803zz.jpg",
-          "fact": "Sierra chickarees are found in the coniferous forests of the Sierra Nevada mountains and are known for their loud calls."
-        }
+        "Mule deer",
+        "Elk",
+        "Mountain lion",
+        "Bobcat",
+        "Coyote",
+        "Black bear",
+        "Bighorn sheep",
+        "Golden-mantled ground squirrel",
+        "Least chipmunk",
+        "Colorado chipmunk",
+        "Yellow-bellied marmot",
+        "White-tailed prairie dog",
+        "Northern pocket gopher",
+        "Deer mouse",
+        "Meadow vole",
+        "Western jumping mouse",
+        "Striped skunk",
+        "Long-tailed weasel",
+        "American badger",
+        "Northern flicker",
+        "Downy woodpecker",
+        "Hairy woodpecker",
+        "White-breasted nuthatch",
+        "Pygmy nuthatch",
+        "Mountain chickadee",
+        "Juniper titmouse",
+        "American robin",
+        "Spotted towhee",
+        "Dark-eyed junco",
+        "Broad-tailed hummingbird",
+        "Common raven",
+        "Northern leopard frog",
+        "Woodhouse's toad"
       ],
       "quizQuestions": {},
       "gameWon": false,
@@ -939,110 +448,39 @@
       "visitors": 2500000,
       "pointValue": 0,
       "wildlife": [
-        {
-          "id": 1,
-          "name": "Black Bear",
-          "img": "https://i.imgur.com/gAKDjey.jpg",
-          "fact": "Black bears are the most common bear in North America.",
-          "found": false
-        },
-        {
-          "id": 2,
-          "name": "Grizzly Bear",
-          "img": "https://i.imgur.com/S4qoH7c.jpg",
-          "fact": "Grizzly bears are the largest bears in North America.",
-          "found": false
-        },
-        {
-          "id": 3,
-          "name": "Pine Marten",
-          "img": "https://i.imgur.com/6S0u6Zf.jpg",
-          "fact": "Pine martens are small, agile members of the weasel family.",
-          "found": false
-        },
-        {
-          "id": 4,
-          "name": "American Badger",
-          "img": "https://i.imgur.com/isUCGY1.jpg",
-          "fact": "American badgers are known for their powerful digging abilities.",
-          "found": false
-        },
-        {
-          "id": 5,
-          "name": "Alaska Red Fox",
-          "img": "https://i.imgur.com/5nFXydc.jpg",
-          "fact": "Alaska red foxes are the largest subspecies of red fox.",
-          "found": false
-        },
-        {
-          "id": 6,
-          "name": "Golden-mantled Marmot",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg/220px-Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg",
-          "fact": "Golden-mantled marmots are known for their whistling calls."
-        },
-        {
-          "id": 7,
-          "name": "Coyote",
-          "img": "https://i.imgur.com/EHDpREh.png",
-          "fact": "Coyotes are highly adaptable animals and can be found in a variety of habitats.",
-          "found": false
-        },
-        {
-          "id": 8,
-          "name": "Mountain Lion",
-          "img": "https://i.imgur.com/PuaNTyi.png",
-          "fact": "Mountain lions are the largest cats in North America.",
-          "found": false
-        },
-        {
-          "id": 9,
-          "name": "Mule Deer",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg/1024px-Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg",
-          "fact": "Each spring, a buck's antlers start to regrow almost immediately after the old antlers are shed."
-        },
-        {
-          "id": 10,
-          "name": "Fisher",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Fisher_cat_tree.jpg/640px-Fisher_cat_tree.jpg",
-          "fact": "Fishers are found in a variety of habitats."
-        },
-        {
-          "id": 11,
-          "name": "Mantled Ground Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Golden-mantled_ground_squirrel-8241.jpg/640px-Golden-mantled_ground_squirrel-8241.jpg",
-          "fact": "Mantled ground squirrels are the largest ground squirrels in North America."
-        },
-        {
-          "id": 12,
-          "name": "Sierra Golden-mantled Ground Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg/640px-Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg",
-          "fact": "Sierra golden-mantled ground squirrels are found at higher elevations than other ground squirrels."
-        },
-        {
-          "id": 13,
-          "name": "Nushagak Ground Squirrel",
-          "img": "https://www.nps.gov/parkhistory/online_books/pwro/wildlife_portfolio/images/fig14.jpg",
-          "fact": "Nushagak ground squirrels are the only ground squirrels found on Kodiak Island."
-        },
-        {
-          "id": 14,
-          "name": "Chipmunk",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tamias_minimus.jpg/640px-Tamias_minimus.jpg",
-          "fact": "Chipmunks can climb trees and swim."
-        },
-        {
-          "id": 15,
-          "name": "Northern Red Squirrel",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg/640px-Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg",
-          "fact": "Northern red squirrels are known for their aggressive behavior and their loud calls, especially when they are defending their territory."
-        },
-        {
-          "id": 16,
-          "name": "Sierra Chickaree",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Douglas_Squirrel_DSC2803zz.jpg/640px-Douglas_Squirrel_DSC2803zz.jpg",
-          "fact": "Sierra chickarees are found in the coniferous forests of the Sierra Nevada mountains and are known for their loud calls."
-        }
-      ],
+        "Mule deer",
+        "Pronghorn",
+        "Coyote",
+        "Bobcat",
+        "Mountain lion",
+        "Black bear",
+        "Utah prairie dog",
+        "Uinta chipmunk",
+        "Golden-mantled ground squirrel",
+        "Rock squirrel",
+        "Deer mouse",
+        "Northern grasshopper mouse",
+        "Western harvest mouse",
+        "Striped skunk",
+        "Ringtail",
+        "Porcupine",
+        "Common raven",
+        "Northern flicker",
+        "Curve-billed thrasher",
+        "Canyon wren",
+        "Rock wren",
+        "Northern mockingbird",
+        "House finch",
+        "Black-throated sparrow",
+        "Common side-blotched lizard",
+        "Greater short-horned lizard",
+        "Desert spiny lizard",
+        "Eastern fence lizard",
+        "Sidewinder",
+        "Gopher snake",
+        "Great Basin rattlesnake",
+        "Colorado River toad"
+    ],
       "quizQuestions": {},
       "gameWon": false,
       "description": "Bryce Canyon is a geological amphitheater on southern Utah's Paunsaugunt Plateau with hundreds of tall, multicolored sandstone hoodoos formed by erosion. The region was originally settled by Native Americans and later by Mormon pioneers.",
@@ -7726,6 +7164,137 @@
       "quizQuestions": {},
       "gameWon": false,
       "description": "Wind Cave is distinctive for its calcite fin formations called boxwork, a unique formation rarely found elsewhere, and needle-like growths called frostwork. It is one of the longest caves in the world and creates a wind as air pressure changes. Above ground is a mixed-grass prairie with animals such as bison, black-footed ferrets, and prairie dogs and ponderosa pine forests home to cougars and elk.[113] The cave is culturally significant to the Lakota people as a creation site.",
+      "favorited": false
+    },
+    {
+      "id": 60,
+      "name": "Wrangell-St. Elias National Park",
+      "year": 1964,
+      "location": [
+        "Utah"
+      ],
+      "coordinates": {
+        "lat": 61.00,
+        "lng": -142
+      },
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Canyonlands_National_Park%E2%80%A6Needles_area_%286294480744%29.jpg/200px-Canyonlands_National_Park%E2%80%A6Needles_area_%286294480744%29.jpg",
+      "attractions": [
+        "Island in the Sky",
+        "Mesa Arch",
+        "Upheaval Dome",
+        "Elephant Hill"
+      ],
+      "link": "https://www.nps.gov/cany/index.htm",
+      "visitors": 733000,
+      "pointValue": 0,
+      "wildlife": [
+        {
+          "id": 1,
+          "name": "Black Bear",
+          "img": "https://i.imgur.com/gAKDjey.jpg",
+          "fact": "Black bears are the most common bear in North America.",
+          "found": false
+        },
+        {
+          "id": 2,
+          "name": "Grizzly Bear",
+          "img": "https://i.imgur.com/S4qoH7c.jpg",
+          "fact": "Grizzly bears are the largest bears in North America.",
+          "found": false
+        },
+        {
+          "id": 3,
+          "name": "Pine Marten",
+          "img": "https://i.imgur.com/6S0u6Zf.jpg",
+          "fact": "Pine martens are small, agile members of the weasel family.",
+          "found": false
+        },
+        {
+          "id": 4,
+          "name": "American Badger",
+          "img": "https://i.imgur.com/isUCGY1.jpg",
+          "fact": "American badgers are known for their powerful digging abilities.",
+          "found": false
+        },
+        {
+          "id": 5,
+          "name": "Alaska Red Fox",
+          "img": "https://i.imgur.com/5nFXydc.jpg",
+          "fact": "Alaska red foxes are the largest subspecies of red fox.",
+          "found": false
+        },
+        {
+          "id": 6,
+          "name": "Golden-mantled Marmot",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg/220px-Marmota_flaviventris_standing_S_of_Donahue_Pass.jpg",
+          "fact": "Golden-mantled marmots are known for their whistling calls."
+        },
+        {
+          "id": 7,
+          "name": "Coyote",
+          "img": "https://i.imgur.com/EHDpREh.png",
+          "fact": "Coyotes are highly adaptable animals and can be found in a variety of habitats.",
+          "found": false
+        },
+        {
+          "id": 8,
+          "name": "Mountain Lion",
+          "img": "https://i.imgur.com/PuaNTyi.png",
+          "fact": "Mountain lions are the largest cats in North America.",
+          "found": false
+        },
+        {
+          "id": 9,
+          "name": "Mule Deer",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg/1024px-Mule_buck_elk_creek_m_myatt_%285489214303%29.jpg",
+          "fact": "Each spring, a buck's antlers start to regrow almost immediately after the old antlers are shed."
+        },
+        {
+          "id": 10,
+          "name": "Fisher",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Fisher_cat_tree.jpg/640px-Fisher_cat_tree.jpg",
+          "fact": "Fishers are found in a variety of habitats."
+        },
+        {
+          "id": 11,
+          "name": "Mantled Ground Squirrel",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Golden-mantled_ground_squirrel-8241.jpg/640px-Golden-mantled_ground_squirrel-8241.jpg",
+          "fact": "Mantled ground squirrels are the largest ground squirrels in North America."
+        },
+        {
+          "id": 12,
+          "name": "Sierra Golden-mantled Ground Squirrel",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg/640px-Golden-Mantled_Ground_Squirrel%2C_Mount_Rainier%2C_July_2006.jpg",
+          "fact": "Sierra golden-mantled ground squirrels are found at higher elevations than other ground squirrels."
+        },
+        {
+          "id": 13,
+          "name": "Nushagak Ground Squirrel",
+          "img": "https://www.nps.gov/parkhistory/online_books/pwro/wildlife_portfolio/images/fig14.jpg",
+          "fact": "Nushagak ground squirrels are the only ground squirrels found on Kodiak Island."
+        },
+        {
+          "id": 14,
+          "name": "Chipmunk",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tamias_minimus.jpg/640px-Tamias_minimus.jpg",
+          "fact": "Chipmunks can climb trees and swim."
+        },
+        {
+          "id": 15,
+          "name": "Northern Red Squirrel",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg/640px-Red_Squirrel_on_Brownsea_Island_%285332865944%29.jpg",
+          "fact": "Northern red squirrels are known for their aggressive behavior and their loud calls, especially when they are defending their territory."
+        },
+        {
+          "id": 16,
+          "name": "Sierra Chickaree",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Douglas_Squirrel_DSC2803zz.jpg/640px-Douglas_Squirrel_DSC2803zz.jpg",
+          "fact": "Sierra chickarees are found in the coniferous forests of the Sierra Nevada mountains and are known for their loud calls."
+        }
+      ],
+      "quizQuestions": {},
+      "gameWon": false,
+      "description": "This landscape was eroded into a maze of canyons, buttes, and mesas by the combined efforts of the Colorado River, Green River, and their tributaries, which divide the park into three districts. The park contains thousands of rock pinnacles and arches, as well as artifacts from Ancient Pueblo peoples.",
       "favorited": false
     },
     {

@@ -2364,6 +2364,27 @@ const saguaroNationalParkAnimals = [
     zionNationalParkAnimals
   ]
 
+
+  function updateWildlifeInParks() {
+    fetch('http://localhost:3000/parkObj')
+    .then(resp => resp.json())
+    .then(data => console.log(data))
+    // .then(data => {
+    // // Loop through each park object in the data
+    // for (const park of data) {
+    //     // Find the index of the park in the newWildlife array based on id
+    //     const newIndex = newWildlife.findIndex(newPark => newPark.id === park.id);
+
+    //     // If a matching index is found, update the wildlife array
+    //     if (newIndex !== -1) {
+    //         park.wildlife = newWildlife[newIndex].wildlife;
+    //     }
+    // }
+    // })
+  }
+
+  updateWildlifeInParks()
+
 const noDuplicates = []
 
 allWildlife.map(park => {
@@ -2375,19 +2396,7 @@ allWildlife.map(park => {
 
 // !! -- find me --
 
-const coloradoRiverToad = {
-  id: 1,
-  name: "Colorado River Toad",
-  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Bufo-alvarius-coloradokr%C3%B6te.jpg/640px-Bufo-alvarius-coloradokr%C3%B6te.jpg",
-  fact: "The Colorado River Toad is also known as the Sonoran Desert toad. It secretes a potent venom from its parotoid glands, which contains the psychoactive compound 5-MeO-DMT and bufotenin."
-};
 
-const mojaveRattlesnake = {
-  id: 2,
-  name: "Mojave Rattlesnake",
-  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Crotalus_scutulatus_mesquite_flats_mojave_preserve_california.jpg/640px-Crotalus_scutulatus_mesquite_flats_mojave_preserve_california.jpg",
-  fact: "The Mojave rattlesnake is a venomous pit viper species found in the southwestern United States and northwestern Mexico. It is known for its potent neurotoxic venom, which is considered to be one of the most dangerous among North American rattlesnakes."
-};
 
 const americanBlackBear = {
   id: 3,
@@ -2676,6 +2685,156 @@ const pacificImperialPigeon = {
   imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Ducula_pacifica_-_Flickr_-_Lip_Kee.jpg/640px-Ducula_pacifica_-_Flickr_-_Lip_Kee.jpg",
   fact: "The Pacific imperial pigeon is a large, pigeon found in the Pacific Islands. It is named for its large size and its distinctive white breast and belly. It is a common bird in rainforests."
 }
+
+const zebraDove = {
+  id: 44,
+  name: "Zebra dove",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Geopelia_striata_-_Flickr_-_Lip_Kee.jpg/640px-Geopelia_striata_-_Flickr_-_Lip_Kee.jpg",
+  fact: "The zebra dove is a small, gray dove with black and white stripes on its neck. It is found in South Asia, Southeast Asia, and Australia. It is a common bird in urban areas and is often seen in parks and gardens."
+};
+
+const redVentedBulbul = {
+  id: 45,
+  name: "Red-vented bulbul",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Pycnonotus_cafer_-_Khao_Yai.jpg/640px-Pycnonotus_cafer_-_Khao_Yai.jpg",
+  fact: "The red-vented bulbul is a small, brown bird with a red vent (undertail). It is found in South Asia, Southeast Asia, and the Middle East. It is a common bird in gardens and forests and is known for its loud, melodious song."
+};
+
+const samoanStarling = {
+  id: 46,
+  name: "Samoan starling",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Aplonis_atrifusca_-_Flickr_-_Snowmanradio.jpg/640px-Aplonis_atrifusca_-_Flickr_-_Snowmanradio.jpg",
+  fact: "The Samoan starling is a small, black bird with a glossy green sheen. It is found in Samoa and American Samoa. It is a common bird in forests and gardens and is known for its loud, chattering calls."
+};
+
+const polynesianTriller = {
+  id: 47,
+  name: "Polynesian triller",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Lalage_maculosa_1547754454a.jpg/640px-Lalage_maculosa_1547754454a.jpg",
+  fact: "The Polynesian triller is a small, gray bird with a white throat and a black mask. It is found in Polynesia, including Samoa, Tonga, and Fiji. It is a common bird in forests and gardens and is known for its loud, trilling calls."
+};
+
+const samoanWhistler = {
+  id: 48,
+  name: "Samoan whistler",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Pachycephala_flavifrons_-_Flickr_-_Snowmanradio.jpg/640px-Pachycephala_flavifrons_-_Flickr_-_Snowmanradio.jpg",
+  fact: "The Samoan whistler is a small, brown bird with a yellow throat and a black mask. It is found in Samoa and American Samoa. It is a common bird in forests and gardens and is known for its loud, whistling calls."
+};
+
+const samoanFlycatcher = {
+  id: 49,
+  name: "Samoan flycatcher",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Myiagra_albiventris_-_Flickr_-_Snowmanradio.jpg/640px-Myiagra_albiventris_-_Flickr_-_Snowmanradio.jpg",
+  fact: "The Samoan flycatcher is a small, gray bird with a white belly and a black mask. It is found in Samoa and American Samoa. It is a common bird in forests and gardens and is known for its acrobatic flying skills as it catches insects in mid-air."
+};
+
+const samoanFantail = {
+  id: 50,
+  name: "Samoan fantail",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Rhipidura_perryi_-_Flickr_-_Snowmanradio.jpg/640px-Rhipidura_perryi_-_Flickr_-_Snowmanradio.jpg",
+  fact: "The Samoan fantail is a small, gray bird with a white belly and a black mask. It is found in Samoa and American Samoa. It is a common bird in forests and gardens and is known for its long tail that it often fans out. It is also known for its ability to imitate the calls of other birds."
+};
+
+const samoanMoorhen = {
+  id: 51,
+  name: "Samoan moorhen",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gallinula_pacifica_Keulemans.jpg/454px-Gallinula_pacifica_Keulemans.jpg",
+  fact: "The Samoan moorhen, also known as the Samoan wood rail, was a flightless bird endemic to the Samoan island of Savai'i. It was considered Critically Endangered and possibly extinct. It was last recorded in 1873. It was a small, dark-colored rail with a red bill and legs. It lived in primary montane forest and probably fed on invertebrates, including insects. It may have dug or lived in burrows. One nest was found on the ground constructed of a few twigs and grass. They have exceptionally large eyes thus may be nocturnal."
+};
+
+const pacificReefHeron = {
+  id: 52,
+  name: "Pacific reef heron",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Egretta_sacra_%28dark_morph%29_in_Manly.jpg/1200px-Egretta_sacra_%28dark_morph%29_in_Manly.jpg",
+  fact: "The Pacific reef heron is a medium-sized heron found in coastal areas of the Pacific Ocean. It is a common sight on rocky shores, coral reefs, and mangroves. It is a solitary bird that feeds on fish, crabs, and other invertebrates."
+};
+
+const buffBandedRail = {
+  id: 53,
+  name: "Buff-banded rail",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Buff-banded_Rail_at_Treaty_Creek.jpg/800px-Buff-banded_Rail_at_Treaty_Creek.jpg",
+  fact: "The buff-banded rail is a small, brown rail found in Australia, New Zealand, and nearby islands. It is a shy bird that is most often seen in dense vegetation near water. It feeds on insects, worms, and other small invertebrates."
+};
+
+const spotlessCrake = {
+  id: 54,
+  name: "Spotless crake",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Spotless_Crake_RWD2.jpg/800px-Spotless_Crake_RWD2.jpg",
+  fact: "The spotless crake is a small, grayish-brown crake found in Australia, New Zealand, and nearby islands. It is a shy bird that is most often seen in dense vegetation near water. It feeds on insects, worms, and other small invertebrates."
+};
+
+const purpleSwamphen = {
+  id: 55,
+  name: "Purple swamphen",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Purple_Swamphen.jpg/1200px-Purple_Swamphen.jpg",
+  fact: "The purple swamphen is a large, colorful bird found in wetlands throughout the world. It is a social bird that is often seen in groups. It feeds on plants, insects, and other small animals."
+};
+
+const pacificGoldenPlover = {
+  id: 56,
+  name: "Pacific golden plover",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Pluvialis_fulva_%28Whimbrel%29.jpg/1200px-Pluvialis_fulva_%28Whimbrel%29.jpg",
+  fact: "The Pacific golden plover is a medium-sized shorebird found in coastal areas of the Pacific Ocean. It is a migratory bird that breeds in the Arctic and winters in the Southern Hemisphere. It feeds on insects, worms, and other small invertebrates."
+};
+
+const wanderingTattler = {
+  id: 57,
+  name: "Wandering tattler",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Heteroscelus_incanus_15477542595.jpg/1200px-Heteroscelus_incanus_15477542595.jpg",
+  fact: "The wandering tattler is a medium-sized shorebird found in coastal areas of the Pacific Ocean. It is a migratory bird that breeds in the Arctic and winters in the Southern Hemisphere. It feeds on insects, worms, and other small invertebrates."
+};
+
+const ruddyTurnstone = {
+  id: 58,
+  name: "Ruddy turnstone",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Arenaria_interpres_MHNT.ZOO.2010.11.216.1.jpg/440px-Arenaria_interpres_MHNT.ZOO.2010.11.216.1.jpg",
+  fact: "The ruddy turnstone is a medium-sized shorebird found on rocky coasts and beaches around the world. It is a migratory bird that breeds in the Arctic and winters in the Southern Hemisphere. It gets its name from its habit of flipping over stones and shells with its bill to find food underneath. It feeds on insects, worms, crustaceans, and mollusks."
+};
+
+const bridledTern = {
+  id: 59,
+  name: "Bridled tern",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Onychoprion_anaethetus_-_Laem_Pakarang_4.jpg/1200px-Onychoprion_anaethetus_-_Laem_Pakarang_4.jpg",
+  fact: "The bridled tern is a medium-sized tern found in tropical and subtropical oceans around the world. It is a dark gray bird with a black cap, white forehead, and white underparts. It has a long, forked tail and a black bill with a yellow tip. It feeds on fish and squid, which it catches by plunge-diving into the water."
+};
+
+const whiteTern = {
+  id: 60,
+  name: "White tern",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Gygis_alba_25415462.jpg/1200px-Gygis_alba_25415462.jpg",
+  fact: "The white tern is a small, white tern found in tropical and subtropical oceans around the world. It has a black bill and black legs. It feeds on fish and squid, which it catches by plunge-diving into the water. It is known for its habit of laying its eggs on bare branches or rocks, rather than building a nest."
+};
+
+const brownNoddy = {
+  id: 61,
+  name: "Brown noddy",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Anous_stolidus_-_Laem_Pakarang.jpg/1200px-Anous_stolidus_-_Laem_Pakarang.jpg",
+  fact: "The brown noddy is a medium-sized tern found in tropical and subtropical oceans around the world. It is a dark brown bird with a white cap and white underparts. It has a long, forked tail and a black bill with a yellow tip. It feeds on fish and squid, which it catches by plunge-diving into the water."
+};
+
+const blackNoddy = {
+  id: 62,
+  name: "Black noddy",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Anous_minutus_MHNT.ZOO.2010.11.216.4.jpg/440px-Anous_minutus_MHNT.ZOO.2010.11.216.4.jpg",
+  fact: "The black noddy is a small, black tern found in tropical and subtropical oceans around the world. It has a white cap and white underparts. It has a long, forked tail and a black bill with a yellow tip. It feeds on fish and squid, which it catches by plunge-diving into the water."
+};
+
+const redFootedBooby = {
+  id: 63,
+  name: "Red-footed booby",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Sula_sula_-_Laem_Pakarang.jpg/1200px-Sula_sula_-_Laem_Pakarang.jpg",
+  fact: "The red-footed booby is a large seabird found in tropical and subtropical oceans around the world. It is a white bird with black wings and a red bill and feet. It feeds on fish, which it catches by plunge-diving into the water from heights of up to 100 feet."
+};
+
+const brownBooby = {
+  id: 64,
+  name: "Brown booby",
+  imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Sula_leucogaster_-_Laem_Pakarang.jpg/440px-Sula_leucogaster_-_Laem_Pakarang.jpg",
+  fact: "The brown booby is a large seabird found in tropical and subtropical oceans around the world. It is a brown bird with white underparts and a yellow bill and feet. It feeds on fish, which it catches by plunge-diving into the water from heights of up to 100 feet. Brown boobies are social birds that often nest in colonies. They are monogamous and both parents care for their young."
+};
+
+
+
 
 const objects = []
 
