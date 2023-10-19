@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import {  } from "react-router-dom"
 import { Outlet, useOutletContext, useNavigate, useLocation } from "react-router-dom"
 import GameNav from "../nav/GameNav"
@@ -9,7 +9,6 @@ const Game = ({ restartGame }) => {
   const locationData = useLocation()
   const [currentGameData, setCurrentGameData] = useState({
     gamePark: {},
-    gameId: 0,
     gamePath: ''
   })
 
@@ -21,7 +20,6 @@ const Game = ({ restartGame }) => {
 
     setCurrentGameData(current => ({...current,
       gamePark: data,
-      gameId: id,
       gamePath: path
     }))
   })}
@@ -32,21 +30,11 @@ const Game = ({ restartGame }) => {
 
   console.log(currentGameData)
 
-
   //TODO Timer
 
   //TODO handleWin
 
-  const location = useLocation()
-  const { state: { id, path } } = location
-
-  const initiateGame = (id) => {
-    fetch(`http://localhost:3000/parkObj/${id}`)
-    .then(resp => resp.json())
-    .then(data => console.log(data)) 
-  }
-  console.log(id, path)
-  // const currentParkObj = initiateGame(passedId)
+  //TODO Reset
 
   //User gets 3 minutes to play game before being navigated back to home
   setTimeout(() => {
@@ -63,30 +51,18 @@ const Game = ({ restartGame }) => {
   //   }
   // })
 
-  const { gamePark: { attractions, wildlife }, gameId, gamePath } = currentGameData
+  const { gamePark: { name, attractions, wildlife, image, location, gameWon }, gameId, gamePath } = currentGameData
 
-  return (
-    <div className="game">
-      {/* <GameNav path={path}/> */}
-      <button onClick={restartGame}>Retry</button>
-      <button onClick={() => navigate('../')}>Return to Map</button>
-      {/* Should we allow user to choose a different type of game without returning to Home? */}
-      {/* Destructure whatever park.property props you need for your game above and feed them to the context below:  */}
-      <Outlet context={{ handleWin, attractions, wildlife }}/>
-      {/* <NotifyBar /> */}
-  useEffect(() => {
-    if (!id) {
-      navigate('/')
-      //TODO select a park msg
-    }
-  })
-
-  return (
-    <div className="game">
-      <button className="return-home-button">X</button>
-      <Outlet context={{ handleWin }}/>
-    </div>
-  )
+    return (
+      <div className="game">
+        {/* <GameNav path={path}/> */}
+        <button onClick={() => navigate('../')}>Return to Map</button>
+        {/* Should we allow user to choose a different type of game without returning to Home? */}
+        {/* Destructure whatever park.property props you need for your game above and feed them to the context below:  */}
+        <Outlet context={{ handleWin, attractions, wildlife }}/>
+        {/* <NotifyBar /> */}
+      </div>
+    )
 }
 
 export default Game

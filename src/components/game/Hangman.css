@@ -2,6 +2,7 @@
 
 /* CSS */
 .letter {
+  display: flex;
   align-self: center;
   background-color: #A4A89F;
   background-image: none;
@@ -15,7 +16,7 @@
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
-  display: inline-block;
+  /* display: inline-block; */
   font-family: 'Bahianita', sans-serif;
   font-size: 1.5rem;
   line-height: 23px;
@@ -52,10 +53,16 @@
 /* hangman container formatting */
 
 .hangman-container div{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5%;
   padding: 40px;
   background-color: #354a20;
   border-radius: 20px/30px;
-  border: 5px solid #595126
+  border: 5px solid #595126;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hangman-container p{
   text-align: center;

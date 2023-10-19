@@ -9,8 +9,7 @@ const Map = () => {
   const navigate = useNavigate()
   const {parks} = useOutletContext()
 
-  //test the callback
-  const loadGame = (parkID) => {
+  const loadGame = (parkID, path) => {
     //Provide three possible game paths.
     const games = ['/game/memory', '/game/hangman', '/game/arrow-game']
     const randomPath = games[Math.floor(Math.random() * games.length)]

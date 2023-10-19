@@ -38,6 +38,17 @@ useEffect(() => {
     console.log(`Congratulations, you earned ${score} points!`)
   }
 
+  //TODO handleWin
+  //1. Calculate score
+  //2. Display score to user
+  //3. PATCH database with gameWon: true
+
+  //4. Add card to trophy case.
+  //5. Pop up card to user, user can navigate '/' from it.
+  //6. Update points container.
+  //7. Updates points/parks in userObj.
+
+
   return (
     <div className='wrapper'>
       <Header points={points} />

@@ -123,65 +123,72 @@ if (!isCollisionWinBox(newPosition.x, newPosition.y)) {
     };
   }, [handleKeyDown]);
 
+  const reset = () => {
+    console.log('hi isaac')
+  }
+
   return (
-    <div style={{backgroundImage: {image}, position: "relative", height: "400px", width: "400px", border: "1px solid #ccc" }}>
-      {maze.map((row, rowIndex) => (
-        <div key={rowIndex} style={{ display: "flex" }}>
-          {row.map((cell, colIndex) => (
-            <div
-              key={colIndex}
-              style={{
-                width: cellSize,
-                height: cellSize,
-                backgroundColor: cell === 1 ? "rgba(139, 69, 19, 0.1)" : "transparent",
-                borderTop: cell === 1 ? "rgba(139, 69, 19, 0.1)" : "transparent",
-                borderRight: cell === 1 ? "rgba(139, 69, 19, 0.1)" : "transparent",
-                borderBottom: cell === 1 ? "rgba(139, 69, 19, 0.1)" : "transparent",
-                borderLeft: cell === 1 ? "rgba(139, 69, 19, 0.1)" : "transparent",
-                boxSizing: "border-box",
-                position: "absolute",
-                top: `${rowIndex * cellSize}px`,
-                left: `${colIndex * cellSize}px`,
-              }}
-            ></div>
-          ))}
-        </div>
-      ))}
-      {winBox.map((row, rowIndex) => (
-        <div key={rowIndex} style={{ display: "flex", position: "absolute", top: `${rowIndex * cellSize}px` }}>
-          {row.map((cell, colIndex) => (
-            <div
-              key={colIndex}
-              style={{
-                width: cellSize,
-                height: cellSize,
-                backgroundColor: cell === 1 ? "rgba(0, 255, 0, 0.2)" : "transparent",
-                borderTop: cell === 1 ? "rgba(0, 255, 0, 0.2)" : "transparent",
-                borderRight: cell === 1 ? "rgba(0, 255, 0, 0.2)" : "transparent",
-                borderBottom: cell === 1 ? "rgba(0, 255, 0, 0.2)" : "transparent",
-                borderLeft: cell === 1 ? "rgba(0, 255, 0, 0.2)" : "transparent",
-                boxSizing: "border-box",
-                position: "absolute",
-                left: `${colIndex * cellSize}px`,
-                zIndex: 1, // Ensure the win box is rendered above the maze
-              }}
-            ></div>
-          ))}
-        </div>
-      ))}
-      <img
-        src={characterImage}
-        alt="Character"
-        style={{
-          position: "absolute",
-          top: `${position.y}px`,
-          left: `${position.x}px`,
-          width: "10px",
-          height: "10px",
-          zIndex: 2, // Ensure the character is rendered above the win box and the maze
-        }}
-      />
-    </div>
+    <>
+    <button onClick={reset}>Retry</button>
+      <div style={{backgroundImage: {image}, position: "relative", height: "400px", width: "400px", border: "1px solid #ccc" }}>
+        {maze.map((row, rowIndex) => (
+          <div key={rowIndex} style={{ display: "flex" }}>
+            {row.map((cell, colIndex) => (
+              <div
+                key={colIndex}
+                style={{
+                  width: cellSize,
+                  height: cellSize,
+                  backgroundColor: cell === 1 ? "rgba(139, 69, 19, 0.1)" : "transparent",
+                  borderTop: cell === 1 ? "rgba(139, 69, 19, 0.1)" : "transparent",
+                  borderRight: cell === 1 ? "rgba(139, 69, 19, 0.1)" : "transparent",
+                  borderBottom: cell === 1 ? "rgba(139, 69, 19, 0.1)" : "transparent",
+                  borderLeft: cell === 1 ? "rgba(139, 69, 19, 0.1)" : "transparent",
+                  boxSizing: "border-box",
+                  position: "absolute",
+                  top: `${rowIndex * cellSize}px`,
+                  left: `${colIndex * cellSize}px`,
+                }}
+              ></div>
+            ))}
+          </div>
+        ))}
+        {winBox.map((row, rowIndex) => (
+          <div key={rowIndex} style={{ display: "flex", position: "absolute", top: `${rowIndex * cellSize}px` }}>
+            {row.map((cell, colIndex) => (
+              <div
+                key={colIndex}
+                style={{
+                  width: cellSize,
+                  height: cellSize,
+                  backgroundColor: cell === 1 ? "rgba(0, 255, 0, 0.2)" : "transparent",
+                  borderTop: cell === 1 ? "rgba(0, 255, 0, 0.2)" : "transparent",
+                  borderRight: cell === 1 ? "rgba(0, 255, 0, 0.2)" : "transparent",
+                  borderBottom: cell === 1 ? "rgba(0, 255, 0, 0.2)" : "transparent",
+                  borderLeft: cell === 1 ? "rgba(0, 255, 0, 0.2)" : "transparent",
+                  boxSizing: "border-box",
+                  position: "absolute",
+                  left: `${colIndex * cellSize}px`,
+                  zIndex: 1, // Ensure the win box is rendered above the maze
+                }}
+              ></div>
+            ))}
+          </div>
+        ))}
+        <img
+          src={characterImage}
+          alt="Character"
+          style={{
+            position: "absolute",
+            top: `${position.y}px`,
+            left: `${position.x}px`,
+            width: "10px",
+            height: "10px",
+            zIndex: 2, // Ensure the character is rendered above the win box and the maze
+          }}
+        />
+      </div>
+    </>
   );
 };
 

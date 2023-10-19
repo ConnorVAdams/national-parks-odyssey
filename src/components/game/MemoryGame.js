@@ -74,6 +74,11 @@ const MemoryGame = () => {
         setShuffledDeck(shuffleDeck(duplicateCards(randomSlice(animals, easy))))
     }, [])
 
+    //Reset
+    const reset = () => {
+        setShuffledDeck(shuffleDeck(duplicateCards(randomSlice(animals, easy))))
+    }
+
     //Re-enable pointer events after every turn.
     useEffect(() => {
         document.querySelector('.animal-board').classList.remove('disabled')
@@ -99,9 +104,12 @@ const MemoryGame = () => {
     })
 
     return (
-    <div className={'animal-board'}>
-        {animalDisplay}
-    </div>
+    <>
+        <button onClick={reset}>Retry</button>
+        <div className={'animal-board'}> 
+            {animalDisplay}
+        </div>
+    </>
     )
 }
 
