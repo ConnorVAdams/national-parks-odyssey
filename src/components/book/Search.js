@@ -1,6 +1,8 @@
-const Search = ({ parks }) => {
-  
-  const makeStateFilters =() => {
+import { useState } from 'react'
+
+const Search = ({ parks, searchObj, handleSearchChange, handleReset }) => {
+
+  const makeStateFilters = () => {
     
     let stateOptions =[]
     parks.map(park => {
@@ -13,37 +15,60 @@ const Search = ({ parks }) => {
     })
     
     const display = stateOptions.sort().map(state => {
-      return (<option key={state}>{state}</option>)
+      return (<option onVolumeChangeCapture={state} key={state}>{state}</option>)
     })
 
     return display
   }
 
+  const makeWildlifeFilters = () => {
+    let animalOptions =[]
+    parks.map(park => {
+      const animals = park.wildlife
+      animals.map(animal => {
+        if (!animalOptions.includes(animal)) {
+          animalOptions = [...animalOptions, animal]
+        }
+      })
+    })
+    
+    const display = animalOptions.sort().map(state => {
+      return (<option key={state}>{state}</option>)
+    })
+
+    return display
+  }
   
+  const onChange = ({ target: { name, value } }) => {
+    handleSearchChange(name, value)
+  }
+
+  const onReset = () => {
+    handleReset()
+  }
 
   return (
       <form className='search-form'>
         <div className='search-list-sort'>
           <div className='search-bar'>
             <label htmlFor='search-bar'><strong>Search</strong></label>
-              <input id='search-bar' type='text' placeholder='Search by name' />
+              <input onChange={onChange} id='search' name='search' type='text' placeholder='Search by name' value={searchObj.searchQuery} />
           </div>
           <div>
             <label htmlFor='lists'><strong>Lists</strong></label>
-              <select id='lists' name='lists'>
+              <select onChange={onChange} id='list' name='list' value={searchObj.list}>
+                <option value='All'>All</option>
                 <option value='Favorites'>Favorites</option>
-                <option value='Trending'>Trending</option>
                 <option value='Cards Collected'>Cards Collected</option>
                 <option value='Cards Remaining'>Cards Remaining</option>
               </select>
           </div>
           <div>
             <label htmlFor='sort'><strong>Sort</strong></label>
-              <select id='sort' name='sort'>
+              <select onChange={onChange} id='sort' name='sort' value={searchObj.sort}>
                   <option value='Alphabetically'>A-Z</option>
+                  <option value='Oldest-Newest'>Oldest-Newest</option>
                   <option value='Visitors'>Visitors </option>
-                  <option value='Favorites'>Oldest-Newest</option>
-                  <option value='Trending'>Trending</option>
               </select>
           </div>
         </div>
@@ -51,36 +76,32 @@ const Search = ({ parks }) => {
           <label htmlFor='filters-container'><strong>Filters</strong></label>
             <div>
               <label htmlFor='state'>State</label>
-                <select id='state'>
+                <select onChange={onChange} name='state'>
+                  <option value='all'>All</option>
                   {makeStateFilters()}
                 </select>
             </div>
             <div>
-              <label htmlFor='traffic'>Traffic</label>
-                <select id='traffic'>
-                  <option value='low'>Low</option>
-                  <option value='med'>Med</option>
-                  <option value='high'>High</option>
-                </select>
-              </div>
-              <div>
-            <label htmlFor='wildlife'>Wildlife</label>
-              <select id='wildlife'>
-                {/* {wildlifeOptions} */}
+              <label htmlFor='wildlife'>Wildlife</label>
+                <select onChange={onChange} name='wildlife'>
+                  <option value='all'>All</option>
+                  {makeWildlifeFilters()}
               </select>
             </div>
             <div>
               <label htmlFor='activities'>Activities</label>
-                <select id='activities'>
+                <select onChange={onChange} name='activity'>
+                  <option value='all'>All</option>
                   <option value='archaeology'>Archaeology</option>
                   <option value='hiking'>Hiking</option>
                   <option value='history'>History</option>
-                  <option value='horseback-riding'>Horseback Riding</option>
-                  <option value='scenic-drives'>Scenic Drives</option>
-                  <option value='water-sports'>Water Sports</option>
+                  <option value='horseback riding'>Horseback Riding</option>
+                  <option value='rock climbing'>Rock Climbing</option>
+                  <option value='scenic drives'>Scenic Drives</option>
+                  <option value='water sports'>Water Sports</option>
                 </select>
               </div>
-              <button>Reset Filters</button>
+              <button onClick={onReset}>Reset Filters</button>
         </div>
       </form>
   )
