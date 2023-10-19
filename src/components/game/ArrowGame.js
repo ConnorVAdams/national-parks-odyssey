@@ -52,7 +52,8 @@ const cellSize = 20;
 const ArrowGame = () => {
   const { id, image, handleWin, name } = useOutletContext()
   const [position, setPosition] = useState({ x: 10, y: 380 });
-  const [wallHits, setWallHits] = useState(1)
+  const [startTime, setStartTime] = useState(Date.now())
+  // const [wallHits, setWallHits] = useState(1)
 
   const handleKeyDown = useCallback((e) => {
     const step = 10;
@@ -82,7 +83,7 @@ if (!isCollisionWinBox(newPosition.x, newPosition.y)) {
     console.log("You Win! You reached the top.");
     const endTime = Date.now()
     // Callback handleWin function if end is reached
-    handleWin(id, endTime, wallHits)
+    handleWin(id, (endTime - startTime))
 
     // Reset the position
     // Add points or perform any other action on winning
@@ -94,12 +95,12 @@ if (!isCollisionWinBox(newPosition.x, newPosition.y)) {
   } else {
     // Reset the position
     setPosition({ x: 10, y: 380 })
-    setWallHits(wallHits + 1)
+    // setWallHits(wallHits + 1)
   }
 
   // Check for collisions with the win box
   
-}, [position, handleWin, id, wallHits])
+}, [position, handleWin, id])
   
 
   const isCollision = (x, y) => {

@@ -1835,7 +1835,7 @@
       ],
       "link": "https://www.nps.gov/hosp/index.htm",
       "visitors": 2646133,
-      "pointValue": 625,
+      "pointValue": 0,
       "wildlife": [
         "Nene (Hawaiian goose)",
         "Hawaiian petrel",
@@ -1894,7 +1894,7 @@
       ],
       "link": "https://www.nps.gov/isro/index.htm",
       "visitors": 25454,
-      "pointValue": null,
+      "pointValue": 609,
       "wildlife": [
         "White-tailed deer",
         "Eastern gray squirrel",
@@ -3540,7 +3540,7 @@
       ],
       "link": "https://www.nps.gov/wica/index.htm",
       "visitors": 607418,
-      "pointValue": 10000,
+      "pointValue": 473,
       "wildlife": [
         "Bison",
         "Elk",
