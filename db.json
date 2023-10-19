@@ -4080,7 +4080,7 @@
       ],
       "link": "https://www.nps.gov/isro/index.htm",
       "visitors": 25454,
-      "pointValue": 625,
+      "pointValue": null,
       "wildlife": [
         {
           "id": 1,
@@ -6438,7 +6438,7 @@
       ],
       "link": "https://www.nps.gov/redw/index.htm",
       "visitors": 458400,
-      "pointValue": 0,
+      "pointValue": 625,
       "wildlife": [
         {
           "id": 1,
@@ -6545,7 +6545,7 @@
         }
       ],
       "quizQuestions": {},
-      "gameWon": false,
+      "gameWon": true,
       "description": "This park and the co-managed state parks protect almost half of all remaining coastal redwoods, the tallest trees on earth. There are three large river systems in this very seismically active area, and 37 miles (60 km) of protected coastline reveal tide pools and seastacks. The prairie, estuary, coast, river, and forest ecosystems contain a wide variety of animal and plant species.",
       "favorited": false
     },
@@ -8128,7 +8128,7 @@
     {
       "id": 1,
       "username": "isaac",
-      "points": 0,
+      "points": 625,
       "cards": []
     },
     {

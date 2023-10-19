@@ -111,6 +111,23 @@ useEffect(() => {
     .then(resp => resp.json())
     .then(data => {
       setPoints(current => current + data.pointValue)
+
+      setCurrentUser((user) => ({
+        ...user,
+        points: user.points + data.pointValue,
+      }))
+
+       // Patch request to update user points in the database
+       fetch(`http://localhost:3000/users/${currentUser.id}`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          points: currentUser.points + data.pointValue,
+        }),
+      })
+
       setCard({...card,
         park: data,
         displayCard: true
