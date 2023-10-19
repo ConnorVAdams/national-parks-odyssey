@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef} from 'react'
 import { createRoot } from "react-dom/client"
 import { Wrapper } from "@googlemaps/react-wrapper"
+import { useOutletContext} from 'react-router-dom'
 import './ParkIcon.css'
 
 const ParkIcon = ({map, parks, google, loadGame}) => {
+  const {currentUser} = useOutletContext()
   const Marker = ({map, children, position, onClick}) => {
     //need to reconcile dom with jsx/react
     const markerRef = useRef();
@@ -39,7 +41,10 @@ const ParkIcon = ({map, parks, google, loadGame}) => {
   return (
     <>
     {parks.map((park) => (
-      <Marker key={park.id} map={map} position={park.coordinates} onClick={() => loadGame(park.id)}>
+      <Marker key={park.id} map={map} position={park.coordinates} onClick={() => { currentUser === "" ? 
+        alert("Please login or create a user to play!") : 
+        loadGame(park.id)}}
+        >
         <div >
           <h2 className="marker">
             <i className="fa fa-tree tree-one"></i>

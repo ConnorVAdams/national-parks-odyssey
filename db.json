@@ -5390,7 +5390,7 @@
       ],
       "link": "https://www.nps.gov/maca/index.htm",
       "visitors": 663147,
-      "pointValue": 625,
+      "pointValue": null,
       "wildlife": [
         {
           "id": 1,
@@ -8134,6 +8134,18 @@
     {
       "id": 2,
       "username": "buzz",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 3,
+      "username": "connor",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 4,
+      "username": "tiana",
       "points": 0,
       "cards": []
     }

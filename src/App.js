@@ -17,6 +17,7 @@ const [card, setCard] = useState({
   displayCard: false
 })
 const [currentUser, setCurrentUser] = useState("")
+const [users, setUsers] = useState([])
 
 const handleCreateUserSubmit = async (username) => {
   try {
@@ -74,10 +75,22 @@ const handleLoginUserSubmit = async (username) => {
   }
 }
 
+const fetchAllUsers = () => {
+  fetch("http://localhost:3000/users")
+  .then(resp => resp.json())
+  .then(user => setUsers(user))
+  .catch(error => alert(error))
+}
+
+useEffect(() => {
+  fetchAllUsers()
+}, [])
+
 const fetchAllParks = () => {
   fetch(URL)
   .then(resp => resp.json())
   .then(data => setParks(data))
+  .catch(error => alert(error))
 }
 
 useEffect(() => {
@@ -158,7 +171,7 @@ useEffect(() => {
   return (
     <div className={card.displayCard ? 'wrapper hidden' : 'wrapper'}>
       <Header currentUser={currentUser} onLoginUserSubmit={handleLoginUserSubmit} onCreateUserSubmit={handleCreateUserSubmit} />
-      <Outlet context={{ parks, handleWin }} />
+      <Outlet context={{ currentUser, users, parks, handleWin }} />
       {card.displayCard ? <ParkCard park={card.park} resetCard={resetCard} /> : null}
       <Footer />
     </div>
