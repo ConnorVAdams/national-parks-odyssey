@@ -5,7 +5,9 @@ import './MemoryGame.css'
 import animals from './animalData.js'
 
 const MemoryGame = () => {
-    const { name, handleWin, id } = useOutletContext()
+    const { currentGameData, handleWin} = useOutletContext()
+    const { gamePark: { id, name, attractions, wildlife, image, location, gameWon } } = currentGameData
+    const { path } = currentGameData
     const [startTime, setStartTime] = useState(Date.now())
 
     //count variable keeps track of number of turns player has taken, with an odd numbered count being the middle of a turn and an even number being the end of a turn.

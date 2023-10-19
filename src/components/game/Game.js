@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
-import { Outlet, useOutletContext, useNavigate, useLocation } from "react-router-dom"
-// import GameNav from "../nav/GameNav"
+import { Outlet, useOutletContext, useNavigate, useLocation, redirect } from "react-router-dom"
 
 const Game = () => {
   const { handleWin } = useOutletContext()
@@ -11,26 +10,6 @@ const Game = () => {
     gamePath: ''
   })
 
-  const startGame = (id, path) => {
-    fetch(`http://localhost:3000/parkObj/${id}`)
-    .then(resp => resp.json())
-    .then(data => {
-
-    setCurrentGameData(current => ({...current,
-      gamePark: data,
-      gamePath: path
-    }))
-  })}
-
-  useEffect(() => {
-    startGame(locationData.state.id, locationData.state.path)
- }, [])
-
-  //TODO Timer
-
-  //TODO handleWin
-
-  //TODO Reset
 
   //User gets 3 minutes to play game before being navigated back to home
   setTimeout(() => {
@@ -38,27 +17,23 @@ const Game = () => {
     navigate('/')
   }, 180000)
 
-
-  // //TODO Route protection
-  // useEffect(() => {
-  //   if (!id) {
-  //     navigate('/')
-  // setTimeout alert('choose a park')
-  // Navigate user to ErrorPage
-  //   }
-  // })
-
-  const { gamePark: { id, name, attractions, wildlife, image, location, gameWon } } = currentGameData
-  const { path } = currentGameData
+  useEffect(() => {
+    if (locationData) {
+      fetch(`http://localhost:3000/parkObj/${locationData.state.id}`)
+      .then(resp => resp.json())
+      .then(data => {
+  
+      setCurrentGameData(current => ({...current,
+        gamePark: data,
+        gamePath: locationData.state.path
+      }))
+    })}
+  }, [])
 
     return (
       <div className="game">
-        {/* <GameNav path={path}/> */}
         <button onClick={() => navigate('../')}>Return to Map</button>
-        {/* Should we allow user to choose a different type of game without returning to Home? */}
-        {/* Destructure whatever park.property props you need for your game above and feed them to the context below:  */}
-        <Outlet context={{ handleWin, id, attractions, wildlife, image, name }}/>
-        {/* <NotifyBar /> */}
+        <Outlet context={{ handleWin, currentGameData }}/>
       </div>
     )
 }
