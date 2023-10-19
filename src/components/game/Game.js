@@ -50,7 +50,6 @@ const Game = () => {
 
   const { gamePark: { id, name, attractions, wildlife, image, location, gameWon } } = currentGameData
   const { path } = currentGameData
-  console.log(id)
 
     return (
       <div className="game">

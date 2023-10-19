@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom"
 import Header from './components/nav/Header'
 import Footer from './components/nav/Footer'
 import './App.css'
-import animals from './components/game/animalData.js'
+import wildlifeData from './wildlifeData.js'
 import ParkCard from './components/ParkCard.js'
 import noDuplicates from './wildlifeData.js'
 import { all } from 'q'
@@ -99,21 +99,18 @@ useEffect(() => {
   fetchAllParks()
 }, [])
 
-// console.log(noDuplicates)
-
 //Score calculator specific to memory game
   //TODO Can be generalized to calculate score for every game?
-  const calculateScore = (finalTime, finalCount) => {
+  const calculateScore = (finalTime) => {
     const minimumMoves = 1
-    const minimumTime = Date.now()
     //Awards player more points for lower number of moves and/or lower elapsed time, with a maximum of 10,000.
     //TODO What should maximum points for each game be?
-    return Math.round((minimumTime / finalTime) * (minimumMoves / finalCount) * 10000)
+    return Math.round((finalTime) / 100)
   }
 
   //Receives elapsed time and number of moves from <AnimalBoard /> and passes it through calculateScore()
-  const handleWin = (gameId, param1, param2) => {
-    const score = calculateScore(param1, param2)
+  const handleWin = (gameId, time) => {
+    const score = calculateScore(time)
     //TODO Only patch score if new score is higher
     fetch(`${URL}/${gameId}`, {
       method: 'PATCH',

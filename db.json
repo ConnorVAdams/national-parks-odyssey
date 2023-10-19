@@ -20,7 +20,7 @@
       ],
       "link": "https://www.nps.gov/acad/index.htm",
       "visitors": 3000000000,
-      "pointValue": null,
+      "pointValue": 80,
       "wildlife": [
         "American black bear",
         "White-tailed deer",
@@ -2606,7 +2606,7 @@
       ],
       "link": "https://www.nps.gov/mora/index.htm",
       "visitors": 1622395,
-      "pointValue": 625,
+      "pointValue": 5000,
       "wildlife": [
         "Black bear",
         "Coyote",
@@ -3869,6 +3869,12 @@
       "id": 5,
       "username": "Matteo",
       "points": 0,
+      "cards": []
+    },
+    {
+      "id": 6,
+      "username": "con con",
+      "points": 5625,
       "cards": []
     }
   ]

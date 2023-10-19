@@ -93,7 +93,7 @@ function Hangman() {
       const endTime = Date.now()
       handleWin(id, endTime, wrongGuesses)
     }
-  })
+  }, [status])
 
   //display hidden word
   const hiddenWord = randomAttraction.split('').map(letter =>
