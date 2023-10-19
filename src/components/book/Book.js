@@ -12,7 +12,7 @@ const defaultObj = {
   state: '',
   traffic: '',
   wildlife: '',
-  activities: '',
+  activity: '',
 }
 
 const Book = () => {

@@ -3587,23 +3587,23 @@
     {
       "id": 60,
       "name": "Wrangell-St. Elias National Park",
-      "year": 1964,
+      "year": 1980,
       "location": [
-        "Utah"
+        "Alaska"
       ],
       "coordinates": {
         "lat": 61,
         "lng": -142
       },
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Canyonlands_National_Park%E2%80%A6Needles_area_%286294480744%29.jpg/200px-Canyonlands_National_Park%E2%80%A6Needles_area_%286294480744%29.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Rain_in_the_Wrangell_Mountains.jpg/400px-Rain_in_the_Wrangell_Mountains.jpg",
       "attractions": [
-        "Island in the Sky",
-        "Mesa Arch",
-        "Upheaval Dome",
-        "Elephant Hill"
+        "Mount Wrangell",
+        "Copper River",
+        "Yakutat Station",
+        "Mount Drum"
       ],
-      "link": "https://www.nps.gov/cany/index.htm",
-      "visitors": 733000,
+      "link": "https://www.nps.gov/wrst/index.htm",
+      "visitors": 65236,
       "pointValue": 0,
       "wildlife": [
         "Moose",

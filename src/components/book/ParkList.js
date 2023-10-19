@@ -2,7 +2,7 @@ import ParkLi from "./ParkLi"
 import { useEffect, useState } from 'react'
 
 const ParkList = ({ parks, displayPark, handleFavorite, searchObj }) => {
-  const { search, list, sort, state, traffic, wildlife, activities } = searchObj
+  const { search, list, sort, state, traffic, wildlife, activity } = searchObj
   // const { state, traffic, wildlife, activities} = searchObj.filters
 
   const listParks = () => {
@@ -59,20 +59,50 @@ const ParkList = ({ parks, displayPark, handleFavorite, searchObj }) => {
 
   const filteredByState = finalParks.filter(park => {
     if (state) {
-    return (park.location.some(loc => loc === state))
+      return (park.location.some(loc => loc === state))
     } else {
       return finalParks
     }
   })
-    // state.includes(park.location))
-  // }
-  const parksDisplay = filteredByState.map(park => {
+
+  const filteredByWildlife = filteredByState.filter(park => {
+    if (wildlife) {
+      return (park.wildlife.some(animal => animal === wildlife))
+    } else {
+      return finalParks
+    }
+  })
+
+  const filteredByActivity = filteredByWildlife.filter(park => {
+    if (activity === 'horseback riding') {
+      const regex = [/horse/i]
+      return (regex.some(regex => regex.test(park.description)))
+    } else if (activity === 'archaeology'){
+      const regex = [/petroglyph/i, /history/i, /native american/i, /artifact/i]
+      return (regex.some(regex => regex.test(park.description)))
+    } else if (activity === 'hiking'){
+      const regex = [/trail/i, /hiking/i, /hike/i]
+      return (regex.some(regex => regex.test(park.description)))
+    } else if (activity === 'water sports'){
+      const regex = [/lake/i, /boat/i, /ocean/i, /sea/i, /swim/i]
+      return (regex.some(regex => regex.test(park.description)))
+    } else if (activity === 'rock climbing'){
+      const regex = [/climb/i, /rock climb/i, /mountaineering/i]
+      return (regex.some(regex => regex.test(park.description)))
+    } else if (activity === 'history'){
+      const regex = [/history/i, /museum/i, /civil war/i]
+      return (regex.some(regex => regex.test(park.description)))
+    } else if (activity === 'scenic drives'){
+      const regex = [/road/i, /drive/i]
+      return (regex.some(regex => regex.test(park.description)))
+    } else {
+      return finalParks
+    }
+  })
+
+  const parksDisplay = filteredByActivity.map(park => {
     return <ParkLi handleFavorite={handleFavorite} key={park.id} park={park} displayPark={displayPark}/>
   })
-  
-
-
-  console.log(filteredByState)
 
   return (
     <div className='park-list'>

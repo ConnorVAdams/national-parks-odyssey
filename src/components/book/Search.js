@@ -87,30 +87,23 @@ const Search = ({ parks, searchObj, handleSearchChange }) => {
                 </select>
             </div>
             <div>
-              <label htmlFor='traffic'>Traffic</label>
-                <select id='traffic'>
-                  <option value='off'>Off</option>
-                  <option value='low'>Low</option>
-                  <option value='med'>Med</option>
-                  <option value='high'>High</option>
-                </select>
-              </div>
-              <div>
-            <label htmlFor='wildlife'>Wildlife</label>
-              <select id='wildlife'>
-                {makeWildlifeFilters()}
+              <label htmlFor='wildlife'>Wildlife</label>
+                <select onChange={onChange} name='wildlife'>
+                  <option value='All'>All</option>
+                  {makeWildlifeFilters()}
               </select>
             </div>
             <div>
               <label htmlFor='activities'>Activities</label>
-                <select id='activities'>
-                <option value='all'>All</option>
+                <select onChange={onChange} name='activity'>
+                  <option value='all'>All</option>
                   <option value='archaeology'>Archaeology</option>
                   <option value='hiking'>Hiking</option>
                   <option value='history'>History</option>
-                  <option value='horseback-riding'>Horseback Riding</option>
-                  <option value='scenic-drives'>Scenic Drives</option>
-                  <option value='water-sports'>Water Sports</option>
+                  <option value='horseback riding'>Horseback Riding</option>
+                  <option value='rock climbing'>Rock Climbing</option>
+                  <option value='scenic drives'>Scenic Drives</option>
+                  <option value='water sports'>Water Sports</option>
                 </select>
               </div>
               <button>Reset Filters</button>
