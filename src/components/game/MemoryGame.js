@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react'
-import { useOutletContext } from 'react-router-dom'
+import { useOutletContext, useNavigate } from 'react-router-dom'
 import MemoryTile from './MemoryTile'
 import './MemoryGame.css'
 import animals from './animalData.js'
 
 const MemoryGame = () => {
+
+    const navigate = useNavigate()
+
     const { currentGameData, handleWin} = useOutletContext()
     const { gamePark: { id, name, attractions, wildlife, image, location, gameWon } } = currentGameData
     const { path } = currentGameData
@@ -109,11 +112,11 @@ const MemoryGame = () => {
     })
 
     return (
-    <>
-        <button onClick={reset}>Retry</button>
+    <>        
         <div className={'animal-board'}>
             {animalDisplay}
         </div>
+        <button onClick={reset}>Retry</button>
     </>
     )
 }
