@@ -3,9 +3,10 @@
   grid-area: 1/1/2/4;
   height: 10vh;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 20px;
   font-family: 'Bahianita', sans-serif;
+  letter-spacing: 1px;
 }
 .title-container {
   display: flex;
@@ -24,11 +25,16 @@
   margin-left: 10px;
 }
 #create-user {
-  background: green;
+  background: #354A20;
+  font-family: 'Open Sans', serif;
+  color: white;
 }
 
 #login {
+  margin-top: 5px;
   margin-left: 10px;
+  background: #b4d2bf;
+  font-family: 'Open Sans', serif;
 }
 
 .point-container{
