@@ -105,7 +105,7 @@ useEffect(() => {
     const minimumMoves = 1
     //Awards player more points for lower number of moves and/or lower elapsed time, with a maximum of 10,000.
     //TODO What should maximum points for each game be?
-    return Math.round((finalTime) / 100)
+    return Math.round(10000000 / (finalTime))
   }
 
   //Receives elapsed time and number of moves from <AnimalBoard /> and passes it through calculateScore()
