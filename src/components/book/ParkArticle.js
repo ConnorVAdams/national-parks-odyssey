@@ -1,11 +1,11 @@
 // import ParkCard from './ParkCard'
 import { useEffect, useState } from 'react'
-import { BiBookHeart as AddFaveIcon } from 'react-icons/bi'
-import { BiSolidBookHeart as RemoveFaveIcon } from 'react-icons/bi'
 
-const ParkArticle = ({ park }) => {
+const ParkArticle = ({ park, handleFavorite, displayPark }) => {
   const { id, name, year, location, coordinates, image, attractions, link, visitors, wildlife, gameWon, description, favorited } = park
   const [currentInfo, setCurrentInfo] = useState(null)
+  const [isFavorited, setIsFavorited] = useState(false)
+
 
   const displayInfo = ({ target: { name } }) => {
     if (name === 'attractions') {
@@ -24,9 +24,9 @@ const ParkArticle = ({ park }) => {
           <ul>
             {wildlife.map(animal => {
               return (
-              <li key={animal.name}>
-                  <img src={animal.img} alt={animal.name} />
-                  <p>{animal.name}</p>
+              <li key={animal}>
+                  {/* <img src={animal} alt={animal} /> */}
+                  <p>{animal}</p>
               </li>
             )})}
           </ul>
@@ -37,19 +37,47 @@ const ParkArticle = ({ park }) => {
     }
   }
 
+  useEffect(() => {
+    if (name === 'attractions') {
+      setCurrentInfo(current => {
+        return (
+          <ul>
+            {attractions.map(attraction => {
+              return <li key={attraction}>{attraction}</li>
+            })}
+          </ul>
+        )
+      })
+    } else if (name === 'wildlife') {
+      setCurrentInfo(current => {
+        return (
+          <ul>
+            {wildlife.map(animal => {
+              return (
+              <li key={animal}>
+                  {/* <img src={animal} alt={animal} /> */}
+                  <p>{animal}</p>
+              </li>
+            )})}
+          </ul>
+        )
+      })
+    } else {
+      setCurrentInfo(current => (<p>{description}</p>))
+    }
+  }, [park])
+
+  const handleFave = () => {
+    handleFavorite(id, isFavorited)
+    setIsFavorited(current => !current)
+  }
+
+
   return (
       <div className='park-article'>
         <div className='article-header'>
           <h2>{name}</h2>
-          {!favorited ? (
-            <div className='single-icon-container'>
-              <AddFaveIcon className='react-icon fave-icon'/> <p>Favorite</p>
-            </div>
-          ) : ( 
-            <div class='single-icon-container'>
-              <RemoveFaveIcon className='react-icon fave-icon'/> <p>Unfavorite</p>
-            </div>
-          )}
+          {!favorited ? <button onClick={handleFave} >Favorite</button> : <button onClick={handleFave}>Unfavorite</button>}
         </div>
         <div className='article-top'>
           <div className='article-stats'>

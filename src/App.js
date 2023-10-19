@@ -6,6 +6,8 @@ import Footer from './components/nav/Footer'
 import './App.css'
 import animals from './components/game/animalData.js'
 import ParkCard from './components/ParkCard.js'
+import noDuplicates from './wildlifeData.js'
+import { all } from 'q'
 
 const URL = 'http://localhost:3000/parkObj'
 
@@ -96,6 +98,8 @@ const fetchAllParks = () => {
 useEffect(() => {
   fetchAllParks()
 }, [])
+
+// console.log(noDuplicates)
 
 //Score calculator specific to memory game
   //TODO Can be generalized to calculate score for every game?

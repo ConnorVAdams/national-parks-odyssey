@@ -5,6 +5,7 @@ import Modal from "./UserModal"
 const Header = ({ currentUser, onLoginUserSubmit, onCreateUserSubmit }) => {
   const [isCreateUserModalOpen, setCreateUserModalOpen] = useState(false);
   const [isLoginModalOpen, setLoginModalOpen] = useState(false);
+
   const navigate = useNavigate()
   const handleOpenCreateUserModal = () => {
     setCreateUserModalOpen(true);
