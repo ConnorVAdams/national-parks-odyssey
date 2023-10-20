@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Bahianita&family=Roboto+Condensed&display=swap);
 
+.app {
+  background-color: #F0E2B5;
+}
+
 ul {
   margin: 0px;
   padding: 0px;
@@ -699,4 +703,8 @@ button:hover {
 .arrow-game {
   display: flex;
   flex-direction: row;
+}
+
+.arrow-wrapper {
+  background-size: auto;
 }

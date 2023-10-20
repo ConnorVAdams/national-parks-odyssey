@@ -10,13 +10,6 @@ const Game = () => {
     gamePath: ''
   })
 
-
-  //User gets 3 minutes to play game before being navigated back to home
-  setTimeout(() => {
-    //TODO Display 'Sorry, you ran out of time!' message to user.
-    navigate('/')
-  }, 180000)
-
   useEffect(() => {
     if (locationData) {
       fetch(`http://localhost:3000/parkObj/${locationData.state.id}`)
