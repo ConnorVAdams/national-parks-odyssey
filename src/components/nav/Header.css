@@ -32,8 +32,10 @@
 
 .point-container {
   height: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 30px;
+  margin-left: 15px;
 }
+
 
 .user-container button#create-user,
 .user-container button#login {

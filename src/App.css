@@ -671,6 +671,23 @@ div {
   margin-right: 2px;
 }
 
+.game button {
+  background-color: #A9A9A9;
+  font-weight: 400;
+  font-family: 'Open Sans', serif;
+  color: white;
+  font-size: 12px;
+  /* Adjust the font size as needed */
+  border-radius: 10px;
+  /* Adds rounded edges */
+  padding: 5px 15px;
+  /* Adjust padding to control button size */
+  /* margin-right: 10px; */
+  /* Add spacing between buttons */
+  margin-top: 10px;
+  margin-right: 2px;
+}
+
 button:hover {
   background-color: #333; /* Darker gray on hover */
 }
