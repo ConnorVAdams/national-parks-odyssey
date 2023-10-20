@@ -3,8 +3,7 @@ import React from 'react'
 const UserStat = ({ position, username, points, cards}) => {
     let cardsLength = cards.length
   return (
-    <div>
-        <li>
+        <li className='user-stat'>
           <p>
             {position}. {username}
           </p>
@@ -15,7 +14,6 @@ const UserStat = ({ position, username, points, cards}) => {
             {cardsLength} cards
           </p>
         </li>
-    </div>
   )
 }
 

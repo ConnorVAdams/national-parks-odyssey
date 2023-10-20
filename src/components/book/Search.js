@@ -76,7 +76,7 @@ const Search = ({ parks, searchObj, handleSearchChange, handleReset }) => {
             <div>
               <label htmlFor='state'/>
                 <select onChange={onChange} name='state'>
-                  <option value='all'>All</option>
+                  <option value='all'>State</option>
                   {makeStateFilters()}
                 </select>
             </div>
@@ -90,7 +90,7 @@ const Search = ({ parks, searchObj, handleSearchChange, handleReset }) => {
             <div>
               <label htmlFor='activities'/>
                 <select onChange={onChange} name='activity'>
-                  <option value='all'>All</option>
+                  <option value='all'>Activities</option>
                   <option value='archaeology'>Archaeology</option>
                   <option value='hiking'>Hiking</option>
                   <option value='history'>History</option>

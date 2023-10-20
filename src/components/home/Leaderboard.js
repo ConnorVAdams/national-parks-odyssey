@@ -13,9 +13,10 @@ const Leaderboard = () => {
   return (
     <div className='game-info'>
       <h2>Leaderboard</h2>
-      <div className='leaderboard'>
-        {mappedUsers}
-        </div>
+      {mappedUsers}
+      {/* <div className='leaderboard'>
+        
+        </div> */}
         
     </div>
   )
