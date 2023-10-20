@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Bahianita&family=Roboto+Condensed&display=swap);
 /* Define styles for the carousel container */
 .carousel {
   display: flex;
@@ -9,4 +10,58 @@
   margin-left: 4px;
   scroll-snap-type: x mandatory;
   gap: 10px;
+  overflow-y: auto;
+  background: #b4d2bf
+}
+
+.carousel::-webkit-scrollbar {
+  width: 0px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+.carousel::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-card {
+  display: flex;
+  background-color: #354a20;
+  color: white;
+  margin: auto;
+  margin-left: 3px;
+  margin-right: 3px;
+  align-items: center;
+  font-family: 'Bahianita', sans-serif;
+  font-size: large;
+  margin-top: 6px;
+  padding: 10px 0;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: 100px;
+}
+
+.carousel-card h3 {
+  padding-left: 8px;
+}
+
+.carousel-card button {
+  color: black;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+    justify-content: space-evenly;
+      text-transform: uppercase;
+        border-radius: 10px;
+        padding: 2px 2px;
+        font-size: x-small;
+}
+
+.carousel-card button:hover {
+  transform: translateY(-10px);
+  transform-origin: center;
 }
