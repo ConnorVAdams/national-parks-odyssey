@@ -56,7 +56,6 @@ const ParkArticle = ({ park, handleFavorite, displayPark }) => {
             {wildlife.map(animal => {
               return (
               <li key={animal}>
-                  {/* <img src={animal} alt={animal} /> */}
                   <p>{animal}</p>
               </li>
             )})}
@@ -68,24 +67,17 @@ const ParkArticle = ({ park, handleFavorite, displayPark }) => {
     }
   }, [park])
 
-  const handleFave = () => {
-    handleFavorite(id, isFavorited)
-    setIsFavorited(current => !current)
-  }
-
-
   return (
     <div className='park-article'>
       <div className='article-header'>
         <h2>{name}</h2>
-        {!favorited ? <button onClick={handleFave} >Favorite</button> : <button onClick={handleFave}>Unfavorite</button>}
       </div>
       <div className='article-top'>
         <div className='article-stats'>
           <img src={image} alt={name} />
           <h4>Est. {year}</h4>
           <h4>{location}</h4>
-          <h4>{visitors} visitors</h4>
+          <h4>{visitors ? visitors.toLocaleString() : null} visitors</h4>
           <h4><a href={link} target='_blank' rel="noreferrer">{name}</a></h4>
         </div>
         <span className='map-card'>
