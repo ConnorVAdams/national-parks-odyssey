@@ -140,8 +140,8 @@ div {
   margin-left: 4px;
 
 } */
-  background-color: #354a20;
-}
+  /* background-color: #354a20;
+} */
 
 .footer {
   display: flex;
@@ -637,6 +637,7 @@ div {
 .footer {
   background-color: #354a20;
   border-radius: 0px;
+}
 
 .point-container {
   margin-right: 100px;
@@ -655,17 +656,19 @@ div {
 
 .book button {
   background-color: #A9A9A9;
-  color: #fff;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  border: none;
-  border-radius: 5px; /* Rounded corners */
-  font-size: .75rem; /* Adjust font size as needed */
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth hover transition */
-  max-height: 20px;
+  font-weight: 400;
+  font-family: 'Open Sans', serif;
+  color: white;
+  font-size: 12px;
+  /* Adjust the font size as needed */
+  border-radius: 10px;
+  /* Adds rounded edges */
+  padding: 5px 15px;
+  /* Adjust padding to control button size */
+  /* margin-right: 10px; */
+  /* Add spacing between buttons */
+  margin-top: 0;
+  margin-right: 2px;
 }
 
 button:hover {
