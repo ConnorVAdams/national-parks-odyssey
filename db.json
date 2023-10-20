@@ -3840,11 +3840,37 @@
       "favorited": false
     }
   ],
+
   "users": [
     {
+      "id": 1,
+      "username": "Isaac",
+      "points": 11038,
+      "cards": [
+        41,
+        67,
+        74,
+        1,
+        5,
+        18
+      ]
+    },
+    {
+      "id": 2,
+      "username": "Tiana",
+      "points": 6438,
+      "cards": [
+        1, 
+        4, 
+        7, 
+        62, 
+        12
+      ]
+    },
+    {
       "id": 3,
-      "username": "connor",
-      "points": 738,
+      "username": "Connor",
+      "points": 3738,
       "cards": [
         32,
         1,
@@ -3853,6 +3879,84 @@
         5,
         8
       ]
+    },
+    {
+      "id": 4,
+      "username": "Wesley",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 5,
+      "username": "Brian",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 6,
+      "username": "Isaac S.",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 7,
+      "username": "Kat",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 8,
+      "username": "Michael",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 9,
+      "username": "Anthony",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 10,
+      "username": "Danner",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 11,
+      "username": "Matteo",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 12,
+      "username": "Zach",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 13,
+      "username": "Austin",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 14,
+      "username": "Alberto",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 15,
+      "username": "Joseph",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 16,
+      "username": "Landon",
+      "points": 0,
+      "cards": []
     }
   ]
 }

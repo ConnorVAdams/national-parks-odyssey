@@ -30,7 +30,7 @@ div {
   height: 100vh;
   grid-gap: 8px;
   z-index: -1;
-  background-color: #f8eecc;
+  background-color: #F0E2B5;
 }
 
 .header {
@@ -40,6 +40,9 @@ div {
   align-items: center;
   margin-top: 10px;
   font-family: 'Bahianita', sans-serif;
+  font-size: 1.75rem;
+  color: white;
+  border-radius: 0px;
 }
 
 .map {
@@ -58,9 +61,21 @@ div {
   display: flex;
   flex-direction: column;
   grid-area: 2/1/5/2;
-  height: 78vh;
+  max-height: 78vh;
   border: 3px solid black;
   margin-left: 10px;
+  background-color: #354a20;
+  color: white;
+  overflow: auto;
+  padding: 10px;
+  font-size: 0.75rem;
+}
+
+.game-info h2{
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 2.75rem;
 }
 
 .game {
@@ -74,7 +89,11 @@ div {
   margin-top: auto;
   margin-bottom: auto;
   height: 103%;
-  background-color: #D2B48E;
+  background-color: #F0E2B5
+}
+
+.game h2 {
+  font-size: 2rem;
 }
 
 .game button {
@@ -119,7 +138,10 @@ div {
   border: 3px solid black;
   margin-right: 10px;
   margin-left: 4px;
+
 } */
+  background-color: #354a20;
+}
 
 .footer {
   display: flex;
@@ -134,9 +156,10 @@ div {
 
 .nps-logo {
   display: flex;
-  max-height: 80px;
+  max-height: 90px;
   max-width: 65px;
   margin: 10px;
+  /* box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5); */
 }
 
 .title {
@@ -397,6 +420,7 @@ div {
   padding: 10px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
   background: rgb(197, 108, 57);
+  overflow: auto;
 }
 
 .article-stats {
@@ -550,18 +574,100 @@ div {
 .leaderboard p {
   display: inline;
   flex-grow: 1;
+  margin-left: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
 }
 
 .leaderboard li {
-  display: flex;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   background: rgb(197, 108, 57);
-}
-
-.leaderboard {
-
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  padding: 0px; */
 }
 
 .footer {
   background-color: #354a20;
   border-radius: 0px;
+}
+
+.game-info {
+  font-family: 'Bahianita', sans-serif;
+}
+
+.game-info h2{
+  margin-bottom: 10px;
+}
+
+.user-stat {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 1.2rem;
+  background: rgb(197, 108, 57);
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  max-height: 58px;
+}
+
+.rules {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  background: rgb(197, 108, 57);
+  color: white;
+}
+
+.rules-p {
+  background-color: white;
+  color: black;
+  padding: 8px;
+  border-radius: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+.footer {
+  background-color: #354a20;
+  border-radius: 0px;
+
+.point-container {
+  margin-right: 100px;
+}
+
+.game button {
+  margin: 10px;
+}
+
+.user-form {
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+.book button {
+  background-color: #A9A9A9;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  font-size: .75rem; /* Adjust font size as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+  max-height: 20px;
+}
+
+button:hover {
+  background-color: #333; /* Darker gray on hover */
 }

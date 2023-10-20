@@ -142,7 +142,6 @@ if (!isCollisionWinBox(newPosition.x, newPosition.y)) {
 
   return (
     <>
-    <button onClick={reset}>Retry</button>
       <div style={{backgroundImage: {image}, position: "relative", height: "400px", width: "400px", border: "1px solid #ccc" }}>
         {maze.map((row, rowIndex) => (
           <div key={rowIndex} style={{ display: "flex" }}>
@@ -201,6 +200,7 @@ if (!isCollisionWinBox(newPosition.x, newPosition.y)) {
           }}
         />
       </div>
+      <button onClick={reset}>Retry</button>
     </>
   );
 };

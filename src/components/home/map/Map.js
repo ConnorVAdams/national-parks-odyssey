@@ -13,7 +13,7 @@ const Map = () => {
     //Provide three possible game paths.
     const games = ['/game/memory', '/game/hangman', '/game/arrow-game']
     const randomPath = games[Math.floor(Math.random() * games.length)]
-    navigate('/game/arrow-game', { state: {id: parkID, path: '/game/memory'} })
+    navigate(randomPath, { state: {id: parkID, path: randomPath} })
   }
 
   return (
