@@ -23,7 +23,7 @@ const Rules = () => {
               </p>
               <p>
               <strong>Minigames</strong>: There will be three total minigames that you could have the possibility of landing on. The encyclopedia cannot be opened during challenges!
-                <ul>
+
                   <li><strong>Wildlife Memory</strong>: User plays a memory game with tiles featuring images of wildlife local to that park. Match all memory tiles to win!
       </li>
                   <li><strong>Hangman</strong>: Game uses a word or words in the park object and plays a hangman game with them. Guess the correct associated word or words within the given amount of attempts to succeed!
@@ -31,7 +31,7 @@ const Rules = () => {
                   <li><strong>Stay on the Trail</strong>: A hiking trail will be shown, use the arrow keys to navigate the hiker through the trail. If you fall off the trail, you have to restart. Get to the end to complete the minigame!
 
       </li>
-                </ul>
+
               </p>
               <p>Good Luck!</p>
             </div>

@@ -583,7 +583,9 @@ div {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  font-size: 48px;
+  font-size: 100px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .leaderboard p {
@@ -601,6 +603,7 @@ div {
 
 .game-info h2{
   margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
 }
 
 .user-stat {
@@ -614,6 +617,7 @@ div {
   margin-bottom: 2px;
   border-radius: 5px;
   max-height: 58px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5)
 }
 
 .rules {
@@ -690,4 +694,9 @@ div {
 
 button:hover {
   background-color: #333; /* Darker gray on hover */
+}
+
+.arrow-game {
+  display: flex;
+  flex-direction: row;
 }

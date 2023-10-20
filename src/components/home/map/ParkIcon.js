@@ -40,22 +40,25 @@ const ParkIcon = ({map, parks, google, loadGame}) => {
   }
   return (
     <>
-    {parks.map((park) => (
-      <Marker key={park.id} map={map} position={park.coordinates} onClick={() => {
-        // { currentUser === "" ? alert("Please login or create a user to play!") : 
-        loadGame(park.id)}}
-        >
-        <div >
-          <h2 className="marker">
-            <i className="fa fa-tree tree-one"></i>
-            <i className="fa fa-tree tree-two"></i>
-            {park.name}
-            <i className="fa fa-tree tree-three"></i>
-            <i className="fa fa-tree tree-four"></i>
+      {parks.map((park) => (
+        <Marker key={park.id} map={map} position={park.coordinates} onClick={() => {
+          if (currentUser === "") {
+            alert("Please login or create a user to play!");
+          } else {
+            loadGame(park.id);
+          }
+        }}>
+          <div>
+            <h2 className="marker">
+              <i className="fa fa-tree tree-one"></i>
+              <i className="fa fa-tree tree-two"></i>
+              {park.name}
+              <i className="fa fa-tree tree-three"></i>
+              <i className="fa fa-tree tree-four"></i>
             </h2>
-        </div>
-      </Marker>
-    ))}
+          </div>
+        </Marker>
+      ))}
     </>
   )
 }

@@ -8,10 +8,8 @@ const Carousel = ({ currentUser, parks }) => {
   const [userCards, setUserCards] = useState([])
   const {cardRoute} = useOutletContext()
   useEffect(() => {
-    console.log(currentUser)
     function getCarousel() {
       if (!currentUser) {
-        console.log('y')
       } else {
         const userCards = currentUser.cards;
 
@@ -25,7 +23,6 @@ const Carousel = ({ currentUser, parks }) => {
 
     const carouselDisplay = () => {
       if (!currentUser) {
-        console.log('y')
       } else {
         return getCarousel().map(park => {
           return <CarouselCard key={park.id} park={park}/>
@@ -33,7 +30,6 @@ const Carousel = ({ currentUser, parks }) => {
       }
     }
     setUserCards(carouselDisplay())
-    console.log(currentUser)
   }, [currentUser])
 
 
