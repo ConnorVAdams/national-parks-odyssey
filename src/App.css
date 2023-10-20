@@ -645,3 +645,22 @@ div {
   justify-content: center;
   margin-right: 25px;
 }
+
+.book button {
+  background-color: #A9A9A9;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  font-size: .75rem; /* Adjust font size as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+  max-height: 20px;
+}
+
+button:hover {
+  background-color: #333; /* Darker gray on hover */
+}
