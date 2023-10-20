@@ -1,7 +1,7 @@
 // import ParkCard from './ParkCard'
 import { useEffect, useState } from 'react'
 import { Wrapper, Marker } from "@googlemaps/react-wrapper"
-import BookMap from './BookMap'
+import BookMap from './BookMap.js'
 
 const ParkArticle = ({ park, handleFavorite, displayPark }) => {
   const { id, name, year, location, coordinates, image, attractions, link, visitors, wildlife, gameWon, description, favorited } = park
