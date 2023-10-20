@@ -3842,99 +3842,14 @@
   ],
   "users": [
     {
-      "id": 1,
-      "username": "isaac",
-      "points": 11038,
-      "cards": [
-        41
-      ]
-    },
-    {
-      "id": 2,
-      "username": "buzz",
-      "points": 0,
-      "cards": []
-    },
-    {
       "id": 3,
       "username": "connor",
       "points": 738,
       "cards": [
         32,
-        1
+        1,
+        4
       ]
-    },
-    {
-      "id": 4,
-      "username": "tiana",
-      "points": 0,
-      "cards": []
-    },
-    {
-      "id": 5,
-      "username": "Matteo",
-      "points": 0,
-      "cards": []
-    },
-    {
-      "id": 6,
-      "username": "con con",
-      "points": 5625,
-      "cards": []
-    },
-    {
-      "id": 7,
-      "username": "gj",
-      "points": 0,
-      "cards": []
-    },
-    {
-      "id": 8,
-      "username": "hsrths",
-      "points": 0,
-      "cards": []
-    },
-    {
-      "id": 9,
-      "username": "thsj",
-      "points": 0,
-      "cards": []
-    },
-    {
-      "id": 10,
-      "username": "agb",
-      "points": 0,
-      "cards": []
-    },
-    {
-      "id": 11,
-      "username": "thstj",
-      "points": 0,
-      "cards": []
-    },
-    {
-      "id": 12,
-      "username": "sfgjng",
-      "points": 0,
-      "cards": []
-    },
-    {
-      "id": 13,
-      "username": "hmd",
-      "points": 0,
-      "cards": []
-    },
-    {
-      "id": 14,
-      "username": "aere5r",
-      "points": 0,
-      "cards": []
-    },
-    {
-      "id": 15,
-      "username": "ktdked",
-      "points": 0,
-      "cards": []
     }
   ]
 }
