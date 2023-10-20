@@ -30,7 +30,7 @@ div {
   height: 100vh;
   grid-gap: 8px;
   z-index: -1;
-  background-color: #f8eecc;
+  background-color: #F0E2B5;
 }
 
 .header {
@@ -42,6 +42,7 @@ div {
   font-family: 'Bahianita', sans-serif;
   font-size: 1.75rem;
   color: white;
+  border-radius: 0px;
 }
 
 .map {
@@ -88,7 +89,11 @@ div {
   margin-top: auto;
   margin-bottom: auto;
   height: 103%;
-  background-color: #D2B48E;
+  background-color: #F0E2B5
+}
+
+.game h2 {
+  font-size: 2rem;
 }
 
 .game button {
@@ -623,4 +628,19 @@ div {
   border-radius: 5px;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.point-container {
+  margin-right: 100px;
+}
+
+.game button {
+  margin: 10px;
+}
+
+.user-form {
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-right: 25px;
 }

@@ -102,16 +102,19 @@ function Hangman() {
   const hiddenWord = randomAttraction.split('').map(letter =>
     correctGuesses.includes(letter) ? letter : "_").join(" ");
 
-  return <div className="hangman-container">
-    
-    <p>{hiddenWord}</p>
-    <p>{progress()}</p>
-    <div>
-      {renderButtons()}
+  return (
+    <>
+    <div className="hangman-container">
+      <p>{hiddenWord}</p>
+      <p>{progress()}</p>
+      <div>
+        {renderButtons()}
+      </div>
+      {renderStatus()}
     </div>
-    {renderStatus()}
     <button onClick={reset}>Retry</button>
-  </div>
+  </>
+  )
 }
 
 export default Hangman

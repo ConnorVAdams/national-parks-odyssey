@@ -63,7 +63,6 @@ const handleLoginUserSubmit = async (username) => {
 
     if (foundUser) {
       console.log('User found:', foundUser)
-      
       setCurrentUser(current => foundUser)
       
     // Set currentUser state correctly
