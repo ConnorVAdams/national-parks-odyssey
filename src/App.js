@@ -63,9 +63,9 @@ const handleLoginUserSubmit = async (username) => {
 
     if (foundUser) {
       console.log('User found:', foundUser)
-      
+
       setCurrentUser(current => foundUser)
-      
+
     // Set currentUser state correctly
     } else {
       alert('User not found. Please check your username.')
@@ -75,7 +75,7 @@ const handleLoginUserSubmit = async (username) => {
   }
 }
 
-// const handleLoginUserSubmit = 
+// const handleLoginUserSubmit =
 
 const fetchAllUsers = () => {
   fetch("http://localhost:3000/users")
@@ -154,10 +154,19 @@ useEffect(() => {
     })
   }
 
+
+  //function to navigate to parkcard
+  const cardRoute = (parkObj) => {
+    setCard({
+      park: parkObj,
+      displayCard: true
+    })
+  }
+
   return (
     <div className={card.displayCard ? 'wrapper hidden' : 'wrapper'}>
       <Header currentUser={currentUser} onLoginUserSubmit={handleLoginUserSubmit} onCreateUserSubmit={handleCreateUserSubmit} />
-      <Outlet context={{ currentUser, users, parks, handleWin }} />
+      <Outlet context={{ currentUser, users, parks, handleWin, cardRoute }} />
       {card.displayCard ? <ParkCard park={card.park} resetCard={resetCard} /> : null}
       <Footer />
     </div>

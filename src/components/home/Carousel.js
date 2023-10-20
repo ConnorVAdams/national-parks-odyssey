@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import ParkCard from "../ParkCard";
 import './Carousel.css'
 import CarouselCard from "./CarouselCard";
+import { useOutletContext, Outlet } from "react-router-dom";
 
 const Carousel = ({ currentUser, parks }) => {
   const [userCards, setUserCards] = useState([])
-
+  const {cardRoute} = useOutletContext()
   useEffect(() => {
     console.log(currentUser)
     function getCarousel() {
@@ -20,17 +21,14 @@ const Carousel = ({ currentUser, parks }) => {
       }
     }
 
-    //function to navigate to parkcard
-    const cardRoute = () => {
-      console.log("need to route!")
-    }
+
 
     const carouselDisplay = () => {
       if (!currentUser) {
         console.log('y')
       } else {
         return getCarousel().map(park => {
-          return <CarouselCard key={park.id} park={park} cardRoute={cardRoute}/>
+          return <CarouselCard key={park.id} park={park}/>
         })
       }
     }
@@ -43,6 +41,7 @@ const Carousel = ({ currentUser, parks }) => {
   return (
     <div className='carousel'>
       {userCards}
+      <Outlet context={{cardRoute}} />
     </div>
   )
 }
