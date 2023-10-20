@@ -30,6 +30,7 @@
 
 .carousel-card {
   display: flex;
+  flex-direction: column;
   background-color: #354a20;
   color: white;
   margin: auto;

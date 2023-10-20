@@ -10,6 +10,12 @@ Simply use `Node Package Manager` to install dependencies and get playing!
 npm install
 ```
 
+Google Maps components contain environment variables that have been hidden, but if you'd like to run the App, you can obtain your own free Google API key: 
+
+[Google Maps Platform](https://developers.google.com/maps/documentation/embed/get-api-key)
+
 # Dependencies
 
 # Acknowledgements
+
+- National Park Service - []
