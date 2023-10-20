@@ -25,13 +25,13 @@ const Header = ({ currentUser, onLoginUserSubmit, onCreateUserSubmit }) => {
     setLoginModalOpen(false);
   };
 
-  
+
 
   return (
     <div className='header'>
       <div className='title-container'>
         <img onClick={() => navigate('./')} className='nps-logo' src='https://wikiwandv2-19431.kxcdn.com/_next/image?url=https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Logo_of_the_United_States_National_Park_Service.svg/640px-Logo_of_the_United_States_National_Park_Service.svg.png&w=640&q=50' alt='nps-logo' />
-        <h1 className='title'>National Parks Odyssey (TBD)</h1>
+        <h1 className='title'>National Parks Exploration</h1>
       </div>
       <div className='user-container'>
 
@@ -39,7 +39,8 @@ const Header = ({ currentUser, onLoginUserSubmit, onCreateUserSubmit }) => {
           <h2>Current User: {currentUser.username} |</h2>
           <h2> | {currentUser.points} Points</h2>
         </div>
-        <button id="create-user" onClick={handleOpenCreateUserModal}>Create User</button>
+        <div>
+          <button id="create-user" onClick={handleOpenCreateUserModal}>Create User</button>
           <Modal
             isOpen={isCreateUserModalOpen}
             onClose={handleCloseCreateUserModal}
@@ -52,8 +53,11 @@ const Header = ({ currentUser, onLoginUserSubmit, onCreateUserSubmit }) => {
             onClose={handleCloseLoginModal}
             onLoginUserSubmit={onLoginUserSubmit}
           />
+        </div>
+
 
       </div>
+
 
     </div>
   )
