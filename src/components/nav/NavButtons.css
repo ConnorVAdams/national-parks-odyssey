@@ -1,0 +1,30 @@
+@import url(https: //kit.fontawesome.com/a076d05399.js);
+
+.nav-link {
+  display: flex;
+  grid-area: 2/2/3/3;
+  height: 4vh;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration-line: none;
+  color: black;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.mountain {
+  width: 40px;
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover {
+  transform: translateY(-10px);
+  transform-origin: center;
+}

@@ -8,37 +8,59 @@
   font-family: 'Bahianita', sans-serif;
   letter-spacing: 1px;
   background-color: #354a20;
+  color: white;
 }
+
 .title-container {
   display: flex;
   /* flex-direction: row; */
   align-items: center;
 }
+
 .user-container {
   display: flex;
-  align-items: right;
-  flex-direction: column;
+  align-items: center;
   margin-left: auto;
-  margin-right: 20px;
+  flex-direction: column;
 }
 
-.user-container button {
-  margin-left: 10px;
+.user-container .point-container {
+  text-align: right;
+  margin-right: 10px;
+  justify-content: center;
 }
-#create-user {
-  background: #354A20;
+
+.point-container {
+  height: 20px;
+  margin-bottom: 8px;
+}
+
+.user-container button#create-user,
+.user-container button#login {
+  background: #bd6315;
+  font-weight: 400;
   font-family: 'Open Sans', serif;
   color: white;
+  font-size: 12px;
+  /* Adjust the font size as needed */
+  border-radius: 10px;
+  /* Adds rounded edges */
+  padding: 5px 15px;
+  /* Adjust padding to control button size */
+  /* margin-right: 10px; */
+  /* Add spacing between buttons */
+  margin-top: 0;
+  margin-right: 2px;
 }
 
 #login {
+  background: #b4d2bf;
   margin-top: 5px;
   margin-left: 10px;
-  background: #b4d2bf;
-  font-family: 'Open Sans', serif;
+  /* Remove left margin to place it next to the "Create User" button */
 }
 
-.point-container{
+.point-container {
   float: right;
   /* flex-direction: column; */
   text-align: right;
@@ -68,6 +90,7 @@
   border: 1px solid #888;
   width: 80%;
 }
+
 .user-modal-content label {
   align-items: center;
 }
