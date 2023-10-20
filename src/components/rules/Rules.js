@@ -16,7 +16,7 @@ const Rules = () => {
                 <strong>Goal</strong>: Win minigames to obtain as many National Park Collectible Cards as possible. Display your knowledge and skills to gain more points, and climb to the top of the leaderboard!
               </p>
               <p>
-              <strong>Learn</strong>: Take as much time as needed to gather information about the many wonderful National Parks in the United States. Search through all 63 parks and even open their encyclapedias. The more you know, the easier the challenges!
+              <strong>Learn</strong>: Take as much time as needed to gather information about the many wonderful National Parks in the United States. Search through all 63 parks and even open their encyclopedias. The more you know, the easier the challenges!
               </p>
               <p>
               <strong>Map</strong>: Explore the National Parks on our map, by clicking on the designated park tile. With each park a random minigame will appear, that you will have to beat. If beaten, you will recieve a certain amount of points (based on your performance and park popularity), and you will also recieve a Collecters Card of that specific park. Collect them all if you dare!
