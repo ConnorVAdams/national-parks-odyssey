@@ -64,11 +64,26 @@ div {
   max-height: 78vh;
   border: 3px solid black;
   margin-left: 10px;
-  background-color: #354a20;
+  background: #b4d2bf;
   color: white;
   overflow: auto;
   padding: 10px;
   font-size: 0.75rem;
+  font-family: 'Bahianita', sans-serif;
+}
+
+.game-info::-webkit-scrollbar {
+  width: 0px;
+}
+
+.game-info::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+.game-info::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .game-info h2{
@@ -579,24 +594,9 @@ div {
   margin-bottom: 5px;
 }
 
-.leaderboard li {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background: rgb(197, 108, 57);
-  margin-top: 3px;
-  margin-bottom: 3px;
-  border-radius: 5px;
-  padding: 0px; */
-}
-
 .footer {
   background-color: #354a20;
   border-radius: 0px;
-}
-
-.game-info {
-  font-family: 'Bahianita', sans-serif;
 }
 
 .game-info h2{
