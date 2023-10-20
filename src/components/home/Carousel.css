@@ -11,7 +11,8 @@
   scroll-snap-type: x mandatory;
   gap: 10px;
   overflow-y: auto;
-  background: #b4d2bf
+  background: #b4d2bf;
+  padding: 10px;
 }
 
 .carousel::-webkit-scrollbar {

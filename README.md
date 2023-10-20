@@ -18,4 +18,16 @@ Google Maps components contain environment variables that have been hidden, but 
 
 # Acknowledgements
 
-- National Park Service - []
+- National Park Service - [www.nps.gov](www.nps.gov)
+- Wikipedia - [U.S. National Parks](https://en.wikipedia.org/wiki/List_of_national_parks_of_the_United_States)
+
+# Contact Us
+
+Connor Adams
+- [GitHub](https://github.com/ConnorVAdams/)
+
+Tiana Lopez
+- [GitHub](https://github.com/tianalopez/)
+
+Isaac Wilhite
+- [GitHub](https://github.com/isaacwilhite)
