@@ -46,6 +46,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   height: 100px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5)
 }
 
 .carousel-card h3 {

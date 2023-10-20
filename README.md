@@ -14,12 +14,17 @@ Google Maps components contain environment variables that have been hidden, but 
 
 [Google Maps Platform](https://developers.google.com/maps/documentation/embed/get-api-key)
 
-# Dependencies
-
 # Acknowledgements
 
 - National Park Service - [www.nps.gov](www.nps.gov)
 - Wikipedia - [U.S. National Parks](https://en.wikipedia.org/wiki/List_of_national_parks_of_the_United_States)
+
+# Usage
+**Home** - Home is the landing page for the App. Here users can see all parks on the map, view the current standings in the leaderboard, view their collected cards, and choose a park to virtually visit. Be sure to log in with a unique username for all these features!
+
+**
+
+# Visual Operations
 
 # Contact Us
 
