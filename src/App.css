@@ -40,6 +40,8 @@ div {
   align-items: center;
   margin-top: 10px;
   font-family: 'Bahianita', sans-serif;
+  font-size: 1.75rem;
+  color: white;
 }
 
 .map {
@@ -72,7 +74,7 @@ div {
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
-  font-size: 2rem;
+  font-size: 2.75rem;
 }
 
 .game {
@@ -150,7 +152,7 @@ div {
   max-height: 80px;
   max-width: 65px;
   margin: 10px;
-  
+  /* box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5); */
 }
 
 .title {
@@ -565,19 +567,37 @@ div {
   display: inline;
   flex-grow: 1;
   margin-left: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .leaderboard li {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   background: rgb(197, 108, 57);
   margin-top: 3px;
   margin-bottom: 3px;
   border-radius: 5px;
-  padding: 2px;
+  padding: 0px;
 }
 
 .footer {
   background-color: #354a20;
   border-radius: 0px;
+}
+
+.game-info {
+  font-family: 'Bahianita', sans-serif;
+}
+
+.user-stat {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 1.2rem;
+  background: rgb(197, 108, 57);
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-radius: 5px;
 }
