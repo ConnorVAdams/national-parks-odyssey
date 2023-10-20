@@ -1,11 +1,41 @@
-import { BiSolidSpreadsheet as DisplayIcon }  from 'react-icons/bi'
-
 const ParkLi = ({ handleFavorite, park, displayPark }) => {
   const { id, name, year, location, coordinates, image, attractions, link, visitors, wildlife, gameWon, description, favorited } = park
 
   const handleClick = () => {
     displayPark(id)
   }
+
+  // const listedStates = location.map(state => {
+  //   if (location.length > 1) {
+  //     for (let index = 0; index < location.length; index++) {
+  //       const state = location[index]
+  //       if (index === location.length - 1) {
+  //         return <p key={state}>{`${state}`}</p>
+  //       } else {
+  //         return <p key={state}>{`${state}, `}</p>
+  //       }
+  //   }
+  //   console.log(state)
+  //   }
+  // })
+
+  // const newStates = location.map(loc => {
+  //   if (location.length > 1) {
+  //     for (let index = 0; index < location.length; index++) {
+  //       const state = location[index]
+  //       if (index === location.length - 1) {
+  //         console.log(<p key={state}>{`${state}`}</p>)
+  //         return <p key={state}>{`${state}`}</p>
+  //       } else {
+  //         console.log(<p key={state}>{`${state}`}</p>)
+  //         return <p key={state}>{`${state}, `}</p>
+  //       }
+  //     }
+  //   } else {
+  //     console.log(<p key={loc}>{loc}</p>)
+  //     return <p>{loc}</p>
+  //   }
+  // })
 
   return (
     <div className='park-li'>

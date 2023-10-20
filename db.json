@@ -3840,99 +3840,119 @@
       "favorited": false
     }
   ],
+
   "users": [
     {
       "id": 1,
-      "username": "isaac",
+      "username": "Isaac",
       "points": 11038,
       "cards": [
-        41
+        41,
+        67,
+        74,
+        1,
+        5,
+        18
       ]
     },
     {
       "id": 2,
-      "username": "buzz",
-      "points": 0,
-      "cards": []
+      "username": "Tiana",
+      "points": 6438,
+      "cards": [
+        1, 
+        4, 
+        7, 
+        62, 
+        12
+      ]
     },
     {
       "id": 3,
-      "username": "connor",
-      "points": 738,
+      "username": "Connor",
+      "points": 3738,
       "cards": [
         32,
-        1
+        1,
+        62,
+        46
       ]
     },
     {
       "id": 4,
-      "username": "tiana",
+      "username": "Wesley",
       "points": 0,
       "cards": []
     },
     {
       "id": 5,
-      "username": "Matteo",
+      "username": "Brian",
       "points": 0,
       "cards": []
     },
     {
       "id": 6,
-      "username": "con con",
-      "points": 5625,
+      "username": "Isaac S.",
+      "points": 0,
       "cards": []
     },
     {
       "id": 7,
-      "username": "gj",
+      "username": "Kat",
       "points": 0,
       "cards": []
     },
     {
       "id": 8,
-      "username": "hsrths",
+      "username": "Michael",
       "points": 0,
       "cards": []
     },
     {
       "id": 9,
-      "username": "thsj",
+      "username": "Anthony",
       "points": 0,
       "cards": []
     },
     {
       "id": 10,
-      "username": "agb",
+      "username": "Danner",
       "points": 0,
       "cards": []
     },
     {
       "id": 11,
-      "username": "thstj",
+      "username": "Matteo",
       "points": 0,
       "cards": []
     },
     {
       "id": 12,
-      "username": "sfgjng",
+      "username": "Zach",
       "points": 0,
       "cards": []
     },
     {
       "id": 13,
-      "username": "hmd",
+      "username": "Austin",
       "points": 0,
       "cards": []
     },
     {
       "id": 14,
-      "username": "aere5r",
+      "username": "Alberto",
       "points": 0,
       "cards": []
     },
     {
       "id": 15,
-      "username": "ktdked",
+      "username": "Joseph",
+      "points": 0,
+      "cards": []
+    },
+    {
+      "id": 16,
+      "username": "Landon",
       "points": 0,
       "cards": []
     }
