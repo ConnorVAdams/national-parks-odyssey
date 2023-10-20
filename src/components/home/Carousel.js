@@ -1,75 +1,44 @@
 import { useEffect, useState } from "react";
 import ParkCard from "../ParkCard";
-import "./Carousel.css"
-import Slide from './Slide'
-import VerticalCarousel from "./VerticalCarousel";
-import { config } from "react-spring";
+import './Carousel.css'
 
 const Carousel = ({ currentUser, parks }) => {
-  const [userCards, setUserCards] = useState([]);
-  const [offsetRadius, setOffsetRadius] = useState(2);
-  const [showNavigation, setShowNavigation] = useState(true);
-
-// useEffect(() => {
-//   function getCarousel() {
-//     if (!currentUser) {
-//     } else {
-//       const userCards = currentUser.cards;
-
-//       const matchingParks = parks.filter(park => userCards.includes(park.id));
-
-//       return matchingParks;
-//     }
-//   }
-
-//   const carouselDisplay = () => {
-//     if (!currentUser) {
-//     } else {
-//       return getCarousel().map(park => {
-//         return <ParkCard key={park.id} park={park}/>
-//     })
-//     }
-//   }
-//   setUserCards(carouselDisplay())
-// }, [currentUser])
+  const [userCards, setUserCards] = useState([])
 
   useEffect(() => {
+    console.log(currentUser)
     function getCarousel() {
       if (!currentUser) {
-        return [];
+        console.log('y')
       } else {
         const userCards = currentUser.cards;
-        const matchingParks = parks.filter((park) => userCards.includes(park.id));
+
+        const matchingParks = parks.filter(park => userCards.includes(park.id));
+
         return matchingParks;
       }
     }
 
-    setUserCards(getCarousel());
-  }, [currentUser, parks]);
+    const carouselDisplay = () => {
+      if (!currentUser) {
+        console.log('y')
+      } else {
+        return getCarousel().map(park => {
+          return <ParkCard key={park.id} park={park} />
+        })
+      }
+    }
+    setUserCards(carouselDisplay())
+    console.log(currentUser)
+  }, [currentUser])
+
+
 
   return (
-    <div className="carousel">
-      <div
-        style={{
-          position: "fixed",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          width: "20%%",
-          height: "20%",
-          margin: "0",
-          background: "#7FfFbF"
-        }}
-      >
-        <VerticalCarousel
-          slides={userCards}
-          offsetRadius={offsetRadius}
-          showNavigation={showNavigation}
-          animationConfig={config.gentle}
-        />
-      </div>
+    <div className='carousel'>
+      {userCards}
     </div>
-  );
-};
+  )
+}
 
 export default Carousel
