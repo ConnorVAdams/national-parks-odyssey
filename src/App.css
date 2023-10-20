@@ -58,9 +58,21 @@ div {
   display: flex;
   flex-direction: column;
   grid-area: 2/1/5/2;
-  height: 78vh;
+  max-height: 78vh;
   border: 3px solid black;
   margin-left: 10px;
+  background-color: #354a20;
+  color: white;
+  overflow: auto;
+  padding: 10px;
+  font-size: 0.75rem;
+}
+
+.game-info h2{
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 2rem;
 }
 
 .game {
@@ -119,6 +131,7 @@ div {
   border: 3px solid black;
   margin-right: 10px;
   margin-left: 4px;
+  background-color: #354a20;
 }
 
 .footer {
@@ -137,6 +150,7 @@ div {
   max-height: 80px;
   max-width: 65px;
   margin: 10px;
+  
 }
 
 .title {
@@ -550,15 +564,17 @@ div {
 .leaderboard p {
   display: inline;
   flex-grow: 1;
+  margin-left: 5px;
 }
 
 .leaderboard li {
   display: flex;
+  justify-content: space-around;
   background: rgb(197, 108, 57);
-}
-
-.leaderboard {
-
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  padding: 2px;
 }
 
 .footer {
