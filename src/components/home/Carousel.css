@@ -1,0 +1,12 @@
+/* Define styles for the carousel container */
+.carousel {
+  display: flex;
+  flex-direction: column;
+  grid-area: 2/3/5/4;
+  height: 78vh;
+  border: 3px solid black;
+  margin-right: 10px;
+  margin-left: 4px;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+}
