@@ -48,7 +48,6 @@ const handleCreateUserSubmit = async (username) => {
       body: JSON.stringify(newUser),
     });
 
-    console.log('User created successfully!')
   } catch (error) {
     alert('Error creating user:', error)
   }
@@ -62,7 +61,6 @@ const handleLoginUserSubmit = async (username) => {
     const foundUser = currentUsers.find((user) => user.username === username)
 
     if (foundUser) {
-      console.log('User found:', foundUser)
       setCurrentUser(current => foundUser)
 
     // Set currentUser state correctly

@@ -41,12 +41,13 @@
   font-family: 'Bahianita', sans-serif;
   font-size: large;
   margin-top: 6px;
-  padding: 10px 0;
+  padding: 10px;
   justify-content: space-evenly;
   text-transform: uppercase;
   letter-spacing: 1px;
   height: 100px;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5)
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 .carousel-card h3 {
@@ -67,4 +68,15 @@
 .carousel-card button:hover {
   transform: translateY(-10px);
   transform-origin: center;
+}
+
+.carousel h2{
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Bahianita', sans-serif;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 2.75rem;
+  color: white;
 }

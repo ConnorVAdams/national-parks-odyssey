@@ -85,7 +85,6 @@ if (!isCollisionWinBox(newPosition.x, newPosition.y)) {
     setPosition(newPosition);
   } else {
     // Log the message to the console or display it in the component
-    console.log("You Win! You reached the top.");
     const endTime = Date.now()
     // Callback handleWin function if end is reached
     handleWin(id, (endTime - startTime))
@@ -136,9 +135,9 @@ if (!isCollisionWinBox(newPosition.x, newPosition.y)) {
     };
   }, [handleKeyDown]);
 
-  const reset = () => {
-    console.log('hi isaac')
-  }
+  // const reset = () => {
+  //   console.log('hi isaac')
+  // }
 
   return (
     <>
@@ -200,7 +199,7 @@ if (!isCollisionWinBox(newPosition.x, newPosition.y)) {
           }}
         />
       </div>
-      <button onClick={reset}>Retry</button>
+      {/* <button onClick={reset}>Retry</button> */}
     </>
   );
 };

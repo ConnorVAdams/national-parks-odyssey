@@ -56,7 +56,6 @@ const MemoryGame = () => {
         //If it's end of turn, check most recently clicked name against value stored in clickedName.
         if (count % 2 !== 0 && name === clickedName){
             //If it's a match, reset clickedName, find matching animal objects, change found property to true, and re-render.
-            console.log('Good job!')
             setDisplayedImg(img)
             setDisplayedFact(fact)
             setClickedName('')
@@ -70,7 +69,6 @@ const MemoryGame = () => {
                 setClickedName('')
                 setCount(count => count + 1)
                 }, 1400)
-            console.log('Better luck next time.')
         } else {
             //If it's mid-turn, store first clicked tile in clickedName and re-render.
             setClickedName(name)
