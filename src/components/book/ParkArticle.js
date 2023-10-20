@@ -1,5 +1,7 @@
 // import ParkCard from './ParkCard'
 import { useEffect, useState } from 'react'
+import { Wrapper } from "@googlemaps/react-wrapper"
+import BookMap from './BookMap'
 
 const ParkArticle = ({ park, handleFavorite, displayPark }) => {
   const { id, name, year, location, coordinates, image, attractions, link, visitors, wildlife, gameWon, description, favorited } = park
@@ -85,13 +87,17 @@ const ParkArticle = ({ park, handleFavorite, displayPark }) => {
             <h4>Est. {year}</h4>
             <h4>{location}</h4>
             <h4>{visitors} visitors</h4>
-            <h4><a href={link} target='_blank'>{name}</a></h4>
+            <h4><a href={link} target='_blank' rel="noreferrer">{name}</a></h4>
           </div>
           {!gameWon ? (
             //TODO Figure out how to destructure new coordinates and get Google Map on the page.
-            <span className='map-card'>Map</span>
+            <span className='map-card'>Map
+            <Wrapper apiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY} version="beta" libraries={["marker"]}>
+              <BookMap coordinates={coordinates}/>
+            </Wrapper>
+            </span>
           ) : ( null
-            // <ParkCard/> 
+            // <ParkCard/>
           )}
         </div>
         <div className='article-bottom'>
