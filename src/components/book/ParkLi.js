@@ -34,10 +34,9 @@ const ParkLi = ({ handleFavorite, park, displayPark }) => {
       </div>
       <div className='icon-container'>
         <div className='single-icon-container'>
-          <DisplayIcon className='react-icon display-icon' />
+          <DisplayIcon className='react-icon display-icon' onClick={() => handleClick(id)}/>
           <p>Details</p>
         </div>   
-        {!favorited ? <button onClick={handleFave} >Favorite</button> : <button onClick={handleFave}>Unfavorite</button>}
         {!gameWon ? 
           <div className='single-icon-container'>
             <PlayIcon className='react-icon play-icon'/> <p>Play Game</p>

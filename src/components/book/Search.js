@@ -58,7 +58,6 @@ const Search = ({ parks, searchObj, handleSearchChange, handleReset }) => {
             <label htmlFor='lists'><strong>Lists</strong></label>
               <select onChange={onChange} id='list' name='list' value={searchObj.list}>
                 <option value='All'>All</option>
-                <option value='Favorites'>Favorites</option>
                 <option value='Cards Collected'>Cards Collected</option>
                 <option value='Cards Remaining'>Cards Remaining</option>
               </select>
@@ -75,21 +74,21 @@ const Search = ({ parks, searchObj, handleSearchChange, handleReset }) => {
         <div id='filters-container' className='filters-container'>
           <label htmlFor='filters-container'><strong>Filters</strong></label>
             <div>
-              <label htmlFor='state'>State</label>
+              <label htmlFor='state'/>
                 <select onChange={onChange} name='state'>
                   <option value='all'>All</option>
                   {makeStateFilters()}
                 </select>
             </div>
             <div>
-              <label htmlFor='wildlife'>Wildlife</label>
+              <label htmlFor='wildlife'/>
                 <select onChange={onChange} name='wildlife'>
-                  <option value='all'>All</option>
+                  <option value='all'>Wildlife</option>
                   {makeWildlifeFilters()}
               </select>
             </div>
             <div>
-              <label htmlFor='activities'>Activities</label>
+              <label htmlFor='activities'/>
                 <select onChange={onChange} name='activity'>
                   <option value='all'>All</option>
                   <option value='archaeology'>Archaeology</option>

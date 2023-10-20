@@ -163,12 +163,14 @@ h3 {
   flex-direction: column;
   flex-grow: 1;
   row-gap: 10px;
-  height: 74vh;
+
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .search-form {
   display: inherit;
-  flex-direction: column;
+  flex-direction: row;
   display: inherit;
   flex-direction: column;
   border: 3px solid black;
@@ -184,7 +186,7 @@ h3 {
 
 .search-list-sort div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-grow: 1;
   align-items: center;
   justify-content: center;
@@ -193,12 +195,12 @@ h3 {
 .search-list-sort input, select {
   display: block;
   margin: 5px;
-  width: 75%
+  width: 150px;
 }
 
 .search-list-sort label {
-  margin-right: auto;
-  margin-left: 10px;
+  margin-right: 8px;
+  /* margin-left: 10px; */
 }
 
 .filters-container {

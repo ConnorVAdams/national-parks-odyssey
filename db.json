@@ -57,7 +57,7 @@
         "Song sparrow"
       ],
       "quizQuestions": {},
-      "gameWon": true,
+      "gameWon": false,
       "description": "Covering most of Mount Desert Island and other coastal islands, Acadia features the tallest mountain on the Atlantic coast of the United States, granite peaks, ocean shoreline, woodlands, and lakes. There are freshwater, estuary, forest, and intertidal habitats.",
       "favorited": true
     },
@@ -1870,7 +1870,7 @@
         "Green anole"
       ],
       "quizQuestions": {},
-      "gameWon": true,
+      "gameWon": false,
       "description": "Renowned for its thermal springs, this urban park offers historic bathhouses, scenic trails, and cultural attractions. Visitors can take a bath in the thermal waters, explore hiking trails, and enjoy the charming town of Hot Springs.",
       "favorited": false
     },
@@ -1928,7 +1928,7 @@
         "American bullfrog"
       ],
       "quizQuestions": {},
-      "gameWon": true,
+      "gameWon": false,
       "description": "Located in the largest freshwater lake in the world, Lake Superior, Isle Royale National Park is known for its pristine wilderness. Visitors can explore the island's rugged coastline, hike, and observe diverse wildlife, including wolves and moose.",
       "favorited": false
     },
@@ -2465,7 +2465,7 @@
         "Black-headed grosbeak"
       ],
       "quizQuestions": {},
-      "gameWon": true,
+      "gameWon": false,
       "description": "Lassen Peak, the largest lava dome volcano in the world, is joined by all three other types of volcanoes in this park: shield, cinder cone, and composite. Though Lassen itself last erupted in 1915, most of the rest of the park is continuously active. Numerous hydrothermal features, including fumaroles, boiling pools, and bubbling mud pots, are heated by molten rock from beneath the peak.",
       "favorited": false
     },
@@ -3670,7 +3670,7 @@
         "Wapiti Lake Wolf Pack"
       ],
       "link": "https://www.nps.gov/yell/index.htm",
-      "visitors": 3,
+      "visitors": 3290242,
       "pointValue": 0,
       "wildlife": [
         "American bison",
